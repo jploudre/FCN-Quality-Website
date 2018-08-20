@@ -1,0 +1,2326 @@
+NAME,Metricname,SeenNum,SeenDenom,SeenAvg,LastUpdate
+"Alexander MD, Steven",AAA Screening,4,65,0.0615,38:19.5
+"Alexander MD, Steven",Advance Directive - Patients >55yrs w/Advance Directive ,184,709,0.2595,38:29.3
+"Alexander MD, Steven",Blood Pressure NOT Controlled  >140/90 mm Hg    ,24,162,0.1481,37:03.6
+"Alexander MD, Steven",Chlamydia,,1,,38:08.3
+"Alexander MD, Steven",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),393,558,0.7043,38:00.2
+"Alexander MD, Steven",Diabetes Care Gaps ,155,162,0.9568,46:03.7
+"Alexander MD, Steven",DM PTS 40 to 75 w/STATIN,80,90,0.8889,45:27.1
+"Alexander MD, Steven",DM PTS 55-75 w/ACE/ARB,54,76,0.7105,45:22.5
+"Alexander MD, Steven",Eye exam,87,162,0.537,37:08.3
+"Alexander MD, Steven",Foot Exam,145,162,0.8951,37:13.4
+"Alexander MD, Steven",HgbA1c < 7.0                     ,87,162,0.537,37:19.0
+"Alexander MD, Steven",HgbA1c NOT > 9.0 (poor control) ,148,162,0.9136,37:25.0
+"Alexander MD, Steven",Hypertension Patients 18-59 years BP <140/90,71,85,0.8353,37:40.5
+"Alexander MD, Steven",Hypertension Patients over 18 BP <140/90,396,437,0.9062,37:52.1
+"Alexander MD, Steven",Hypertension Patients over 59 years BP <150/90,340,360,0.9444,37:45.6
+"Alexander MD, Steven",Mammogram Ages 52 -74,123,191,0.644,38:12.8
+"Alexander MD, Steven",Nephropathy Assessment,136,162,0.8395,37:30.2
+"Alexander MD, Steven",Pap Smear Report,135,273,0.4945,46:09.2
+"Alexander MD, Steven",Pneumovax - DM patients w/current pneumovax,152,162,0.9383,38:35.2
+"Alexander MD, Steven",Pneumovax - Patients Age>65 w/current pneumovax,413,475,0.8695,38:41.0
+"Alexander MD, Steven",Pneumovax - Smokers w/current pneumovax,46,72,0.6389,38:47.7
+"Alexander MD, Steven",Smoking Cessation Advice or Treatment ,11,11,1,37:36.4
+"Alexander MD, Steven",Statin patients with LDL in the past 365 days,333,379,0.8786,46:35.8
+"Alexander MD, Steven",TD - Patients >18yrs with TD in last 10 years,1009,1265,0.7976,38:55.2
+"Alexander MD, Steven",WCV 3-6 yr,61,69,0.8841,25:54.1
+"Anderson MD, Greg",AAA Screening,72,101,0.7129,38:19.5
+"Anderson MD, Greg",Advance Directive - Patients >55yrs w/Advance Directive ,133,639,0.2081,38:29.3
+"Anderson MD, Greg",Blood Pressure NOT Controlled  >140/90 mm Hg    ,16,100,0.16,37:03.6
+"Anderson MD, Greg",Chlamydia,3,8,0.375,38:08.3
+"Anderson MD, Greg",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),526,662,0.7946,38:00.2
+"Anderson MD, Greg",Diabetes Care Gaps ,97,100,0.97,46:03.7
+"Anderson MD, Greg",DM PTS 40 to 75 w/STATIN,65,77,0.8442,45:27.1
+"Anderson MD, Greg",DM PTS 55-75 w/ACE/ARB,59,65,0.9077,45:22.5
+"Anderson MD, Greg",Eye exam,48,100,0.48,37:08.3
+"Anderson MD, Greg",Foot Exam,85,100,0.85,37:13.4
+"Anderson MD, Greg",HgbA1c < 7.0                     ,35,100,0.35,37:19.0
+"Anderson MD, Greg",HgbA1c NOT > 9.0 (poor control) ,85,100,0.85,37:25.0
+"Anderson MD, Greg",Hypertension Patients 18-59 years BP <140/90,101,161,0.6273,37:40.5
+"Anderson MD, Greg",Hypertension Patients over 18 BP <140/90,353,449,0.7862,37:52.1
+"Anderson MD, Greg",Hypertension Patients over 59 years BP <150/90,262,299,0.8763,37:45.6
+"Anderson MD, Greg",Mammogram Ages 52 -74,108,162,0.6667,38:12.8
+"Anderson MD, Greg",Nephropathy Assessment,84,100,0.84,37:30.2
+"Anderson MD, Greg",Pap Smear Report,125,203,0.6158,46:09.2
+"Anderson MD, Greg",Pneumovax - DM patients w/current pneumovax,84,100,0.84,38:35.2
+"Anderson MD, Greg",Pneumovax - Patients Age>65 w/current pneumovax,298,364,0.8187,38:41.0
+"Anderson MD, Greg",Pneumovax - Smokers w/current pneumovax,38,90,0.4222,38:47.7
+"Anderson MD, Greg",Smoking Cessation Advice or Treatment ,5,5,1,37:36.4
+"Anderson MD, Greg",Statin patients with LDL in the past 365 days,257,355,0.7239,46:35.8
+"Anderson MD, Greg",TD - Patients >18yrs with TD in last 10 years,1081,1337,0.8085,38:55.2
+"Anderson MD, Greg",WCV 3-6 yr,15,16,0.9375,25:54.1
+"Anderson MD, Rodney",AAA Screening,68,108,0.6296,38:19.5
+"Anderson MD, Rodney",Advance Directive - Patients >55yrs w/Advance Directive ,87,840,0.1036,38:29.3
+"Anderson MD, Rodney",Blood Pressure NOT Controlled  >140/90 mm Hg    ,13,100,0.13,37:03.6
+"Anderson MD, Rodney",Chlamydia,1,6,0.1667,38:08.3
+"Anderson MD, Rodney",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),562,725,0.7752,38:00.2
+"Anderson MD, Rodney",Diabetes Care Gaps ,92,100,0.92,46:03.7
+"Anderson MD, Rodney",DM PTS 40 to 75 w/STATIN,53,66,0.803,45:27.1
+"Anderson MD, Rodney",DM PTS 55-75 w/ACE/ARB,42,58,0.7241,45:22.5
+"Anderson MD, Rodney",Eye exam,57,100,0.57,37:08.3
+"Anderson MD, Rodney",Foot Exam,65,100,0.65,37:13.4
+"Anderson MD, Rodney",HgbA1c < 7.0                     ,45,100,0.45,37:19.0
+"Anderson MD, Rodney",HgbA1c NOT > 9.0 (poor control) ,95,100,0.95,37:25.0
+"Anderson MD, Rodney",Hypertension Patients 18-59 years BP <140/90,72,100,0.72,37:40.5
+"Anderson MD, Rodney",Hypertension Patients over 18 BP <140/90,425,498,0.8534,37:52.1
+"Anderson MD, Rodney",Hypertension Patients over 59 years BP <150/90,368,407,0.9042,37:45.6
+"Anderson MD, Rodney",Mammogram Ages 52 -74,218,292,0.7466,38:12.8
+"Anderson MD, Rodney",Nephropathy Assessment,79,100,0.79,37:30.2
+"Anderson MD, Rodney",Pap Smear Report,224,269,0.8327,46:09.2
+"Anderson MD, Rodney",Pneumovax - DM patients w/current pneumovax,85,100,0.85,38:35.2
+"Anderson MD, Rodney",Pneumovax - Patients Age>65 w/current pneumovax,455,594,0.766,38:41.0
+"Anderson MD, Rodney",Pneumovax - Smokers w/current pneumovax,34,54,0.6296,38:47.7
+"Anderson MD, Rodney",Smoking Cessation Advice or Treatment ,11,11,1,37:36.4
+"Anderson MD, Rodney",Statin patients with LDL in the past 365 days,314,425,0.7388,46:35.8
+"Anderson MD, Rodney",TD - Patients >18yrs with TD in last 10 years,1095,1345,0.8141,38:55.2
+"Anderson MD, Rodney",WCV 3-6 yr,68,75,0.9067,25:54.1
+"Bates MD, Jennifer",AAA Screening,1,13,0.0769,38:19.5
+"Bates MD, Jennifer",Advance Directive - Patients >55yrs w/Advance Directive ,38,318,0.1195,38:29.3
+"Bates MD, Jennifer",Blood Pressure NOT Controlled  >140/90 mm Hg    ,5,69,0.0725,37:03.6
+"Bates MD, Jennifer",Chlamydia,5,21,0.2381,38:08.3
+"Bates MD, Jennifer",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),222,315,0.7048,38:00.2
+Island Family Physicians,Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),1302,2218,0.6053,00:04.8
+Lynden Family Medicine,Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),2722,4115,0.6076,00:04.8
+North Cascade Family Physicians,Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),3189,5235,0.6056,00:04.8
+North Sound Family Medicine,Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),3969,5450,0.7215,00:04.8
+Squalicum Family Medicine,Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),2554,3567,0.7151,00:04.8
+Whatcom Family Medicine,Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),1111,1598,0.6525,00:04.8
+Bellingham Bay Medical Center,Diabetes Care Gaps ,395,434,0.9017,00:04.8
+Birch Bay Family Medicine,Diabetes Care Gaps ,379,437,0.8401,00:04.8
+Everson Family Medicine,Diabetes Care Gaps ,128,138,0.9275,00:04.8
+Family Health Associates,Diabetes Care Gaps ,583,644,0.9023,00:04.8
+Ferndale Family Medical Center,Diabetes Care Gaps ,565,642,0.853,00:04.8
+Island Family Physicians,Diabetes Care Gaps ,373,414,0.9078,00:04.8
+Lynden Family Medicine,Diabetes Care Gaps ,828,908,0.9118,00:04.8
+North Cascade Family Physicians,Diabetes Care Gaps ,884,934,0.9482,00:04.8
+North Sound Family Medicine,Diabetes Care Gaps ,714,795,0.8884,00:04.8
+Squalicum Family Medicine,Diabetes Care Gaps ,407,435,0.9258,00:04.8
+Whatcom Family Medicine,Diabetes Care Gaps ,243,267,0.9078,00:04.8
+Bellingham Bay Medical Center,DM PTS 40 to 75 w/STATIN,256,346,0.7171,00:04.8
+Birch Bay Family Medicine,DM PTS 40 to 75 w/STATIN,207,332,0.611,00:04.8
+Everson Family Medicine,DM PTS 40 to 75 w/STATIN,74,100,0.74,00:04.8
+Family Health Associates,DM PTS 40 to 75 w/STATIN,368,478,0.7581,00:04.8
+Ferndale Family Medical Center,DM PTS 40 to 75 w/STATIN,328,463,0.7076,00:04.8
+Island Family Physicians,DM PTS 40 to 75 w/STATIN,177,287,0.649,00:04.8
+Lynden Family Medicine,DM PTS 40 to 75 w/STATIN,461,581,0.7762,00:04.8
+North Cascade Family Physicians,DM PTS 40 to 75 w/STATIN,560,746,0.7467,00:04.8
+North Sound Family Medicine,DM PTS 40 to 75 w/STATIN,496,632,0.7703,00:04.8
+Squalicum Family Medicine,DM PTS 40 to 75 w/STATIN,235,330,0.7091,00:04.8
+Whatcom Family Medicine,DM PTS 40 to 75 w/STATIN,128,206,0.6301,00:04.8
+Bellingham Bay Medical Center,DM PTS 55-75 w/ACE/ARB,216,270,0.7572,00:04.8
+Birch Bay Family Medicine,DM PTS 55-75 w/ACE/ARB,183,270,0.6721,00:04.8
+Everson Family Medicine,DM PTS 55-75 w/ACE/ARB,61,84,0.7262,00:04.8
+Family Health Associates,DM PTS 55-75 w/ACE/ARB,301,382,0.8137,00:04.8
+Ferndale Family Medical Center,DM PTS 55-75 w/ACE/ARB,256,356,0.7447,00:04.8
+Island Family Physicians,DM PTS 55-75 w/ACE/ARB,159,225,0.6877,00:04.8
+Lynden Family Medicine,DM PTS 55-75 w/ACE/ARB,365,474,0.7884,00:04.8
+North Cascade Family Physicians,DM PTS 55-75 w/ACE/ARB,413,534,0.7756,00:04.8
+North Sound Family Medicine,DM PTS 55-75 w/ACE/ARB,405,500,0.8067,00:04.8
+Squalicum Family Medicine,DM PTS 55-75 w/ACE/ARB,201,249,0.8092,00:04.8
+Whatcom Family Medicine,DM PTS 55-75 w/ACE/ARB,102,154,0.635,00:04.8
+Bellingham Bay Medical Center,Eye exam,216,434,0.5181,00:04.8
+Birch Bay Family Medicine,Eye exam,147,437,0.3045,00:04.8
+Everson Family Medicine,Eye exam,47,138,0.3406,00:04.8
+Family Health Associates,Eye exam,301,644,0.4476,00:04.8
+Ferndale Family Medical Center,Eye exam,247,642,0.3726,00:04.8
+Island Family Physicians,Eye exam,209,414,0.4996,00:04.8
+Lynden Family Medicine,Eye exam,388,908,0.4053,00:04.8
+North Cascade Family Physicians,Eye exam,584,934,0.6221,00:04.8
+North Sound Family Medicine,Eye exam,323,795,0.4059,00:04.8
+Squalicum Family Medicine,Eye exam,246,435,0.5479,00:04.8
+Whatcom Family Medicine,Eye exam,103,267,0.3416,00:04.8
+Bellingham Bay Medical Center,Foot Exam,326,434,0.7488,00:04.8
+Birch Bay Family Medicine,Foot Exam,344,437,0.746,00:04.8
+Everson Family Medicine,Foot Exam,111,138,0.8043,00:04.8
+Family Health Associates,Foot Exam,461,644,0.7021,00:04.8
+Ferndale Family Medical Center,Foot Exam,434,642,0.6595,00:04.8
+Island Family Physicians,Foot Exam,323,414,0.7682,00:04.8
+Lynden Family Medicine,Foot Exam,713,908,0.7704,00:04.8
+North Cascade Family Physicians,Foot Exam,744,934,0.7992,00:04.8
+North Sound Family Medicine,Foot Exam,617,795,0.7372,00:04.8
+Squalicum Family Medicine,Foot Exam,358,435,0.8056,00:04.8
+Whatcom Family Medicine,Foot Exam,216,267,0.8117,00:04.8
+Bellingham Bay Medical Center,HgbA1c < 7.0                     ,178,434,0.4107,00:04.8
+Birch Bay Family Medicine,HgbA1c < 7.0                     ,188,437,0.4391,00:04.8
+Everson Family Medicine,HgbA1c < 7.0                     ,69,138,0.5,00:04.8
+Family Health Associates,HgbA1c < 7.0                     ,322,644,0.4764,00:04.8
+Ferndale Family Medical Center,HgbA1c < 7.0                     ,341,642,0.5227,00:04.8
+Island Family Physicians,HgbA1c < 7.0                     ,219,414,0.5329,00:04.8
+Lynden Family Medicine,HgbA1c < 7.0                     ,462,908,0.4892,00:04.8
+North Cascade Family Physicians,HgbA1c < 7.0                     ,437,934,0.4779,00:04.8
+North Sound Family Medicine,HgbA1c < 7.0                     ,362,795,0.4452,00:04.8
+Squalicum Family Medicine,HgbA1c < 7.0                     ,183,435,0.4182,00:04.8
+Whatcom Family Medicine,HgbA1c < 7.0                     ,97,267,0.3131,00:04.8
+Bellingham Bay Medical Center,HgbA1c NOT > 9.0 (poor control) ,386,434,0.8973,00:04.8
+Birch Bay Family Medicine,HgbA1c NOT > 9.0 (poor control) ,387,437,0.8973,00:04.8
+Everson Family Medicine,HgbA1c NOT > 9.0 (poor control) ,127,138,0.9203,00:04.8
+Family Health Associates,HgbA1c NOT > 9.0 (poor control) ,598,644,0.9137,00:04.8
+Ferndale Family Medical Center,HgbA1c NOT > 9.0 (poor control) ,589,642,0.9118,00:04.8
+Island Family Physicians,HgbA1c NOT > 9.0 (poor control) ,386,414,0.9306,00:04.8
+Lynden Family Medicine,HgbA1c NOT > 9.0 (poor control) ,806,908,0.8708,00:04.8
+North Cascade Family Physicians,HgbA1c NOT > 9.0 (poor control) ,824,934,0.8912,00:04.8
+North Sound Family Medicine,HgbA1c NOT > 9.0 (poor control) ,725,795,0.8988,00:04.8
+Squalicum Family Medicine,HgbA1c NOT > 9.0 (poor control) ,393,435,0.9105,00:04.8
+Whatcom Family Medicine,HgbA1c NOT > 9.0 (poor control) ,231,267,0.8772,00:04.8
+Bellingham Bay Medical Center,Hypertension Patients 18-59 years BP <140/90,443,620,0.7268,00:04.8
+Birch Bay Family Medicine,Hypertension Patients 18-59 years BP <140/90,251,397,0.6675,00:04.8
+Everson Family Medicine,Hypertension Patients 18-59 years BP <140/90,83,109,0.7615,00:04.8
+Family Health Associates,Hypertension Patients 18-59 years BP <140/90,593,785,0.7504,00:04.8
+Ferndale Family Medical Center,Hypertension Patients 18-59 years BP <140/90,438,562,0.7708,00:04.8
+Island Family Physicians,Hypertension Patients 18-59 years BP <140/90,300,401,0.7293,00:04.8
+Lynden Family Medicine,Hypertension Patients 18-59 years BP <140/90,574,738,0.8161,00:04.8
+North Cascade Family Physicians,Hypertension Patients 18-59 years BP <140/90,781,1146,0.6939,00:04.8
+North Sound Family Medicine,Hypertension Patients 18-59 years BP <140/90,790,998,0.8015,00:04.8
+Squalicum Family Medicine,Hypertension Patients 18-59 years BP <140/90,480,634,0.7616,00:04.8
+Whatcom Family Medicine,Hypertension Patients 18-59 years BP <140/90,260,317,0.836,00:04.8
+Bellingham Bay Medical Center,Hypertension Patients over 18 BP <140/90,1419,1755,0.8117,00:04.8
+Birch Bay Family Medicine,Hypertension Patients over 18 BP <140/90,965,1328,0.758,00:04.8
+Everson Family Medicine,Hypertension Patients over 18 BP <140/90,310,371,0.8356,00:04.8
+Family Health Associates,Hypertension Patients over 18 BP <140/90,2223,2645,0.8403,00:04.8
+Ferndale Family Medical Center,Hypertension Patients over 18 BP <140/90,1538,1865,0.812,00:04.8
+Island Family Physicians,Hypertension Patients over 18 BP <140/90,1197,1445,0.8229,00:04.8
+Lynden Family Medicine,Hypertension Patients over 18 BP <140/90,2398,2750,0.8838,00:04.8
+North Cascade Family Physicians,Hypertension Patients over 18 BP <140/90,2448,3086,0.7968,00:04.8
+North Sound Family Medicine,Hypertension Patients over 18 BP <140/90,2418,2849,0.8488,00:04.8
+Squalicum Family Medicine,Hypertension Patients over 18 BP <140/90,1495,1784,0.841,00:04.8
+Whatcom Family Medicine,Hypertension Patients over 18 BP <140/90,841,964,0.8717,00:04.8
+Bellingham Bay Medical Center,Hypertension Patients over 59 years BP <150/90,1036,1178,0.8806,00:04.8
+Birch Bay Family Medicine,Hypertension Patients over 59 years BP <150/90,778,972,0.8359,00:04.8
+Everson Family Medicine,Hypertension Patients over 59 years BP <150/90,245,274,0.8942,00:04.8
+Family Health Associates,Hypertension Patients over 59 years BP <150/90,1722,1919,0.9015,00:04.8
+Ferndale Family Medical Center,Hypertension Patients over 59 years BP <150/90,1156,1342,0.8504,00:04.8
+Island Family Physicians,Hypertension Patients over 59 years BP <150/90,927,1068,0.8717,00:04.8
+Lynden Family Medicine,Hypertension Patients over 59 years BP <150/90,1923,2081,0.9205,00:04.8
+North Cascade Family Physicians,Hypertension Patients over 59 years BP <150/90,1783,2015,0.8834,00:04.8
+North Sound Family Medicine,Hypertension Patients over 59 years BP <150/90,1727,1907,0.9002,00:04.8
+Squalicum Family Medicine,Hypertension Patients over 59 years BP <150/90,1079,1202,0.897,00:04.8
+Whatcom Family Medicine,Hypertension Patients over 59 years BP <150/90,620,678,0.9142,00:04.8
+Bellingham Bay Medical Center,Mammogram Ages 52 -74,1216,1796,0.6713,00:04.8
+Birch Bay Family Medicine,Mammogram Ages 52 -74,409,882,0.4839,00:04.8
+Everson Family Medicine,Mammogram Ages 52 -74,104,223,0.4664,00:04.8
+Family Health Associates,Mammogram Ages 52 -74,1655,2478,0.6443,00:04.8
+Ferndale Family Medical Center,Mammogram Ages 52 -74,933,1445,0.6107,00:04.8
+Island Family Physicians,Mammogram Ages 52 -74,705,1062,0.6645,00:04.8
+Lynden Family Medicine,Mammogram Ages 52 -74,1251,1948,0.6059,00:04.8
+North Cascade Family Physicians,Mammogram Ages 52 -74,1535,2442,0.6355,00:04.8
+North Sound Family Medicine,Mammogram Ages 52 -74,1759,2652,0.6614,00:04.8
+Squalicum Family Medicine,Mammogram Ages 52 -74,1270,1910,0.6732,00:04.8
+Whatcom Family Medicine,Mammogram Ages 52 -74,502,765,0.6393,00:04.8
+Bellingham Bay Medical Center,Nephropathy Assessment,312,434,0.7079,00:04.8
+Birch Bay Family Medicine,Nephropathy Assessment,309,437,0.667,00:04.8
+Everson Family Medicine,Nephropathy Assessment,101,138,0.7319,00:04.8
+Family Health Associates,Nephropathy Assessment,472,644,0.7255,00:04.8
+Ferndale Family Medical Center,Nephropathy Assessment,465,642,0.7002,00:04.8
+Island Family Physicians,Nephropathy Assessment,268,414,0.6515,00:04.8
+Lynden Family Medicine,Nephropathy Assessment,661,908,0.7244,00:04.8
+North Cascade Family Physicians,Nephropathy Assessment,742,934,0.7973,00:04.8
+North Sound Family Medicine,Nephropathy Assessment,596,795,0.7439,00:04.8
+Squalicum Family Medicine,Nephropathy Assessment,295,435,0.6872,00:04.8
+Whatcom Family Medicine,Nephropathy Assessment,174,267,0.6102,00:04.8
+Bellingham Bay Medical Center,Pap Smear Report,2304,3458,0.6574,00:04.8
+Birch Bay Family Medicine,Pap Smear Report,604,1217,0.4949,00:04.8
+Everson Family Medicine,Pap Smear Report,141,272,0.5184,00:04.8
+Family Health Associates,Pap Smear Report,3074,4155,0.7255,00:04.8
+Ferndale Family Medical Center,Pap Smear Report,1612,2242,0.6909,00:04.8
+Island Family Physicians,Pap Smear Report,1148,1560,0.7123,00:04.8
+Lynden Family Medicine,Pap Smear Report,1588,3107,0.5015,00:04.8
+North Cascade Family Physicians,Pap Smear Report,2753,4125,0.6682,00:04.8
+North Sound Family Medicine,Pap Smear Report,3183,4958,0.6391,00:04.8
+Squalicum Family Medicine,Pap Smear Report,2084,3247,0.634,00:04.8
+Whatcom Family Medicine,Pap Smear Report,785,1424,0.5422,00:04.8
+Bellingham Bay Medical Center,Pneumovax - DM patients w/current pneumovax,360,434,0.8265,00:04.8
+Birch Bay Family Medicine,Pneumovax - DM patients w/current pneumovax,284,437,0.5716,00:04.8
+Everson Family Medicine,Pneumovax - DM patients w/current pneumovax,109,138,0.7899,00:04.8
+Family Health Associates,Pneumovax - DM patients w/current pneumovax,546,644,0.8584,00:04.8
+Ferndale Family Medical Center,Pneumovax - DM patients w/current pneumovax,533,642,0.8119,00:04.8
+Island Family Physicians,Pneumovax - DM patients w/current pneumovax,281,414,0.7029,00:04.8
+Lynden Family Medicine,Pneumovax - DM patients w/current pneumovax,774,908,0.8083,00:04.8
+North Cascade Family Physicians,Pneumovax - DM patients w/current pneumovax,739,934,0.8012,00:04.8
+North Sound Family Medicine,Pneumovax - DM patients w/current pneumovax,673,795,0.8165,00:04.8
+Squalicum Family Medicine,Pneumovax - DM patients w/current pneumovax,375,435,0.8736,00:04.8
+Whatcom Family Medicine,Pneumovax - DM patients w/current pneumovax,217,267,0.6932,00:04.8
+Bellingham Bay Medical Center,Pneumovax - Patients Age>65 w/current pneumovax,1389,1767,0.7645,00:04.8
+Birch Bay Family Medicine,Pneumovax - Patients Age>65 w/current pneumovax,812,1254,0.588,00:04.8
+Everson Family Medicine,Pneumovax - Patients Age>65 w/current pneumovax,254,380,0.6684,00:04.8
+Family Health Associates,Pneumovax - Patients Age>65 w/current pneumovax,1826,2525,0.6947,00:04.8
+Ferndale Family Medical Center,Pneumovax - Patients Age>65 w/current pneumovax,1503,1895,0.7633,00:04.8
+Island Family Physicians,Pneumovax - Patients Age>65 w/current pneumovax,968,1536,0.6386,00:04.8
+Lynden Family Medicine,Pneumovax - Patients Age>65 w/current pneumovax,2335,2860,0.7706,00:04.8
+North Cascade Family Physicians,Pneumovax - Patients Age>65 w/current pneumovax,2094,2557,0.8121,00:04.8
+North Sound Family Medicine,Pneumovax - Patients Age>65 w/current pneumovax,2234,2752,0.7923,00:04.8
+Squalicum Family Medicine,Pneumovax - Patients Age>65 w/current pneumovax,1360,1674,0.8124,00:04.8
+Whatcom Family Medicine,Pneumovax - Patients Age>65 w/current pneumovax,680,868,0.7316,00:04.8
+Bellingham Bay Medical Center,Pneumovax - Smokers w/current pneumovax,193,537,0.3648,00:04.8
+Birch Bay Family Medicine,Pneumovax - Smokers w/current pneumovax,147,456,0.3084,00:04.8
+Everson Family Medicine,Pneumovax - Smokers w/current pneumovax,81,218,0.3716,00:04.8
+Family Health Associates,Pneumovax - Smokers w/current pneumovax,249,570,0.4371,00:04.8
+Ferndale Family Medical Center,Pneumovax - Smokers w/current pneumovax,366,768,0.4942,00:04.8
+Island Family Physicians,Pneumovax - Smokers w/current pneumovax,138,374,0.3605,00:04.8
+Lynden Family Medicine,Pneumovax - Smokers w/current pneumovax,322,681,0.4571,00:04.8
+North Cascade Family Physicians,Pneumovax - Smokers w/current pneumovax,323,950,0.3682,00:04.8
+North Sound Family Medicine,Pneumovax - Smokers w/current pneumovax,302,695,0.4397,00:04.8
+Squalicum Family Medicine,Pneumovax - Smokers w/current pneumovax,215,394,0.5229,00:04.8
+Whatcom Family Medicine,Pneumovax - Smokers w/current pneumovax,95,213,0.4184,00:04.8
+Bellingham Bay Medical Center,Smoking Cessation Advice or Treatment ,28,32,0.9127,00:04.8
+Birch Bay Family Medicine,Smoking Cessation Advice or Treatment ,6,26,0.6072,00:04.8
+Everson Family Medicine,Smoking Cessation Advice or Treatment ,14,19,0.7368,00:04.8
+Family Health Associates,Smoking Cessation Advice or Treatment ,37,43,0.8292,00:04.8
+Ferndale Family Medical Center,Smoking Cessation Advice or Treatment ,69,85,0.7751,00:04.8
+Island Family Physicians,Smoking Cessation Advice or Treatment ,22,36,0.64,00:04.8
+Lynden Family Medicine,Smoking Cessation Advice or Treatment ,34,50,0.7667,00:04.8
+North Cascade Family Physicians,Smoking Cessation Advice or Treatment ,56,88,0.6279,00:04.8
+North Sound Family Medicine,Smoking Cessation Advice or Treatment ,27,44,0.6583,00:04.8
+Squalicum Family Medicine,Smoking Cessation Advice or Treatment ,20,27,0.7361,00:04.8
+Whatcom Family Medicine,Smoking Cessation Advice or Treatment ,12,26,0.5747,00:04.8
+Bellingham Bay Medical Center,Statin patients with LDL in the past 365 days,904,1345,0.6688,00:04.8
+Birch Bay Family Medicine,Statin patients with LDL in the past 365 days,593,871,0.6634,00:04.8
+Everson Family Medicine,Statin patients with LDL in the past 365 days,211,261,0.8084,00:04.8
+Family Health Associates,Statin patients with LDL in the past 365 days,1384,1874,0.717,00:04.8
+Ferndale Family Medical Center,Statin patients with LDL in the past 365 days,909,1384,0.6376,00:04.8
+Island Family Physicians,Statin patients with LDL in the past 365 days,716,1034,0.6835,00:04.8
+Lynden Family Medicine,Statin patients with LDL in the past 365 days,1697,2204,0.7721,00:04.8
+North Cascade Family Physicians,Statin patients with LDL in the past 365 days,1549,2062,0.757,00:04.8
+North Sound Family Medicine,Statin patients with LDL in the past 365 days,1876,2479,0.7547,00:04.8
+Squalicum Family Medicine,Statin patients with LDL in the past 365 days,820,1263,0.6527,00:04.8
+Whatcom Family Medicine,Statin patients with LDL in the past 365 days,523,695,0.7575,00:04.8
+Bellingham Bay Medical Center,TD - Patients >18yrs with TD in last 10 years,6617,8488,0.789,00:04.8
+Birch Bay Family Medicine,TD - Patients >18yrs with TD in last 10 years,2457,4052,0.5791,00:04.8
+Everson Family Medicine,TD - Patients >18yrs with TD in last 10 years,780,1204,0.6478,00:04.8
+Family Health Associates,TD - Patients >18yrs with TD in last 10 years,7708,9976,0.7673,00:04.8
+Ferndale Family Medical Center,TD - Patients >18yrs with TD in last 10 years,4855,6438,0.7468,00:04.8
+Island Family Physicians,TD - Patients >18yrs with TD in last 10 years,2591,4575,0.5812,00:04.8
+Lynden Family Medicine,TD - Patients >18yrs with TD in last 10 years,7833,9978,0.7608,00:04.8
+North Cascade Family Physicians,TD - Patients >18yrs with TD in last 10 years,8808,11384,0.7839,00:04.8
+North Sound Family Medicine,TD - Patients >18yrs with TD in last 10 years,9584,12610,0.7561,00:04.8
+Squalicum Family Medicine,TD - Patients >18yrs with TD in last 10 years,5922,7818,0.758,00:04.8
+Whatcom Family Medicine,TD - Patients >18yrs with TD in last 10 years,2854,3796,0.7236,00:04.8
+Bellingham Bay Medical Center,WCV 3-6 yr,291,319,0.9092,00:04.8
+Birch Bay Family Medicine,WCV 3-6 yr,138,174,0.7038,00:04.8
+Everson Family Medicine,WCV 3-6 yr,41,49,0.8367,00:04.8
+Family Health Associates,WCV 3-6 yr,424,471,0.8816,00:04.8
+Ferndale Family Medical Center,WCV 3-6 yr,362,398,0.8844,00:04.8
+Island Family Physicians,WCV 3-6 yr,182,214,0.8587,00:04.8
+Lynden Family Medicine,WCV 3-6 yr,384,480,0.7284,00:04.8
+North Cascade Family Physicians,WCV 3-6 yr,377,419,0.8543,00:04.8
+North Sound Family Medicine,WCV 3-6 yr,541,587,0.8642,00:04.8
+Squalicum Family Medicine,WCV 3-6 yr,296,333,0.8057,00:04.8
+Whatcom Family Medicine,WCV 3-6 yr,111,133,0.9136,00:04.8
+"Bates MD, Jennifer",Diabetes Care Gaps ,63,69,0.913,46:03.7
+"Bates MD, Jennifer",DM PTS 40 to 75 w/STATIN,43,57,0.7544,45:27.1
+"Bates MD, Jennifer",DM PTS 55-75 w/ACE/ARB,26,42,0.619,45:22.5
+"Bates MD, Jennifer",Eye exam,38,69,0.5507,37:08.3
+"Bates MD, Jennifer",Foot Exam,52,69,0.7536,37:13.4
+"Bates MD, Jennifer",HgbA1c < 7.0                     ,35,69,0.5072,37:19.0
+"Bates MD, Jennifer",HgbA1c NOT > 9.0 (poor control) ,63,69,0.913,37:25.0
+"Bates MD, Jennifer",Hypertension Patients 18-59 years BP <140/90,57,69,0.8261,37:40.5
+"Bates MD, Jennifer",Hypertension Patients over 18 BP <140/90,194,217,0.894,37:52.1
+"Bates MD, Jennifer",Hypertension Patients over 59 years BP <150/90,141,153,0.9216,37:45.6
+"Bates MD, Jennifer",Mammogram Ages 52 -74,168,230,0.7304,38:12.8
+"Bates MD, Jennifer",Nephropathy Assessment,54,69,0.7826,37:30.2
+"Bates MD, Jennifer",Pap Smear Report,320,398,0.804,46:09.2
+"Bates MD, Jennifer",Pneumovax - DM patients w/current pneumovax,57,69,0.8261,38:35.2
+"Bates MD, Jennifer",Pneumovax - Patients Age>65 w/current pneumovax,135,175,0.7714,38:41.0
+"Bates MD, Jennifer",Pneumovax - Smokers w/current pneumovax,37,65,0.5692,38:47.7
+"Bates MD, Jennifer",Smoking Cessation Advice or Treatment ,9,10,0.9,37:36.4
+"Bates MD, Jennifer",Statin patients with LDL in the past 365 days,104,159,0.6541,46:35.8
+"Bates MD, Jennifer",TD - Patients >18yrs with TD in last 10 years,590,765,0.7712,38:55.2
+"Bates MD, Jennifer",WCV 3-6 yr,85,89,0.9551,25:54.1
+"Billau DO, Shannon",AAA Screening,1,12,0.0833,38:19.5
+"Billau DO, Shannon",Advance Directive - Patients >55yrs w/Advance Directive ,63,427,0.1475,38:29.3
+"Billau DO, Shannon",Blood Pressure NOT Controlled  >140/90 mm Hg    ,12,57,0.2105,37:03.6
+"Billau DO, Shannon",Chlamydia,6,18,0.3333,38:08.3
+"Billau DO, Shannon",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),310,491,0.6314,38:00.2
+"Billau DO, Shannon",Diabetes Care Gaps ,48,57,0.8421,46:03.7
+"Billau DO, Shannon",DM PTS 40 to 75 w/STATIN,31,45,0.6889,45:27.1
+"Billau DO, Shannon",DM PTS 55-75 w/ACE/ARB,23,32,0.7188,45:22.5
+"Billau DO, Shannon",Eye exam,21,57,0.3684,37:08.3
+"Billau DO, Shannon",Foot Exam,43,57,0.7544,37:13.4
+"Billau DO, Shannon",HgbA1c < 7.0                     ,22,57,0.386,37:19.0
+"Billau DO, Shannon",HgbA1c NOT > 9.0 (poor control) ,47,57,0.8246,37:25.0
+"Billau DO, Shannon",Hypertension Patients 18-59 years BP <140/90,78,103,0.7573,37:40.5
+"Billau DO, Shannon",Hypertension Patients over 18 BP <140/90,198,251,0.7888,37:52.1
+"Billau DO, Shannon",Hypertension Patients over 59 years BP <150/90,135,156,0.8654,37:45.6
+"Billau DO, Shannon",Mammogram Ages 52 -74,255,373,0.6836,38:12.8
+"Billau DO, Shannon",Nephropathy Assessment,38,57,0.6667,37:30.2
+"Billau DO, Shannon",Pap Smear Report,499,845,0.5905,46:09.2
+"Billau DO, Shannon",Pneumovax - DM patients w/current pneumovax,43,57,0.7544,38:35.2
+"Billau DO, Shannon",Pneumovax - Patients Age>65 w/current pneumovax,131,202,0.6485,38:41.0
+"Billau DO, Shannon",Pneumovax - Smokers w/current pneumovax,24,60,0.4,38:47.7
+"Billau DO, Shannon",Smoking Cessation Advice or Treatment ,5,7,0.7143,37:36.4
+"Billau DO, Shannon",Statin patients with LDL in the past 365 days,103,161,0.6398,46:35.8
+"Billau DO, Shannon",TD - Patients >18yrs with TD in last 10 years,930,1330,0.6992,38:55.2
+"Billau DO, Shannon",WCV 3-6 yr,64,72,0.8889,25:54.1
+"Binder MD, Richard",AAA Screening,70,89,0.7865,38:19.5
+"Binder MD, Richard",Advance Directive - Patients >55yrs w/Advance Directive ,148,534,0.2772,38:29.3
+"Binder MD, Richard",Blood Pressure NOT Controlled  >140/90 mm Hg    ,6,78,0.0769,37:03.6
+"Binder MD, Richard",Chlamydia,,4,,38:08.3
+"Binder MD, Richard",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),421,481,0.8753,38:00.2
+"Binder MD, Richard",Diabetes Care Gaps ,77,78,0.9872,46:03.7
+"Binder MD, Richard",DM PTS 40 to 75 w/STATIN,49,61,0.8033,45:27.1
+"Binder MD, Richard",DM PTS 55-75 w/ACE/ARB,36,51,0.7059,45:22.5
+"Binder MD, Richard",Eye exam,34,78,0.4359,37:08.3
+"Binder MD, Richard",Foot Exam,70,78,0.8974,37:13.4
+"Binder MD, Richard",HgbA1c < 7.0                     ,36,78,0.4615,37:19.0
+"Binder MD, Richard",HgbA1c NOT > 9.0 (poor control) ,74,78,0.9487,37:25.0
+"Binder MD, Richard",Hypertension Patients 18-59 years BP <140/90,65,71,0.9155,37:40.5
+"Binder MD, Richard",Hypertension Patients over 18 BP <140/90,295,316,0.9335,37:52.1
+"Binder MD, Richard",Hypertension Patients over 59 years BP <150/90,240,254,0.9449,37:45.6
+"Binder MD, Richard",Mammogram Ages 52 -74,121,163,0.7423,38:12.8
+"Binder MD, Richard",Nephropathy Assessment,52,78,0.6667,37:30.2
+"Binder MD, Richard",Pap Smear Report,112,175,0.64,46:09.2
+"Binder MD, Richard",Pneumovax - DM patients w/current pneumovax,73,78,0.9359,38:35.2
+"Binder MD, Richard",Pneumovax - Patients Age>65 w/current pneumovax,304,337,0.9021,38:41.0
+"Binder MD, Richard",Pneumovax - Smokers w/current pneumovax,29,45,0.6444,38:47.7
+"Binder MD, Richard",Smoking Cessation Advice or Treatment ,1,5,0.2,37:36.4
+"Binder MD, Richard",Statin patients with LDL in the past 365 days,243,295,0.8237,46:35.8
+"Binder MD, Richard",TD - Patients >18yrs with TD in last 10 years,718,856,0.8388,38:55.2
+"Binder MD, Richard",WCV 3-6 yr,15,16,0.9375,25:54.1
+"Bjorseth, Franklin",AAA Screening,25,93,0.2688,38:19.5
+"Bjorseth, Franklin",Advance Directive - Patients >55yrs w/Advance Directive ,127,659,0.1927,38:29.3
+"Bjorseth, Franklin",Blood Pressure NOT Controlled  >140/90 mm Hg    ,18,111,0.1622,37:03.6
+"Bjorseth, Franklin",Chlamydia,2,5,0.4,38:08.3
+"Bjorseth, Franklin",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),312,578,0.5398,38:00.2
+"Bjorseth, Franklin",Diabetes Care Gaps ,103,111,0.9279,46:03.7
+"Bjorseth, Franklin",DM PTS 40 to 75 w/STATIN,45,76,0.5921,45:27.1
+"Bjorseth, Franklin",DM PTS 55-75 w/ACE/ARB,39,56,0.6964,45:22.5
+"Bjorseth, Franklin",Eye exam,53,111,0.4775,37:08.3
+"Bjorseth, Franklin",Foot Exam,100,111,0.9009,37:13.4
+"Bjorseth, Franklin",HgbA1c < 7.0                     ,59,111,0.5315,37:19.0
+"Bjorseth, Franklin",HgbA1c NOT > 9.0 (poor control) ,104,111,0.9369,37:25.0
+"Bjorseth, Franklin",Hypertension Patients 18-59 years BP <140/90,98,129,0.7597,37:40.5
+"Bjorseth, Franklin",Hypertension Patients over 18 BP <140/90,381,468,0.8141,37:52.1
+"Bjorseth, Franklin",Hypertension Patients over 59 years BP <150/90,292,347,0.8415,37:45.6
+"Bjorseth, Franklin",Mammogram Ages 52 -74,130,215,0.6047,38:12.8
+"Bjorseth, Franklin",Nephropathy Assessment,68,111,0.6126,37:30.2
+"Bjorseth, Franklin",Pap Smear Report,141,219,0.6438,46:09.2
+"Bjorseth, Franklin",Pneumovax - DM patients w/current pneumovax,84,111,0.7568,38:35.2
+"Bjorseth, Franklin",Pneumovax - Patients Age>65 w/current pneumovax,324,450,0.72,38:41.0
+"Bjorseth, Franklin",Pneumovax - Smokers w/current pneumovax,50,120,0.4167,38:47.7
+"Bjorseth, Franklin",Smoking Cessation Advice or Treatment ,8,8,1,37:36.4
+"Bjorseth, Franklin",Statin patients with LDL in the past 365 days,194,269,0.7212,46:35.8
+"Bjorseth, Franklin",TD - Patients >18yrs with TD in last 10 years,521,1102,0.4728,38:55.2
+"Bjorseth, Franklin",WCV 3-6 yr,5,6,0.8333,25:54.1
+"Bloom MD, Edward",AAA Screening,26,126,0.2063,38:19.5
+"Bloom MD, Edward",Advance Directive - Patients >55yrs w/Advance Directive ,54,831,0.065,38:29.3
+"Bloom MD, Edward",Blood Pressure NOT Controlled  >140/90 mm Hg    ,30,141,0.2128,37:03.6
+"Bloom MD, Edward",Chlamydia,1,10,0.1,38:08.3
+"Bloom MD, Edward",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),584,839,0.6961,38:00.2
+"Bloom MD, Edward",Diabetes Care Gaps ,127,141,0.9007,46:03.7
+"Bloom MD, Edward",DM PTS 40 to 75 w/STATIN,98,111,0.8829,45:27.1
+"Bloom MD, Edward",DM PTS 55-75 w/ACE/ARB,74,88,0.8409,45:22.5
+"Bloom MD, Edward",Eye exam,55,141,0.3901,37:08.3
+"Bloom MD, Edward",Foot Exam,109,141,0.773,37:13.4
+"Bloom MD, Edward",HgbA1c < 7.0                     ,74,141,0.5248,37:19.0
+"Bloom MD, Edward",HgbA1c NOT > 9.0 (poor control) ,133,141,0.9433,37:25.0
+"Bloom MD, Edward",Hypertension Patients 18-59 years BP <140/90,143,194,0.7371,37:40.5
+"Bloom MD, Edward",Hypertension Patients over 18 BP <140/90,487,606,0.8036,37:52.1
+"Bloom MD, Edward",Hypertension Patients over 59 years BP <150/90,373,426,0.8756,37:45.6
+"Bloom MD, Edward",Mammogram Ages 52 -74,177,298,0.594,38:12.8
+"Bloom MD, Edward",Nephropathy Assessment,102,141,0.7234,37:30.2
+"Bloom MD, Edward",Pap Smear Report,310,442,0.7014,46:09.2
+"Bloom MD, Edward",Pneumovax - DM patients w/current pneumovax,111,141,0.7872,38:35.2
+"Bloom MD, Edward",Pneumovax - Patients Age>65 w/current pneumovax,336,479,0.7015,38:41.0
+"Bloom MD, Edward",Pneumovax - Smokers w/current pneumovax,53,119,0.4454,38:47.7
+"Bloom MD, Edward",Smoking Cessation Advice or Treatment ,4,5,0.8,37:36.4
+"Bloom MD, Edward",Statin patients with LDL in the past 365 days,351,446,0.787,46:35.8
+"Bloom MD, Edward",TD - Patients >18yrs with TD in last 10 years,1359,1757,0.7735,38:55.2
+"Bloom MD, Edward",WCV 3-6 yr,74,79,0.9367,25:54.1
+"Bloom MD, Jessica",AAA Screening,2,5,0.4,38:19.5
+"Bloom MD, Jessica",Advance Directive - Patients >55yrs w/Advance Directive ,18,179,0.1006,38:29.3
+"Bloom MD, Jessica",Blood Pressure NOT Controlled  >140/90 mm Hg    ,1,20,0.05,37:03.6
+"Bloom MD, Jessica",Chlamydia,4,8,0.5,38:08.3
+"Bloom MD, Jessica",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),138,205,0.6732,38:00.2
+"Bloom MD, Jessica",Diabetes Care Gaps ,17,20,0.85,46:03.7
+"Bloom MD, Jessica",DM PTS 40 to 75 w/STATIN,12,14,0.8571,45:27.1
+"Bloom MD, Jessica",DM PTS 55-75 w/ACE/ARB,10,10,1,45:22.5
+"Bloom MD, Jessica",Eye exam,5,20,0.25,37:08.3
+"Bloom MD, Jessica",Foot Exam,11,20,0.55,37:13.4
+"Bloom MD, Jessica",HgbA1c < 7.0                     ,10,20,0.5,37:19.0
+"Bloom MD, Jessica",HgbA1c NOT > 9.0 (poor control) ,18,20,0.9,37:25.0
+"Bloom MD, Jessica",Hypertension Patients 18-59 years BP <140/90,27,36,0.75,37:40.5
+"Bloom MD, Jessica",Hypertension Patients over 18 BP <140/90,85,101,0.8416,37:52.1
+"Bloom MD, Jessica",Hypertension Patients over 59 years BP <150/90,60,67,0.8955,37:45.6
+"Bloom MD, Jessica",Mammogram Ages 52 -74,116,162,0.716,38:12.8
+"Bloom MD, Jessica",Nephropathy Assessment,14,20,0.7,37:30.2
+"Bloom MD, Jessica",Pap Smear Report,316,378,0.836,46:09.2
+"Bloom MD, Jessica",Pneumovax - DM patients w/current pneumovax,20,20,1,38:35.2
+"Bloom MD, Jessica",Pneumovax - Patients Age>65 w/current pneumovax,63,92,0.6848,38:41.0
+"Bloom MD, Jessica",Pneumovax - Smokers w/current pneumovax,5,18,0.2778,38:47.7
+"Bloom MD, Jessica",Smoking Cessation Advice or Treatment ,,,,37:36.4
+"Bloom MD, Jessica",Statin patients with LDL in the past 365 days,52,79,0.6582,46:35.8
+"Bloom MD, Jessica",TD - Patients >18yrs with TD in last 10 years,447,555,0.8054,38:55.2
+"Bloom MD, Jessica",WCV 3-6 yr,96,100,0.96,25:54.1
+"Bloom MD, Steven",AAA Screening,1,78,0.0128,38:19.5
+"Bloom MD, Steven",Advance Directive - Patients >55yrs w/Advance Directive ,60,572,0.1049,38:29.3
+"Bloom MD, Steven",Blood Pressure NOT Controlled  >140/90 mm Hg    ,37,121,0.3058,37:03.6
+"Bloom MD, Steven",Chlamydia,1,3,0.3333,38:08.3
+"Bloom MD, Steven",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),360,585,0.6154,38:00.2
+"Bloom MD, Steven",Diabetes Care Gaps ,108,121,0.8926,46:03.7
+"Bloom MD, Steven",DM PTS 40 to 75 w/STATIN,43,91,0.4725,45:27.1
+"Bloom MD, Steven",DM PTS 55-75 w/ACE/ARB,40,65,0.6154,45:22.5
+"Bloom MD, Steven",Eye exam,46,121,0.3802,37:08.3
+"Bloom MD, Steven",Foot Exam,94,121,0.7769,37:13.4
+"Bloom MD, Steven",HgbA1c < 7.0                     ,38,121,0.314,37:19.0
+"Bloom MD, Steven",HgbA1c NOT > 9.0 (poor control) ,100,121,0.8264,37:25.0
+"Bloom MD, Steven",Hypertension Patients 18-59 years BP <140/90,105,129,0.814,37:40.5
+"Bloom MD, Steven",Hypertension Patients over 18 BP <140/90,324,370,0.8757,37:52.1
+"Bloom MD, Steven",Hypertension Patients over 59 years BP <150/90,231,253,0.913,37:45.6
+"Bloom MD, Steven",Mammogram Ages 52 -74,109,200,0.545,38:12.8
+"Bloom MD, Steven",Nephropathy Assessment,79,121,0.6529,37:30.2
+"Bloom MD, Steven",Pap Smear Report,107,285,0.3754,46:09.2
+"Bloom MD, Steven",Pneumovax - DM patients w/current pneumovax,98,121,0.8099,38:35.2
+"Bloom MD, Steven",Pneumovax - Patients Age>65 w/current pneumovax,235,313,0.7508,38:41.0
+"Bloom MD, Steven",Pneumovax - Smokers w/current pneumovax,39,94,0.4149,38:47.7
+"Bloom MD, Steven",Smoking Cessation Advice or Treatment ,5,13,0.3846,37:36.4
+"Bloom MD, Steven",Statin patients with LDL in the past 365 days,162,221,0.733,46:35.8
+"Bloom MD, Steven",TD - Patients >18yrs with TD in last 10 years,1092,1415,0.7717,38:55.2
+"Bloom MD, Steven",WCV 3-6 yr,32,35,0.9143,25:54.1
+"Bonner, MD, Ian",AAA Screening,9,76,0.1184,38:19.5
+"Bonner, MD, Ian",Advance Directive - Patients >55yrs w/Advance Directive ,39,580,0.0672,38:29.3
+"Bonner, MD, Ian",Blood Pressure NOT Controlled  >140/90 mm Hg    ,10,86,0.1163,37:03.6
+"Bonner, MD, Ian",Chlamydia,,5,,38:08.3
+"Bonner, MD, Ian",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),423,637,0.6641,38:00.2
+"Bonner, MD, Ian",Diabetes Care Gaps ,78,86,0.907,46:03.7
+"Bonner, MD, Ian",DM PTS 40 to 75 w/STATIN,49,67,0.7313,45:27.1
+"Bonner, MD, Ian",DM PTS 55-75 w/ACE/ARB,34,47,0.7234,45:22.5
+"Bonner, MD, Ian",Eye exam,38,86,0.4419,37:08.3
+"Bonner, MD, Ian",Foot Exam,52,86,0.6047,37:13.4
+"Bonner, MD, Ian",HgbA1c < 7.0                     ,39,86,0.4535,37:19.0
+"Bonner, MD, Ian",HgbA1c NOT > 9.0 (poor control) ,81,86,0.9419,37:25.0
+"Bonner, MD, Ian",Hypertension Patients 18-59 years BP <140/90,83,112,0.7411,37:40.5
+"Bonner, MD, Ian",Hypertension Patients over 18 BP <140/90,250,305,0.8197,37:52.1
+"Bonner, MD, Ian",Hypertension Patients over 59 years BP <150/90,176,200,0.88,37:45.6
+"Bonner, MD, Ian",Mammogram Ages 52 -74,114,182,0.6264,38:12.8
+"Bonner, MD, Ian",Nephropathy Assessment,58,86,0.6744,37:30.2
+"Bonner, MD, Ian",Pap Smear Report,281,515,0.5456,46:09.2
+"Bonner, MD, Ian",Pneumovax - DM patients w/current pneumovax,74,86,0.8605,38:35.2
+"Bonner, MD, Ian",Pneumovax - Patients Age>65 w/current pneumovax,232,293,0.7918,38:41.0
+"Bonner, MD, Ian",Pneumovax - Smokers w/current pneumovax,47,128,0.3672,38:47.7
+"Bonner, MD, Ian",Smoking Cessation Advice or Treatment ,,2,,37:36.4
+"Bonner, MD, Ian",Statin patients with LDL in the past 365 days,147,242,0.6074,46:35.8
+"Bonner, MD, Ian",TD - Patients >18yrs with TD in last 10 years,1260,1720,0.7326,38:55.2
+"Bonner, MD, Ian",WCV 3-6 yr,28,35,0.8,25:54.1
+"Bowling, Sara",AAA Screening,12,29,0.4138,38:19.5
+"Bowling, Sara",Advance Directive - Patients >55yrs w/Advance Directive ,31,360,0.0861,38:29.3
+"Bowling, Sara",Blood Pressure NOT Controlled  >140/90 mm Hg    ,8,30,0.2667,37:03.6
+"Bowling, Sara",Chlamydia,7,30,0.2333,38:08.3
+"Bowling, Sara",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),306,446,0.6861,38:00.2
+"Bowling, Sara",Diabetes Care Gaps ,25,30,0.8333,46:03.7
+"Bowling, Sara",DM PTS 40 to 75 w/STATIN,19,26,0.7308,45:27.1
+"Bowling, Sara",DM PTS 55-75 w/ACE/ARB,12,15,0.8,45:22.5
+"Bowling, Sara",Eye exam,14,30,0.4667,37:08.3
+"Bowling, Sara",Foot Exam,22,30,0.7333,37:13.4
+"Bowling, Sara",HgbA1c < 7.0                     ,13,30,0.4333,37:19.0
+"Bowling, Sara",HgbA1c NOT > 9.0 (poor control) ,27,30,0.9,37:25.0
+"Bowling, Sara",Hypertension Patients 18-59 years BP <140/90,65,75,0.8667,37:40.5
+"Bowling, Sara",Hypertension Patients over 18 BP <140/90,127,147,0.8639,37:52.1
+"Bowling, Sara",Hypertension Patients over 59 years BP <150/90,68,77,0.8831,37:45.6
+"Bowling, Sara",Mammogram Ages 52 -74,156,253,0.6166,38:12.8
+"Bowling, Sara",Nephropathy Assessment,20,30,0.6667,37:30.2
+"Bowling, Sara",Pap Smear Report,354,548,0.646,46:09.2
+"Bowling, Sara",Pneumovax - DM patients w/current pneumovax,24,30,0.8,38:35.2
+"Bowling, Sara",Pneumovax - Patients Age>65 w/current pneumovax,105,147,0.7143,38:41.0
+"Bowling, Sara",Pneumovax - Smokers w/current pneumovax,28,86,0.3256,38:47.7
+"Bowling, Sara",Smoking Cessation Advice or Treatment ,3,3,1,37:36.4
+"Bowling, Sara",Statin patients with LDL in the past 365 days,85,121,0.7025,46:35.8
+"Bowling, Sara",TD - Patients >18yrs with TD in last 10 years,750,1087,0.69,38:55.2
+"Bowling, Sara",WCV 3-6 yr,26,33,0.7879,25:54.1
+"Bradt DO, Rory",AAA Screening,2,75,0.0267,38:19.5
+"Bradt DO, Rory",Advance Directive - Patients >55yrs w/Advance Directive ,55,572,0.0962,38:29.3
+"Bradt DO, Rory",Blood Pressure NOT Controlled  >140/90 mm Hg    ,11,97,0.1134,37:03.6
+"Bradt DO, Rory",Chlamydia,8,28,0.2857,38:08.3
+"Bradt DO, Rory",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),401,611,0.6563,38:00.2
+"Bradt DO, Rory",Diabetes Care Gaps ,85,97,0.8763,46:03.7
+"Bradt DO, Rory",DM PTS 40 to 75 w/STATIN,52,77,0.6753,45:27.1
+"Bradt DO, Rory",DM PTS 55-75 w/ACE/ARB,36,56,0.6429,45:22.5
+"Bradt DO, Rory",Eye exam,36,97,0.3711,37:08.3
+"Bradt DO, Rory",Foot Exam,75,97,0.7732,37:13.4
+"Bradt DO, Rory",HgbA1c < 7.0                     ,38,97,0.3918,37:19.0
+"Bradt DO, Rory",HgbA1c NOT > 9.0 (poor control) ,86,97,0.8866,37:25.0
+"Bradt DO, Rory",Hypertension Patients 18-59 years BP <140/90,110,158,0.6962,37:40.5
+"Bradt DO, Rory",Hypertension Patients over 18 BP <140/90,290,362,0.8011,37:52.1
+"Bradt DO, Rory",Hypertension Patients over 59 years BP <150/90,187,210,0.8905,37:45.6
+"Bradt DO, Rory",Mammogram Ages 52 -74,112,183,0.612,38:12.8
+"Bradt DO, Rory",Nephropathy Assessment,70,97,0.7216,37:30.2
+"Bradt DO, Rory",Pap Smear Report,217,397,0.5466,46:09.2
+"Bradt DO, Rory",Pneumovax - DM patients w/current pneumovax,77,97,0.7938,38:35.2
+"Bradt DO, Rory",Pneumovax - Patients Age>65 w/current pneumovax,209,277,0.7545,38:41.0
+"Bradt DO, Rory",Pneumovax - Smokers w/current pneumovax,50,134,0.3731,38:47.7
+"Bradt DO, Rory",Smoking Cessation Advice or Treatment ,2,4,0.5,37:36.4
+"Bradt DO, Rory",Statin patients with LDL in the past 365 days,178,270,0.6593,46:35.8
+"Bradt DO, Rory",TD - Patients >18yrs with TD in last 10 years,1117,1716,0.6509,38:55.2
+"Bradt DO, Rory",WCV 3-6 yr,36,48,0.75,25:54.1
+"Brejcha ARNP, Rebecca",AAA Screening,,,,38:19.5
+"Brejcha ARNP, Rebecca",Advance Directive - Patients >55yrs w/Advance Directive ,,,,38:29.3
+"Brejcha ARNP, Rebecca",Blood Pressure NOT Controlled  >140/90 mm Hg    ,,,,37:03.6
+"Brejcha ARNP, Rebecca",Chlamydia,,,,38:08.3
+"Brejcha ARNP, Rebecca",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),,,,38:00.2
+"Brejcha ARNP, Rebecca",Diabetes Care Gaps ,,,,46:03.7
+"Brejcha ARNP, Rebecca",DM PTS 40 to 75 w/STATIN,,,,45:27.1
+"Brejcha ARNP, Rebecca",DM PTS 55-75 w/ACE/ARB,,,,45:22.5
+"Brejcha ARNP, Rebecca",Eye exam,,,,37:08.3
+"Brejcha ARNP, Rebecca",Foot Exam,,,,37:13.4
+"Brejcha ARNP, Rebecca",HgbA1c < 7.0                     ,,,,37:19.0
+"Brejcha ARNP, Rebecca",HgbA1c NOT > 9.0 (poor control) ,,,,37:25.0
+"Brejcha ARNP, Rebecca",Hypertension Patients 18-59 years BP <140/90,,,,37:40.5
+"Brejcha ARNP, Rebecca",Hypertension Patients over 18 BP <140/90,,,,37:52.1
+"Brejcha ARNP, Rebecca",Hypertension Patients over 59 years BP <150/90,,,,37:45.6
+"Brejcha ARNP, Rebecca",Mammogram Ages 52 -74,,,,38:12.8
+"Brejcha ARNP, Rebecca",Nephropathy Assessment,,,,37:30.2
+"Brejcha ARNP, Rebecca",Pap Smear Report,,,,46:09.2
+"Brejcha ARNP, Rebecca",Pneumovax - DM patients w/current pneumovax,,,,38:35.2
+"Brejcha ARNP, Rebecca",Pneumovax - Patients Age>65 w/current pneumovax,,,,38:41.0
+"Brejcha ARNP, Rebecca",Pneumovax - Smokers w/current pneumovax,,,,38:47.7
+"Brejcha ARNP, Rebecca",Smoking Cessation Advice or Treatment ,,,,37:36.4
+"Brejcha ARNP, Rebecca",Statin patients with LDL in the past 365 days,,,,46:35.8
+"Brejcha ARNP, Rebecca",TD - Patients >18yrs with TD in last 10 years,,,,38:55.2
+"Brejcha ARNP, Rebecca",WCV 3-6 yr,,,,25:54.1
+"Brodsky, Lisa",AAA Screening,,4,,38:19.5
+"Brodsky, Lisa",Advance Directive - Patients >55yrs w/Advance Directive ,18,125,0.144,38:29.3
+"Brodsky, Lisa",Blood Pressure NOT Controlled  >140/90 mm Hg    ,4,18,0.2222,37:03.6
+"Brodsky, Lisa",Chlamydia,5,22,0.2273,38:08.3
+"Brodsky, Lisa",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),92,143,0.6434,38:00.2
+"Brodsky, Lisa",Diabetes Care Gaps ,14,18,0.7778,46:03.7
+"Brodsky, Lisa",DM PTS 40 to 75 w/STATIN,9,15,0.6,45:27.1
+"Brodsky, Lisa",DM PTS 55-75 w/ACE/ARB,8,10,0.8,45:22.5
+"Brodsky, Lisa",Eye exam,5,18,0.2778,37:08.3
+"Brodsky, Lisa",Foot Exam,9,18,0.5,37:13.4
+"Brodsky, Lisa",HgbA1c < 7.0                     ,9,18,0.5,37:19.0
+"Brodsky, Lisa",HgbA1c NOT > 9.0 (poor control) ,16,18,0.8889,37:25.0
+"Brodsky, Lisa",Hypertension Patients 18-59 years BP <140/90,23,28,0.8214,37:40.5
+"Brodsky, Lisa",Hypertension Patients over 18 BP <140/90,61,70,0.8714,37:52.1
+"Brodsky, Lisa",Hypertension Patients over 59 years BP <150/90,38,42,0.9048,37:45.6
+"Brodsky, Lisa",Mammogram Ages 52 -74,71,104,0.6827,38:12.8
+"Brodsky, Lisa",Nephropathy Assessment,13,18,0.7222,37:30.2
+"Brodsky, Lisa",Pap Smear Report,156,258,0.6047,46:09.2
+"Brodsky, Lisa",Pneumovax - DM patients w/current pneumovax,10,18,0.5556,38:35.2
+"Brodsky, Lisa",Pneumovax - Patients Age>65 w/current pneumovax,43,66,0.6515,38:41.0
+"Brodsky, Lisa",Pneumovax - Smokers w/current pneumovax,7,31,0.2258,38:47.7
+"Brodsky, Lisa",Smoking Cessation Advice or Treatment ,3,3,1,37:36.4
+"Brodsky, Lisa",Statin patients with LDL in the past 365 days,41,52,0.7885,46:35.8
+"Brodsky, Lisa",TD - Patients >18yrs with TD in last 10 years,221,435,0.508,38:55.2
+"Brodsky, Lisa",WCV 3-6 yr,12,17,0.7059,25:54.1
+"Burden MD, Margaret",AAA Screening,,3,,38:19.5
+"Burden MD, Margaret",Advance Directive - Patients >55yrs w/Advance Directive ,34,359,0.0947,38:29.3
+"Burden MD, Margaret",Blood Pressure NOT Controlled  >140/90 mm Hg    ,5,45,0.1111,37:03.6
+"Burden MD, Margaret",Chlamydia,10,50,0.2,38:08.3
+"Burden MD, Margaret",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),283,393,0.7201,38:00.2
+"Burden MD, Margaret",Diabetes Care Gaps ,44,45,0.9778,46:03.7
+"Burden MD, Margaret",DM PTS 40 to 75 w/STATIN,28,37,0.7568,45:27.1
+"Burden MD, Margaret",DM PTS 55-75 w/ACE/ARB,22,27,0.8148,45:22.5
+"Burden MD, Margaret",Eye exam,22,45,0.4889,37:08.3
+"Burden MD, Margaret",Foot Exam,38,45,0.8444,37:13.4
+"Burden MD, Margaret",HgbA1c < 7.0                     ,22,45,0.4889,37:19.0
+"Burden MD, Margaret",HgbA1c NOT > 9.0 (poor control) ,38,45,0.8444,37:25.0
+"Burden MD, Margaret",Hypertension Patients 18-59 years BP <140/90,57,70,0.8143,37:40.5
+"Burden MD, Margaret",Hypertension Patients over 18 BP <140/90,156,182,0.8571,37:52.1
+"Burden MD, Margaret",Hypertension Patients over 59 years BP <150/90,107,119,0.8992,37:45.6
+"Burden MD, Margaret",Mammogram Ages 52 -74,233,316,0.7373,38:12.8
+"Burden MD, Margaret",Nephropathy Assessment,35,45,0.7778,37:30.2
+"Burden MD, Margaret",Pap Smear Report,345,559,0.6172,46:09.2
+"Burden MD, Margaret",Pneumovax - DM patients w/current pneumovax,38,45,0.8444,38:35.2
+"Burden MD, Margaret",Pneumovax - Patients Age>65 w/current pneumovax,141,178,0.7921,38:41.0
+"Burden MD, Margaret",Pneumovax - Smokers w/current pneumovax,15,38,0.3947,38:47.7
+"Burden MD, Margaret",Smoking Cessation Advice or Treatment ,,2,,37:36.4
+"Burden MD, Margaret",Statin patients with LDL in the past 365 days,130,165,0.7879,46:35.8
+"Burden MD, Margaret",TD - Patients >18yrs with TD in last 10 years,843,1005,0.8388,38:55.2
+"Burden MD, Margaret",WCV 3-6 yr,43,55,0.7818,25:54.1
+"Bylund MD, Erik",AAA Screening,27,69,0.3913,38:19.5
+"Bylund MD, Erik",Advance Directive - Patients >55yrs w/Advance Directive ,24,523,0.0459,38:29.3
+"Bylund MD, Erik",Blood Pressure NOT Controlled  >140/90 mm Hg    ,37,125,0.296,37:03.6
+"Bylund MD, Erik",Chlamydia,6,13,0.4615,38:08.3
+"Bylund MD, Erik",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),349,595,0.5866,38:00.2
+"Bylund MD, Erik",Diabetes Care Gaps ,116,125,0.928,46:03.7
+"Bylund MD, Erik",DM PTS 40 to 75 w/STATIN,75,106,0.7075,45:27.1
+"Bylund MD, Erik",DM PTS 55-75 w/ACE/ARB,50,72,0.6944,45:22.5
+"Bylund MD, Erik",Eye exam,78,125,0.624,37:08.3
+"Bylund MD, Erik",Foot Exam,94,125,0.752,37:13.4
+"Bylund MD, Erik",HgbA1c < 7.0                     ,54,125,0.432,37:19.0
+"Bylund MD, Erik",HgbA1c NOT > 9.0 (poor control) ,108,125,0.864,37:25.0
+"Bylund MD, Erik",Hypertension Patients 18-59 years BP <140/90,92,162,0.5679,37:40.5
+"Bylund MD, Erik",Hypertension Patients over 18 BP <140/90,261,371,0.7035,37:52.1
+"Bylund MD, Erik",Hypertension Patients over 59 years BP <150/90,187,218,0.8578,37:45.6
+"Bylund MD, Erik",Mammogram Ages 52 -74,103,175,0.5886,38:12.8
+"Bylund MD, Erik",Nephropathy Assessment,100,125,0.8,37:30.2
+"Bylund MD, Erik",Pap Smear Report,178,294,0.6054,46:09.2
+"Bylund MD, Erik",Pneumovax - DM patients w/current pneumovax,85,125,0.68,38:35.2
+"Bylund MD, Erik",Pneumovax - Patients Age>65 w/current pneumovax,205,259,0.7915,38:41.0
+"Bylund MD, Erik",Pneumovax - Smokers w/current pneumovax,39,135,0.2889,38:47.7
+"Bylund MD, Erik",Smoking Cessation Advice or Treatment ,4,9,0.4444,37:36.4
+"Bylund MD, Erik",Statin patients with LDL in the past 365 days,189,236,0.8008,46:35.8
+"Bylund MD, Erik",TD - Patients >18yrs with TD in last 10 years,975,1291,0.7552,38:55.2
+"Bylund MD, Erik",WCV 3-6 yr,75,80,0.9375,25:54.1
+"Caldwell MD, Robin",AAA Screening,1,66,0.0152,38:19.5
+"Caldwell MD, Robin",Advance Directive - Patients >55yrs w/Advance Directive ,107,883,0.1212,38:29.3
+"Caldwell MD, Robin",Blood Pressure NOT Controlled  >140/90 mm Hg    ,30,191,0.1571,37:03.6
+"Caldwell MD, Robin",Chlamydia,4,14,0.2857,38:08.3
+"Caldwell MD, Robin",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),537,785,0.6841,38:00.2
+"Caldwell MD, Robin",Diabetes Care Gaps ,165,191,0.8639,46:03.7
+"Caldwell MD, Robin",DM PTS 40 to 75 w/STATIN,101,129,0.7829,45:27.1
+"Caldwell MD, Robin",DM PTS 55-75 w/ACE/ARB,83,105,0.7905,45:22.5
+"Caldwell MD, Robin",Eye exam,57,191,0.2984,37:08.3
+"Caldwell MD, Robin",Foot Exam,141,191,0.7382,37:13.4
+"Caldwell MD, Robin",HgbA1c < 7.0                     ,80,191,0.4188,37:19.0
+"Caldwell MD, Robin",HgbA1c NOT > 9.0 (poor control) ,168,191,0.8796,37:25.0
+"Caldwell MD, Robin",Hypertension Patients 18-59 years BP <140/90,135,175,0.7714,37:40.5
+"Caldwell MD, Robin",Hypertension Patients over 18 BP <140/90,484,554,0.8736,37:52.1
+"Caldwell MD, Robin",Hypertension Patients over 59 years BP <150/90,364,390,0.9333,37:45.6
+"Caldwell MD, Robin",Mammogram Ages 52 -74,175,299,0.5853,38:12.8
+"Caldwell MD, Robin",Nephropathy Assessment,132,191,0.6911,37:30.2
+"Caldwell MD, Robin",Pap Smear Report,166,458,0.3624,46:09.2
+"Caldwell MD, Robin",Pneumovax - DM patients w/current pneumovax,156,191,0.8168,38:35.2
+"Caldwell MD, Robin",Pneumovax - Patients Age>65 w/current pneumovax,436,533,0.818,38:41.0
+"Caldwell MD, Robin",Pneumovax - Smokers w/current pneumovax,71,163,0.4356,38:47.7
+"Caldwell MD, Robin",Smoking Cessation Advice or Treatment ,8,12,0.6667,37:36.4
+"Caldwell MD, Robin",Statin patients with LDL in the past 365 days,334,434,0.7696,46:35.8
+"Caldwell MD, Robin",TD - Patients >18yrs with TD in last 10 years,1599,2001,0.7991,38:55.2
+"Caldwell MD, Robin",WCV 3-6 yr,74,88,0.8409,25:54.1
+"Case ARNP, Erinn",AAA Screening,,4,,38:19.5
+"Case ARNP, Erinn",Advance Directive - Patients >55yrs w/Advance Directive ,5,186,0.0269,38:29.3
+"Case ARNP, Erinn",Blood Pressure NOT Controlled  >140/90 mm Hg    ,10,39,0.2564,37:03.6
+"Case ARNP, Erinn",Chlamydia,3,17,0.1765,38:08.3
+"Case ARNP, Erinn",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),102,238,0.4286,38:00.2
+"Case ARNP, Erinn",Diabetes Care Gaps ,35,39,0.8974,46:03.7
+"Case ARNP, Erinn",DM PTS 40 to 75 w/STATIN,18,33,0.5455,45:27.1
+"Case ARNP, Erinn",DM PTS 55-75 w/ACE/ARB,18,22,0.8182,45:22.5
+"Case ARNP, Erinn",Eye exam,15,39,0.3846,37:08.3
+"Case ARNP, Erinn",Foot Exam,26,39,0.6667,37:13.4
+"Case ARNP, Erinn",HgbA1c < 7.0                     ,19,39,0.4872,37:19.0
+"Case ARNP, Erinn",HgbA1c NOT > 9.0 (poor control) ,36,39,0.9231,37:25.0
+"Case ARNP, Erinn",Hypertension Patients 18-59 years BP <140/90,45,65,0.6923,37:40.5
+"Case ARNP, Erinn",Hypertension Patients over 18 BP <140/90,92,121,0.7603,37:52.1
+"Case ARNP, Erinn",Hypertension Patients over 59 years BP <150/90,55,65,0.8462,37:45.6
+"Case ARNP, Erinn",Mammogram Ages 52 -74,92,183,0.5027,38:12.8
+"Case ARNP, Erinn",Nephropathy Assessment,28,39,0.7179,37:30.2
+"Case ARNP, Erinn",Pap Smear Report,297,466,0.6373,46:09.2
+"Case ARNP, Erinn",Pneumovax - DM patients w/current pneumovax,28,39,0.7179,38:35.2
+"Case ARNP, Erinn",Pneumovax - Patients Age>65 w/current pneumovax,57,74,0.7703,38:41.0
+"Case ARNP, Erinn",Pneumovax - Smokers w/current pneumovax,13,56,0.2321,38:47.7
+"Case ARNP, Erinn",Smoking Cessation Advice or Treatment ,1,3,0.3333,37:36.4
+"Case ARNP, Erinn",Statin patients with LDL in the past 365 days,44,61,0.7213,46:35.8
+"Case ARNP, Erinn",TD - Patients >18yrs with TD in last 10 years,497,684,0.7266,38:55.2
+"Case ARNP, Erinn",WCV 3-6 yr,14,14,1,25:54.1
+"Eiford PA-C, William",AAA Screening,,,,38:19.5
+"Eiford PA-C, William",Advance Directive - Patients >55yrs w/Advance Directive ,,,,38:29.3
+"Eiford PA-C, William",Blood Pressure NOT Controlled  >140/90 mm Hg    ,,,,37:03.6
+"Eiford PA-C, William",Chlamydia,,,,38:08.3
+"Eiford PA-C, William",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),,,,38:00.2
+"Eiford PA-C, William",Diabetes Care Gaps ,,,,46:03.7
+"Eiford PA-C, William",DM PTS 40 to 75 w/STATIN,,,,45:27.1
+"Eiford PA-C, William",DM PTS 55-75 w/ACE/ARB,,,,45:22.5
+"Eiford PA-C, William",Eye exam,,,,37:08.3
+"Eiford PA-C, William",Foot Exam,,,,37:13.4
+"Eiford PA-C, William",HgbA1c < 7.0                     ,,,,37:19.0
+"Eiford PA-C, William",HgbA1c NOT > 9.0 (poor control) ,,,,37:25.0
+"Eiford PA-C, William",Hypertension Patients 18-59 years BP <140/90,,,,37:40.5
+"Eiford PA-C, William",Hypertension Patients over 18 BP <140/90,,,,37:52.1
+"Eiford PA-C, William",Hypertension Patients over 59 years BP <150/90,,,,37:45.6
+"Eiford PA-C, William",Mammogram Ages 52 -74,,,,38:12.8
+"Eiford PA-C, William",Nephropathy Assessment,,,,37:30.2
+"Eiford PA-C, William",Pap Smear Report,,,,46:09.2
+"Eiford PA-C, William",Pneumovax - DM patients w/current pneumovax,,,,38:35.2
+"Eiford PA-C, William",Pneumovax - Patients Age>65 w/current pneumovax,,,,38:41.0
+"Eiford PA-C, William",Pneumovax - Smokers w/current pneumovax,,,,38:47.7
+"Eiford PA-C, William",Smoking Cessation Advice or Treatment ,,,,37:36.4
+"Eiford PA-C, William",Statin patients with LDL in the past 365 days,,,,46:35.8
+"Eiford PA-C, William",TD - Patients >18yrs with TD in last 10 years,,,,38:55.2
+"Eiford PA-C, William",WCV 3-6 yr,,,,25:54.1
+"Estep MD, Roger",AAA Screening,2,44,0.0455,38:19.5
+"Estep MD, Roger",Advance Directive - Patients >55yrs w/Advance Directive ,8,336,0.0238,38:29.3
+"Estep MD, Roger",Blood Pressure NOT Controlled  >140/90 mm Hg    ,20,83,0.241,37:03.6
+"Estep MD, Roger",Chlamydia,1,2,0.5,38:08.3
+"Estep MD, Roger",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),236,335,0.7045,38:00.2
+"Estep MD, Roger",Diabetes Care Gaps ,83,83,1,46:03.7
+"Estep MD, Roger",DM PTS 40 to 75 w/STATIN,61,70,0.8714,45:27.1
+"Estep MD, Roger",DM PTS 55-75 w/ACE/ARB,46,55,0.8364,45:22.5
+"Estep MD, Roger",Eye exam,59,83,0.7108,37:08.3
+"Estep MD, Roger",Foot Exam,78,83,0.9398,37:13.4
+"Estep MD, Roger",HgbA1c < 7.0                     ,36,83,0.4337,37:19.0
+"Estep MD, Roger",HgbA1c NOT > 9.0 (poor control) ,72,83,0.8675,37:25.0
+"Estep MD, Roger",Hypertension Patients 18-59 years BP <140/90,61,81,0.7531,37:40.5
+"Estep MD, Roger",Hypertension Patients over 18 BP <140/90,204,236,0.8644,37:52.1
+"Estep MD, Roger",Hypertension Patients over 59 years BP <150/90,150,160,0.9375,37:45.6
+"Estep MD, Roger",Mammogram Ages 52 -74,56,82,0.6829,38:12.8
+"Estep MD, Roger",Nephropathy Assessment,75,83,0.9036,37:30.2
+"Estep MD, Roger",Pap Smear Report,135,187,0.7219,46:09.2
+"Estep MD, Roger",Pneumovax - DM patients w/current pneumovax,68,83,0.8193,38:35.2
+"Estep MD, Roger",Pneumovax - Patients Age>65 w/current pneumovax,158,187,0.8449,38:41.0
+"Estep MD, Roger",Pneumovax - Smokers w/current pneumovax,10,48,0.2083,38:47.7
+"Estep MD, Roger",Smoking Cessation Advice or Treatment ,3,4,0.75,37:36.4
+"Estep MD, Roger",Statin patients with LDL in the past 365 days,167,192,0.8698,46:35.8
+"Estep MD, Roger",TD - Patients >18yrs with TD in last 10 years,612,730,0.8384,38:55.2
+"Estep MD, Roger",WCV 3-6 yr,70,71,0.9859,25:54.1
+"Fleming PA-C, Michael",AAA Screening,5,18,0.2778,38:19.5
+"Fleming PA-C, Michael",Advance Directive - Patients >55yrs w/Advance Directive ,12,156,0.0769,38:29.3
+"Fleming PA-C, Michael",Blood Pressure NOT Controlled  >140/90 mm Hg    ,5,36,0.1389,37:03.6
+"Fleming PA-C, Michael",Chlamydia,5,10,0.5,38:08.3
+"Fleming PA-C, Michael",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),69,160,0.4313,38:00.2
+"Fleming PA-C, Michael",Diabetes Care Gaps ,29,36,0.8056,46:03.7
+"Fleming PA-C, Michael",DM PTS 40 to 75 w/STATIN,22,27,0.8148,45:27.1
+"Fleming PA-C, Michael",DM PTS 55-75 w/ACE/ARB,16,21,0.7619,45:22.5
+"Fleming PA-C, Michael",Eye exam,10,36,0.2778,37:08.3
+"Fleming PA-C, Michael",Foot Exam,20,36,0.5556,37:13.4
+"Fleming PA-C, Michael",HgbA1c < 7.0                     ,9,36,0.25,37:19.0
+"Fleming PA-C, Michael",HgbA1c NOT > 9.0 (poor control) ,26,36,0.7222,37:25.0
+"Fleming PA-C, Michael",Hypertension Patients 18-59 years BP <140/90,31,33,0.9394,37:40.5
+"Fleming PA-C, Michael",Hypertension Patients over 18 BP <140/90,85,93,0.914,37:52.1
+"Fleming PA-C, Michael",Hypertension Patients over 59 years BP <150/90,57,63,0.9048,37:45.6
+"Fleming PA-C, Michael",Mammogram Ages 52 -74,25,59,0.4237,38:12.8
+"Fleming PA-C, Michael",Nephropathy Assessment,25,36,0.6944,37:30.2
+"Fleming PA-C, Michael",Pap Smear Report,68,144,0.4722,46:09.2
+"Fleming PA-C, Michael",Pneumovax - DM patients w/current pneumovax,24,36,0.6667,38:35.2
+"Fleming PA-C, Michael",Pneumovax - Patients Age>65 w/current pneumovax,47,79,0.5949,38:41.0
+"Fleming PA-C, Michael",Pneumovax - Smokers w/current pneumovax,19,58,0.3276,38:47.7
+"Fleming PA-C, Michael",Smoking Cessation Advice or Treatment ,2,3,0.6667,37:36.4
+"Fleming PA-C, Michael",Statin patients with LDL in the past 365 days,58,82,0.7073,46:35.8
+"Fleming PA-C, Michael",TD - Patients >18yrs with TD in last 10 years,335,549,0.6102,38:55.2
+"Fleming PA-C, Michael",WCV 3-6 yr,32,52,0.6154,25:54.1
+"Floyd MD, Anneliese",AAA Screening,,16,,38:19.5
+"Floyd MD, Anneliese",Advance Directive - Patients >55yrs w/Advance Directive ,33,276,0.1196,38:29.3
+"Floyd MD, Anneliese",Blood Pressure NOT Controlled  >140/90 mm Hg    ,5,39,0.1282,37:03.6
+"Floyd MD, Anneliese",Chlamydia,5,17,0.2941,38:08.3
+"Floyd MD, Anneliese",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),235,312,0.7532,38:00.2
+"Floyd MD, Anneliese",Diabetes Care Gaps ,31,39,0.7949,46:03.7
+"Floyd MD, Anneliese",DM PTS 40 to 75 w/STATIN,26,34,0.7647,45:27.1
+"Floyd MD, Anneliese",DM PTS 55-75 w/ACE/ARB,29,30,0.9667,45:22.5
+"Floyd MD, Anneliese",Eye exam,20,39,0.5128,37:08.3
+"Floyd MD, Anneliese",Foot Exam,25,39,0.641,37:13.4
+"Floyd MD, Anneliese",HgbA1c < 7.0                     ,15,39,0.3846,37:19.0
+"Floyd MD, Anneliese",HgbA1c NOT > 9.0 (poor control) ,35,39,0.8974,37:25.0
+"Floyd MD, Anneliese",Hypertension Patients 18-59 years BP <140/90,41,51,0.8039,37:40.5
+"Floyd MD, Anneliese",Hypertension Patients over 18 BP <140/90,112,130,0.8615,37:52.1
+"Floyd MD, Anneliese",Hypertension Patients over 59 years BP <150/90,75,84,0.8929,37:45.6
+"Floyd MD, Anneliese",Mammogram Ages 52 -74,158,227,0.696,38:12.8
+"Floyd MD, Anneliese",Nephropathy Assessment,30,39,0.7692,37:30.2
+"Floyd MD, Anneliese",Pap Smear Report,392,522,0.751,46:09.2
+"Floyd MD, Anneliese",Pneumovax - DM patients w/current pneumovax,35,39,0.8974,38:35.2
+"Floyd MD, Anneliese",Pneumovax - Patients Age>65 w/current pneumovax,127,149,0.8523,38:41.0
+"Floyd MD, Anneliese",Pneumovax - Smokers w/current pneumovax,21,40,0.525,38:47.7
+"Floyd MD, Anneliese",Smoking Cessation Advice or Treatment ,1,1,1,37:36.4
+"Floyd MD, Anneliese",Statin patients with LDL in the past 365 days,85,117,0.7265,46:35.8
+"Floyd MD, Anneliese",TD - Patients >18yrs with TD in last 10 years,742,851,0.8719,38:55.2
+"Floyd MD, Anneliese",WCV 3-6 yr,101,104,0.9712,25:54.1
+"Fox DO, Laura",AAA Screening,3,18,0.1667,38:19.5
+"Fox DO, Laura",Advance Directive - Patients >55yrs w/Advance Directive ,30,336,0.0893,38:29.3
+"Fox DO, Laura",Blood Pressure NOT Controlled  >140/90 mm Hg    ,4,35,0.1143,37:03.6
+"Fox DO, Laura",Chlamydia,10,55,0.1818,38:08.3
+"Fox DO, Laura",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),272,373,0.7292,38:00.2
+"Fox DO, Laura",Diabetes Care Gaps ,30,35,0.8571,46:03.7
+"Fox DO, Laura",DM PTS 40 to 75 w/STATIN,19,30,0.6333,45:27.1
+"Fox DO, Laura",DM PTS 55-75 w/ACE/ARB,19,26,0.7308,45:22.5
+"Fox DO, Laura",Eye exam,16,35,0.4571,37:08.3
+"Fox DO, Laura",Foot Exam,20,35,0.5714,37:13.4
+"Fox DO, Laura",HgbA1c < 7.0                     ,15,35,0.4286,37:19.0
+"Fox DO, Laura",HgbA1c NOT > 9.0 (poor control) ,30,35,0.8571,37:25.0
+"Fox DO, Laura",Hypertension Patients 18-59 years BP <140/90,51,73,0.6986,37:40.5
+"Fox DO, Laura",Hypertension Patients over 18 BP <140/90,147,191,0.7696,37:52.1
+"Fox DO, Laura",Hypertension Patients over 59 years BP <150/90,103,121,0.8512,37:45.6
+"Fox DO, Laura",Mammogram Ages 52 -74,193,274,0.7044,38:12.8
+"Fox DO, Laura",Nephropathy Assessment,27,35,0.7714,37:30.2
+"Fox DO, Laura",Pap Smear Report,403,566,0.712,46:09.2
+"Fox DO, Laura",Pneumovax - DM patients w/current pneumovax,27,35,0.7714,38:35.2
+"Fox DO, Laura",Pneumovax - Patients Age>65 w/current pneumovax,136,171,0.7953,38:41.0
+"Fox DO, Laura",Pneumovax - Smokers w/current pneumovax,22,48,0.4583,38:47.7
+"Fox DO, Laura",Smoking Cessation Advice or Treatment ,8,9,0.8889,37:36.4
+"Fox DO, Laura",Statin patients with LDL in the past 365 days,95,117,0.812,46:35.8
+"Fox DO, Laura",TD - Patients >18yrs with TD in last 10 years,818,981,0.8338,38:55.2
+"Fox DO, Laura",WCV 3-6 yr,58,62,0.9355,25:54.1
+"Fredette MD, MSNu, Renay",AAA Screening,2,12,0.1667,38:19.5
+"Fredette MD, MSNu, Renay",Advance Directive - Patients >55yrs w/Advance Directive ,35,278,0.1259,38:29.3
+"Fredette MD, MSNu, Renay",Blood Pressure NOT Controlled  >140/90 mm Hg    ,6,61,0.0984,37:03.6
+"Fredette MD, MSNu, Renay",Chlamydia,3,11,0.2727,38:08.3
+"Fredette MD, MSNu, Renay",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),168,269,0.6245,38:00.2
+"Fredette MD, MSNu, Renay",Diabetes Care Gaps ,54,61,0.8852,46:03.7
+"Fredette MD, MSNu, Renay",DM PTS 40 to 75 w/STATIN,30,40,0.75,45:27.1
+"Fredette MD, MSNu, Renay",DM PTS 55-75 w/ACE/ARB,27,31,0.871,45:22.5
+"Fredette MD, MSNu, Renay",Eye exam,20,61,0.3279,37:08.3
+"Fredette MD, MSNu, Renay",Foot Exam,38,61,0.623,37:13.4
+"Fredette MD, MSNu, Renay",HgbA1c < 7.0                     ,41,61,0.6721,37:19.0
+"Fredette MD, MSNu, Renay",HgbA1c NOT > 9.0 (poor control) ,59,61,0.9672,37:25.0
+"Fredette MD, MSNu, Renay",Hypertension Patients 18-59 years BP <140/90,55,61,0.9016,37:40.5
+"Fredette MD, MSNu, Renay",Hypertension Patients over 18 BP <140/90,163,188,0.867,37:52.1
+"Fredette MD, MSNu, Renay",Hypertension Patients over 59 years BP <150/90,114,129,0.8837,37:45.6
+"Fredette MD, MSNu, Renay",Mammogram Ages 52 -74,102,173,0.5896,38:12.8
+"Fredette MD, MSNu, Renay",Nephropathy Assessment,43,61,0.7049,37:30.2
+"Fredette MD, MSNu, Renay",Pap Smear Report,245,350,0.7,46:09.2
+"Fredette MD, MSNu, Renay",Pneumovax - DM patients w/current pneumovax,49,61,0.8033,38:35.2
+"Fredette MD, MSNu, Renay",Pneumovax - Patients Age>65 w/current pneumovax,124,162,0.7654,38:41.0
+"Fredette MD, MSNu, Renay",Pneumovax - Smokers w/current pneumovax,34,64,0.5313,38:47.7
+"Fredette MD, MSNu, Renay",Smoking Cessation Advice or Treatment ,4,8,0.5,37:36.4
+"Fredette MD, MSNu, Renay",Statin patients with LDL in the past 365 days,96,133,0.7218,46:35.8
+"Fredette MD, MSNu, Renay",TD - Patients >18yrs with TD in last 10 years,536,695,0.7712,38:55.2
+"Fredette MD, MSNu, Renay",WCV 3-6 yr,80,87,0.9195,25:54.1
+"Gambs MD, Catherine",AAA Screening,4,33,0.1212,38:19.5
+"Gambs MD, Catherine",Advance Directive - Patients >55yrs w/Advance Directive ,13,523,0.0249,38:29.3
+"Gambs MD, Catherine",Blood Pressure NOT Controlled  >140/90 mm Hg    ,26,98,0.2653,37:03.6
+"Gambs MD, Catherine",Chlamydia,3,6,0.5,38:08.3
+"Gambs MD, Catherine",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),259,577,0.4489,38:00.2
+"Gambs MD, Catherine",Diabetes Care Gaps ,90,98,0.9184,46:03.7
+"Gambs MD, Catherine",DM PTS 40 to 75 w/STATIN,48,72,0.6667,45:27.1
+"Gambs MD, Catherine",DM PTS 55-75 w/ACE/ARB,35,44,0.7955,45:22.5
+"Gambs MD, Catherine",Eye exam,55,98,0.5612,37:08.3
+"Gambs MD, Catherine",Foot Exam,57,98,0.5816,37:13.4
+"Gambs MD, Catherine",HgbA1c < 7.0                     ,47,98,0.4796,37:19.0
+"Gambs MD, Catherine",HgbA1c NOT > 9.0 (poor control) ,80,98,0.8163,37:25.0
+"Gambs MD, Catherine",Hypertension Patients 18-59 years BP <140/90,84,136,0.6176,37:40.5
+"Gambs MD, Catherine",Hypertension Patients over 18 BP <140/90,248,325,0.7631,37:52.1
+"Gambs MD, Catherine",Hypertension Patients over 59 years BP <150/90,175,197,0.8883,37:45.6
+"Gambs MD, Catherine",Mammogram Ages 52 -74,159,311,0.5113,38:12.8
+"Gambs MD, Catherine",Nephropathy Assessment,70,98,0.7143,37:30.2
+"Gambs MD, Catherine",Pap Smear Report,382,564,0.6773,46:09.2
+"Gambs MD, Catherine",Pneumovax - DM patients w/current pneumovax,58,98,0.5918,38:35.2
+"Gambs MD, Catherine",Pneumovax - Patients Age>65 w/current pneumovax,178,257,0.6926,38:41.0
+"Gambs MD, Catherine",Pneumovax - Smokers w/current pneumovax,24,121,0.1983,38:47.7
+"Gambs MD, Catherine",Smoking Cessation Advice or Treatment ,5,8,0.625,37:36.4
+"Gambs MD, Catherine",Statin patients with LDL in the past 365 days,142,205,0.6927,46:35.8
+"Gambs MD, Catherine",TD - Patients >18yrs with TD in last 10 years,890,1345,0.6617,38:55.2
+"Gambs MD, Catherine",WCV 3-6 yr,16,25,0.64,25:54.1
+"Gamson MD, Jonathan",AAA Screening,22,110,0.2,38:19.5
+"Gamson MD, Jonathan",Advance Directive - Patients >55yrs w/Advance Directive ,27,778,0.0347,38:29.3
+"Gamson MD, Jonathan",Blood Pressure NOT Controlled  >140/90 mm Hg    ,42,143,0.2937,37:03.6
+"Gamson MD, Jonathan",Chlamydia,2,3,0.6667,38:08.3
+"Gamson MD, Jonathan",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),503,785,0.6408,38:00.2
+"Gamson MD, Jonathan",Diabetes Care Gaps ,134,143,0.9371,46:03.7
+"Gamson MD, Jonathan",DM PTS 40 to 75 w/STATIN,79,113,0.6991,45:27.1
+"Gamson MD, Jonathan",DM PTS 55-75 w/ACE/ARB,63,80,0.7875,45:22.5
+"Gamson MD, Jonathan",Eye exam,88,143,0.6154,37:08.3
+"Gamson MD, Jonathan",Foot Exam,115,143,0.8042,37:13.4
+"Gamson MD, Jonathan",HgbA1c < 7.0                     ,72,143,0.5035,37:19.0
+"Gamson MD, Jonathan",HgbA1c NOT > 9.0 (poor control) ,132,143,0.9231,37:25.0
+"Gamson MD, Jonathan",Hypertension Patients 18-59 years BP <140/90,107,161,0.6646,37:40.5
+"Gamson MD, Jonathan",Hypertension Patients over 18 BP <140/90,387,485,0.7979,37:52.1
+"Gamson MD, Jonathan",Hypertension Patients over 59 years BP <150/90,297,332,0.8946,37:45.6
+"Gamson MD, Jonathan",Mammogram Ages 52 -74,164,276,0.5942,38:12.8
+"Gamson MD, Jonathan",Nephropathy Assessment,111,143,0.7762,37:30.2
+"Gamson MD, Jonathan",Pap Smear Report,166,312,0.5321,46:09.2
+"Gamson MD, Jonathan",Pneumovax - DM patients w/current pneumovax,113,143,0.7902,38:35.2
+"Gamson MD, Jonathan",Pneumovax - Patients Age>65 w/current pneumovax,376,447,0.8412,38:41.0
+"Gamson MD, Jonathan",Pneumovax - Smokers w/current pneumovax,37,133,0.2782,38:47.7
+"Gamson MD, Jonathan",Smoking Cessation Advice or Treatment ,12,19,0.6316,37:36.4
+"Gamson MD, Jonathan",Statin patients with LDL in the past 365 days,232,319,0.7273,46:35.8
+"Gamson MD, Jonathan",TD - Patients >18yrs with TD in last 10 years,1102,1476,0.7466,38:55.2
+"Gamson MD, Jonathan",WCV 3-6 yr,22,29,0.7586,25:54.1
+"Gavareski MD, David",AAA Screening,,69,,38:19.5
+"Gavareski MD, David",Advance Directive - Patients >55yrs w/Advance Directive ,71,618,0.1149,38:29.3
+"Gavareski MD, David",Blood Pressure NOT Controlled  >140/90 mm Hg    ,11,109,0.1009,37:03.6
+"Gavareski MD, David",Chlamydia,,6,,38:08.3
+"Gavareski MD, David",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),485,639,0.759,38:00.2
+"Gavareski MD, David",Diabetes Care Gaps ,97,109,0.8899,46:03.7
+"Gavareski MD, David",DM PTS 40 to 75 w/STATIN,49,76,0.6447,45:27.1
+"Gavareski MD, David",DM PTS 55-75 w/ACE/ARB,43,65,0.6615,45:22.5
+"Gavareski MD, David",Eye exam,54,109,0.4954,37:08.3
+"Gavareski MD, David",Foot Exam,79,109,0.7248,37:13.4
+"Gavareski MD, David",HgbA1c < 7.0                     ,66,109,0.6055,37:19.0
+"Gavareski MD, David",HgbA1c NOT > 9.0 (poor control) ,103,109,0.945,37:25.0
+"Gavareski MD, David",Hypertension Patients 18-59 years BP <140/90,98,119,0.8235,37:40.5
+"Gavareski MD, David",Hypertension Patients over 18 BP <140/90,368,421,0.8741,37:52.1
+"Gavareski MD, David",Hypertension Patients over 59 years BP <150/90,282,311,0.9068,37:45.6
+"Gavareski MD, David",Mammogram Ages 52 -74,194,264,0.7348,38:12.8
+"Gavareski MD, David",Nephropathy Assessment,85,109,0.7798,37:30.2
+"Gavareski MD, David",Pap Smear Report,219,303,0.7228,46:09.2
+"Gavareski MD, David",Pneumovax - DM patients w/current pneumovax,92,109,0.844,38:35.2
+"Gavareski MD, David",Pneumovax - Patients Age>65 w/current pneumovax,259,355,0.7296,38:41.0
+"Gavareski MD, David",Pneumovax - Smokers w/current pneumovax,25,58,0.431,38:47.7
+"Gavareski MD, David",Smoking Cessation Advice or Treatment ,11,12,0.9167,37:36.4
+"Gavareski MD, David",Statin patients with LDL in the past 365 days,160,214,0.7477,46:35.8
+"Gavareski MD, David",TD - Patients >18yrs with TD in last 10 years,880,1119,0.7864,38:55.2
+"Gavareski MD, David",WCV 3-6 yr,15,16,0.9375,25:54.1
+"Gaylord ARNP, ND, Elizabeth",AAA Screening,2,18,0.1111,38:19.5
+"Gaylord ARNP, ND, Elizabeth",Advance Directive - Patients >55yrs w/Advance Directive ,25,224,0.1116,38:29.3
+"Gaylord ARNP, ND, Elizabeth",Blood Pressure NOT Controlled  >140/90 mm Hg    ,2,21,0.0952,37:03.6
+"Gaylord ARNP, ND, Elizabeth",Chlamydia,14,54,0.2593,38:08.3
+"Gaylord ARNP, ND, Elizabeth",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),198,276,0.7174,38:00.2
+"Gaylord ARNP, ND, Elizabeth",Diabetes Care Gaps ,20,21,0.9524,46:03.7
+"Gaylord ARNP, ND, Elizabeth",DM PTS 40 to 75 w/STATIN,16,20,0.8,45:27.1
+"Gaylord ARNP, ND, Elizabeth",DM PTS 55-75 w/ACE/ARB,10,13,0.7692,45:22.5
+"Gaylord ARNP, ND, Elizabeth",Eye exam,11,21,0.5238,37:08.3
+"Gaylord ARNP, ND, Elizabeth",Foot Exam,17,21,0.8095,37:13.4
+"Gaylord ARNP, ND, Elizabeth",HgbA1c < 7.0                     ,7,21,0.3333,37:19.0
+"Gaylord ARNP, ND, Elizabeth",HgbA1c NOT > 9.0 (poor control) ,17,21,0.8095,37:25.0
+"Gaylord ARNP, ND, Elizabeth",Hypertension Patients 18-59 years BP <140/90,63,74,0.8514,37:40.5
+"Gaylord ARNP, ND, Elizabeth",Hypertension Patients over 18 BP <140/90,121,144,0.8403,37:52.1
+"Gaylord ARNP, ND, Elizabeth",Hypertension Patients over 59 years BP <150/90,60,70,0.8571,37:45.6
+"Gaylord ARNP, ND, Elizabeth",Mammogram Ages 52 -74,129,190,0.6789,38:12.8
+"Gaylord ARNP, ND, Elizabeth",Nephropathy Assessment,15,21,0.7143,37:30.2
+"Gaylord ARNP, ND, Elizabeth",Pap Smear Report,362,511,0.7084,46:09.2
+"Gaylord ARNP, ND, Elizabeth",Pneumovax - DM patients w/current pneumovax,17,21,0.8095,38:35.2
+"Gaylord ARNP, ND, Elizabeth",Pneumovax - Patients Age>65 w/current pneumovax,66,90,0.7333,38:41.0
+"Gaylord ARNP, ND, Elizabeth",Pneumovax - Smokers w/current pneumovax,13,28,0.4643,38:47.7
+"Gaylord ARNP, ND, Elizabeth",Smoking Cessation Advice or Treatment ,,,,37:36.4
+"Gaylord ARNP, ND, Elizabeth",Statin patients with LDL in the past 365 days,61,82,0.7439,46:35.8
+"Gaylord ARNP, ND, Elizabeth",TD - Patients >18yrs with TD in last 10 years,641,785,0.8166,38:55.2
+"Gaylord ARNP, ND, Elizabeth",WCV 3-6 yr,37,38,0.9737,25:54.1
+"Goodman ARNP, Karen",AAA Screening,1,8,0.125,38:19.5
+"Goodman ARNP, Karen",Advance Directive - Patients >55yrs w/Advance Directive ,24,244,0.0984,38:29.3
+"Goodman ARNP, Karen",Blood Pressure NOT Controlled  >140/90 mm Hg    ,3,24,0.125,37:03.6
+"Goodman ARNP, Karen",Chlamydia,2,8,0.25,38:08.3
+"Goodman ARNP, Karen",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),138,271,0.5092,38:00.2
+"Goodman ARNP, Karen",Diabetes Care Gaps ,22,24,0.9167,46:03.7
+"Goodman ARNP, Karen",DM PTS 40 to 75 w/STATIN,12,19,0.6316,45:27.1
+"Goodman ARNP, Karen",DM PTS 55-75 w/ACE/ARB,8,13,0.6154,45:22.5
+"Goodman ARNP, Karen",Eye exam,8,24,0.3333,37:08.3
+"Goodman ARNP, Karen",Foot Exam,15,24,0.625,37:13.4
+"Goodman ARNP, Karen",HgbA1c < 7.0                     ,12,24,0.5,37:19.0
+"Goodman ARNP, Karen",HgbA1c NOT > 9.0 (poor control) ,22,24,0.9167,37:25.0
+"Goodman ARNP, Karen",Hypertension Patients 18-59 years BP <140/90,18,28,0.6429,37:40.5
+"Goodman ARNP, Karen",Hypertension Patients over 18 BP <140/90,63,80,0.7875,37:52.1
+"Goodman ARNP, Karen",Hypertension Patients over 59 years BP <150/90,46,53,0.8679,37:45.6
+"Goodman ARNP, Karen",Mammogram Ages 52 -74,138,226,0.6106,38:12.8
+"Goodman ARNP, Karen",Nephropathy Assessment,16,24,0.6667,37:30.2
+"Goodman ARNP, Karen",Pap Smear Report,250,349,0.7163,46:09.2
+"Goodman ARNP, Karen",Pneumovax - DM patients w/current pneumovax,15,24,0.625,38:35.2
+"Goodman ARNP, Karen",Pneumovax - Patients Age>65 w/current pneumovax,72,130,0.5538,38:41.0
+"Goodman ARNP, Karen",Pneumovax - Smokers w/current pneumovax,11,37,0.2973,38:47.7
+"Goodman ARNP, Karen",Smoking Cessation Advice or Treatment ,1,2,0.5,37:36.4
+"Goodman ARNP, Karen",Statin patients with LDL in the past 365 days,33,51,0.6471,46:35.8
+"Goodman ARNP, Karen",TD - Patients >18yrs with TD in last 10 years,362,590,0.6136,38:55.2
+"Goodman ARNP, Karen",WCV 3-6 yr,3,3,1,25:54.1
+"Gunningham MD, Frederick",AAA Screening,3,41,0.0732,38:19.5
+"Gunningham MD, Frederick",Advance Directive - Patients >55yrs w/Advance Directive ,38,416,0.0913,38:29.3
+"Gunningham MD, Frederick",Blood Pressure NOT Controlled  >140/90 mm Hg    ,28,115,0.2435,37:03.6
+"Gunningham MD, Frederick",Chlamydia,5,16,0.3125,38:08.3
+"Gunningham MD, Frederick",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),243,406,0.5985,38:00.2
+"Gunningham MD, Frederick",Diabetes Care Gaps ,105,115,0.913,46:03.7
+"Gunningham MD, Frederick",DM PTS 40 to 75 w/STATIN,54,88,0.6136,45:27.1
+"Gunningham MD, Frederick",DM PTS 55-75 w/ACE/ARB,47,67,0.7015,45:22.5
+"Gunningham MD, Frederick",Eye exam,44,115,0.3826,37:08.3
+"Gunningham MD, Frederick",Foot Exam,95,115,0.8261,37:13.4
+"Gunningham MD, Frederick",HgbA1c < 7.0                     ,56,115,0.487,37:19.0
+"Gunningham MD, Frederick",HgbA1c NOT > 9.0 (poor control) ,103,115,0.8957,37:25.0
+"Gunningham MD, Frederick",Hypertension Patients 18-59 years BP <140/90,68,95,0.7158,37:40.5
+"Gunningham MD, Frederick",Hypertension Patients over 18 BP <140/90,222,291,0.7629,37:52.1
+"Gunningham MD, Frederick",Hypertension Patients over 59 years BP <150/90,165,202,0.8168,37:45.6
+"Gunningham MD, Frederick",Mammogram Ages 52 -74,86,163,0.5276,38:12.8
+"Gunningham MD, Frederick",Nephropathy Assessment,88,115,0.7652,37:30.2
+"Gunningham MD, Frederick",Pap Smear Report,206,336,0.6131,46:09.2
+"Gunningham MD, Frederick",Pneumovax - DM patients w/current pneumovax,87,115,0.7565,38:35.2
+"Gunningham MD, Frederick",Pneumovax - Patients Age>65 w/current pneumovax,185,244,0.7582,38:41.0
+"Gunningham MD, Frederick",Pneumovax - Smokers w/current pneumovax,39,112,0.3482,38:47.7
+"Gunningham MD, Frederick",Smoking Cessation Advice or Treatment ,1,2,0.5,37:36.4
+"Gunningham MD, Frederick",Statin patients with LDL in the past 365 days,136,197,0.6904,46:35.8
+"Gunningham MD, Frederick",TD - Patients >18yrs with TD in last 10 years,786,1019,0.7713,38:55.2
+"Gunningham MD, Frederick",WCV 3-6 yr,97,113,0.8584,25:54.1
+"Hall MD, Deborah",AAA Screening,11,34,0.3235,38:19.5
+"Hall MD, Deborah",Advance Directive - Patients >55yrs w/Advance Directive ,59,578,0.1021,38:29.3
+"Hall MD, Deborah",Blood Pressure NOT Controlled  >140/90 mm Hg    ,5,78,0.0641,37:03.6
+"Hall MD, Deborah",Chlamydia,9,27,0.3333,38:08.3
+"Hall MD, Deborah",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),413,604,0.6838,38:00.2
+"Hall MD, Deborah",Diabetes Care Gaps ,73,78,0.9359,46:03.7
+"Hall MD, Deborah",DM PTS 40 to 75 w/STATIN,49,63,0.7778,45:27.1
+"Hall MD, Deborah",DM PTS 55-75 w/ACE/ARB,41,49,0.8367,45:22.5
+"Hall MD, Deborah",Eye exam,39,78,0.5,37:08.3
+"Hall MD, Deborah",Foot Exam,54,78,0.6923,37:13.4
+"Hall MD, Deborah",HgbA1c < 7.0                     ,45,78,0.5769,37:19.0
+"Hall MD, Deborah",HgbA1c NOT > 9.0 (poor control) ,75,78,0.9615,37:25.0
+"Hall MD, Deborah",Hypertension Patients 18-59 years BP <140/90,63,95,0.6632,37:40.5
+"Hall MD, Deborah",Hypertension Patients over 18 BP <140/90,239,302,0.7914,37:52.1
+"Hall MD, Deborah",Hypertension Patients over 59 years BP <150/90,185,213,0.8685,37:45.6
+"Hall MD, Deborah",Mammogram Ages 52 -74,291,448,0.6496,38:12.8
+"Hall MD, Deborah",Nephropathy Assessment,51,78,0.6538,37:30.2
+"Hall MD, Deborah",Pap Smear Report,559,784,0.713,46:09.2
+"Hall MD, Deborah",Pneumovax - DM patients w/current pneumovax,72,78,0.9231,38:35.2
+"Hall MD, Deborah",Pneumovax - Patients Age>65 w/current pneumovax,220,318,0.6918,38:41.0
+"Hall MD, Deborah",Pneumovax - Smokers w/current pneumovax,44,77,0.5714,38:47.7
+"Hall MD, Deborah",Smoking Cessation Advice or Treatment ,2,3,0.6667,37:36.4
+"Hall MD, Deborah",Statin patients with LDL in the past 365 days,166,229,0.7249,46:35.8
+"Hall MD, Deborah",TD - Patients >18yrs with TD in last 10 years,1075,1440,0.7465,38:55.2
+"Hall MD, Deborah",WCV 3-6 yr,40,44,0.9091,25:54.1
+"Hansom MD, Janet",AAA Screening,1,15,0.0667,38:19.5
+"Hansom MD, Janet",Advance Directive - Patients >55yrs w/Advance Directive ,34,493,0.069,38:29.3
+"Hansom MD, Janet",Blood Pressure NOT Controlled  >140/90 mm Hg    ,15,63,0.2381,37:03.6
+"Hansom MD, Janet",Chlamydia,2,5,0.4,38:08.3
+"Hansom MD, Janet",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),353,516,0.6841,38:00.2
+"Hansom MD, Janet",Diabetes Care Gaps ,61,63,0.9683,46:03.7
+"Hansom MD, Janet",DM PTS 40 to 75 w/STATIN,41,50,0.82,45:27.1
+"Hansom MD, Janet",DM PTS 55-75 w/ACE/ARB,28,34,0.8235,45:22.5
+"Hansom MD, Janet",Eye exam,43,63,0.6825,37:08.3
+"Hansom MD, Janet",Foot Exam,47,63,0.746,37:13.4
+"Hansom MD, Janet",HgbA1c < 7.0                     ,40,63,0.6349,37:19.0
+"Hansom MD, Janet",HgbA1c NOT > 9.0 (poor control) ,56,63,0.8889,37:25.0
+"Hansom MD, Janet",Hypertension Patients 18-59 years BP <140/90,56,81,0.6914,37:40.5
+"Hansom MD, Janet",Hypertension Patients over 18 BP <140/90,210,265,0.7925,37:52.1
+"Hansom MD, Janet",Hypertension Patients over 59 years BP <150/90,168,194,0.866,37:45.6
+"Hansom MD, Janet",Mammogram Ages 52 -74,251,386,0.6503,38:12.8
+"Hansom MD, Janet",Nephropathy Assessment,53,63,0.8413,37:30.2
+"Hansom MD, Janet",Pap Smear Report,363,472,0.7691,46:09.2
+"Hansom MD, Janet",Pneumovax - DM patients w/current pneumovax,57,63,0.9048,38:35.2
+"Hansom MD, Janet",Pneumovax - Patients Age>65 w/current pneumovax,229,266,0.8609,38:41.0
+"Hansom MD, Janet",Pneumovax - Smokers w/current pneumovax,16,29,0.5517,38:47.7
+"Hansom MD, Janet",Smoking Cessation Advice or Treatment ,2,2,1,37:36.4
+"Hansom MD, Janet",Statin patients with LDL in the past 365 days,114,151,0.755,46:35.8
+"Hansom MD, Janet",TD - Patients >18yrs with TD in last 10 years,762,904,0.8429,38:55.2
+"Hansom MD, Janet",WCV 3-6 yr,12,13,0.9231,25:54.1
+"Hartwell MD, Larry",AAA Screening,1,90,0.0111,38:19.5
+"Hartwell MD, Larry",Advance Directive - Patients >55yrs w/Advance Directive ,79,753,0.1049,38:29.3
+"Hartwell MD, Larry",Blood Pressure NOT Controlled  >140/90 mm Hg    ,27,159,0.1698,37:03.6
+"Hartwell MD, Larry",Chlamydia,,1,,38:08.3
+"Hartwell MD, Larry",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),407,660,0.6167,38:00.2
+"Hartwell MD, Larry",Diabetes Care Gaps ,142,159,0.8931,46:03.7
+"Hartwell MD, Larry",DM PTS 40 to 75 w/STATIN,79,103,0.767,45:27.1
+"Hartwell MD, Larry",DM PTS 55-75 w/ACE/ARB,65,89,0.7303,45:22.5
+"Hartwell MD, Larry",Eye exam,75,159,0.4717,37:08.3
+"Hartwell MD, Larry",Foot Exam,120,159,0.7547,37:13.4
+"Hartwell MD, Larry",HgbA1c < 7.0                     ,90,159,0.566,37:19.0
+"Hartwell MD, Larry",HgbA1c NOT > 9.0 (poor control) ,146,159,0.9182,37:25.0
+"Hartwell MD, Larry",Hypertension Patients 18-59 years BP <140/90,78,122,0.6393,37:40.5
+"Hartwell MD, Larry",Hypertension Patients over 18 BP <140/90,391,472,0.8284,37:52.1
+"Hartwell MD, Larry",Hypertension Patients over 59 years BP <150/90,330,363,0.9091,37:45.6
+"Hartwell MD, Larry",Mammogram Ages 52 -74,115,210,0.5476,38:12.8
+"Hartwell MD, Larry",Nephropathy Assessment,117,159,0.7358,37:30.2
+"Hartwell MD, Larry",Pap Smear Report,85,236,0.3602,46:09.2
+"Hartwell MD, Larry",Pneumovax - DM patients w/current pneumovax,137,159,0.8616,38:35.2
+"Hartwell MD, Larry",Pneumovax - Patients Age>65 w/current pneumovax,380,471,0.8068,38:41.0
+"Hartwell MD, Larry",Pneumovax - Smokers w/current pneumovax,54,109,0.4954,38:47.7
+"Hartwell MD, Larry",Smoking Cessation Advice or Treatment ,3,9,0.3333,37:36.4
+"Hartwell MD, Larry",Statin patients with LDL in the past 365 days,259,362,0.7155,46:35.8
+"Hartwell MD, Larry",TD - Patients >18yrs with TD in last 10 years,1082,1416,0.7641,38:55.2
+"Hartwell MD, Larry",WCV 3-6 yr,10,14,0.7143,25:54.1
+"Hein MD, Shelby",AAA Screening,1,15,0.0667,38:19.5
+"Hein MD, Shelby",Advance Directive - Patients >55yrs w/Advance Directive ,82,598,0.1371,38:29.3
+"Hein MD, Shelby",Blood Pressure NOT Controlled  >140/90 mm Hg    ,11,78,0.141,37:03.6
+"Hein MD, Shelby",Chlamydia,10,41,0.2439,38:08.3
+"Hein MD, Shelby",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),429,631,0.6799,38:00.2
+"Hein MD, Shelby",Diabetes Care Gaps ,71,78,0.9103,46:03.7
+"Hein MD, Shelby",DM PTS 40 to 75 w/STATIN,43,61,0.7049,45:27.1
+"Hein MD, Shelby",DM PTS 55-75 w/ACE/ARB,37,44,0.8409,45:22.5
+"Hein MD, Shelby",Eye exam,39,78,0.5,37:08.3
+"Hein MD, Shelby",Foot Exam,55,78,0.7051,37:13.4
+"Hein MD, Shelby",HgbA1c < 7.0                     ,31,78,0.3974,37:19.0
+"Hein MD, Shelby",HgbA1c NOT > 9.0 (poor control) ,69,78,0.8846,37:25.0
+"Hein MD, Shelby",Hypertension Patients 18-59 years BP <140/90,77,92,0.837,37:40.5
+"Hein MD, Shelby",Hypertension Patients over 18 BP <140/90,263,306,0.8595,37:52.1
+"Hein MD, Shelby",Hypertension Patients over 59 years BP <150/90,198,222,0.8919,37:45.6
+"Hein MD, Shelby",Mammogram Ages 52 -74,341,490,0.6959,38:12.8
+"Hein MD, Shelby",Nephropathy Assessment,37,78,0.4744,37:30.2
+"Hein MD, Shelby",Pap Smear Report,512,783,0.6539,46:09.2
+"Hein MD, Shelby",Pneumovax - DM patients w/current pneumovax,67,78,0.859,38:35.2
+"Hein MD, Shelby",Pneumovax - Patients Age>65 w/current pneumovax,245,320,0.7656,38:41.0
+"Hein MD, Shelby",Pneumovax - Smokers w/current pneumovax,30,61,0.4918,38:47.7
+"Hein MD, Shelby",Smoking Cessation Advice or Treatment ,3,6,0.5,37:36.4
+"Hein MD, Shelby",Statin patients with LDL in the past 365 days,126,230,0.5478,46:35.8
+"Hein MD, Shelby",TD - Patients >18yrs with TD in last 10 years,1062,1417,0.7495,38:55.2
+"Hein MD, Shelby",WCV 3-6 yr,51,57,0.8947,25:54.1
+"Herdman MD, S. Harry",AAA Screening,38,85,0.4471,38:19.5
+"Herdman MD, S. Harry",Advance Directive - Patients >55yrs w/Advance Directive ,105,710,0.1479,38:29.3
+"Herdman MD, S. Harry",Blood Pressure NOT Controlled  >140/90 mm Hg    ,19,87,0.2184,37:03.6
+"Herdman MD, S. Harry",Chlamydia,10,19,0.5263,38:08.3
+"Herdman MD, S. Harry",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),601,774,0.7765,38:00.2
+"Herdman MD, S. Harry",Diabetes Care Gaps ,86,87,0.9885,46:03.7
+"Herdman MD, S. Harry",DM PTS 40 to 75 w/STATIN,47,60,0.7833,45:27.1
+"Herdman MD, S. Harry",DM PTS 55-75 w/ACE/ARB,34,42,0.8095,45:22.5
+"Herdman MD, S. Harry",Eye exam,65,87,0.7471,37:08.3
+"Herdman MD, S. Harry",Foot Exam,82,87,0.9425,37:13.4
+"Herdman MD, S. Harry",HgbA1c < 7.0                     ,42,87,0.4828,37:19.0
+"Herdman MD, S. Harry",HgbA1c NOT > 9.0 (poor control) ,79,87,0.908,37:25.0
+"Herdman MD, S. Harry",Hypertension Patients 18-59 years BP <140/90,124,178,0.6966,37:40.5
+"Herdman MD, S. Harry",Hypertension Patients over 18 BP <140/90,363,442,0.8213,37:52.1
+"Herdman MD, S. Harry",Hypertension Patients over 59 years BP <150/90,249,275,0.9055,37:45.6
+"Herdman MD, S. Harry",Mammogram Ages 52 -74,215,304,0.7072,38:12.8
+"Herdman MD, S. Harry",Nephropathy Assessment,70,87,0.8046,37:30.2
+"Herdman MD, S. Harry",Pap Smear Report,359,530,0.6774,46:09.2
+"Herdman MD, S. Harry",Pneumovax - DM patients w/current pneumovax,79,87,0.908,38:35.2
+"Herdman MD, S. Harry",Pneumovax - Patients Age>65 w/current pneumovax,320,356,0.8989,38:41.0
+"Herdman MD, S. Harry",Pneumovax - Smokers w/current pneumovax,45,73,0.6164,38:47.7
+"Herdman MD, S. Harry",Smoking Cessation Advice or Treatment ,3,4,0.75,37:36.4
+"Herdman MD, S. Harry",Statin patients with LDL in the past 365 days,206,295,0.6983,46:35.8
+"Herdman MD, S. Harry",TD - Patients >18yrs with TD in last 10 years,1301,1616,0.8051,38:55.2
+"Herdman MD, S. Harry",WCV 3-6 yr,102,109,0.9358,25:54.1
+"Herrman ARNP, Sarah",AAA Screening,,,,38:19.5
+"Herrman ARNP, Sarah",Advance Directive - Patients >55yrs w/Advance Directive ,,,,38:29.3
+"Herrman ARNP, Sarah",Blood Pressure NOT Controlled  >140/90 mm Hg    ,,,,37:03.6
+"Herrman ARNP, Sarah",Chlamydia,,,,38:08.3
+"Herrman ARNP, Sarah",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),,,,38:00.2
+"Herrman ARNP, Sarah",Diabetes Care Gaps ,,,,46:03.7
+"Herrman ARNP, Sarah",DM PTS 40 to 75 w/STATIN,,,,45:27.1
+"Herrman ARNP, Sarah",DM PTS 55-75 w/ACE/ARB,,,,45:22.5
+"Herrman ARNP, Sarah",Eye exam,,,,37:08.3
+"Herrman ARNP, Sarah",Foot Exam,,,,37:13.4
+"Herrman ARNP, Sarah",HgbA1c < 7.0                     ,,,,37:19.0
+"Herrman ARNP, Sarah",HgbA1c NOT > 9.0 (poor control) ,,,,37:25.0
+"Herrman ARNP, Sarah",Hypertension Patients 18-59 years BP <140/90,,,,37:40.5
+"Herrman ARNP, Sarah",Hypertension Patients over 18 BP <140/90,,,,37:52.1
+"Herrman ARNP, Sarah",Hypertension Patients over 59 years BP <150/90,,,,37:45.6
+"Herrman ARNP, Sarah",Mammogram Ages 52 -74,,,,38:12.8
+"Herrman ARNP, Sarah",Nephropathy Assessment,,,,37:30.2
+"Herrman ARNP, Sarah",Pap Smear Report,,,,46:09.2
+"Herrman ARNP, Sarah",Pneumovax - DM patients w/current pneumovax,,,,38:35.2
+"Herrman ARNP, Sarah",Pneumovax - Patients Age>65 w/current pneumovax,,,,38:41.0
+"Herrman ARNP, Sarah",Pneumovax - Smokers w/current pneumovax,,,,38:47.7
+"Herrman ARNP, Sarah",Smoking Cessation Advice or Treatment ,,,,37:36.4
+"Herrman ARNP, Sarah",Statin patients with LDL in the past 365 days,,,,46:35.8
+"Herrman ARNP, Sarah",TD - Patients >18yrs with TD in last 10 years,,,,38:55.2
+"Herrman ARNP, Sarah",WCV 3-6 yr,,,,25:54.1
+"Hiemstra DO, John",AAA Screening,8,119,0.0672,38:19.5
+"Hiemstra DO, John",Advance Directive - Patients >55yrs w/Advance Directive ,146,1167,0.1251,38:29.3
+"Hiemstra DO, John",Blood Pressure NOT Controlled  >140/90 mm Hg    ,23,227,0.1013,37:03.6
+"Hiemstra DO, John",Chlamydia,3,14,0.2143,38:08.3
+"Hiemstra DO, John",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),653,932,0.7006,38:00.2
+"Hiemstra DO, John",Diabetes Care Gaps ,212,227,0.9339,46:03.7
+"Hiemstra DO, John",DM PTS 40 to 75 w/STATIN,104,132,0.7879,45:27.1
+"Hiemstra DO, John",DM PTS 55-75 w/ACE/ARB,84,106,0.7925,45:22.5
+"Hiemstra DO, John",Eye exam,103,227,0.4537,37:08.3
+"Hiemstra DO, John",Foot Exam,182,227,0.8018,37:13.4
+"Hiemstra DO, John",HgbA1c < 7.0                     ,125,227,0.5507,37:19.0
+"Hiemstra DO, John",HgbA1c NOT > 9.0 (poor control) ,203,227,0.8943,37:25.0
+"Hiemstra DO, John",Hypertension Patients 18-59 years BP <140/90,132,160,0.825,37:40.5
+"Hiemstra DO, John",Hypertension Patients over 18 BP <140/90,632,705,0.8965,37:52.1
+"Hiemstra DO, John",Hypertension Patients over 59 years BP <150/90,522,563,0.9272,37:45.6
+"Hiemstra DO, John",Mammogram Ages 52 -74,246,364,0.6758,38:12.8
+"Hiemstra DO, John",Nephropathy Assessment,155,227,0.6828,37:30.2
+"Hiemstra DO, John",Pap Smear Report,225,430,0.5233,46:09.2
+"Hiemstra DO, John",Pneumovax - DM patients w/current pneumovax,199,227,0.8767,38:35.2
+"Hiemstra DO, John",Pneumovax - Patients Age>65 w/current pneumovax,681,800,0.8513,38:41.0
+"Hiemstra DO, John",Pneumovax - Smokers w/current pneumovax,80,149,0.5369,38:47.7
+"Hiemstra DO, John",Smoking Cessation Advice or Treatment ,7,10,0.7,37:36.4
+"Hiemstra DO, John",Statin patients with LDL in the past 365 days,392,531,0.7382,46:35.8
+"Hiemstra DO, John",TD - Patients >18yrs with TD in last 10 years,1719,2074,0.8288,38:55.2
+"Hiemstra DO, John",WCV 3-6 yr,93,105,0.8857,25:54.1
+"Honey DO, Heather",AAA Screening,14,56,0.25,38:19.5
+"Honey DO, Heather",Advance Directive - Patients >55yrs w/Advance Directive ,58,414,0.1401,38:29.3
+"Honey DO, Heather",Blood Pressure NOT Controlled  >140/90 mm Hg    ,6,57,0.1053,37:03.6
+"Honey DO, Heather",Chlamydia,4,13,0.3077,38:08.3
+"Honey DO, Heather",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),307,426,0.7207,38:00.2
+"Honey DO, Heather",Diabetes Care Gaps ,51,57,0.8947,46:03.7
+"Honey DO, Heather",DM PTS 40 to 75 w/STATIN,32,43,0.7442,45:27.1
+"Honey DO, Heather",DM PTS 55-75 w/ACE/ARB,33,37,0.8919,45:22.5
+"Honey DO, Heather",Eye exam,31,57,0.5439,37:08.3
+"Honey DO, Heather",Foot Exam,41,57,0.7193,37:13.4
+"Honey DO, Heather",HgbA1c < 7.0                     ,25,57,0.4386,37:19.0
+"Honey DO, Heather",HgbA1c NOT > 9.0 (poor control) ,55,57,0.9649,37:25.0
+"Honey DO, Heather",Hypertension Patients 18-59 years BP <140/90,59,78,0.7564,37:40.5
+"Honey DO, Heather",Hypertension Patients over 18 BP <140/90,180,214,0.8411,37:52.1
+"Honey DO, Heather",Hypertension Patients over 59 years BP <150/90,124,141,0.8794,37:45.6
+"Honey DO, Heather",Mammogram Ages 52 -74,91,143,0.6364,38:12.8
+"Honey DO, Heather",Nephropathy Assessment,41,57,0.7193,37:30.2
+"Honey DO, Heather",Pap Smear Report,184,270,0.6815,46:09.2
+"Honey DO, Heather",Pneumovax - DM patients w/current pneumovax,52,57,0.9123,38:35.2
+"Honey DO, Heather",Pneumovax - Patients Age>65 w/current pneumovax,194,238,0.8151,38:41.0
+"Honey DO, Heather",Pneumovax - Smokers w/current pneumovax,25,61,0.4098,38:47.7
+"Honey DO, Heather",Smoking Cessation Advice or Treatment ,2,4,0.5,37:36.4
+"Honey DO, Heather",Statin patients with LDL in the past 365 days,109,169,0.645,46:35.8
+"Honey DO, Heather",TD - Patients >18yrs with TD in last 10 years,721,937,0.7695,38:55.2
+"Honey DO, Heather",WCV 3-6 yr,12,20,0.6,25:54.1
+"Honey MD, Robert",AAA Screening,5,25,0.2,38:19.5
+"Honey MD, Robert",Advance Directive - Patients >55yrs w/Advance Directive ,14,179,0.0782,38:29.3
+"Honey MD, Robert",Blood Pressure NOT Controlled  >140/90 mm Hg    ,5,37,0.1351,37:03.6
+"Honey MD, Robert",Chlamydia,2,7,0.2857,38:08.3
+"Honey MD, Robert",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),90,184,0.4891,38:00.2
+"Honey MD, Robert",Diabetes Care Gaps ,34,37,0.9189,46:03.7
+"Honey MD, Robert",DM PTS 40 to 75 w/STATIN,15,24,0.625,45:27.1
+"Honey MD, Robert",DM PTS 55-75 w/ACE/ARB,16,19,0.8421,45:22.5
+"Honey MD, Robert",Eye exam,13,37,0.3514,37:08.3
+"Honey MD, Robert",Foot Exam,28,37,0.7568,37:13.4
+"Honey MD, Robert",HgbA1c < 7.0                     ,11,37,0.2973,37:19.0
+"Honey MD, Robert",HgbA1c NOT > 9.0 (poor control) ,29,37,0.7838,37:25.0
+"Honey MD, Robert",Hypertension Patients 18-59 years BP <140/90,21,35,0.6,37:40.5
+"Honey MD, Robert",Hypertension Patients over 18 BP <140/90,73,96,0.7604,37:52.1
+"Honey MD, Robert",Hypertension Patients over 59 years BP <150/90,57,63,0.9048,37:45.6
+"Honey MD, Robert",Mammogram Ages 52 -74,28,64,0.4375,38:12.8
+"Honey MD, Robert",Nephropathy Assessment,25,37,0.6757,37:30.2
+"Honey MD, Robert",Pap Smear Report,59,128,0.4609,46:09.2
+"Honey MD, Robert",Pneumovax - DM patients w/current pneumovax,25,37,0.6757,38:35.2
+"Honey MD, Robert",Pneumovax - Patients Age>65 w/current pneumovax,56,97,0.5773,38:41.0
+"Honey MD, Robert",Pneumovax - Smokers w/current pneumovax,19,77,0.2468,38:47.7
+"Honey MD, Robert",Smoking Cessation Advice or Treatment ,1,4,0.25,37:36.4
+"Honey MD, Robert",Statin patients with LDL in the past 365 days,54,79,0.6835,46:35.8
+"Honey MD, Robert",TD - Patients >18yrs with TD in last 10 years,346,528,0.6553,38:55.2
+"Honey MD, Robert",WCV 3-6 yr,14,23,0.6087,25:54.1
+"Hopper MD, James",AAA Screening,23,64,0.3594,38:19.5
+"Hopper MD, James",Advance Directive - Patients >55yrs w/Advance Directive ,56,477,0.1174,38:29.3
+"Hopper MD, James",Blood Pressure NOT Controlled  >140/90 mm Hg    ,7,75,0.0933,37:03.6
+"Hopper MD, James",Chlamydia,3,6,0.5,38:08.3
+"Hopper MD, James",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),330,444,0.7432,38:00.2
+"Hopper MD, James",Diabetes Care Gaps ,65,75,0.8667,46:03.7
+"Hopper MD, James",DM PTS 40 to 75 w/STATIN,37,55,0.6727,45:27.1
+"Hopper MD, James",DM PTS 55-75 w/ACE/ARB,40,46,0.8696,45:22.5
+"Hopper MD, James",Eye exam,37,75,0.4933,37:08.3
+"Hopper MD, James",Foot Exam,59,75,0.7867,37:13.4
+"Hopper MD, James",HgbA1c < 7.0                     ,33,75,0.44,37:19.0
+"Hopper MD, James",HgbA1c NOT > 9.0 (poor control) ,65,75,0.8667,37:25.0
+"Hopper MD, James",Hypertension Patients 18-59 years BP <140/90,38,56,0.6786,37:40.5
+"Hopper MD, James",Hypertension Patients over 18 BP <140/90,195,238,0.8193,37:52.1
+"Hopper MD, James",Hypertension Patients over 59 years BP <150/90,164,187,0.877,37:45.6
+"Hopper MD, James",Mammogram Ages 52 -74,107,154,0.6948,38:12.8
+"Hopper MD, James",Nephropathy Assessment,53,75,0.7067,37:30.2
+"Hopper MD, James",Pap Smear Report,98,180,0.5444,46:09.2
+"Hopper MD, James",Pneumovax - DM patients w/current pneumovax,59,75,0.7867,38:35.2
+"Hopper MD, James",Pneumovax - Patients Age>65 w/current pneumovax,261,302,0.8642,38:41.0
+"Hopper MD, James",Pneumovax - Smokers w/current pneumovax,22,49,0.449,38:47.7
+"Hopper MD, James",Smoking Cessation Advice or Treatment ,7,7,1,37:36.4
+"Hopper MD, James",Statin patients with LDL in the past 365 days,95,187,0.508,46:35.8
+"Hopper MD, James",TD - Patients >18yrs with TD in last 10 years,676,834,0.8106,38:55.2
+"Hopper MD, James",WCV 3-6 yr,26,26,1,25:54.1
+"Hruby MD, John",AAA Screening,6,84,0.0714,38:19.5
+"Hruby MD, John",Advance Directive - Patients >55yrs w/Advance Directive ,66,518,0.1274,38:29.3
+"Hruby MD, John",Blood Pressure NOT Controlled  >140/90 mm Hg    ,16,103,0.1553,37:03.6
+"Hruby MD, John",Chlamydia,,1,,38:08.3
+"Hruby MD, John",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),281,409,0.687,38:00.2
+"Hruby MD, John",Diabetes Care Gaps ,91,103,0.8835,46:03.7
+"Hruby MD, John",DM PTS 40 to 75 w/STATIN,45,67,0.6716,45:27.1
+"Hruby MD, John",DM PTS 55-75 w/ACE/ARB,36,60,0.6,45:22.5
+"Hruby MD, John",Eye exam,28,103,0.2718,37:08.3
+"Hruby MD, John",Foot Exam,66,103,0.6408,37:13.4
+"Hruby MD, John",HgbA1c < 7.0                     ,57,103,0.5534,37:19.0
+"Hruby MD, John",HgbA1c NOT > 9.0 (poor control) ,93,103,0.9029,37:25.0
+"Hruby MD, John",Hypertension Patients 18-59 years BP <140/90,36,45,0.8,37:40.5
+"Hruby MD, John",Hypertension Patients over 18 BP <140/90,185,233,0.794,37:52.1
+"Hruby MD, John",Hypertension Patients over 59 years BP <150/90,156,191,0.8168,37:45.6
+"Hruby MD, John",Mammogram Ages 52 -74,90,148,0.6081,38:12.8
+"Hruby MD, John",Nephropathy Assessment,67,103,0.6505,37:30.2
+"Hruby MD, John",Pap Smear Report,90,131,0.687,46:09.2
+"Hruby MD, John",Pneumovax - DM patients w/current pneumovax,90,103,0.8738,38:35.2
+"Hruby MD, John",Pneumovax - Patients Age>65 w/current pneumovax,298,357,0.8347,38:41.0
+"Hruby MD, John",Pneumovax - Smokers w/current pneumovax,55,119,0.4622,38:47.7
+"Hruby MD, John",Smoking Cessation Advice or Treatment ,11,13,0.8462,37:36.4
+"Hruby MD, John",Statin patients with LDL in the past 365 days,111,197,0.5635,46:35.8
+"Hruby MD, John",TD - Patients >18yrs with TD in last 10 years,581,779,0.7458,38:55.2
+"Hruby MD, John",WCV 3-6 yr,4,5,0.8,25:54.1
+"Jacobs MD, Kellie",AAA Screening,2,12,0.1667,38:19.5
+"Jacobs MD, Kellie",Advance Directive - Patients >55yrs w/Advance Directive ,86,498,0.1727,38:29.3
+"Jacobs MD, Kellie",Blood Pressure NOT Controlled  >140/90 mm Hg    ,7,60,0.1167,37:03.6
+"Jacobs MD, Kellie",Chlamydia,11,24,0.4583,38:08.3
+"Jacobs MD, Kellie",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),417,533,0.7824,38:00.2
+"Jacobs MD, Kellie",Diabetes Care Gaps ,52,60,0.8667,46:03.7
+"Jacobs MD, Kellie",DM PTS 40 to 75 w/STATIN,36,50,0.72,45:27.1
+"Jacobs MD, Kellie",DM PTS 55-75 w/ACE/ARB,30,37,0.8108,45:22.5
+"Jacobs MD, Kellie",Eye exam,28,60,0.4667,37:08.3
+"Jacobs MD, Kellie",Foot Exam,41,60,0.6833,37:13.4
+"Jacobs MD, Kellie",HgbA1c < 7.0                     ,28,60,0.4667,37:19.0
+"Jacobs MD, Kellie",HgbA1c NOT > 9.0 (poor control) ,54,60,0.9,37:25.0
+"Jacobs MD, Kellie",Hypertension Patients 18-59 years BP <140/90,51,68,0.75,37:40.5
+"Jacobs MD, Kellie",Hypertension Patients over 18 BP <140/90,207,244,0.8484,37:52.1
+"Jacobs MD, Kellie",Hypertension Patients over 59 years BP <150/90,163,181,0.9006,37:45.6
+"Jacobs MD, Kellie",Mammogram Ages 52 -74,284,404,0.703,38:12.8
+"Jacobs MD, Kellie",Nephropathy Assessment,39,60,0.65,37:30.2
+"Jacobs MD, Kellie",Pap Smear Report,528,654,0.8073,46:09.2
+"Jacobs MD, Kellie",Pneumovax - DM patients w/current pneumovax,57,60,0.95,38:35.2
+"Jacobs MD, Kellie",Pneumovax - Patients Age>65 w/current pneumovax,214,270,0.7926,38:41.0
+"Jacobs MD, Kellie",Pneumovax - Smokers w/current pneumovax,20,46,0.4348,38:47.7
+"Jacobs MD, Kellie",Smoking Cessation Advice or Treatment ,1,1,1,37:36.4
+"Jacobs MD, Kellie",Statin patients with LDL in the past 365 days,92,131,0.7023,46:35.8
+"Jacobs MD, Kellie",TD - Patients >18yrs with TD in last 10 years,976,1174,0.8313,38:55.2
+"Jacobs MD, Kellie",WCV 3-6 yr,28,29,0.9655,25:54.1
+"James, Michael",AAA Screening,2,78,0.0256,38:19.5
+"James, Michael",Advance Directive - Patients >55yrs w/Advance Directive ,109,707,0.1542,38:29.3
+"James, Michael",Blood Pressure NOT Controlled  >140/90 mm Hg    ,33,138,0.2391,37:03.6
+"James, Michael",Chlamydia,3,6,0.5,38:08.3
+"James, Michael",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),310,642,0.4829,38:00.2
+"James, Michael",Diabetes Care Gaps ,119,138,0.8623,46:03.7
+"James, Michael",DM PTS 40 to 75 w/STATIN,52,103,0.5049,45:27.1
+"James, Michael",DM PTS 55-75 w/ACE/ARB,59,81,0.7284,45:22.5
+"James, Michael",Eye exam,60,138,0.4348,37:08.3
+"James, Michael",Foot Exam,92,138,0.6667,37:13.4
+"James, Michael",HgbA1c < 7.0                     ,67,138,0.4855,37:19.0
+"James, Michael",HgbA1c NOT > 9.0 (poor control) ,128,138,0.9275,37:25.0
+"James, Michael",Hypertension Patients 18-59 years BP <140/90,94,119,0.7899,37:40.5
+"James, Michael",Hypertension Patients over 18 BP <140/90,370,436,0.8486,37:52.1
+"James, Michael",Hypertension Patients over 59 years BP <150/90,286,326,0.8773,37:45.6
+"James, Michael",Mammogram Ages 52 -74,141,241,0.5851,38:12.8
+"James, Michael",Nephropathy Assessment,91,138,0.6594,37:30.2
+"James, Michael",Pap Smear Report,131,254,0.5157,46:09.2
+"James, Michael",Pneumovax - DM patients w/current pneumovax,65,138,0.471,38:35.2
+"James, Michael",Pneumovax - Patients Age>65 w/current pneumovax,160,420,0.381,38:41.0
+"James, Michael",Pneumovax - Smokers w/current pneumovax,19,94,0.2021,38:47.7
+"James, Michael",Smoking Cessation Advice or Treatment ,1,10,0.1,37:36.4
+"James, Michael",Statin patients with LDL in the past 365 days,190,274,0.6934,46:35.8
+"James, Michael",TD - Patients >18yrs with TD in last 10 years,480,1130,0.4248,38:55.2
+"James, Michael",WCV 3-6 yr,9,12,0.75,25:54.1
+"Kerlin ARNP, Sharon",AAA Screening,,,,38:19.5
+"Kerlin ARNP, Sharon",Advance Directive - Patients >55yrs w/Advance Directive ,,,,38:29.3
+"Kerlin ARNP, Sharon",Blood Pressure NOT Controlled  >140/90 mm Hg    ,,,,37:03.6
+"Kerlin ARNP, Sharon",Chlamydia,,,,38:08.3
+"Kerlin ARNP, Sharon",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),,,,38:00.2
+"Kerlin ARNP, Sharon",Diabetes Care Gaps ,,,,46:03.7
+"Kerlin ARNP, Sharon",DM PTS 40 to 75 w/STATIN,,,,45:27.1
+"Kerlin ARNP, Sharon",DM PTS 55-75 w/ACE/ARB,,,,45:22.5
+"Kerlin ARNP, Sharon",Eye exam,,,,37:08.3
+"Kerlin ARNP, Sharon",Foot Exam,,,,37:13.4
+"Kerlin ARNP, Sharon",HgbA1c < 7.0                     ,,,,37:19.0
+"Kerlin ARNP, Sharon",HgbA1c NOT > 9.0 (poor control) ,,,,37:25.0
+"Kerlin ARNP, Sharon",Hypertension Patients 18-59 years BP <140/90,,,,37:40.5
+"Kerlin ARNP, Sharon",Hypertension Patients over 18 BP <140/90,,,,37:52.1
+"Kerlin ARNP, Sharon",Hypertension Patients over 59 years BP <150/90,,,,37:45.6
+"Kerlin ARNP, Sharon",Mammogram Ages 52 -74,,,,38:12.8
+"Kerlin ARNP, Sharon",Nephropathy Assessment,,,,37:30.2
+"Kerlin ARNP, Sharon",Pap Smear Report,,,,46:09.2
+"Kerlin ARNP, Sharon",Pneumovax - DM patients w/current pneumovax,,,,38:35.2
+"Kerlin ARNP, Sharon",Pneumovax - Patients Age>65 w/current pneumovax,,,,38:41.0
+"Kerlin ARNP, Sharon",Pneumovax - Smokers w/current pneumovax,,,,38:47.7
+"Kerlin ARNP, Sharon",Smoking Cessation Advice or Treatment ,,,,37:36.4
+"Kerlin ARNP, Sharon",Statin patients with LDL in the past 365 days,,,,46:35.8
+"Kerlin ARNP, Sharon",TD - Patients >18yrs with TD in last 10 years,,,,38:55.2
+"Kerlin ARNP, Sharon",WCV 3-6 yr,,,,25:54.1
+"Klassen ARNP, Jessica",AAA Screening,1,10,0.1,38:19.5
+"Klassen ARNP, Jessica",Advance Directive - Patients >55yrs w/Advance Directive ,15,193,0.0777,38:29.3
+"Klassen ARNP, Jessica",Blood Pressure NOT Controlled  >140/90 mm Hg    ,7,40,0.175,37:03.6
+"Klassen ARNP, Jessica",Chlamydia,1,4,0.25,38:08.3
+"Klassen ARNP, Jessica",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),67,182,0.3681,38:00.2
+"Klassen ARNP, Jessica",Diabetes Care Gaps ,30,40,0.75,46:03.7
+"Klassen ARNP, Jessica",DM PTS 40 to 75 w/STATIN,14,28,0.5,45:27.1
+"Klassen ARNP, Jessica",DM PTS 55-75 w/ACE/ARB,13,22,0.5909,45:22.5
+"Klassen ARNP, Jessica",Eye exam,8,40,0.2,37:08.3
+"Klassen ARNP, Jessica",Foot Exam,24,40,0.6,37:13.4
+"Klassen ARNP, Jessica",HgbA1c < 7.0                     ,15,40,0.375,37:19.0
+"Klassen ARNP, Jessica",HgbA1c NOT > 9.0 (poor control) ,36,40,0.9,37:25.0
+"Klassen ARNP, Jessica",Hypertension Patients 18-59 years BP <140/90,36,46,0.7826,37:40.5
+"Klassen ARNP, Jessica",Hypertension Patients over 18 BP <140/90,107,123,0.8699,37:52.1
+"Klassen ARNP, Jessica",Hypertension Patients over 59 years BP <150/90,81,84,0.9643,37:45.6
+"Klassen ARNP, Jessica",Mammogram Ages 52 -74,47,88,0.5341,38:12.8
+"Klassen ARNP, Jessica",Nephropathy Assessment,22,40,0.55,37:30.2
+"Klassen ARNP, Jessica",Pap Smear Report,71,141,0.5035,46:09.2
+"Klassen ARNP, Jessica",Pneumovax - DM patients w/current pneumovax,13,40,0.325,38:35.2
+"Klassen ARNP, Jessica",Pneumovax - Patients Age>65 w/current pneumovax,51,107,0.4766,38:41.0
+"Klassen ARNP, Jessica",Pneumovax - Smokers w/current pneumovax,11,46,0.2391,38:47.7
+"Klassen ARNP, Jessica",Smoking Cessation Advice or Treatment ,,3,,37:36.4
+"Klassen ARNP, Jessica",Statin patients with LDL in the past 365 days,42,69,0.6087,46:35.8
+"Klassen ARNP, Jessica",TD - Patients >18yrs with TD in last 10 years,182,410,0.4439,38:55.2
+"Klassen ARNP, Jessica",WCV 3-6 yr,6,18,0.3333,25:54.1
+"Lelonek, Meghan",AAA Screening,,9,,38:19.5
+"Lelonek, Meghan",Advance Directive - Patients >55yrs w/Advance Directive ,17,249,0.0683,38:29.3
+"Lelonek, Meghan",Blood Pressure NOT Controlled  >140/90 mm Hg    ,2,48,0.0417,37:03.6
+"Lelonek, Meghan",Chlamydia,10,32,0.3125,38:08.3
+"Lelonek, Meghan",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),151,290,0.5207,38:00.2
+"Lelonek, Meghan",Diabetes Care Gaps ,44,48,0.9167,46:03.7
+"Lelonek, Meghan",DM PTS 40 to 75 w/STATIN,26,35,0.7429,45:27.1
+"Lelonek, Meghan",DM PTS 55-75 w/ACE/ARB,23,28,0.8214,45:22.5
+"Lelonek, Meghan",Eye exam,20,48,0.4167,37:08.3
+"Lelonek, Meghan",Foot Exam,31,48,0.6458,37:13.4
+"Lelonek, Meghan",HgbA1c < 7.0                     ,19,48,0.3958,37:19.0
+"Lelonek, Meghan",HgbA1c NOT > 9.0 (poor control) ,45,48,0.9375,37:25.0
+"Lelonek, Meghan",Hypertension Patients 18-59 years BP <140/90,53,62,0.8548,37:40.5
+"Lelonek, Meghan",Hypertension Patients over 18 BP <140/90,123,140,0.8786,37:52.1
+"Lelonek, Meghan",Hypertension Patients over 59 years BP <150/90,78,85,0.9176,37:45.6
+"Lelonek, Meghan",Mammogram Ages 52 -74,101,198,0.5101,38:12.8
+"Lelonek, Meghan",Nephropathy Assessment,38,48,0.7917,37:30.2
+"Lelonek, Meghan",Pap Smear Report,480,712,0.6742,46:09.2
+"Lelonek, Meghan",Pneumovax - DM patients w/current pneumovax,40,48,0.8333,38:35.2
+"Lelonek, Meghan",Pneumovax - Patients Age>65 w/current pneumovax,51,92,0.5543,38:41.0
+"Lelonek, Meghan",Pneumovax - Smokers w/current pneumovax,29,85,0.3412,38:47.7
+"Lelonek, Meghan",Smoking Cessation Advice or Treatment ,5,5,1,37:36.4
+"Lelonek, Meghan",Statin patients with LDL in the past 365 days,62,94,0.6596,46:35.8
+"Lelonek, Meghan",TD - Patients >18yrs with TD in last 10 years,791,1115,0.7094,38:55.2
+"Lelonek, Meghan",WCV 3-6 yr,61,73,0.8356,25:54.1
+"Lewis MD, Stephen",AAA Screening,7,137,0.0511,38:19.5
+"Lewis MD, Stephen",Advance Directive - Patients >55yrs w/Advance Directive ,74,815,0.0908,38:29.3
+"Lewis MD, Stephen",Blood Pressure NOT Controlled  >140/90 mm Hg    ,13,180,0.0722,37:03.6
+"Lewis MD, Stephen",Chlamydia,3,11,0.2727,38:08.3
+"Lewis MD, Stephen",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),528,780,0.6769,38:00.2
+"Lewis MD, Stephen",Diabetes Care Gaps ,166,180,0.9222,46:03.7
+"Lewis MD, Stephen",DM PTS 40 to 75 w/STATIN,96,133,0.7218,45:27.1
+"Lewis MD, Stephen",DM PTS 55-75 w/ACE/ARB,78,107,0.729,45:22.5
+"Lewis MD, Stephen",Eye exam,69,180,0.3833,37:08.3
+"Lewis MD, Stephen",Foot Exam,127,180,0.7056,37:13.4
+"Lewis MD, Stephen",HgbA1c < 7.0                     ,101,180,0.5611,37:19.0
+"Lewis MD, Stephen",HgbA1c NOT > 9.0 (poor control) ,169,180,0.9389,37:25.0
+"Lewis MD, Stephen",Hypertension Patients 18-59 years BP <140/90,149,184,0.8098,37:40.5
+"Lewis MD, Stephen",Hypertension Patients over 18 BP <140/90,483,567,0.8519,37:52.1
+"Lewis MD, Stephen",Hypertension Patients over 59 years BP <150/90,358,404,0.8861,37:45.6
+"Lewis MD, Stephen",Mammogram Ages 52 -74,146,229,0.6376,38:12.8
+"Lewis MD, Stephen",Nephropathy Assessment,142,180,0.7889,37:30.2
+"Lewis MD, Stephen",Pap Smear Report,271,377,0.7188,46:09.2
+"Lewis MD, Stephen",Pneumovax - DM patients w/current pneumovax,152,180,0.8444,38:35.2
+"Lewis MD, Stephen",Pneumovax - Patients Age>65 w/current pneumovax,415,503,0.825,38:41.0
+"Lewis MD, Stephen",Pneumovax - Smokers w/current pneumovax,107,241,0.444,38:47.7
+"Lewis MD, Stephen",Smoking Cessation Advice or Treatment ,22,26,0.8462,37:36.4
+"Lewis MD, Stephen",Statin patients with LDL in the past 365 days,278,393,0.7074,46:35.8
+"Lewis MD, Stephen",TD - Patients >18yrs with TD in last 10 years,1308,1667,0.7846,38:55.2
+"Lewis MD, Stephen",WCV 3-6 yr,67,73,0.9178,25:54.1
+"Maloney PA-C, Erin",AAA Screening,,,,38:19.5
+"Maloney PA-C, Erin",Advance Directive - Patients >55yrs w/Advance Directive ,,,,38:29.3
+"Maloney PA-C, Erin",Blood Pressure NOT Controlled  >140/90 mm Hg    ,,,,37:03.6
+"Maloney PA-C, Erin",Chlamydia,,,,38:08.3
+"Maloney PA-C, Erin",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),,,,38:00.2
+"Maloney PA-C, Erin",Diabetes Care Gaps ,,,,46:03.7
+"Maloney PA-C, Erin",DM PTS 40 to 75 w/STATIN,,,,45:27.1
+"Maloney PA-C, Erin",DM PTS 55-75 w/ACE/ARB,,,,45:22.5
+"Maloney PA-C, Erin",Eye exam,,,,37:08.3
+"Maloney PA-C, Erin",Foot Exam,,,,37:13.4
+"Maloney PA-C, Erin",HgbA1c < 7.0                     ,,,,37:19.0
+"Maloney PA-C, Erin",HgbA1c NOT > 9.0 (poor control) ,,,,37:25.0
+"Maloney PA-C, Erin",Hypertension Patients 18-59 years BP <140/90,,,,37:40.5
+"Maloney PA-C, Erin",Hypertension Patients over 18 BP <140/90,,,,37:52.1
+"Maloney PA-C, Erin",Hypertension Patients over 59 years BP <150/90,,,,37:45.6
+"Maloney PA-C, Erin",Mammogram Ages 52 -74,,,,38:12.8
+"Maloney PA-C, Erin",Nephropathy Assessment,,,,37:30.2
+"Maloney PA-C, Erin",Pap Smear Report,,,,46:09.2
+"Maloney PA-C, Erin",Pneumovax - DM patients w/current pneumovax,,,,38:35.2
+"Maloney PA-C, Erin",Pneumovax - Patients Age>65 w/current pneumovax,,,,38:41.0
+"Maloney PA-C, Erin",Pneumovax - Smokers w/current pneumovax,,,,38:47.7
+"Maloney PA-C, Erin",Smoking Cessation Advice or Treatment ,,,,37:36.4
+"Maloney PA-C, Erin",Statin patients with LDL in the past 365 days,,,,46:35.8
+"Maloney PA-C, Erin",TD - Patients >18yrs with TD in last 10 years,,,,38:55.2
+"Maloney PA-C, Erin",WCV 3-6 yr,,,,25:54.1
+"McConahey PA-C, Joseph",AAA Screening,,,,38:19.5
+"McConahey PA-C, Joseph",Advance Directive - Patients >55yrs w/Advance Directive ,,1,,38:29.3
+"McConahey PA-C, Joseph",Blood Pressure NOT Controlled  >140/90 mm Hg    ,,,,37:03.6
+"McConahey PA-C, Joseph",Chlamydia,,,,38:08.3
+"McConahey PA-C, Joseph",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),,1,,38:00.2
+"McConahey PA-C, Joseph",Diabetes Care Gaps ,,,,46:03.7
+"McConahey PA-C, Joseph",DM PTS 40 to 75 w/STATIN,,,,45:27.1
+"McConahey PA-C, Joseph",DM PTS 55-75 w/ACE/ARB,,,,45:22.5
+"McConahey PA-C, Joseph",Eye exam,,,,37:08.3
+"McConahey PA-C, Joseph",Foot Exam,,,,37:13.4
+"McConahey PA-C, Joseph",HgbA1c < 7.0                     ,,,,37:19.0
+"McConahey PA-C, Joseph",HgbA1c NOT > 9.0 (poor control) ,,,,37:25.0
+"McConahey PA-C, Joseph",Hypertension Patients 18-59 years BP <140/90,,,,37:40.5
+"McConahey PA-C, Joseph",Hypertension Patients over 18 BP <140/90,,,,37:52.1
+"McConahey PA-C, Joseph",Hypertension Patients over 59 years BP <150/90,,,,37:45.6
+"McConahey PA-C, Joseph",Mammogram Ages 52 -74,,1,,38:12.8
+"McConahey PA-C, Joseph",Nephropathy Assessment,,,,37:30.2
+"McConahey PA-C, Joseph",Pap Smear Report,,4,,46:09.2
+"McConahey PA-C, Joseph",Pneumovax - DM patients w/current pneumovax,,,,38:35.2
+"McConahey PA-C, Joseph",Pneumovax - Patients Age>65 w/current pneumovax,,,,38:41.0
+"McConahey PA-C, Joseph",Pneumovax - Smokers w/current pneumovax,,,,38:47.7
+"McConahey PA-C, Joseph",Smoking Cessation Advice or Treatment ,,,,37:36.4
+"McConahey PA-C, Joseph",Statin patients with LDL in the past 365 days,,,,46:35.8
+"McConahey PA-C, Joseph",TD - Patients >18yrs with TD in last 10 years,,4,,38:55.2
+"McConahey PA-C, Joseph",WCV 3-6 yr,,,,25:54.1
+"McLaughlin MD, Patrick",AAA Screening,15,55,0.2727,38:19.5
+"McLaughlin MD, Patrick",Advance Directive - Patients >55yrs w/Advance Directive ,28,399,0.0702,38:29.3
+"McLaughlin MD, Patrick",Blood Pressure NOT Controlled  >140/90 mm Hg    ,10,47,0.2128,37:03.6
+"McLaughlin MD, Patrick",Chlamydia,3,18,0.1667,38:08.3
+"McLaughlin MD, Patrick",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),281,442,0.6357,38:00.2
+"McLaughlin MD, Patrick",Diabetes Care Gaps ,40,47,0.8511,46:03.7
+"McLaughlin MD, Patrick",DM PTS 40 to 75 w/STATIN,28,39,0.7179,45:27.1
+"McLaughlin MD, Patrick",DM PTS 55-75 w/ACE/ARB,21,28,0.75,45:22.5
+"McLaughlin MD, Patrick",Eye exam,12,47,0.2553,37:08.3
+"McLaughlin MD, Patrick",Foot Exam,26,47,0.5532,37:13.4
+"McLaughlin MD, Patrick",HgbA1c < 7.0                     ,21,47,0.4468,37:19.0
+"McLaughlin MD, Patrick",HgbA1c NOT > 9.0 (poor control) ,42,47,0.8936,37:25.0
+"McLaughlin MD, Patrick",Hypertension Patients 18-59 years BP <140/90,68,88,0.7727,37:40.5
+"McLaughlin MD, Patrick",Hypertension Patients over 18 BP <140/90,176,223,0.7892,37:52.1
+"McLaughlin MD, Patrick",Hypertension Patients over 59 years BP <150/90,115,141,0.8156,37:45.6
+"McLaughlin MD, Patrick",Mammogram Ages 52 -74,84,169,0.497,38:12.8
+"McLaughlin MD, Patrick",Nephropathy Assessment,25,47,0.5319,37:30.2
+"McLaughlin MD, Patrick",Pap Smear Report,223,408,0.5466,46:09.2
+"McLaughlin MD, Patrick",Pneumovax - DM patients w/current pneumovax,35,47,0.7447,38:35.2
+"McLaughlin MD, Patrick",Pneumovax - Patients Age>65 w/current pneumovax,139,191,0.7277,38:41.0
+"McLaughlin MD, Patrick",Pneumovax - Smokers w/current pneumovax,27,76,0.3553,38:47.7
+"McLaughlin MD, Patrick",Smoking Cessation Advice or Treatment ,3,4,0.75,37:36.4
+"McLaughlin MD, Patrick",Statin patients with LDL in the past 365 days,109,166,0.6566,46:35.8
+"McLaughlin MD, Patrick",TD - Patients >18yrs with TD in last 10 years,726,1144,0.6346,38:55.2
+"McLaughlin MD, Patrick",WCV 3-6 yr,10,15,0.6667,25:54.1
+"McPherson ARNP, Sally",AAA Screening,2,41,0.0488,38:19.5
+"McPherson ARNP, Sally",Advance Directive - Patients >55yrs w/Advance Directive ,11,416,0.0264,38:29.3
+"McPherson ARNP, Sally",Blood Pressure NOT Controlled  >140/90 mm Hg    ,19,84,0.2262,37:03.6
+"McPherson ARNP, Sally",Chlamydia,1,2,0.5,38:08.3
+"McPherson ARNP, Sally",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),257,470,0.5468,38:00.2
+"McPherson ARNP, Sally",Diabetes Care Gaps ,79,84,0.9405,46:03.7
+"McPherson ARNP, Sally",DM PTS 40 to 75 w/STATIN,56,66,0.8485,45:27.1
+"McPherson ARNP, Sally",DM PTS 55-75 w/ACE/ARB,37,50,0.74,45:22.5
+"McPherson ARNP, Sally",Eye exam,44,84,0.5238,37:08.3
+"McPherson ARNP, Sally",Foot Exam,70,84,0.8333,37:13.4
+"McPherson ARNP, Sally",HgbA1c < 7.0                     ,37,84,0.4405,37:19.0
+"McPherson ARNP, Sally",HgbA1c NOT > 9.0 (poor control) ,72,84,0.8571,37:25.0
+"McPherson ARNP, Sally",Hypertension Patients 18-59 years BP <140/90,95,118,0.8051,37:40.5
+"McPherson ARNP, Sally",Hypertension Patients over 18 BP <140/90,243,281,0.8648,37:52.1
+"McPherson ARNP, Sally",Hypertension Patients over 59 years BP <150/90,158,171,0.924,37:45.6
+"McPherson ARNP, Sally",Mammogram Ages 52 -74,127,210,0.6048,38:12.8
+"McPherson ARNP, Sally",Nephropathy Assessment,64,84,0.7619,37:30.2
+"McPherson ARNP, Sally",Pap Smear Report,234,388,0.6031,46:09.2
+"McPherson ARNP, Sally",Pneumovax - DM patients w/current pneumovax,70,84,0.8333,38:35.2
+"McPherson ARNP, Sally",Pneumovax - Patients Age>65 w/current pneumovax,138,184,0.75,38:41.0
+"McPherson ARNP, Sally",Pneumovax - Smokers w/current pneumovax,46,123,0.374,38:47.7
+"McPherson ARNP, Sally",Smoking Cessation Advice or Treatment ,5,13,0.3846,37:36.4
+"McPherson ARNP, Sally",Statin patients with LDL in the past 365 days,135,177,0.7627,46:35.8
+"McPherson ARNP, Sally",TD - Patients >18yrs with TD in last 10 years,836,1128,0.7411,38:55.2
+"McPherson ARNP, Sally",WCV 3-6 yr,15,21,0.7143,25:54.1
+"Muller MD, Lucia",AAA Screening,12,17,0.7059,38:19.5
+"Muller MD, Lucia",Advance Directive - Patients >55yrs w/Advance Directive ,20,321,0.0623,38:29.3
+"Muller MD, Lucia",Blood Pressure NOT Controlled  >140/90 mm Hg    ,17,38,0.4474,37:03.6
+"Muller MD, Lucia",Chlamydia,1,6,0.1667,38:08.3
+"Muller MD, Lucia",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),197,328,0.6006,38:00.2
+"Muller MD, Lucia",Diabetes Care Gaps ,38,38,1,46:03.7
+"Muller MD, Lucia",DM PTS 40 to 75 w/STATIN,19,28,0.6786,45:27.1
+"Muller MD, Lucia",DM PTS 55-75 w/ACE/ARB,13,19,0.6842,45:22.5
+"Muller MD, Lucia",Eye exam,30,38,0.7895,37:08.3
+"Muller MD, Lucia",Foot Exam,35,38,0.9211,37:13.4
+"Muller MD, Lucia",HgbA1c < 7.0                     ,21,38,0.5526,37:19.0
+"Muller MD, Lucia",HgbA1c NOT > 9.0 (poor control) ,37,38,0.9737,37:25.0
+"Muller MD, Lucia",Hypertension Patients 18-59 years BP <140/90,44,63,0.6984,37:40.5
+"Muller MD, Lucia",Hypertension Patients over 18 BP <140/90,155,202,0.7673,37:52.1
+"Muller MD, Lucia",Hypertension Patients over 59 years BP <150/90,122,142,0.8592,37:45.6
+"Muller MD, Lucia",Mammogram Ages 52 -74,139,215,0.6465,38:12.8
+"Muller MD, Lucia",Nephropathy Assessment,34,38,0.8947,37:30.2
+"Muller MD, Lucia",Pap Smear Report,237,342,0.693,46:09.2
+"Muller MD, Lucia",Pneumovax - DM patients w/current pneumovax,32,38,0.8421,38:35.2
+"Muller MD, Lucia",Pneumovax - Patients Age>65 w/current pneumovax,147,178,0.8258,38:41.0
+"Muller MD, Lucia",Pneumovax - Smokers w/current pneumovax,23,46,0.5,38:47.7
+"Muller MD, Lucia",Smoking Cessation Advice or Treatment ,2,3,0.6667,37:36.4
+"Muller MD, Lucia",Statin patients with LDL in the past 365 days,90,113,0.7965,46:35.8
+"Muller MD, Lucia",TD - Patients >18yrs with TD in last 10 years,563,695,0.8101,38:55.2
+"Muller MD, Lucia",WCV 3-6 yr,51,52,0.9808,25:54.1
+"O'Keefe MD, Karen",AAA Screening,2,16,0.125,38:19.5
+"O'Keefe MD, Karen",Advance Directive - Patients >55yrs w/Advance Directive ,78,398,0.196,38:29.3
+"O'Keefe MD, Karen",Blood Pressure NOT Controlled  >140/90 mm Hg    ,11,57,0.193,37:03.6
+"O'Keefe MD, Karen",Chlamydia,8,34,0.2353,38:08.3
+"O'Keefe MD, Karen",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),340,441,0.771,38:00.2
+"O'Keefe MD, Karen",Diabetes Care Gaps ,53,57,0.9298,46:03.7
+"O'Keefe MD, Karen",DM PTS 40 to 75 w/STATIN,37,46,0.8043,45:27.1
+"O'Keefe MD, Karen",DM PTS 55-75 w/ACE/ARB,32,38,0.8421,45:22.5
+"O'Keefe MD, Karen",Eye exam,30,57,0.5263,37:08.3
+"O'Keefe MD, Karen",Foot Exam,47,57,0.8246,37:13.4
+"O'Keefe MD, Karen",HgbA1c < 7.0                     ,23,57,0.4035,37:19.0
+"O'Keefe MD, Karen",HgbA1c NOT > 9.0 (poor control) ,50,57,0.8772,37:25.0
+"O'Keefe MD, Karen",Hypertension Patients 18-59 years BP <140/90,46,63,0.7302,37:40.5
+"O'Keefe MD, Karen",Hypertension Patients over 18 BP <140/90,174,209,0.8325,37:52.1
+"O'Keefe MD, Karen",Hypertension Patients over 59 years BP <150/90,140,154,0.9091,37:45.6
+"O'Keefe MD, Karen",Mammogram Ages 52 -74,268,343,0.7813,38:12.8
+"O'Keefe MD, Karen",Nephropathy Assessment,35,57,0.614,37:30.2
+"O'Keefe MD, Karen",Pap Smear Report,368,438,0.8402,46:09.2
+"O'Keefe MD, Karen",Pneumovax - DM patients w/current pneumovax,48,57,0.8421,38:35.2
+"O'Keefe MD, Karen",Pneumovax - Patients Age>65 w/current pneumovax,172,213,0.8075,38:41.0
+"O'Keefe MD, Karen",Pneumovax - Smokers w/current pneumovax,13,42,0.3095,38:47.7
+"O'Keefe MD, Karen",Smoking Cessation Advice or Treatment ,1,2,0.5,37:36.4
+"O'Keefe MD, Karen",Statin patients with LDL in the past 365 days,129,168,0.7679,46:35.8
+"O'Keefe MD, Karen",TD - Patients >18yrs with TD in last 10 years,726,831,0.8736,38:55.2
+"O'Keefe MD, Karen",WCV 3-6 yr,28,30,0.9333,25:54.1
+"Pavlik ARNP, Lillian",AAA Screening,,,,38:19.5
+"Pavlik ARNP, Lillian",Advance Directive - Patients >55yrs w/Advance Directive ,,,,38:29.3
+"Pavlik ARNP, Lillian",Blood Pressure NOT Controlled  >140/90 mm Hg    ,,,,37:03.6
+"Pavlik ARNP, Lillian",Chlamydia,,,,38:08.3
+"Pavlik ARNP, Lillian",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),,,,38:00.2
+"Pavlik ARNP, Lillian",Diabetes Care Gaps ,,,,46:03.7
+"Pavlik ARNP, Lillian",DM PTS 40 to 75 w/STATIN,,,,45:27.1
+"Pavlik ARNP, Lillian",DM PTS 55-75 w/ACE/ARB,,,,45:22.5
+"Pavlik ARNP, Lillian",Eye exam,,,,37:08.3
+"Pavlik ARNP, Lillian",Foot Exam,,,,37:13.4
+"Pavlik ARNP, Lillian",HgbA1c < 7.0                     ,,,,37:19.0
+"Pavlik ARNP, Lillian",HgbA1c NOT > 9.0 (poor control) ,,,,37:25.0
+"Pavlik ARNP, Lillian",Hypertension Patients 18-59 years BP <140/90,,,,37:40.5
+"Pavlik ARNP, Lillian",Hypertension Patients over 18 BP <140/90,,,,37:52.1
+"Pavlik ARNP, Lillian",Hypertension Patients over 59 years BP <150/90,,,,37:45.6
+"Pavlik ARNP, Lillian",Mammogram Ages 52 -74,,,,38:12.8
+"Pavlik ARNP, Lillian",Nephropathy Assessment,,,,37:30.2
+"Pavlik ARNP, Lillian",Pap Smear Report,,,,46:09.2
+"Pavlik ARNP, Lillian",Pneumovax - DM patients w/current pneumovax,,,,38:35.2
+"Pavlik ARNP, Lillian",Pneumovax - Patients Age>65 w/current pneumovax,,,,38:41.0
+"Pavlik ARNP, Lillian",Pneumovax - Smokers w/current pneumovax,,,,38:47.7
+"Pavlik ARNP, Lillian",Smoking Cessation Advice or Treatment ,,,,37:36.4
+"Pavlik ARNP, Lillian",Statin patients with LDL in the past 365 days,,,,46:35.8
+"Pavlik ARNP, Lillian",TD - Patients >18yrs with TD in last 10 years,,,,38:55.2
+"Pavlik ARNP, Lillian",WCV 3-6 yr,,,,25:54.1
+"Payne-Zajac PA-C, Patricia",AAA Screening,1,8,0.125,38:19.5
+"Payne-Zajac PA-C, Patricia",Advance Directive - Patients >55yrs w/Advance Directive ,17,137,0.1241,38:29.3
+"Payne-Zajac PA-C, Patricia",Blood Pressure NOT Controlled  >140/90 mm Hg    ,6,30,0.2,37:03.6
+"Payne-Zajac PA-C, Patricia",Chlamydia,,2,,38:08.3
+"Payne-Zajac PA-C, Patricia",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),76,123,0.6179,38:00.2
+"Payne-Zajac PA-C, Patricia",Diabetes Care Gaps ,29,30,0.9667,46:03.7
+"Payne-Zajac PA-C, Patricia",DM PTS 40 to 75 w/STATIN,11,18,0.6111,45:27.1
+"Payne-Zajac PA-C, Patricia",DM PTS 55-75 w/ACE/ARB,13,14,0.9286,45:22.5
+"Payne-Zajac PA-C, Patricia",Eye exam,8,30,0.2667,37:08.3
+"Payne-Zajac PA-C, Patricia",Foot Exam,26,30,0.8667,37:13.4
+"Payne-Zajac PA-C, Patricia",HgbA1c < 7.0                     ,16,30,0.5333,37:19.0
+"Payne-Zajac PA-C, Patricia",HgbA1c NOT > 9.0 (poor control) ,29,30,0.9667,37:25.0
+"Payne-Zajac PA-C, Patricia",Hypertension Patients 18-59 years BP <140/90,22,28,0.7857,37:40.5
+"Payne-Zajac PA-C, Patricia",Hypertension Patients over 18 BP <140/90,80,92,0.8696,37:52.1
+"Payne-Zajac PA-C, Patricia",Hypertension Patients over 59 years BP <150/90,63,66,0.9545,37:45.6
+"Payne-Zajac PA-C, Patricia",Mammogram Ages 52 -74,57,83,0.6867,38:12.8
+"Payne-Zajac PA-C, Patricia",Nephropathy Assessment,20,30,0.6667,37:30.2
+"Payne-Zajac PA-C, Patricia",Pap Smear Report,65,105,0.619,46:09.2
+"Payne-Zajac PA-C, Patricia",Pneumovax - DM patients w/current pneumovax,18,30,0.6,38:35.2
+"Payne-Zajac PA-C, Patricia",Pneumovax - Patients Age>65 w/current pneumovax,60,88,0.6818,38:41.0
+"Payne-Zajac PA-C, Patricia",Pneumovax - Smokers w/current pneumovax,10,27,0.3704,38:47.7
+"Payne-Zajac PA-C, Patricia",Smoking Cessation Advice or Treatment ,1,1,1,37:36.4
+"Payne-Zajac PA-C, Patricia",Statin patients with LDL in the past 365 days,58,69,0.8406,46:35.8
+"Payne-Zajac PA-C, Patricia",TD - Patients >18yrs with TD in last 10 years,183,260,0.7038,38:55.2
+"Payne-Zajac PA-C, Patricia",WCV 3-6 yr,4,12,0.3333,25:54.1
+"Pederson MD, Bruce",AAA Screening,9,149,0.0604,38:19.5
+"Pederson MD, Bruce",Advance Directive - Patients >55yrs w/Advance Directive ,56,1038,0.0539,38:29.3
+"Pederson MD, Bruce",Blood Pressure NOT Controlled  >140/90 mm Hg    ,45,191,0.2356,37:03.6
+"Pederson MD, Bruce",Chlamydia,,5,,38:08.3
+"Pederson MD, Bruce",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),519,892,0.5818,38:00.2
+"Pederson MD, Bruce",Diabetes Care Gaps ,171,191,0.8953,46:03.7
+"Pederson MD, Bruce",DM PTS 40 to 75 w/STATIN,82,139,0.5899,45:27.1
+"Pederson MD, Bruce",DM PTS 55-75 w/ACE/ARB,77,120,0.6417,45:22.5
+"Pederson MD, Bruce",Eye exam,71,191,0.3717,37:08.3
+"Pederson MD, Bruce",Foot Exam,159,191,0.8325,37:13.4
+"Pederson MD, Bruce",HgbA1c < 7.0                     ,68,191,0.356,37:19.0
+"Pederson MD, Bruce",HgbA1c NOT > 9.0 (poor control) ,162,191,0.8482,37:25.0
+"Pederson MD, Bruce",Hypertension Patients 18-59 years BP <140/90,71,144,0.4931,37:40.5
+"Pederson MD, Bruce",Hypertension Patients over 18 BP <140/90,441,639,0.6901,37:52.1
+"Pederson MD, Bruce",Hypertension Patients over 59 years BP <150/90,394,512,0.7695,37:45.6
+"Pederson MD, Bruce",Mammogram Ages 52 -74,156,318,0.4906,38:12.8
+"Pederson MD, Bruce",Nephropathy Assessment,145,191,0.7592,37:30.2
+"Pederson MD, Bruce",Pap Smear Report,108,277,0.3899,46:09.2
+"Pederson MD, Bruce",Pneumovax - DM patients w/current pneumovax,142,191,0.7435,38:35.2
+"Pederson MD, Bruce",Pneumovax - Patients Age>65 w/current pneumovax,484,670,0.7224,38:41.0
+"Pederson MD, Bruce",Pneumovax - Smokers w/current pneumovax,63,153,0.4118,38:47.7
+"Pederson MD, Bruce",Smoking Cessation Advice or Treatment ,,14,,37:36.4
+"Pederson MD, Bruce",Statin patients with LDL in the past 365 days,280,397,0.7053,46:35.8
+"Pederson MD, Bruce",TD - Patients >18yrs with TD in last 10 years,1002,1583,0.633,38:55.2
+"Pederson MD, Bruce",WCV 3-6 yr,20,22,0.9091,25:54.1
+"Ploudre MD, Jonathan",AAA Screening,18,96,0.1875,38:19.5
+"Ploudre MD, Jonathan",Advance Directive - Patients >55yrs w/Advance Directive ,18,593,0.0304,38:29.3
+"Ploudre MD, Jonathan",Blood Pressure NOT Controlled  >140/90 mm Hg    ,30,114,0.2632,37:03.6
+"Ploudre MD, Jonathan",Chlamydia,7,20,0.35,38:08.3
+"Ploudre MD, Jonathan",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),432,602,0.7176,38:00.2
+"Ploudre MD, Jonathan",Diabetes Care Gaps ,112,114,0.9825,46:03.7
+"Ploudre MD, Jonathan",DM PTS 40 to 75 w/STATIN,72,94,0.766,45:27.1
+"Ploudre MD, Jonathan",DM PTS 55-75 w/ACE/ARB,55,72,0.7639,45:22.5
+"Ploudre MD, Jonathan",Eye exam,90,114,0.7895,37:08.3
+"Ploudre MD, Jonathan",Foot Exam,100,114,0.8772,37:13.4
+"Ploudre MD, Jonathan",HgbA1c < 7.0                     ,44,114,0.386,37:19.0
+"Ploudre MD, Jonathan",HgbA1c NOT > 9.0 (poor control) ,100,114,0.8772,37:25.0
+"Ploudre MD, Jonathan",Hypertension Patients 18-59 years BP <140/90,80,109,0.7339,37:40.5
+"Ploudre MD, Jonathan",Hypertension Patients over 18 BP <140/90,284,339,0.8378,37:52.1
+"Ploudre MD, Jonathan",Hypertension Patients over 59 years BP <150/90,213,237,0.8987,37:45.6
+"Ploudre MD, Jonathan",Mammogram Ages 52 -74,136,192,0.7083,38:12.8
+"Ploudre MD, Jonathan",Nephropathy Assessment,97,114,0.8509,37:30.2
+"Ploudre MD, Jonathan",Pap Smear Report,237,318,0.7453,46:09.2
+"Ploudre MD, Jonathan",Pneumovax - DM patients w/current pneumovax,108,114,0.9474,38:35.2
+"Ploudre MD, Jonathan",Pneumovax - Patients Age>65 w/current pneumovax,288,319,0.9028,38:41.0
+"Ploudre MD, Jonathan",Pneumovax - Smokers w/current pneumovax,55,108,0.5093,38:47.7
+"Ploudre MD, Jonathan",Smoking Cessation Advice or Treatment ,16,16,1,37:36.4
+"Ploudre MD, Jonathan",Statin patients with LDL in the past 365 days,208,305,0.682,46:35.8
+"Ploudre MD, Jonathan",TD - Patients >18yrs with TD in last 10 years,1042,1245,0.8369,38:55.2
+"Ploudre MD, Jonathan",WCV 3-6 yr,47,48,0.9792,25:54.1
+"Raduege MD, John",AAA Screening,54,125,0.432,38:19.5
+"Raduege MD, John",Advance Directive - Patients >55yrs w/Advance Directive ,100,839,0.1192,38:29.3
+"Raduege MD, John",Blood Pressure NOT Controlled  >140/90 mm Hg    ,13,138,0.0942,37:03.6
+"Raduege MD, John",Chlamydia,3,14,0.2143,38:08.3
+"Raduege MD, John",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),660,819,0.8059,38:00.2
+"Raduege MD, John",Diabetes Care Gaps ,131,138,0.9493,46:03.7
+"Raduege MD, John",DM PTS 40 to 75 w/STATIN,96,110,0.8727,45:27.1
+"Raduege MD, John",DM PTS 55-75 w/ACE/ARB,80,97,0.8247,45:22.5
+"Raduege MD, John",Eye exam,64,138,0.4638,37:08.3
+"Raduege MD, John",Foot Exam,129,138,0.9348,37:13.4
+"Raduege MD, John",HgbA1c < 7.0                     ,73,138,0.529,37:19.0
+"Raduege MD, John",HgbA1c NOT > 9.0 (poor control) ,131,138,0.9493,37:25.0
+"Raduege MD, John",Hypertension Patients 18-59 years BP <140/90,93,104,0.8942,37:40.5
+"Raduege MD, John",Hypertension Patients over 18 BP <140/90,385,416,0.9255,37:52.1
+"Raduege MD, John",Hypertension Patients over 59 years BP <150/90,308,322,0.9565,37:45.6
+"Raduege MD, John",Mammogram Ages 52 -74,207,315,0.6571,38:12.8
+"Raduege MD, John",Nephropathy Assessment,119,138,0.8623,37:30.2
+"Raduege MD, John",Pap Smear Report,225,345,0.6522,46:09.2
+"Raduege MD, John",Pneumovax - DM patients w/current pneumovax,122,138,0.8841,38:35.2
+"Raduege MD, John",Pneumovax - Patients Age>65 w/current pneumovax,435,513,0.848,38:41.0
+"Raduege MD, John",Pneumovax - Smokers w/current pneumovax,47,95,0.4947,38:47.7
+"Raduege MD, John",Smoking Cessation Advice or Treatment ,6,6,1,37:36.4
+"Raduege MD, John",Statin patients with LDL in the past 365 days,364,454,0.8018,46:35.8
+"Raduege MD, John",TD - Patients >18yrs with TD in last 10 years,1243,1480,0.8399,38:55.2
+"Raduege MD, John",WCV 3-6 yr,54,56,0.9643,25:54.1
+"Regier ARNP, Teresa",AAA Screening,2,38,0.0526,38:19.5
+"Regier ARNP, Teresa",Advance Directive - Patients >55yrs w/Advance Directive ,20,472,0.0424,38:29.3
+"Regier ARNP, Teresa",Blood Pressure NOT Controlled  >140/90 mm Hg    ,13,91,0.1429,37:03.6
+"Regier ARNP, Teresa",Chlamydia,3,9,0.3333,38:08.3
+"Regier ARNP, Teresa",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),180,492,0.3659,38:00.2
+"Regier ARNP, Teresa",Diabetes Care Gaps ,73,91,0.8022,46:03.7
+"Regier ARNP, Teresa",DM PTS 40 to 75 w/STATIN,57,77,0.7403,45:27.1
+"Regier ARNP, Teresa",DM PTS 55-75 w/ACE/ARB,46,61,0.7541,45:22.5
+"Regier ARNP, Teresa",Eye exam,24,91,0.2637,37:08.3
+"Regier ARNP, Teresa",Foot Exam,66,91,0.7253,37:13.4
+"Regier ARNP, Teresa",HgbA1c < 7.0                     ,49,91,0.5385,37:19.0
+"Regier ARNP, Teresa",HgbA1c NOT > 9.0 (poor control) ,86,91,0.9451,37:25.0
+"Regier ARNP, Teresa",Hypertension Patients 18-59 years BP <140/90,76,112,0.6786,37:40.5
+"Regier ARNP, Teresa",Hypertension Patients over 18 BP <140/90,195,275,0.7091,37:52.1
+"Regier ARNP, Teresa",Hypertension Patients over 59 years BP <150/90,138,174,0.7931,37:45.6
+"Regier ARNP, Teresa",Mammogram Ages 52 -74,120,313,0.3834,38:12.8
+"Regier ARNP, Teresa",Nephropathy Assessment,54,91,0.5934,37:30.2
+"Regier ARNP, Teresa",Pap Smear Report,219,463,0.473,46:09.2
+"Regier ARNP, Teresa",Pneumovax - DM patients w/current pneumovax,42,91,0.4615,38:35.2
+"Regier ARNP, Teresa",Pneumovax - Patients Age>65 w/current pneumovax,92,233,0.3948,38:41.0
+"Regier ARNP, Teresa",Pneumovax - Smokers w/current pneumovax,34,145,0.2345,38:47.7
+"Regier ARNP, Teresa",Smoking Cessation Advice or Treatment ,5,7,0.7143,37:36.4
+"Regier ARNP, Teresa",Statin patients with LDL in the past 365 days,135,208,0.649,46:35.8
+"Regier ARNP, Teresa",TD - Patients >18yrs with TD in last 10 years,487,1040,0.4683,38:55.2
+"Regier ARNP, Teresa",WCV 3-6 yr,15,21,0.7143,25:54.1
+"Rey MD, Claudia",AAA Screening,3,33,0.0909,38:19.5
+"Rey MD, Claudia",Advance Directive - Patients >55yrs w/Advance Directive ,23,395,0.0582,38:29.3
+"Rey MD, Claudia",Blood Pressure NOT Controlled  >140/90 mm Hg    ,9,87,0.1034,37:03.6
+"Rey MD, Claudia",Chlamydia,20,40,0.5,38:08.3
+"Rey MD, Claudia",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),235,398,0.5905,38:00.2
+"Rey MD, Claudia",Diabetes Care Gaps ,73,87,0.8391,46:03.7
+"Rey MD, Claudia",DM PTS 40 to 75 w/STATIN,45,66,0.6818,45:27.1
+"Rey MD, Claudia",DM PTS 55-75 w/ACE/ARB,34,42,0.8095,45:22.5
+"Rey MD, Claudia",Eye exam,30,87,0.3448,37:08.3
+"Rey MD, Claudia",Foot Exam,52,87,0.5977,37:13.4
+"Rey MD, Claudia",HgbA1c < 7.0                     ,40,87,0.4598,37:19.0
+"Rey MD, Claudia",HgbA1c NOT > 9.0 (poor control) ,81,87,0.931,37:25.0
+"Rey MD, Claudia",Hypertension Patients 18-59 years BP <140/90,68,95,0.7158,37:40.5
+"Rey MD, Claudia",Hypertension Patients over 18 BP <140/90,203,262,0.7748,37:52.1
+"Rey MD, Claudia",Hypertension Patients over 59 years BP <150/90,143,171,0.8363,37:45.6
+"Rey MD, Claudia",Mammogram Ages 52 -74,137,231,0.5931,38:12.8
+"Rey MD, Claudia",Nephropathy Assessment,63,87,0.7241,37:30.2
+"Rey MD, Claudia",Pap Smear Report,385,526,0.7319,46:09.2
+"Rey MD, Claudia",Pneumovax - DM patients w/current pneumovax,70,87,0.8046,38:35.2
+"Rey MD, Claudia",Pneumovax - Patients Age>65 w/current pneumovax,163,230,0.7087,38:41.0
+"Rey MD, Claudia",Pneumovax - Smokers w/current pneumovax,54,107,0.5047,38:47.7
+"Rey MD, Claudia",Smoking Cessation Advice or Treatment ,8,12,0.6667,37:36.4
+"Rey MD, Claudia",Statin patients with LDL in the past 365 days,136,211,0.6445,46:35.8
+"Rey MD, Claudia",TD - Patients >18yrs with TD in last 10 years,801,1097,0.7302,38:55.2
+"Rey MD, Claudia",WCV 3-6 yr,82,88,0.9318,25:54.1
+"Rieger, Robert",AAA Screening,10,55,0.1818,38:19.5
+"Rieger, Robert",Advance Directive - Patients >55yrs w/Advance Directive ,110,447,0.2461,38:29.3
+"Rieger, Robert",Blood Pressure NOT Controlled  >140/90 mm Hg    ,8,69,0.1159,37:03.6
+"Rieger, Robert",Chlamydia,5,14,0.3571,38:08.3
+"Rieger, Robert",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),283,391,0.7238,38:00.2
+"Rieger, Robert",Diabetes Care Gaps ,67,69,0.971,46:03.7
+"Rieger, Robert",DM PTS 40 to 75 w/STATIN,28,41,0.6829,45:27.1
+"Rieger, Robert",DM PTS 55-75 w/ACE/ARB,21,33,0.6364,45:22.5
+"Rieger, Robert",Eye exam,50,69,0.7246,37:08.3
+"Rieger, Robert",Foot Exam,62,69,0.8986,37:13.4
+"Rieger, Robert",HgbA1c < 7.0                     ,37,69,0.5362,37:19.0
+"Rieger, Robert",HgbA1c NOT > 9.0 (poor control) ,64,69,0.9275,37:25.0
+"Rieger, Robert",Hypertension Patients 18-59 years BP <140/90,48,71,0.6761,37:40.5
+"Rieger, Robert",Hypertension Patients over 18 BP <140/90,199,245,0.8122,37:52.1
+"Rieger, Robert",Hypertension Patients over 59 years BP <150/90,157,177,0.887,37:45.6
+"Rieger, Robert",Mammogram Ages 52 -74,99,144,0.6875,38:12.8
+"Rieger, Robert",Nephropathy Assessment,45,69,0.6522,37:30.2
+"Rieger, Robert",Pap Smear Report,248,306,0.8105,46:09.2
+"Rieger, Robert",Pneumovax - DM patients w/current pneumovax,61,69,0.8841,38:35.2
+"Rieger, Robert",Pneumovax - Patients Age>65 w/current pneumovax,221,289,0.7647,38:41.0
+"Rieger, Robert",Pneumovax - Smokers w/current pneumovax,43,80,0.5375,38:47.7
+"Rieger, Robert",Smoking Cessation Advice or Treatment ,6,10,0.6,37:36.4
+"Rieger, Robert",Statin patients with LDL in the past 365 days,167,240,0.6958,46:35.8
+"Rieger, Robert",TD - Patients >18yrs with TD in last 10 years,697,929,0.7503,38:55.2
+"Rieger, Robert",WCV 3-6 yr,86,101,0.8515,25:54.1
+"Roessler MD, Deborah",AAA Screening,2,23,0.087,38:19.5
+"Roessler MD, Deborah",Advance Directive - Patients >55yrs w/Advance Directive ,86,701,0.1227,38:29.3
+"Roessler MD, Deborah",Blood Pressure NOT Controlled  >140/90 mm Hg    ,11,90,0.1222,37:03.6
+"Roessler MD, Deborah",Chlamydia,10,77,0.1299,38:08.3
+"Roessler MD, Deborah",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),531,766,0.6932,38:00.2
+"Roessler MD, Deborah",Diabetes Care Gaps ,85,90,0.9444,46:03.7
+"Roessler MD, Deborah",DM PTS 40 to 75 w/STATIN,44,71,0.6197,45:27.1
+"Roessler MD, Deborah",DM PTS 55-75 w/ACE/ARB,40,57,0.7018,45:22.5
+"Roessler MD, Deborah",Eye exam,48,90,0.5333,37:08.3
+"Roessler MD, Deborah",Foot Exam,76,90,0.8444,37:13.4
+"Roessler MD, Deborah",HgbA1c < 7.0                     ,41,90,0.4556,37:19.0
+"Roessler MD, Deborah",HgbA1c NOT > 9.0 (poor control) ,82,90,0.9111,37:25.0
+"Roessler MD, Deborah",Hypertension Patients 18-59 years BP <140/90,95,113,0.8407,37:40.5
+"Roessler MD, Deborah",Hypertension Patients over 18 BP <140/90,296,334,0.8862,37:52.1
+"Roessler MD, Deborah",Hypertension Patients over 59 years BP <150/90,213,232,0.9181,37:45.6
+"Roessler MD, Deborah",Mammogram Ages 52 -74,372,592,0.6284,38:12.8
+"Roessler MD, Deborah",Nephropathy Assessment,57,90,0.6333,37:30.2
+"Roessler MD, Deborah",Pap Smear Report,658,1034,0.6364,46:09.2
+"Roessler MD, Deborah",Pneumovax - DM patients w/current pneumovax,74,90,0.8222,38:35.2
+"Roessler MD, Deborah",Pneumovax - Patients Age>65 w/current pneumovax,245,326,0.7515,38:41.0
+"Roessler MD, Deborah",Pneumovax - Smokers w/current pneumovax,54,93,0.5806,38:47.7
+"Roessler MD, Deborah",Smoking Cessation Advice or Treatment ,4,4,1,37:36.4
+"Roessler MD, Deborah",Statin patients with LDL in the past 365 days,136,232,0.5862,46:35.8
+"Roessler MD, Deborah",TD - Patients >18yrs with TD in last 10 years,1316,1783,0.7381,38:55.2
+"Roessler MD, Deborah",WCV 3-6 yr,68,76,0.8947,25:54.1
+"Safford MD, Bertha",AAA Screening,5,19,0.2632,38:19.5
+"Safford MD, Bertha",Advance Directive - Patients >55yrs w/Advance Directive ,101,511,0.1977,38:29.3
+"Safford MD, Bertha",Blood Pressure NOT Controlled  >140/90 mm Hg    ,11,103,0.1068,37:03.6
+"Safford MD, Bertha",Chlamydia,2,6,0.3333,38:08.3
+"Safford MD, Bertha",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),329,451,0.7295,38:00.2
+"Safford MD, Bertha",Diabetes Care Gaps ,94,103,0.9126,46:03.7
+"Safford MD, Bertha",DM PTS 40 to 75 w/STATIN,52,75,0.6933,45:27.1
+"Safford MD, Bertha",DM PTS 55-75 w/ACE/ARB,40,57,0.7018,45:22.5
+"Safford MD, Bertha",Eye exam,54,103,0.5243,37:08.3
+"Safford MD, Bertha",Foot Exam,78,103,0.7573,37:13.4
+"Safford MD, Bertha",HgbA1c < 7.0                     ,51,103,0.4951,37:19.0
+"Safford MD, Bertha",HgbA1c NOT > 9.0 (poor control) ,91,103,0.8835,37:25.0
+"Safford MD, Bertha",Hypertension Patients 18-59 years BP <140/90,45,56,0.8036,37:40.5
+"Safford MD, Bertha",Hypertension Patients over 18 BP <140/90,218,258,0.845,37:52.1
+"Safford MD, Bertha",Hypertension Patients over 59 years BP <150/90,177,203,0.8719,37:45.6
+"Safford MD, Bertha",Mammogram Ages 52 -74,259,353,0.7337,38:12.8
+"Safford MD, Bertha",Nephropathy Assessment,76,103,0.7379,37:30.2
+"Safford MD, Bertha",Pap Smear Report,236,310,0.7613,46:09.2
+"Safford MD, Bertha",Pneumovax - DM patients w/current pneumovax,89,103,0.8641,38:35.2
+"Safford MD, Bertha",Pneumovax - Patients Age>65 w/current pneumovax,295,340,0.8676,38:41.0
+"Safford MD, Bertha",Pneumovax - Smokers w/current pneumovax,59,81,0.7284,38:47.7
+"Safford MD, Bertha",Smoking Cessation Advice or Treatment ,13,13,1,37:36.4
+"Safford MD, Bertha",Statin patients with LDL in the past 365 days,144,207,0.6957,46:35.8
+"Safford MD, Bertha",TD - Patients >18yrs with TD in last 10 years,653,792,0.8245,38:55.2
+"Safford MD, Bertha",WCV 3-6 yr,11,12,0.9167,25:54.1
+"Sauve ARNP, Lauren",AAA Screening,5,53,0.0943,38:19.5
+"Sauve ARNP, Lauren",Advance Directive - Patients >55yrs w/Advance Directive ,30,451,0.0665,38:29.3
+"Sauve ARNP, Lauren",Blood Pressure NOT Controlled  >140/90 mm Hg    ,26,93,0.2796,37:03.6
+"Sauve ARNP, Lauren",Chlamydia,3,4,0.75,38:08.3
+"Sauve ARNP, Lauren",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),308,514,0.5992,38:00.2
+"Sauve ARNP, Lauren",Diabetes Care Gaps ,85,93,0.914,46:03.7
+"Sauve ARNP, Lauren",DM PTS 40 to 75 w/STATIN,57,73,0.7808,45:27.1
+"Sauve ARNP, Lauren",DM PTS 55-75 w/ACE/ARB,43,55,0.7818,45:22.5
+"Sauve ARNP, Lauren",Eye exam,46,93,0.4946,37:08.3
+"Sauve ARNP, Lauren",Foot Exam,76,93,0.8172,37:13.4
+"Sauve ARNP, Lauren",HgbA1c < 7.0                     ,43,93,0.4624,37:19.0
+"Sauve ARNP, Lauren",HgbA1c NOT > 9.0 (poor control) ,79,93,0.8495,37:25.0
+"Sauve ARNP, Lauren",Hypertension Patients 18-59 years BP <140/90,83,124,0.6694,37:40.5
+"Sauve ARNP, Lauren",Hypertension Patients over 18 BP <140/90,232,307,0.7557,37:52.1
+"Sauve ARNP, Lauren",Hypertension Patients over 59 years BP <150/90,159,190,0.8368,37:45.6
+"Sauve ARNP, Lauren",Mammogram Ages 52 -74,146,209,0.6986,38:12.8
+"Sauve ARNP, Lauren",Nephropathy Assessment,68,93,0.7312,37:30.2
+"Sauve ARNP, Lauren",Pap Smear Report,233,418,0.5574,46:09.2
+"Sauve ARNP, Lauren",Pneumovax - DM patients w/current pneumovax,69,93,0.7419,38:35.2
+"Sauve ARNP, Lauren",Pneumovax - Patients Age>65 w/current pneumovax,173,215,0.8047,38:41.0
+"Sauve ARNP, Lauren",Pneumovax - Smokers w/current pneumovax,39,114,0.3421,38:47.7
+"Sauve ARNP, Lauren",Smoking Cessation Advice or Treatment ,2,4,0.5,37:36.4
+"Sauve ARNP, Lauren",Statin patients with LDL in the past 365 days,139,190,0.7316,46:35.8
+"Sauve ARNP, Lauren",TD - Patients >18yrs with TD in last 10 years,958,1242,0.7713,38:55.2
+"Sauve ARNP, Lauren",WCV 3-6 yr,10,20,0.5,25:54.1
+"Schimke, MD, Melana",AAA Screening,2,14,0.1429,38:19.5
+"Schimke, MD, Melana",Advance Directive - Patients >55yrs w/Advance Directive ,29,296,0.098,38:29.3
+"Schimke, MD, Melana",Blood Pressure NOT Controlled  >140/90 mm Hg    ,4,23,0.1739,37:03.6
+"Schimke, MD, Melana",Chlamydia,2,26,0.0769,38:08.3
+"Schimke, MD, Melana",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),208,327,0.6361,38:00.2
+"Schimke, MD, Melana",Diabetes Care Gaps ,22,23,0.9565,46:03.7
+"Schimke, MD, Melana",DM PTS 40 to 75 w/STATIN,12,20,0.6,45:27.1
+"Schimke, MD, Melana",DM PTS 55-75 w/ACE/ARB,7,14,0.5,45:22.5
+"Schimke, MD, Melana",Eye exam,13,23,0.5652,37:08.3
+"Schimke, MD, Melana",Foot Exam,20,23,0.8696,37:13.4
+"Schimke, MD, Melana",HgbA1c < 7.0                     ,8,23,0.3478,37:19.0
+"Schimke, MD, Melana",HgbA1c NOT > 9.0 (poor control) ,22,23,0.9565,37:25.0
+"Schimke, MD, Melana",Hypertension Patients 18-59 years BP <140/90,35,47,0.7447,37:40.5
+"Schimke, MD, Melana",Hypertension Patients over 18 BP <140/90,86,106,0.8113,37:52.1
+"Schimke, MD, Melana",Hypertension Patients over 59 years BP <150/90,59,63,0.9365,37:45.6
+"Schimke, MD, Melana",Mammogram Ages 52 -74,139,243,0.572,38:12.8
+"Schimke, MD, Melana",Nephropathy Assessment,18,23,0.7826,37:30.2
+"Schimke, MD, Melana",Pap Smear Report,410,634,0.6467,46:09.2
+"Schimke, MD, Melana",Pneumovax - DM patients w/current pneumovax,18,23,0.7826,38:35.2
+"Schimke, MD, Melana",Pneumovax - Patients Age>65 w/current pneumovax,74,130,0.5692,38:41.0
+"Schimke, MD, Melana",Pneumovax - Smokers w/current pneumovax,12,67,0.1791,38:47.7
+"Schimke, MD, Melana",Smoking Cessation Advice or Treatment ,2,2,1,37:36.4
+"Schimke, MD, Melana",Statin patients with LDL in the past 365 days,39,68,0.5735,46:35.8
+"Schimke, MD, Melana",TD - Patients >18yrs with TD in last 10 years,714,1002,0.7126,38:55.2
+"Schimke, MD, Melana",WCV 3-6 yr,44,47,0.9362,25:54.1
+"Shapiro MD, Miriam",AAA Screening,3,17,0.1765,38:19.5
+"Shapiro MD, Miriam",Advance Directive - Patients >55yrs w/Advance Directive ,61,459,0.1329,38:29.3
+"Shapiro MD, Miriam",Blood Pressure NOT Controlled  >140/90 mm Hg    ,1,51,0.0196,37:03.6
+"Shapiro MD, Miriam",Chlamydia,1,10,0.1,38:08.3
+"Shapiro MD, Miriam",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),358,489,0.7321,38:00.2
+"Shapiro MD, Miriam",Diabetes Care Gaps ,47,51,0.9216,46:03.7
+"Shapiro MD, Miriam",DM PTS 40 to 75 w/STATIN,30,39,0.7692,45:27.1
+"Shapiro MD, Miriam",DM PTS 55-75 w/ACE/ARB,22,28,0.7857,45:22.5
+"Shapiro MD, Miriam",Eye exam,30,51,0.5882,37:08.3
+"Shapiro MD, Miriam",Foot Exam,43,51,0.8431,37:13.4
+"Shapiro MD, Miriam",HgbA1c < 7.0                     ,24,51,0.4706,37:19.0
+"Shapiro MD, Miriam",HgbA1c NOT > 9.0 (poor control) ,46,51,0.902,37:25.0
+"Shapiro MD, Miriam",Hypertension Patients 18-59 years BP <140/90,65,76,0.8553,37:40.5
+"Shapiro MD, Miriam",Hypertension Patients over 18 BP <140/90,216,237,0.9114,37:52.1
+"Shapiro MD, Miriam",Hypertension Patients over 59 years BP <150/90,156,166,0.9398,37:45.6
+"Shapiro MD, Miriam",Mammogram Ages 52 -74,246,348,0.7069,38:12.8
+"Shapiro MD, Miriam",Nephropathy Assessment,39,51,0.7647,37:30.2
+"Shapiro MD, Miriam",Pap Smear Report,379,485,0.7814,46:09.2
+"Shapiro MD, Miriam",Pneumovax - DM patients w/current pneumovax,44,51,0.8627,38:35.2
+"Shapiro MD, Miriam",Pneumovax - Patients Age>65 w/current pneumovax,172,228,0.7544,38:41.0
+"Shapiro MD, Miriam",Pneumovax - Smokers w/current pneumovax,20,36,0.5556,38:47.7
+"Shapiro MD, Miriam",Smoking Cessation Advice or Treatment ,2,2,1,37:36.4
+"Shapiro MD, Miriam",Statin patients with LDL in the past 365 days,133,177,0.7514,46:35.8
+"Shapiro MD, Miriam",TD - Patients >18yrs with TD in last 10 years,739,943,0.7837,38:55.2
+"Shapiro MD, Miriam",WCV 3-6 yr,28,32,0.875,25:54.1
+"Short MD, Jason",AAA Screening,15,102,0.1471,38:19.5
+"Short MD, Jason",Advance Directive - Patients >55yrs w/Advance Directive ,73,660,0.1106,38:29.3
+"Short MD, Jason",Blood Pressure NOT Controlled  >140/90 mm Hg    ,27,123,0.2195,37:03.6
+"Short MD, Jason",Chlamydia,6,25,0.24,38:08.3
+"Short MD, Jason",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),515,697,0.7389,38:00.2
+"Short MD, Jason",Diabetes Care Gaps ,105,123,0.8537,46:03.7
+"Short MD, Jason",DM PTS 40 to 75 w/STATIN,75,96,0.7813,45:27.1
+"Short MD, Jason",DM PTS 55-75 w/ACE/ARB,68,74,0.9189,45:22.5
+"Short MD, Jason",Eye exam,44,123,0.3577,37:08.3
+"Short MD, Jason",Foot Exam,95,123,0.7724,37:13.4
+"Short MD, Jason",HgbA1c < 7.0                     ,54,123,0.439,37:19.0
+"Short MD, Jason",HgbA1c NOT > 9.0 (poor control) ,112,123,0.9106,37:25.0
+"Short MD, Jason",Hypertension Patients 18-59 years BP <140/90,106,136,0.7794,37:40.5
+"Short MD, Jason",Hypertension Patients over 18 BP <140/90,337,412,0.818,37:52.1
+"Short MD, Jason",Hypertension Patients over 59 years BP <150/90,249,283,0.8799,37:45.6
+"Short MD, Jason",Mammogram Ages 52 -74,131,202,0.6485,38:12.8
+"Short MD, Jason",Nephropathy Assessment,81,123,0.6585,37:30.2
+"Short MD, Jason",Pap Smear Report,204,350,0.5829,46:09.2
+"Short MD, Jason",Pneumovax - DM patients w/current pneumovax,105,123,0.8537,38:35.2
+"Short MD, Jason",Pneumovax - Patients Age>65 w/current pneumovax,301,374,0.8048,38:41.0
+"Short MD, Jason",Pneumovax - Smokers w/current pneumovax,38,96,0.3958,38:47.7
+"Short MD, Jason",Smoking Cessation Advice or Treatment ,4,6,0.6667,37:36.4
+"Short MD, Jason",Statin patients with LDL in the past 365 days,315,404,0.7797,46:35.8
+"Short MD, Jason",TD - Patients >18yrs with TD in last 10 years,1246,1561,0.7982,38:55.2
+"Short MD, Jason",WCV 3-6 yr,36,43,0.8372,25:54.1
+"Short MD, Vicki",AAA Screening,9,53,0.1698,38:19.5
+"Short MD, Vicki",Advance Directive - Patients >55yrs w/Advance Directive ,50,563,0.0888,38:29.3
+"Short MD, Vicki",Blood Pressure NOT Controlled  >140/90 mm Hg    ,16,83,0.1928,37:03.6
+"Short MD, Vicki",Chlamydia,9,36,0.25,38:08.3
+"Short MD, Vicki",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),407,621,0.6554,38:00.2
+"Short MD, Vicki",Diabetes Care Gaps ,76,83,0.9157,46:03.7
+"Short MD, Vicki",DM PTS 40 to 75 w/STATIN,55,66,0.8333,45:27.1
+"Short MD, Vicki",DM PTS 55-75 w/ACE/ARB,43,54,0.7963,45:22.5
+"Short MD, Vicki",Eye exam,31,83,0.3735,37:08.3
+"Short MD, Vicki",Foot Exam,57,83,0.6867,37:13.4
+"Short MD, Vicki",HgbA1c < 7.0                     ,38,83,0.4578,37:19.0
+"Short MD, Vicki",HgbA1c NOT > 9.0 (poor control) ,72,83,0.8675,37:25.0
+"Short MD, Vicki",Hypertension Patients 18-59 years BP <140/90,74,100,0.74,37:40.5
+"Short MD, Vicki",Hypertension Patients over 18 BP <140/90,227,283,0.8021,37:52.1
+"Short MD, Vicki",Hypertension Patients over 59 years BP <150/90,168,191,0.8796,37:45.6
+"Short MD, Vicki",Mammogram Ages 52 -74,237,370,0.6405,38:12.8
+"Short MD, Vicki",Nephropathy Assessment,62,83,0.747,37:30.2
+"Short MD, Vicki",Pap Smear Report,366,682,0.5367,46:09.2
+"Short MD, Vicki",Pneumovax - DM patients w/current pneumovax,67,83,0.8072,38:35.2
+"Short MD, Vicki",Pneumovax - Patients Age>65 w/current pneumovax,229,275,0.8327,38:41.0
+"Short MD, Vicki",Pneumovax - Smokers w/current pneumovax,43,83,0.5181,38:47.7
+"Short MD, Vicki",Smoking Cessation Advice or Treatment ,3,9,0.3333,37:36.4
+"Short MD, Vicki",Statin patients with LDL in the past 365 days,191,255,0.749,46:35.8
+"Short MD, Vicki",TD - Patients >18yrs with TD in last 10 years,934,1439,0.6491,38:55.2
+"Short MD, Vicki",WCV 3-6 yr,17,26,0.6538,25:54.1
+"Snyder DO, Ashley",AAA Screening,3,9,0.3333,38:19.5
+"Snyder DO, Ashley",Advance Directive - Patients >55yrs w/Advance Directive ,27,457,0.0591,38:29.3
+"Snyder DO, Ashley",Blood Pressure NOT Controlled  >140/90 mm Hg    ,5,58,0.0862,37:03.6
+"Snyder DO, Ashley",Chlamydia,7,25,0.28,38:08.3
+"Snyder DO, Ashley",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),299,491,0.609,38:00.2
+"Snyder DO, Ashley",Diabetes Care Gaps ,52,58,0.8966,46:03.7
+"Snyder DO, Ashley",DM PTS 40 to 75 w/STATIN,36,45,0.8,45:27.1
+"Snyder DO, Ashley",DM PTS 55-75 w/ACE/ARB,28,36,0.7778,45:22.5
+"Snyder DO, Ashley",Eye exam,26,58,0.4483,37:08.3
+"Snyder DO, Ashley",Foot Exam,41,58,0.7069,37:13.4
+"Snyder DO, Ashley",HgbA1c < 7.0                     ,33,58,0.569,37:19.0
+"Snyder DO, Ashley",HgbA1c NOT > 9.0 (poor control) ,48,58,0.8276,37:25.0
+"Snyder DO, Ashley",Hypertension Patients 18-59 years BP <140/90,47,64,0.7344,37:40.5
+"Snyder DO, Ashley",Hypertension Patients over 18 BP <140/90,173,214,0.8084,37:52.1
+"Snyder DO, Ashley",Hypertension Patients over 59 years BP <150/90,140,157,0.8917,37:45.6
+"Snyder DO, Ashley",Mammogram Ages 52 -74,273,418,0.6531,38:12.8
+"Snyder DO, Ashley",Nephropathy Assessment,41,58,0.7069,37:30.2
+"Snyder DO, Ashley",Pap Smear Report,439,783,0.5607,46:09.2
+"Snyder DO, Ashley",Pneumovax - DM patients w/current pneumovax,50,58,0.8621,38:35.2
+"Snyder DO, Ashley",Pneumovax - Patients Age>65 w/current pneumovax,177,236,0.75,38:41.0
+"Snyder DO, Ashley",Pneumovax - Smokers w/current pneumovax,27,59,0.4576,38:47.7
+"Snyder DO, Ashley",Smoking Cessation Advice or Treatment ,2,2,1,37:36.4
+"Snyder DO, Ashley",Statin patients with LDL in the past 365 days,133,180,0.7389,46:35.8
+"Snyder DO, Ashley",TD - Patients >18yrs with TD in last 10 years,935,1237,0.7559,38:55.2
+"Snyder DO, Ashley",WCV 3-6 yr,19,34,0.5588,25:54.1
+"Snyder MD, Walter Kalani",AAA Screening,1,30,0.0333,38:19.5
+"Snyder MD, Walter Kalani",Advance Directive - Patients >55yrs w/Advance Directive ,16,229,0.0699,38:29.3
+"Snyder MD, Walter Kalani",Blood Pressure NOT Controlled  >140/90 mm Hg    ,6,39,0.1538,37:03.6
+"Snyder MD, Walter Kalani",Chlamydia,,4,,38:08.3
+"Snyder MD, Walter Kalani",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),96,248,0.3871,38:00.2
+"Snyder MD, Walter Kalani",Diabetes Care Gaps ,24,39,0.6154,46:03.7
+"Snyder MD, Walter Kalani",DM PTS 40 to 75 w/STATIN,17,25,0.68,45:27.1
+"Snyder MD, Walter Kalani",DM PTS 55-75 w/ACE/ARB,15,17,0.8824,45:22.5
+"Snyder MD, Walter Kalani",Eye exam,8,39,0.2051,37:08.3
+"Snyder MD, Walter Kalani",Foot Exam,21,39,0.5385,37:13.4
+"Snyder MD, Walter Kalani",HgbA1c < 7.0                     ,16,39,0.4103,37:19.0
+"Snyder MD, Walter Kalani",HgbA1c NOT > 9.0 (poor control) ,33,39,0.8462,37:25.0
+"Snyder MD, Walter Kalani",Hypertension Patients 18-59 years BP <140/90,28,52,0.5385,37:40.5
+"Snyder MD, Walter Kalani",Hypertension Patients over 18 BP <140/90,92,140,0.6571,37:52.1
+"Snyder MD, Walter Kalani",Hypertension Patients over 59 years BP <150/90,67,91,0.7363,37:45.6
+"Snyder MD, Walter Kalani",Mammogram Ages 52 -74,31,81,0.3827,38:12.8
+"Snyder MD, Walter Kalani",Nephropathy Assessment,20,39,0.5128,37:30.2
+"Snyder MD, Walter Kalani",Pap Smear Report,65,150,0.4333,46:09.2
+"Snyder MD, Walter Kalani",Pneumovax - DM patients w/current pneumovax,26,39,0.6667,38:35.2
+"Snyder MD, Walter Kalani",Pneumovax - Patients Age>65 w/current pneumovax,73,128,0.5703,38:41.0
+"Snyder MD, Walter Kalani",Pneumovax - Smokers w/current pneumovax,20,91,0.2198,38:47.7
+"Snyder MD, Walter Kalani",Smoking Cessation Advice or Treatment ,2,3,0.6667,37:36.4
+"Snyder MD, Walter Kalani",Statin patients with LDL in the past 365 days,40,84,0.4762,46:35.8
+"Snyder MD, Walter Kalani",TD - Patients >18yrs with TD in last 10 years,386,643,0.6003,38:55.2
+"Snyder MD, Walter Kalani",WCV 3-6 yr,33,44,0.75,25:54.1
+"Steele MD, Michael",AAA Screening,14,75,0.1867,38:19.5
+"Steele MD, Michael",Advance Directive - Patients >55yrs w/Advance Directive ,62,626,0.099,38:29.3
+"Steele MD, Michael",Blood Pressure NOT Controlled  >140/90 mm Hg    ,18,138,0.1304,37:03.6
+"Steele MD, Michael",Chlamydia,3,6,0.5,38:08.3
+"Steele MD, Michael",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),308,592,0.5203,38:00.2
+"Steele MD, Michael",Diabetes Care Gaps ,128,138,0.9275,46:03.7
+"Steele MD, Michael",DM PTS 40 to 75 w/STATIN,74,100,0.74,45:27.1
+"Steele MD, Michael",DM PTS 55-75 w/ACE/ARB,61,84,0.7262,45:22.5
+"Steele MD, Michael",Eye exam,47,138,0.3406,37:08.3
+"Steele MD, Michael",Foot Exam,111,138,0.8043,37:13.4
+"Steele MD, Michael",HgbA1c < 7.0                     ,69,138,0.5,37:19.0
+"Steele MD, Michael",HgbA1c NOT > 9.0 (poor control) ,127,138,0.9203,37:25.0
+"Steele MD, Michael",Hypertension Patients 18-59 years BP <140/90,83,109,0.7615,37:40.5
+"Steele MD, Michael",Hypertension Patients over 18 BP <140/90,310,371,0.8356,37:52.1
+"Steele MD, Michael",Hypertension Patients over 59 years BP <150/90,245,274,0.8942,37:45.6
+"Steele MD, Michael",Mammogram Ages 52 -74,104,223,0.4664,38:12.8
+"Steele MD, Michael",Nephropathy Assessment,101,138,0.7319,37:30.2
+"Steele MD, Michael",Pap Smear Report,141,272,0.5184,46:09.2
+"Steele MD, Michael",Pneumovax - DM patients w/current pneumovax,109,138,0.7899,38:35.2
+"Steele MD, Michael",Pneumovax - Patients Age>65 w/current pneumovax,254,380,0.6684,38:41.0
+"Steele MD, Michael",Pneumovax - Smokers w/current pneumovax,81,218,0.3716,38:47.7
+"Steele MD, Michael",Smoking Cessation Advice or Treatment ,14,19,0.7368,37:36.4
+"Steele MD, Michael",Statin patients with LDL in the past 365 days,211,261,0.8084,46:35.8
+"Steele MD, Michael",TD - Patients >18yrs with TD in last 10 years,780,1204,0.6478,38:55.2
+"Steele MD, Michael",WCV 3-6 yr,41,49,0.8367,25:54.1
+"Stewart ARNP, Sarah",AAA Screening,,,,38:19.5
+"Stewart ARNP, Sarah",Advance Directive - Patients >55yrs w/Advance Directive ,,4,,38:29.3
+"Stewart ARNP, Sarah",Blood Pressure NOT Controlled  >140/90 mm Hg    ,,,,37:03.6
+"Stewart ARNP, Sarah",Chlamydia,4,16,0.25,38:08.3
+"Stewart ARNP, Sarah",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),5,13,0.3846,38:00.2
+"Stewart ARNP, Sarah",Diabetes Care Gaps ,,,,46:03.7
+"Stewart ARNP, Sarah",DM PTS 40 to 75 w/STATIN,,,,45:27.1
+"Stewart ARNP, Sarah",DM PTS 55-75 w/ACE/ARB,,,,45:22.5
+"Stewart ARNP, Sarah",Eye exam,,,,37:08.3
+"Stewart ARNP, Sarah",Foot Exam,,,,37:13.4
+"Stewart ARNP, Sarah",HgbA1c < 7.0                     ,,,,37:19.0
+"Stewart ARNP, Sarah",HgbA1c NOT > 9.0 (poor control) ,,,,37:25.0
+"Stewart ARNP, Sarah",Hypertension Patients 18-59 years BP <140/90,1,1,1,37:40.5
+"Stewart ARNP, Sarah",Hypertension Patients over 18 BP <140/90,1,1,1,37:52.1
+"Stewart ARNP, Sarah",Hypertension Patients over 59 years BP <150/90,,,,37:45.6
+"Stewart ARNP, Sarah",Mammogram Ages 52 -74,4,8,0.5,38:12.8
+"Stewart ARNP, Sarah",Nephropathy Assessment,,,,37:30.2
+"Stewart ARNP, Sarah",Pap Smear Report,60,119,0.5042,46:09.2
+"Stewart ARNP, Sarah",Pneumovax - DM patients w/current pneumovax,,,,38:35.2
+"Stewart ARNP, Sarah",Pneumovax - Patients Age>65 w/current pneumovax,,,,38:41.0
+"Stewart ARNP, Sarah",Pneumovax - Smokers w/current pneumovax,,6,,38:47.7
+"Stewart ARNP, Sarah",Smoking Cessation Advice or Treatment ,,,,37:36.4
+"Stewart ARNP, Sarah",Statin patients with LDL in the past 365 days,,2,,46:35.8
+"Stewart ARNP, Sarah",TD - Patients >18yrs with TD in last 10 years,128,171,0.7485,38:55.2
+"Stewart ARNP, Sarah",WCV 3-6 yr,48,51,0.9412,25:54.1
+"Swanson MD, Mary",AAA Screening,6,12,0.5,38:19.5
+"Swanson MD, Mary",Advance Directive - Patients >55yrs w/Advance Directive ,45,235,0.1915,38:29.3
+"Swanson MD, Mary",Blood Pressure NOT Controlled  >140/90 mm Hg    ,7,39,0.1795,37:03.6
+"Swanson MD, Mary",Chlamydia,3,23,0.1304,38:08.3
+"Swanson MD, Mary",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),216,266,0.812,38:00.2
+"Swanson MD, Mary",Diabetes Care Gaps ,38,39,0.9744,46:03.7
+"Swanson MD, Mary",DM PTS 40 to 75 w/STATIN,31,35,0.8857,45:27.1
+"Swanson MD, Mary",DM PTS 55-75 w/ACE/ARB,21,26,0.8077,45:22.5
+"Swanson MD, Mary",Eye exam,19,39,0.4872,37:08.3
+"Swanson MD, Mary",Foot Exam,34,39,0.8718,37:13.4
+"Swanson MD, Mary",HgbA1c < 7.0                     ,19,39,0.4872,37:19.0
+"Swanson MD, Mary",HgbA1c NOT > 9.0 (poor control) ,35,39,0.8974,37:25.0
+"Swanson MD, Mary",Hypertension Patients 18-59 years BP <140/90,45,55,0.8182,37:40.5
+"Swanson MD, Mary",Hypertension Patients over 18 BP <140/90,123,139,0.8849,37:52.1
+"Swanson MD, Mary",Hypertension Patients over 59 years BP <150/90,82,84,0.9762,37:45.6
+"Swanson MD, Mary",Mammogram Ages 52 -74,146,187,0.7807,38:12.8
+"Swanson MD, Mary",Nephropathy Assessment,37,39,0.9487,37:30.2
+"Swanson MD, Mary",Pap Smear Report,311,404,0.7698,46:09.2
+"Swanson MD, Mary",Pneumovax - DM patients w/current pneumovax,32,39,0.8205,38:35.2
+"Swanson MD, Mary",Pneumovax - Patients Age>65 w/current pneumovax,108,128,0.8438,38:41.0
+"Swanson MD, Mary",Pneumovax - Smokers w/current pneumovax,14,32,0.4375,38:47.7
+"Swanson MD, Mary",Smoking Cessation Advice or Treatment ,3,4,0.75,37:36.4
+"Swanson MD, Mary",Statin patients with LDL in the past 365 days,90,105,0.8571,46:35.8
+"Swanson MD, Mary",TD - Patients >18yrs with TD in last 10 years,593,687,0.8632,38:55.2
+"Swanson MD, Mary",WCV 3-6 yr,112,112,1,25:54.1
+"Sweeney, Margaret",AAA Screening,3,14,0.2143,38:19.5
+"Sweeney, Margaret",Advance Directive - Patients >55yrs w/Advance Directive ,93,399,0.2331,38:29.3
+"Sweeney, Margaret",Blood Pressure NOT Controlled  >140/90 mm Hg    ,14,72,0.1944,37:03.6
+"Sweeney, Margaret",Chlamydia,1,12,0.0833,38:08.3
+"Sweeney, Margaret",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),259,336,0.7708,38:00.2
+"Sweeney, Margaret",Diabetes Care Gaps ,62,72,0.8611,46:03.7
+"Sweeney, Margaret",DM PTS 40 to 75 w/STATIN,40,48,0.8333,45:27.1
+"Sweeney, Margaret",DM PTS 55-75 w/ACE/ARB,32,42,0.7619,45:22.5
+"Sweeney, Margaret",Eye exam,38,72,0.5278,37:08.3
+"Sweeney, Margaret",Foot Exam,54,72,0.75,37:13.4
+"Sweeney, Margaret",HgbA1c < 7.0                     ,44,72,0.6111,37:19.0
+"Sweeney, Margaret",HgbA1c NOT > 9.0 (poor control) ,68,72,0.9444,37:25.0
+"Sweeney, Margaret",Hypertension Patients 18-59 years BP <140/90,42,54,0.7778,37:40.5
+"Sweeney, Margaret",Hypertension Patients over 18 BP <140/90,184,216,0.8519,37:52.1
+"Sweeney, Margaret",Hypertension Patients over 59 years BP <150/90,146,165,0.8848,37:45.6
+"Sweeney, Margaret",Mammogram Ages 52 -74,197,236,0.8347,38:12.8
+"Sweeney, Margaret",Nephropathy Assessment,48,72,0.6667,37:30.2
+"Sweeney, Margaret",Pap Smear Report,378,432,0.875,46:09.2
+"Sweeney, Margaret",Pneumovax - DM patients w/current pneumovax,56,72,0.7778,38:35.2
+"Sweeney, Margaret",Pneumovax - Patients Age>65 w/current pneumovax,191,247,0.7733,38:41.0
+"Sweeney, Margaret",Pneumovax - Smokers w/current pneumovax,15,43,0.3488,38:47.7
+"Sweeney, Margaret",Smoking Cessation Advice or Treatment ,6,6,1,37:36.4
+"Sweeney, Margaret",Statin patients with LDL in the past 365 days,132,200,0.66,46:35.8
+"Sweeney, Margaret",TD - Patients >18yrs with TD in last 10 years,531,824,0.6444,38:55.2
+"Sweeney, Margaret",WCV 3-6 yr,79,92,0.8587,25:54.1
+"Thomson ARNP, Heather",AAA Screening,1,1,1,38:19.5
+"Thomson ARNP, Heather",Advance Directive - Patients >55yrs w/Advance Directive ,2,37,0.0541,38:29.3
+"Thomson ARNP, Heather",Blood Pressure NOT Controlled  >140/90 mm Hg    ,2,11,0.1818,37:03.6
+"Thomson ARNP, Heather",Chlamydia,1,1,1,38:08.3
+"Thomson ARNP, Heather",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),20,41,0.4878,38:00.2
+"Thomson ARNP, Heather",Diabetes Care Gaps ,10,11,0.9091,46:03.7
+"Thomson ARNP, Heather",DM PTS 40 to 75 w/STATIN,5,9,0.5556,45:27.1
+"Thomson ARNP, Heather",DM PTS 55-75 w/ACE/ARB,3,6,0.5,45:22.5
+"Thomson ARNP, Heather",Eye exam,2,11,0.1818,37:08.3
+"Thomson ARNP, Heather",Foot Exam,9,11,0.8182,37:13.4
+"Thomson ARNP, Heather",HgbA1c < 7.0                     ,1,11,0.0909,37:19.0
+"Thomson ARNP, Heather",HgbA1c NOT > 9.0 (poor control) ,10,11,0.9091,37:25.0
+"Thomson ARNP, Heather",Hypertension Patients 18-59 years BP <140/90,12,14,0.8571,37:40.5
+"Thomson ARNP, Heather",Hypertension Patients over 18 BP <140/90,24,27,0.8889,37:52.1
+"Thomson ARNP, Heather",Hypertension Patients over 59 years BP <150/90,14,15,0.9333,37:45.6
+"Thomson ARNP, Heather",Mammogram Ages 52 -74,17,29,0.5862,38:12.8
+"Thomson ARNP, Heather",Nephropathy Assessment,5,11,0.4545,37:30.2
+"Thomson ARNP, Heather",Pap Smear Report,67,119,0.563,46:09.2
+"Thomson ARNP, Heather",Pneumovax - DM patients w/current pneumovax,3,11,0.2727,38:35.2
+"Thomson ARNP, Heather",Pneumovax - Patients Age>65 w/current pneumovax,10,16,0.625,38:41.0
+"Thomson ARNP, Heather",Pneumovax - Smokers w/current pneumovax,3,14,0.2143,38:47.7
+"Thomson ARNP, Heather",Smoking Cessation Advice or Treatment ,1,1,1,37:36.4
+"Thomson ARNP, Heather",Statin patients with LDL in the past 365 days,15,18,0.8333,46:35.8
+"Thomson ARNP, Heather",TD - Patients >18yrs with TD in last 10 years,114,195,0.5846,38:55.2
+"Thomson ARNP, Heather",WCV 3-6 yr,,10,,25:54.1
+"VanHofwegen MD, Lisa",AAA Screening,1,19,0.0526,38:19.5
+"VanHofwegen MD, Lisa",Advance Directive - Patients >55yrs w/Advance Directive ,35,259,0.1351,38:29.3
+"VanHofwegen MD, Lisa",Blood Pressure NOT Controlled  >140/90 mm Hg    ,1,28,0.0357,37:03.6
+"VanHofwegen MD, Lisa",Chlamydia,4,16,0.25,38:08.3
+"VanHofwegen MD, Lisa",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),211,289,0.7301,38:00.2
+"VanHofwegen MD, Lisa",Diabetes Care Gaps ,25,28,0.8929,46:03.7
+"VanHofwegen MD, Lisa",DM PTS 40 to 75 w/STATIN,18,25,0.72,45:27.1
+"VanHofwegen MD, Lisa",DM PTS 55-75 w/ACE/ARB,13,19,0.6842,45:22.5
+"VanHofwegen MD, Lisa",Eye exam,20,28,0.7143,37:08.3
+"VanHofwegen MD, Lisa",Foot Exam,21,28,0.75,37:13.4
+"VanHofwegen MD, Lisa",HgbA1c < 7.0                     ,12,28,0.4286,37:19.0
+"VanHofwegen MD, Lisa",HgbA1c NOT > 9.0 (poor control) ,26,28,0.9286,37:25.0
+"VanHofwegen MD, Lisa",Hypertension Patients 18-59 years BP <140/90,24,33,0.7273,37:40.5
+"VanHofwegen MD, Lisa",Hypertension Patients over 18 BP <140/90,87,110,0.7909,37:52.1
+"VanHofwegen MD, Lisa",Hypertension Patients over 59 years BP <150/90,64,77,0.8312,37:45.6
+"VanHofwegen MD, Lisa",Mammogram Ages 52 -74,131,185,0.7081,38:12.8
+"VanHofwegen MD, Lisa",Nephropathy Assessment,17,28,0.6071,37:30.2
+"VanHofwegen MD, Lisa",Pap Smear Report,265,374,0.7086,46:09.2
+"VanHofwegen MD, Lisa",Pneumovax - DM patients w/current pneumovax,26,28,0.9286,38:35.2
+"VanHofwegen MD, Lisa",Pneumovax - Patients Age>65 w/current pneumovax,111,147,0.7551,38:41.0
+"VanHofwegen MD, Lisa",Pneumovax - Smokers w/current pneumovax,11,27,0.4074,38:47.7
+"VanHofwegen MD, Lisa",Smoking Cessation Advice or Treatment ,2,2,1,37:36.4
+"VanHofwegen MD, Lisa",Statin patients with LDL in the past 365 days,57,87,0.6552,46:35.8
+"VanHofwegen MD, Lisa",TD - Patients >18yrs with TD in last 10 years,592,696,0.8506,38:55.2
+"VanHofwegen MD, Lisa",WCV 3-6 yr,66,70,0.9429,25:54.1
+"Wakefield-Pagels MD, April",AAA Screening,2,33,0.0606,38:19.5
+"Wakefield-Pagels MD, April",Advance Directive - Patients >55yrs w/Advance Directive ,55,521,0.1056,38:29.3
+"Wakefield-Pagels MD, April",Blood Pressure NOT Controlled  >140/90 mm Hg    ,17,87,0.1954,37:03.6
+"Wakefield-Pagels MD, April",Chlamydia,7,42,0.1667,38:08.3
+"Wakefield-Pagels MD, April",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),408,573,0.712,38:00.2
+"Wakefield-Pagels MD, April",Diabetes Care Gaps ,77,87,0.8851,46:03.7
+"Wakefield-Pagels MD, April",DM PTS 40 to 75 w/STATIN,52,68,0.7647,45:27.1
+"Wakefield-Pagels MD, April",DM PTS 55-75 w/ACE/ARB,43,51,0.8431,45:22.5
+"Wakefield-Pagels MD, April",Eye exam,31,87,0.3563,37:08.3
+"Wakefield-Pagels MD, April",Foot Exam,62,87,0.7126,37:13.4
+"Wakefield-Pagels MD, April",HgbA1c < 7.0                     ,41,87,0.4713,37:19.0
+"Wakefield-Pagels MD, April",HgbA1c NOT > 9.0 (poor control) ,83,87,0.954,37:25.0
+"Wakefield-Pagels MD, April",Hypertension Patients 18-59 years BP <140/90,84,106,0.7925,37:40.5
+"Wakefield-Pagels MD, April",Hypertension Patients over 18 BP <140/90,248,293,0.8464,37:52.1
+"Wakefield-Pagels MD, April",Hypertension Patients over 59 years BP <150/90,175,192,0.9115,37:45.6
+"Wakefield-Pagels MD, April",Mammogram Ages 52 -74,253,390,0.6487,38:12.8
+"Wakefield-Pagels MD, April",Nephropathy Assessment,61,87,0.7011,37:30.2
+"Wakefield-Pagels MD, April",Pap Smear Report,519,760,0.6829,46:09.2
+"Wakefield-Pagels MD, April",Pneumovax - DM patients w/current pneumovax,76,87,0.8736,38:35.2
+"Wakefield-Pagels MD, April",Pneumovax - Patients Age>65 w/current pneumovax,231,285,0.8105,38:41.0
+"Wakefield-Pagels MD, April",Pneumovax - Smokers w/current pneumovax,25,47,0.5319,38:47.7
+"Wakefield-Pagels MD, April",Smoking Cessation Advice or Treatment ,1,3,0.3333,37:36.4
+"Wakefield-Pagels MD, April",Statin patients with LDL in the past 365 days,189,247,0.7652,46:35.8
+"Wakefield-Pagels MD, April",TD - Patients >18yrs with TD in last 10 years,1196,1385,0.8635,38:55.2
+"Wakefield-Pagels MD, April",WCV 3-6 yr,115,117,0.9829,25:54.1
+"Welty MD, Joy",AAA Screening,3,25,0.12,38:19.5
+"Welty MD, Joy",Advance Directive - Patients >55yrs w/Advance Directive ,29,216,0.1343,38:29.3
+"Welty MD, Joy",Blood Pressure NOT Controlled  >140/90 mm Hg    ,2,31,0.0645,37:03.6
+"Welty MD, Joy",Chlamydia,,2,,38:08.3
+"Welty MD, Joy",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),161,225,0.7156,38:00.2
+"Welty MD, Joy",Diabetes Care Gaps ,27,31,0.871,46:03.7
+"Welty MD, Joy",DM PTS 40 to 75 w/STATIN,15,23,0.6522,45:27.1
+"Welty MD, Joy",DM PTS 55-75 w/ACE/ARB,13,17,0.7647,45:22.5
+"Welty MD, Joy",Eye exam,13,31,0.4194,37:08.3
+"Welty MD, Joy",Foot Exam,23,31,0.7419,37:13.4
+"Welty MD, Joy",HgbA1c < 7.0                     ,12,31,0.3871,37:19.0
+"Welty MD, Joy",HgbA1c NOT > 9.0 (poor control) ,29,31,0.9355,37:25.0
+"Welty MD, Joy",Hypertension Patients 18-59 years BP <140/90,25,35,0.7143,37:40.5
+"Welty MD, Joy",Hypertension Patients over 18 BP <140/90,98,116,0.8448,37:52.1
+"Welty MD, Joy",Hypertension Patients over 59 years BP <150/90,75,83,0.9036,37:45.6
+"Welty MD, Joy",Mammogram Ages 52 -74,54,74,0.7297,38:12.8
+"Welty MD, Joy",Nephropathy Assessment,24,31,0.7742,37:30.2
+"Welty MD, Joy",Pap Smear Report,73,131,0.5573,46:09.2
+"Welty MD, Joy",Pneumovax - DM patients w/current pneumovax,29,31,0.9355,38:35.2
+"Welty MD, Joy",Pneumovax - Patients Age>65 w/current pneumovax,94,114,0.8246,38:41.0
+"Welty MD, Joy",Pneumovax - Smokers w/current pneumovax,10,24,0.4167,38:47.7
+"Welty MD, Joy",Smoking Cessation Advice or Treatment ,2,3,0.6667,37:36.4
+"Welty MD, Joy",Statin patients with LDL in the past 365 days,58,81,0.716,46:35.8
+"Welty MD, Joy",TD - Patients >18yrs with TD in last 10 years,371,492,0.7541,38:55.2
+"Welty MD, Joy",WCV 3-6 yr,3,5,0.6,25:54.1
+"Werner MD, Matt",AAA Screening,21,71,0.2958,38:19.5
+"Werner MD, Matt",Advance Directive - Patients >55yrs w/Advance Directive ,57,657,0.0868,38:29.3
+"Werner MD, Matt",Blood Pressure NOT Controlled  >140/90 mm Hg    ,15,92,0.163,37:03.6
+"Werner MD, Matt",Chlamydia,7,35,0.2,38:08.3
+"Werner MD, Matt",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),525,745,0.7047,38:00.2
+"Werner MD, Matt",Diabetes Care Gaps ,87,92,0.9457,46:03.7
+"Werner MD, Matt",DM PTS 40 to 75 w/STATIN,54,72,0.75,45:27.1
+"Werner MD, Matt",DM PTS 55-75 w/ACE/ARB,44,52,0.8462,45:22.5
+"Werner MD, Matt",Eye exam,50,92,0.5435,37:08.3
+"Werner MD, Matt",Foot Exam,81,92,0.8804,37:13.4
+"Werner MD, Matt",HgbA1c < 7.0                     ,32,92,0.3478,37:19.0
+"Werner MD, Matt",HgbA1c NOT > 9.0 (poor control) ,79,92,0.8587,37:25.0
+"Werner MD, Matt",Hypertension Patients 18-59 years BP <140/90,100,138,0.7246,37:40.5
+"Werner MD, Matt",Hypertension Patients over 18 BP <140/90,295,372,0.793,37:52.1
+"Werner MD, Matt",Hypertension Patients over 59 years BP <150/90,220,249,0.8835,37:45.6
+"Werner MD, Matt",Mammogram Ages 52 -74,197,307,0.6417,38:12.8
+"Werner MD, Matt",Nephropathy Assessment,66,92,0.7174,37:30.2
+"Werner MD, Matt",Pap Smear Report,298,499,0.5972,46:09.2
+"Werner MD, Matt",Pneumovax - DM patients w/current pneumovax,74,92,0.8043,38:35.2
+"Werner MD, Matt",Pneumovax - Patients Age>65 w/current pneumovax,262,320,0.8188,38:41.0
+"Werner MD, Matt",Pneumovax - Smokers w/current pneumovax,51,82,0.622,38:47.7
+"Werner MD, Matt",Smoking Cessation Advice or Treatment ,6,6,1,37:36.4
+"Werner MD, Matt",Statin patients with LDL in the past 365 days,185,256,0.7227,46:35.8
+"Werner MD, Matt",TD - Patients >18yrs with TD in last 10 years,1151,1573,0.7317,38:55.2
+"Werner MD, Matt",WCV 3-6 yr,60,66,0.9091,25:54.1
+"Winkes MD, L Sloane",AAA Screening,1,14,0.0714,38:19.5
+"Winkes MD, L Sloane",Advance Directive - Patients >55yrs w/Advance Directive ,37,283,0.1307,38:29.3
+"Winkes MD, L Sloane",Blood Pressure NOT Controlled  >140/90 mm Hg    ,16,54,0.2963,37:03.6
+"Winkes MD, L Sloane",Chlamydia,4,8,0.5,38:08.3
+"Winkes MD, L Sloane",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),193,274,0.7044,38:00.2
+"Winkes MD, L Sloane",Diabetes Care Gaps ,51,54,0.9444,46:03.7
+"Winkes MD, L Sloane",DM PTS 40 to 75 w/STATIN,34,41,0.8293,45:27.1
+"Winkes MD, L Sloane",DM PTS 55-75 w/ACE/ARB,25,31,0.8065,45:22.5
+"Winkes MD, L Sloane",Eye exam,36,54,0.6667,37:08.3
+"Winkes MD, L Sloane",Foot Exam,46,54,0.8519,37:13.4
+"Winkes MD, L Sloane",HgbA1c < 7.0                     ,24,54,0.4444,37:19.0
+"Winkes MD, L Sloane",HgbA1c NOT > 9.0 (poor control) ,52,54,0.963,37:25.0
+"Winkes MD, L Sloane",Hypertension Patients 18-59 years BP <140/90,34,46,0.7391,37:40.5
+"Winkes MD, L Sloane",Hypertension Patients over 18 BP <140/90,132,154,0.8571,37:52.1
+"Winkes MD, L Sloane",Hypertension Patients over 59 years BP <150/90,99,109,0.9083,37:45.6
+"Winkes MD, L Sloane",Mammogram Ages 52 -74,162,202,0.802,38:12.8
+"Winkes MD, L Sloane",Nephropathy Assessment,42,54,0.7778,37:30.2
+"Winkes MD, L Sloane",Pap Smear Report,291,360,0.8083,46:09.2
+"Winkes MD, L Sloane",Pneumovax - DM patients w/current pneumovax,51,54,0.9444,38:35.2
+"Winkes MD, L Sloane",Pneumovax - Patients Age>65 w/current pneumovax,145,171,0.848,38:41.0
+"Winkes MD, L Sloane",Pneumovax - Smokers w/current pneumovax,21,37,0.5676,38:47.7
+"Winkes MD, L Sloane",Smoking Cessation Advice or Treatment ,4,7,0.5714,37:36.4
+"Winkes MD, L Sloane",Statin patients with LDL in the past 365 days,89,113,0.7876,46:35.8
+"Winkes MD, L Sloane",TD - Patients >18yrs with TD in last 10 years,571,640,0.8922,38:55.2
+"Winkes MD, L Sloane",WCV 3-6 yr,45,46,0.9783,25:54.1
+"Wu MD, Chao-Ying",AAA Screening,63,85,0.7412,38:19.5
+"Wu MD, Chao-Ying",Advance Directive - Patients >55yrs w/Advance Directive ,261,691,0.3777,38:29.3
+"Wu MD, Chao-Ying",Blood Pressure NOT Controlled  >140/90 mm Hg    ,13,103,0.1262,37:03.6
+"Wu MD, Chao-Ying",Chlamydia,5,13,0.3846,38:08.3
+"Wu MD, Chao-Ying",Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),556,690,0.8058,38:00.2
+"Wu MD, Chao-Ying",Diabetes Care Gaps ,97,103,0.9417,46:03.7
+"Wu MD, Chao-Ying",DM PTS 40 to 75 w/STATIN,56,72,0.7778,45:27.1
+"Wu MD, Chao-Ying",DM PTS 55-75 w/ACE/ARB,46,61,0.7541,45:22.5
+"Wu MD, Chao-Ying",Eye exam,50,103,0.4854,37:08.3
+"Wu MD, Chao-Ying",Foot Exam,88,103,0.8544,37:13.4
+"Wu MD, Chao-Ying",HgbA1c < 7.0                     ,47,103,0.4563,37:19.0
+"Wu MD, Chao-Ying",HgbA1c NOT > 9.0 (poor control) ,96,103,0.932,37:25.0
+"Wu MD, Chao-Ying",Hypertension Patients 18-59 years BP <140/90,83,98,0.8469,37:40.5
+"Wu MD, Chao-Ying",Hypertension Patients over 18 BP <140/90,338,377,0.8966,37:52.1
+"Wu MD, Chao-Ying",Hypertension Patients over 59 years BP <150/90,270,288,0.9375,37:45.6
+"Wu MD, Chao-Ying",Mammogram Ages 52 -74,231,315,0.7333,38:12.8
+"Wu MD, Chao-Ying",Nephropathy Assessment,83,103,0.8058,37:30.2
+"Wu MD, Chao-Ying",Pap Smear Report,208,321,0.648,46:09.2
+"Wu MD, Chao-Ying",Pneumovax - DM patients w/current pneumovax,97,103,0.9417,38:35.2
+"Wu MD, Chao-Ying",Pneumovax - Patients Age>65 w/current pneumovax,346,404,0.8564,38:41.0
+"Wu MD, Chao-Ying",Pneumovax - Smokers w/current pneumovax,17,33,0.5152,38:47.7
+"Wu MD, Chao-Ying",Smoking Cessation Advice or Treatment ,1,4,0.25,37:36.4
+"Wu MD, Chao-Ying",Statin patients with LDL in the past 365 days,253,327,0.7737,46:35.8
+"Wu MD, Chao-Ying",TD - Patients >18yrs with TD in last 10 years,925,1127,0.8208,38:55.2
+"Wu MD, Chao-Ying",WCV 3-6 yr,11,11,1,25:54.1
+Bellingham Bay Medical Center,AAA Screening,124,337,0.2615,00:04.8
+Birch Bay Family Medicine,AAA Screening,15,238,0.0716,00:04.8
+Everson Family Medicine,AAA Screening,14,75,0.1867,00:04.8
+Family Health Associates,AAA Screening,117,405,0.3004,00:04.8
+Ferndale Family Medical Center,AAA Screening,25,328,0.1076,00:04.8
+Island Family Physicians,AAA Screening,41,248,0.1631,00:04.8
+Lynden Family Medicine,AAA Screening,23,378,0.1273,00:04.8
+North Cascade Family Physicians,AAA Screening,94,496,0.1933,00:04.8
+North Sound Family Medicine,AAA Screening,168,578,0.2735,00:04.8
+Squalicum Family Medicine,AAA Screening,79,275,0.2111,00:04.8
+Whatcom Family Medicine,AAA Screening,73,180,0.4707,00:04.8
+Bellingham Bay Medical Center,Advance Directive - Patients >55yrs w/Advance Directive ,431,3345,0.1247,00:04.8
+Birch Bay Family Medicine,Advance Directive - Patients >55yrs w/Advance Directive ,129,2119,0.0663,00:04.8
+Everson Family Medicine,Advance Directive - Patients >55yrs w/Advance Directive ,62,626,0.099,00:04.8
+Family Health Associates,Advance Directive - Patients >55yrs w/Advance Directive ,467,4431,0.1043,00:04.8
+Ferndale Family Medical Center,Advance Directive - Patients >55yrs w/Advance Directive ,353,3064,0.1128,00:04.8
+Island Family Physicians,Advance Directive - Patients >55yrs w/Advance Directive ,463,2456,0.1849,00:04.8
+Lynden Family Medicine,Advance Directive - Patients >55yrs w/Advance Directive ,606,4625,0.1207,00:04.8
+North Cascade Family Physicians,Advance Directive - Patients >55yrs w/Advance Directive ,227,4904,0.0492,00:04.8
+North Sound Family Medicine,Advance Directive - Patients >55yrs w/Advance Directive ,743,5105,0.1395,00:04.8
+Squalicum Family Medicine,Advance Directive - Patients >55yrs w/Advance Directive ,417,3296,0.1282,00:04.8
+Whatcom Family Medicine,Advance Directive - Patients >55yrs w/Advance Directive ,273,1570,0.1459,00:04.8
+Bellingham Bay Medical Center,Blood Pressure NOT Controlled  >140/90 mm Hg    ,61,434,0.1442,00:04.8
+Birch Bay Family Medicine,Blood Pressure NOT Controlled  >140/90 mm Hg    ,93,437,0.1993,00:04.8
+Everson Family Medicine,Blood Pressure NOT Controlled  >140/90 mm Hg    ,18,138,0.1304,00:04.8
+Family Health Associates,Blood Pressure NOT Controlled  >140/90 mm Hg    ,75,644,0.0968,00:04.8
+Ferndale Family Medical Center,Blood Pressure NOT Controlled  >140/90 mm Hg    ,66,642,0.1089,00:04.8
+Island Family Physicians,Blood Pressure NOT Controlled  >140/90 mm Hg    ,76,414,0.1673,00:04.8
+Lynden Family Medicine,Blood Pressure NOT Controlled  >140/90 mm Hg    ,125,908,0.1391,00:04.8
+North Cascade Family Physicians,Blood Pressure NOT Controlled  >140/90 mm Hg    ,258,934,0.2821,00:04.8
+North Sound Family Medicine,Blood Pressure NOT Controlled  >140/90 mm Hg    ,125,795,0.1618,00:04.8
+Squalicum Family Medicine,Blood Pressure NOT Controlled  >140/90 mm Hg    ,64,435,0.1357,00:04.8
+Whatcom Family Medicine,Blood Pressure NOT Controlled  >140/90 mm Hg    ,57,267,0.1938,00:04.8
+Bellingham Bay Medical Center,Chlamydia,37,180,0.2646,00:04.8
+Birch Bay Family Medicine,Chlamydia,9,34,0.2986,00:04.8
+Everson Family Medicine,Chlamydia,3,6,0.5,00:04.8
+Family Health Associates,Chlamydia,39,130,0.2821,00:04.8
+Ferndale Family Medical Center,Chlamydia,33,94,0.3234,00:04.8
+Island Family Physicians,Chlamydia,13,45,0.3181,00:04.8
+Lynden Family Medicine,Chlamydia,33,133,0.2883,00:04.8
+North Cascade Family Physicians,Chlamydia,33,86,0.4519,00:04.8
+North Sound Family Medicine,Chlamydia,68,292,0.2381,00:04.8
+Squalicum Family Medicine,Chlamydia,41,187,0.2816,00:04.8
+Whatcom Family Medicine,Chlamydia,8,26,0.5555,00:04.8
+Bellingham Bay Medical Center,Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),2616,3619,0.7193,00:04.8
+Birch Bay Family Medicine,Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),1009,1972,0.4786,00:04.8
+Everson Family Medicine,Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),308,592,0.5203,00:04.8
+Family Health Associates,Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),3198,4508,0.6791,00:04.8
+Ferndale Family Medical Center,Colorectal Cancer Screening (Colonoscopy/Sigmoid/FIT test),1859,2870,0.6286,00:04.8

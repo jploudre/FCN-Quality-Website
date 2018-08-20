@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Population Health Quality</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="../favicon.ico" />
+<script src="https://vega.github.io/vega/assets/promise.min.js"></script>
+<script src="https://vega.github.io/vega/assets/symbol.min.js"></script>
+<script src="https://vega.github.io/vega/assets/fetch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.3"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@2.6.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@3.18.2"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/js/uikit.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-29863015-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-29863015-2');
+</script>
+</head>
+
+<body>
+<div class="uk-container">
+<div uk-sticky class="uk-inline uk-background-default uk-text-lead uk-text-middle" style="padding-top:1em;">
+<a href="../index.html"><img src="../pictures/logo.png" width="39" height="64"></a>
+<div class="uk-inline">Patients seeing:&nbsp;</div>
+<img src="../pictures/Erik_Bylund.JPG" width="64" height="64" class="uk-border-circle">&nbsp;
+<div class="uk-inline uk-text-bold" style="color:#9467bd">Erik Bylund&nbsp;<span class="uk-animation-slide-bottom">&#9660;</span></div>
+<div uk-dropdown><ul class="uk-nav uk-dropdown-nav">
+<li class="uk-active">Erik Bylund</li>
+<li><a href="../Roger_Estep/index.html">Roger Estep</a></li>
+<li><a href="../Kay-Kay_Gambs/index.html">Kay-Kay Gambs</a></li>
+<li><a href="../Jonathan_Gamson/index.html">Jonathan Gamson</a></li>
+<li><a href="../Janet_Hansom/index.html">Janet Hansom</a></li>
+<li><a href="../Sally_McPherson/index.html">Sally McPherson</a></li>
+<li><a href="../Lucia_Muller/index.html">Lucia Muller</a></li>
+<li><a href="../Jonathan_Ploudre/index.html">Jonathan Ploudre</a></li>
+<li><a href="../Lauren_Sauve/index.html">Lauren Sauve</a></li>
+<li><a href="../Sloane_Winkes/index.html">Sloane Winkes</a></li>
+</ul></div>
+&nbsp;@&nbsp;
+<div class="uk-inline" style="color:#ff7f0e">NCFP&nbsp;<span class="uk-animation-slide-bottom">&#9660;</span></div>
+<div uk-dropdown><ul class="uk-nav uk-dropdown-nav">
+<li><a href="../BBFM/index.html">BBFM</a></li>
+<li><a href="../BellB/index.html">BellB</a></li>
+<li><a href="../FFMC/index.html">FFMC</a></li>
+<li><a href="../FHA/index.html">FHA</a></li>
+<li><a href="../IFP/index.html">IFP</a></li>
+<li><a href="../LFM/index.html">LFM</a></li>
+<li class="uk-active"><a href="../NCFP/index.html">NCFP</a></li>
+<li><a href="../NSFM/index.html">NSFM</a></li>
+<li><a href="../SFM/index.html">SFM</a></li>
+<li><a href="../WFM/index.html">WFM</a></li>
+</ul></div>
+&nbsp;@&nbsp;
+<a class="uk-inline" style="color:#1F77B4" href="../FCN/index.html">FCN</a>
+</div>
+
+<a class="uk-button uk-button-secondary uk-float-right" href="#modal-help" uk-toggle>Help?</a>
+
+<div id="modal-help" uk-modal>
+<div class="uk-modal-dialog">
+<button class="uk-modal-close-default" type="button" uk-close></button>
+<div class="uk-modal-header">
+<h2 class="uk-modal-title">Help with Interpretation</h2>
+</div>
+<div class="uk-modal-body" uk-overflow-auto>
+<h3>Color Legend</h3>
+<p>
+<span style="color:#c5b0d5; background:#9467bd; padding:4px; border-radius: 4px;">Provider</span> 
+<span style="color:#ffbb78; background:#ff7f0e; padding:4px; border-radius: 4px;">Clinic</span>
+<span style="color:#aec7e8; background:#1f77b4; padding:4px; border-radius: 4px;">FCN</span> 
+<span style="color:#98df8a; background:#2ca02c; padding:4px; border-radius: 4px;">Target</span> 
+</p>
+
+<h3>Strip Chart</h3>
+<p>Shows the distribution of all provider panels at FCN with the individual provider highlighted.</p>
+<img src="../strip_chart.png" width="176" height="239" style="display:block" class="uk-align-center">
+<p>Here you can see that the provider's panel is doing better than most at FCN. You can also see there's a wide range of panels &mdash;
+typically that means this quality measure is more difficult for us.</p>
+<h3>Quality Comet Chart</h3>
+<p>The 'quality comets' show how individual panels are changing over time. The tail shows size and direction of changes. If there's no tail, then there hasn't been significant change.</p>
+<img src="../quality_comet.png" width="339" height="169" style="display:block" class="uk-align-center">
+<p>Here you can see that 3 provider panels have dramatically improved. Several are doing a little improvement and a few are mostly unchanged. Looking that the height of the dots, you can see most are above target &mdash; so there has probably been some work and learning on this quality measure.</p>
+</div>
+</div>
+</div>
+
+
+<ul uk-switcher="animation: uk-animation-fade" uk-tab>
+    <li><a href="#">2018 Core</a></li>
+    <li><a href="#">Screening</a></li>
+    <li><a href="#">Immunization</a></li>
+    <li><a href="#">Diabetes</a></li>
+</ul>
+
+<ul class="uk-switcher uk-margin">
+    <li>
+
+    <div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Colon Cancer</h5><div id="Colorectal_Screen"></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Pap Smears</h5><div id="Pap_Smears" ></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Mammograms</h5><div id="Mammogram"></div></div></div>
+	</div>
+	<hr class="uk-divider-small uk-align-center">
+	<div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Eye Exam</h5><div id="DM_Eye_Exam"></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Foot Exam</h5><div id="DM_Foot_Exam" ></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Nephropathy</h5><div id="DM_Nephropathy"></div></div></div>
+	</div>
+	<hr class="uk-divider-small uk-align-center">
+	<div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Pneumovax (DM)</h5><div id="DM_Pneumovax"></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">TDAP</h5><div id="TD_and_TDAP"></div></div></div>
+	</div></li>
+
+    <li>
+    <div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Colon Cancer</h5><div id="Colorectal_Screen_2"></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Pap Smears</h5><div id="Pap_Smears_2" ></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Mammograms</h5><div id="Mammogram_2"></div></div></div>
+	</div>
+	<hr class="uk-divider-small uk-align-center">
+	<div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Chlamydia</h5><div id="Chlamydia"></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">AAA</h5><div id="AAA"></div></div></div>
+	</div></li>
+
+    <li><div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Pneumovax (65+)</h5><div id="Over_age_65_Pneumovax"></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Pneumovax (Smoker)</h5><div id="Smoker_Pneumovax" ></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">TDAP</h5><div id="TD_and_TDAP_2"></div></div></div>
+	</div></li>
+	
+    <li><div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Eye Exam</h5><div id="DM_Eye_Exam_2"></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Foot Exam</h5><div id="DM_Foot_Exam_2" ></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Nephropathy</h5><div id="DM_Nephropathy_2"></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Pneumovax (DM)</h5><div id="DM_Pneumovax_2"></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">ACE/ARB</h5><div id="DM_with_ACE_or_ARB"></div></div></div>
+	<div><div  class="uk-card uk-card-small uk-card-default uk-card-body"><h5 class="uk-card-title">Statin</h5><div id="DM_with_Statin"></div></div></div>
+	</div></li>
+</ul>
+
+<p><b>Legend: </b>
+<span style="color:#c5b0d5; background:#9467bd; padding:4px; border-radius: 4px;">Provider</span> 
+<span style="color:#ffbb78; background:#ff7f0e; padding:4px; border-radius: 4px;">Clinic</span>
+<span style="color:#aec7e8; background:#1f77b4; padding:4px; border-radius: 4px;">FCN</span> 
+<span style="color:#98df8a; background:#2ca02c; padding:4px; border-radius: 4px;">Target</span> 
+</p>
+
+<br />
+<hr class="uk-divider-icon">
+<p class="uk-text-bold">Updated: 08/06/2018</p>
+</div>
+
+
+<div id="Colorectal_Screen_Info" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Colorectal Cancer Screening</h2>
+        <p><b>Measure:</b> Patients age 50 – 75 who have had colonoscopy in past 10 years, flex sig in past 5 years, or fecal immune test in past 1 year.</p>
+        <p><b>Target:</b> 76%</p>    
+    </div>
+</div>
+
+<script type="text/javascript">
+	function insert_chart(metric, seconddiv) {
+		var spec = "./" + metric + ".json"; 
+		if(!seconddiv) { 
+		    var idname = "#" + metric;
+	    } else {
+            var idname = "#" + seconddiv;
+        }
+		vegaEmbed(idname, spec, {actions: false}).then(function(result) {}).catch(console.error);
+	}
+	insert_chart('DM_Eye_Exam');
+	insert_chart('DM_Eye_Exam', 'DM_Eye_Exam_2');
+	insert_chart('DM_Foot_Exam');
+	insert_chart('DM_Foot_Exam', 'DM_Foot_Exam_2');
+	insert_chart('DM_Nephropathy');
+	insert_chart('DM_Nephropathy', 'DM_Nephropathy_2');
+	insert_chart('DM_Pneumovax');
+	insert_chart('DM_Pneumovax', 'DM_Pneumovax_2');
+	insert_chart('DM_with_ACE_or_ARB');
+	insert_chart('DM_with_Statin');
+	insert_chart('Colorectal_Screen');
+	insert_chart('Colorectal_Screen', 'Colorectal_Screen_2');
+	insert_chart('Pap_Smears');
+	insert_chart('Pap_Smears', 'Pap_Smears_2');
+	insert_chart('Mammogram');
+	insert_chart('Mammogram', 'Mammogram_2');
+	insert_chart('Chlamydia');
+	insert_chart('AAA');
+	insert_chart('Over_age_65_Pneumovax');
+	insert_chart('Smoker_Pneumovax');
+	insert_chart('TD_and_TDAP');
+	insert_chart('TD_and_TDAP', 'TD_and_TDAP_2');
+</script>
+</body>
+</html>
+
+
+
+
+
+
