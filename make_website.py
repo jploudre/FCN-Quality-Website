@@ -75,7 +75,7 @@ if (set(df.Metric.unique()) < set(metrics.Metric)):
 big_error_df = df[(df["Percentage"] > 1)]
 if not big_error_df.empty:
     print("Percentages can't be over 100:\n", big_error_df )
-    
+
 under_zero_df = df[(df["Percentage"] < 0)]
 if not under_zero_df.empty:
     print("Percentages can't be less than 0:\n", under_zero_df)
@@ -83,7 +83,7 @@ if not under_zero_df.empty:
 def make_individual_metric_chart(metric, name, savefolder):
     """
     Makes a chart for a single metric and a single provider.
-    
+
     Assumes: dataframe 'df' that has all the data from CSVs
     Assumes: dataframes 'names' and 'metrics' for lookups
     """
@@ -120,7 +120,7 @@ def make_individual_metric_chart(metric, name, savefolder):
     highlight_provider = highlight_provider[(highlight_provider["Name"] == name)]
     current_metric = current_metric.drop(["Name", "Type", "Clinic", "Metric", "Date"], axis=1)
     highlight_provider = highlight_provider.drop(["Name", "Type", "Clinic", "Metric", "Date"], axis=1)
-    
+
     provider_progress_line = (
         alt.Chart(provider_df)
         .mark_line(strokeWidth=4)
@@ -214,7 +214,7 @@ def make_individual_metric_chart(metric, name, savefolder):
 def make_clinic_metric_chart(metric, clinic_name, savefolder):
     """
     Makes a chart for a single metric and a clinic.
-    
+
     Assumes: dataframe 'df' that has all the data from CSVs
     Assumes: dataframes 'names' and 'metrics' for lookups
     """
@@ -324,16 +324,16 @@ def make_clinic_metric_chart(metric, clinic_name, savefolder):
 
     if metric_target:
         chart = (
-            metric_target_rule + fcn_progress_line + clinic_progress_line 
+            metric_target_rule + fcn_progress_line + clinic_progress_line
         ) | ranged_dot + ranged_dot_rule
     else:
         chart = (fcn_progress_line + clinic_progress_line) | ranged_dot
     chart.save(savefolder + str(metric).replace(" ", "_") + ".json", scale_factor=2)
-    
+
 def make_fcn_metric_chart(metric, savefolder):
     """
     Makes a chart for a single metric for FCN.
-    
+
     Assumes: dataframe 'df' that has all the data from CSVs
     Assumes: dataframes 'names' and 'metrics' for lookups
     """
@@ -445,7 +445,7 @@ def create_individual_metrics(name):
 def create_clinic_metrics(clinic_name):
     for metric in main_metrics:
         chart = make_clinic_metric_chart(metric, clinic_name, savefolder(clinic_name))
-        
+
 FCN_logo = "./files/pictures/logo.png"
 if os.path.isfile(FCN_logo):
     if not os.path.exists("./docs/pictures/"):
@@ -472,7 +472,7 @@ if os.path.isfile(strip_chart):
 comet_chart = "./files/pictures/quality_comet.png"
 if os.path.isfile(comet_chart):
     shutil.copyfile(comet_chart, "./docs/quality_comet.png")
-    
+
 def make_navbar(provider):
 
     clinic_name = names[names.Name == provider].iloc[0].Clinic
@@ -533,7 +533,7 @@ def make_navbar(provider):
         navbar += (
             f'<div class="uk-inline uk-text-bold" style="color:#ff7f0e">{clinic_name}'
         )
-    elif type == "FCN": 
+    elif type == "FCN":
         navbar += '<div class="uk-inline" style="color:#ff7f0e">Clinics'
 
     navbar += (
@@ -561,7 +561,7 @@ def make_navbar(provider):
         )
 
     navbar += "</div>\n"
-    
+
     navbar += '''
 <a class="uk-button uk-button-secondary uk-float-right" href="#modal-help" uk-toggle>Help?</a>
 
@@ -572,12 +572,14 @@ def make_navbar(provider):
 <h2 class="uk-modal-title">Help with Interpretation</h2>
 </div>
 <div class="uk-modal-body" uk-overflow-auto>
+<h3>Issues, Ideas?</h3>
+<p>Please <a href="mailto:jkploudre@fcn.net?subject=Quality-Website">email Jonathan Ploudre</a></p>
 <h3>Color Legend</h3>
 <p>
-<span style="color:#c5b0d5; background:#9467bd; padding:4px; border-radius: 4px;">Provider</span> 
+<span style="color:#c5b0d5; background:#9467bd; padding:4px; border-radius: 4px;">Provider</span>
 <span style="color:#ffbb78; background:#ff7f0e; padding:4px; border-radius: 4px;">Clinic</span>
-<span style="color:#aec7e8; background:#1f77b4; padding:4px; border-radius: 4px;">FCN</span> 
-<span style="color:#98df8a; background:#2ca02c; padding:4px; border-radius: 4px;">Target</span> 
+<span style="color:#aec7e8; background:#1f77b4; padding:4px; border-radius: 4px;">FCN</span>
+<span style="color:#98df8a; background:#2ca02c; padding:4px; border-radius: 4px;">Target</span>
 </p>
 
 <h3>Strip Chart</h3>
@@ -593,7 +595,7 @@ typically that means this quality measure is more difficult for us.</p>
 </div>
 </div>
 '''
-    
+
     return navbar
 
 for provider in sorted_single_provider_names:
@@ -622,7 +624,7 @@ filedata = filedata.replace("<!--NAVBAR-->", navbar)
 filedata = filedata.replace("<!--CURRENT_DATE-->", current_date_string)
 with open(savefolder(provider) + "index.html", "w+") as file:
     file.write(filedata)
-    
+
 # Base HTML File
 root_index_clinic = (
     '<div uk-filter="target: .js-filter"><ul class="uk-subnav uk-subnav-pill">\n'
@@ -669,7 +671,7 @@ filedata = filedata.replace("<!--Provider-Index-Cards-->", provider_index_cards)
 filedata = filedata.replace("{{{Current Date}}}", current_date_string)
 with open("docs/" + "index.html", "w+") as file:
     file.write(filedata)
-    
+
 pool = Pool()
 pool.map(create_individual_metrics, sorted_single_provider_names)
 pool.close()
