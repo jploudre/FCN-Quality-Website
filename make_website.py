@@ -65,20 +65,25 @@ for file in files:
 # metrics.head()
 
 if set(df.Name.unique()) - set(names.Name) != set():
-    print("There are providers in Meridios CSVs that aren't in names.csv:\n", set(df.Name.unique()) - set(names.Name))
-
-if (set(df.Metric.unique()) < set(metrics.Metric)):
     print(
-        "There are metrics in Meridios CSVs that aren't in metrics.csv:\n", set(df.Metric.unique()) - set(metrics.Metric)
+        "There are providers in Meridios CSVs that aren't in names.csv:\n",
+        set(df.Name.unique()) - set(names.Name),
+    )
+
+if set(df.Metric.unique()) < set(metrics.Metric):
+    print(
+        "There are metrics in Meridios CSVs that aren't in metrics.csv:\n",
+        set(df.Metric.unique()) - set(metrics.Metric),
     )
 
 big_error_df = df[(df["Percentage"] > 1)]
 if not big_error_df.empty:
-    print("Percentages can't be over 100:\n", big_error_df )
+    print("Percentages can't be over 100:\n", big_error_df)
 
 under_zero_df = df[(df["Percentage"] < 0)]
 if not under_zero_df.empty:
     print("Percentages can't be less than 0:\n", under_zero_df)
+
 
 def make_individual_metric_chart(metric, name, savefolder):
     """
@@ -118,8 +123,12 @@ def make_individual_metric_chart(metric, name, savefolder):
     ]
     highlight_provider = current_metric
     highlight_provider = highlight_provider[(highlight_provider["Name"] == name)]
-    current_metric = current_metric.drop(["Name", "Type", "Clinic", "Metric", "Date"], axis=1)
-    highlight_provider = highlight_provider.drop(["Name", "Type", "Clinic", "Metric", "Date"], axis=1)
+    current_metric = current_metric.drop(
+        ["Name", "Type", "Clinic", "Metric", "Date"], axis=1
+    )
+    highlight_provider = highlight_provider.drop(
+        ["Name", "Type", "Clinic", "Metric", "Date"], axis=1
+    )
 
     provider_progress_line = (
         alt.Chart(provider_df)
@@ -161,10 +170,7 @@ def make_individual_metric_chart(metric, name, savefolder):
         metric_target_rule = (
             alt.Chart(metricdf)
             .mark_rule(strokeWidth=1, strokeDash=[4, 2])
-            .encode(
-                y="TargetValue:Q",
-                color=alt.ColorValue("#2ca02c"),
-            )
+            .encode(y="TargetValue:Q", color=alt.ColorValue("#2ca02c"))
         )
 
     fcn_current_strip_chart = (
@@ -190,12 +196,9 @@ def make_individual_metric_chart(metric, name, savefolder):
         )
     )
 
-    provider_percent = (
-        provider_highlight_strip.mark_text(
-            align="left", baseline="middle", dx=15, size=20
-        )
-        .encode(text=alt.Text("Percentage:Q", format=".2%"))
-    )
+    provider_percent = provider_highlight_strip.mark_text(
+        align="left", baseline="middle", dx=15, size=20
+    ).encode(text=alt.Text("Percentage:Q", format=".2%"))
 
     if metric_target:
         chart = (
@@ -210,6 +213,7 @@ def make_individual_metric_chart(metric, name, savefolder):
             fcn_current_strip_chart + provider_highlight_strip + provider_percent
         )
     chart.save(savefolder + str(metric).replace(" ", "_") + ".json", scale_factor=2)
+
 
 def make_clinic_metric_chart(metric, clinic_name, savefolder):
     """
@@ -268,10 +272,7 @@ def make_clinic_metric_chart(metric, clinic_name, savefolder):
         metric_target_rule = (
             alt.Chart(metricdf)
             .mark_rule(strokeWidth=1, strokeDash=[4, 2])
-            .encode(
-                y="TargetValue:Q",
-                color=alt.ColorValue("#2ca02c"),
-            )
+            .encode(y="TargetValue:Q", color=alt.ColorValue("#2ca02c"))
         )
 
     clinic_providers = sorted(
@@ -330,6 +331,7 @@ def make_clinic_metric_chart(metric, clinic_name, savefolder):
         chart = (fcn_progress_line + clinic_progress_line) | ranged_dot
     chart.save(savefolder + str(metric).replace(" ", "_") + ".json", scale_factor=2)
 
+
 def make_fcn_metric_chart(metric, savefolder):
     """
     Makes a chart for a single metric for FCN.
@@ -364,10 +366,7 @@ def make_fcn_metric_chart(metric, savefolder):
         metric_target_rule = (
             alt.Chart(metricdf)
             .mark_rule(strokeWidth=1, strokeDash=[4, 2])
-            .encode(
-                y="TargetValue:Q",
-                color=alt.ColorValue("#2ca02c"),
-            )
+            .encode(y="TargetValue:Q", color=alt.ColorValue("#2ca02c"))
         )
 
     current_metric = df[
@@ -419,6 +418,7 @@ def make_fcn_metric_chart(metric, savefolder):
         chart = (fcn_progress_line) | ranged_dot
     chart.save(savefolder + str(metric).replace(" ", "_") + ".json", scale_factor=2)
 
+
 # In names dataframe, if data in individual column then it's an active person
 single_providers = names[(names["Type"] == "Individual")]
 
@@ -429,6 +429,7 @@ clinics = sorted(set(df[(df["Type"] == "Clinic")].Name.unique()))
 main_metrics = sorted(set(metrics[(metrics["Main"] == "Main")].Metric.unique()))
 current_date = max(df["Date"])
 current_date_string = current_date.strftime("%m/%d/%Y")
+
 
 def savefolder(name):
     foldername = str(name).replace(" ", "_")
@@ -442,15 +443,35 @@ def create_individual_metrics(name):
         make_individual_metric_chart(metric, name, savefolder(name))
 
 
+def create_full_html(filedata, provider):
+    filedata = filedata.replace("<!--HEAD-->", headtext)
+    filedata = filedata.replace("<!--NAVBAR-->", navbar)
+    filedata = filedata.replace("<!--CURRENT_DATE-->", current_date_string)
+    with open(savefolder(provider) + "index.html", "w+") as file:
+        file.write(filedata)
+
+
 def create_clinic_metrics(clinic_name):
     for metric in main_metrics:
         chart = make_clinic_metric_chart(metric, clinic_name, savefolder(clinic_name))
+
 
 FCN_logo = "./files/pictures/logo.png"
 if os.path.isfile(FCN_logo):
     if not os.path.exists("./docs/pictures/"):
         os.makedirs("./docs/pictures/")
     shutil.copyfile(FCN_logo, "./docs/pictures/logo.png")
+
+if not os.path.exists("./docs/js/"):
+    os.makedirs("./docs/js/")
+files = glob.glob("./files/js/*.js")
+for file in files:
+    _, tail = os.path.split(file)
+    shutil.copyfile(file, "./docs/js/" + str(tail))
+
+css = "./files/uikit.min.css"
+if os.path.isfile(css):
+    shutil.copyfile(css, "./docs/uikit.min.css")
 
 favicon = "./files/pictures/favicon.ico"
 if os.path.isfile(favicon):
@@ -472,6 +493,7 @@ if os.path.isfile(strip_chart):
 comet_chart = "./files/pictures/quality_comet.png"
 if os.path.isfile(comet_chart):
     shutil.copyfile(comet_chart, "./docs/quality_comet.png")
+
 
 def make_navbar(provider):
 
@@ -502,10 +524,10 @@ def make_navbar(provider):
         navbar += (
             f'<div class="uk-inline uk-text-bold" style="color:#9467bd">{provider}'
         )
-    elif (type == "Clinic" or type == "FCN"):
+    elif type == "Clinic" or type == "FCN":
         navbar += '<div class="uk-inline" style="color:#9467bd">Providers'
 
-    if (type == "Individual" or type == "Clinic"):
+    if type == "Individual" or type == "Clinic":
         navbar += (
             '&nbsp;<span class="uk-animation-slide-bottom">&#9660;</span></div>\n'
             + '<div uk-dropdown><ul class="uk-nav uk-dropdown-nav">\n'
@@ -522,14 +544,14 @@ def make_navbar(provider):
                     + "</a></li>\n"
                 )
         navbar += "</ul></div>\n"
-    elif (type == "FCN"):
+    elif type == "FCN":
         navbar += "</div>\n"
 
     navbar += "&nbsp;@&nbsp;\n"
 
-    if (type == "Individual"):
+    if type == "Individual":
         navbar += f'<div class="uk-inline" style="color:#ff7f0e">{clinic_name}'
-    elif (type == "Clinic"):
+    elif type == "Clinic":
         navbar += (
             f'<div class="uk-inline uk-text-bold" style="color:#ff7f0e">{clinic_name}'
         )
@@ -551,18 +573,16 @@ def make_navbar(provider):
             )
     navbar += "</ul></div>\n&nbsp;@&nbsp;\n"
 
-    if (type == "Individual" or type == "Clinic"):
+    if type == "Individual" or type == "Clinic":
         navbar += (
             '<a class="uk-inline" style="color:#1F77B4" href="../FCN/index.html">FCN</a>\n'
         )
-    elif (type == "FCN"):
-        navbar += (
-            '<p class="uk-inline uk-text-bold" style="color:#1F77B4">FCN</p>\n'
-        )
+    elif type == "FCN":
+        navbar += '<p class="uk-inline uk-text-bold" style="color:#1F77B4">FCN</p>\n'
 
     navbar += "</div>\n"
 
-    navbar += '''
+    navbar += """
 <a class="uk-button uk-button-secondary uk-float-right" href="#modal-help" uk-toggle>Help?</a>
 
 <div id="modal-help" uk-modal>
@@ -594,36 +614,31 @@ typically that means this quality measure is more difficult for us.</p>
 </div>
 </div>
 </div>
-'''
+"""
 
     return navbar
+
+
+with open("./files/index-head.txt", "r") as head:
+    headtext = head.read()
 
 for provider in sorted_single_provider_names:
     navbar = make_navbar(provider)
     with open("./files/index.html", "r") as file:
         filedata = file.read()
-    filedata = filedata.replace("<!--NAVBAR-->", navbar)
-    filedata = filedata.replace("<!--CURRENT_DATE-->", current_date_string)
-    with open(savefolder(provider) + "index.html", "w+") as file:
-        file.write(filedata)
+    create_full_html(filedata, provider)
 
 for provider in clinics:
     navbar = make_navbar(provider)
     with open("./files/index-clinic.html", "r") as file:
         filedata = file.read()
-    filedata = filedata.replace("<!--NAVBAR-->", navbar)
-    filedata = filedata.replace("<!--CURRENT_DATE-->", current_date_string)
-    with open(savefolder(provider) + "index.html", "w+") as file:
-        file.write(filedata)
+    create_full_html(filedata, provider)
 
 provider = "FCN"
 navbar = make_navbar(provider)
 with open("./files/index-clinic.html", "r") as file:
     filedata = file.read()
-filedata = filedata.replace("<!--NAVBAR-->", navbar)
-filedata = filedata.replace("<!--CURRENT_DATE-->", current_date_string)
-with open(savefolder(provider) + "index.html", "w+") as file:
-    file.write(filedata)
+create_full_html(filedata, provider)
 
 # Base HTML File
 root_index_clinic = (
@@ -640,9 +655,7 @@ for clinic in clinics:
     )
 root_index_clinic += "</ul>"
 
-provider_index_cards = (
-    '<ul class="js-filter uk-grid-match uk-card-small" uk-grid>\n'
-)
+provider_index_cards = '<ul class="js-filter uk-grid-match uk-card-small" uk-grid>\n'
 
 for name in sorted_single_provider_names:
     provider_icon = (
@@ -683,4 +696,4 @@ pool2.close()
 pool2.join()
 
 for metric in main_metrics:
-        chart = make_fcn_metric_chart(metric, savefolder("FCN"))
+    chart = make_fcn_metric_chart(metric, savefolder("FCN"))
