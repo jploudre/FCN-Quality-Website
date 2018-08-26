@@ -605,12 +605,12 @@ def make_navbar(provider):
 
 <h3>Strip Chart</h3>
 <p>Shows the distribution of all provider panels at FCN with the individual provider highlighted.</p>
-<img src="../strip_chart.png" width="176" height="239" style="display:block" class="uk-align-center">
+<img src="../strip_chart.png" width="176" height="239" style="display:block" class="uk-align-center" uk-img>
 <p>Here you can see that the provider's panel is doing better than most at FCN. You can also see there's a wide range of panels &mdash;
 typically that means this quality measure is more difficult for us.</p>
 <h3>Quality Comet Chart</h3>
 <p>The 'quality comets' show how individual panels are changing over time. The tail shows size and direction of changes. If there's no tail, then there hasn't been significant change.</p>
-<img src="../quality_comet.png" width="339" height="169" style="display:block" class="uk-align-center">
+<img src="../quality_comet.png" width="339" height="169" style="display:block" class="uk-align-center" uk-img>
 <p>Here you can see that 3 provider panels have dramatically improved. Several are doing a little improvement and a few are mostly unchanged. Looking that the height of the dots, you can see most are above target &mdash; so there has probably been some work and learning on this quality measure.</p>
 </div>
 </div>

@@ -5,6 +5,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="../favicon.ico" />
+<link rel="preload" href="../uikit.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="../uikit.min.css"></noscript>
 <script src="../js/promise.min.js"></script>
 <script src="../js/symbol.min.js"></script>
 <script src="../js/fetch.min.js"></script>
@@ -12,7 +14,6 @@
 <script src="../js/vega_lite.min.js"></script>
 <script src="../js/vega_embed.min.js"></script>
 <script src="../js/uikit.min.js"></script>
-<link rel="stylesheet" href="../uikit.min.css" />
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29863015-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -78,12 +79,12 @@
 
 <h3>Strip Chart</h3>
 <p>Shows the distribution of all provider panels at FCN with the individual provider highlighted.</p>
-<img src="../strip_chart.png" width="176" height="239" style="display:block" class="uk-align-center">
+<img src="../strip_chart.png" width="176" height="239" style="display:block" class="uk-align-center" uk-img>
 <p>Here you can see that the provider's panel is doing better than most at FCN. You can also see there's a wide range of panels &mdash;
 typically that means this quality measure is more difficult for us.</p>
 <h3>Quality Comet Chart</h3>
 <p>The 'quality comets' show how individual panels are changing over time. The tail shows size and direction of changes. If there's no tail, then there hasn't been significant change.</p>
-<img src="../quality_comet.png" width="339" height="169" style="display:block" class="uk-align-center">
+<img src="../quality_comet.png" width="339" height="169" style="display:block" class="uk-align-center" uk-img>
 <p>Here you can see that 3 provider panels have dramatically improved. Several are doing a little improvement and a few are mostly unchanged. Looking that the height of the dots, you can see most are above target &mdash; so there has probably been some work and learning on this quality measure.</p>
 </div>
 </div>
@@ -154,7 +155,7 @@ typically that means this quality measure is more difficult for us.</p>
 <hr class="uk-divider-icon">
 <p class="uk-text-bold">Updated: 08/20/2018</p>
 </div>
-<script type="text/javascript">
+<script>
 	function insert_chart(metric, seconddiv) {
 		var spec = "./" + metric + ".json"; 
 		if(!seconddiv) { 
@@ -164,20 +165,20 @@ typically that means this quality measure is more difficult for us.</p>
         }
 		vegaEmbed(idname, spec, {actions: false}).then(function(result) {}).catch(console.error);
 	}
+    insert_chart('Colorectal_Screen');
+    insert_chart('Pap_Smears');
+    insert_chart('Mammogram');
     insert_chart('DM_Eye_Exam');
     insert_chart('DM_Foot_Exam');
     insert_chart('DM_Nephropathy');
     insert_chart('DM_Pneumovax');
+    insert_chart('TD_and_TDAP');
     insert_chart('DM_with_ACE_or_ARB');
     insert_chart('DM_with_Statin');
-    insert_chart('Colorectal_Screen');
-    insert_chart('Pap_Smears');
-    insert_chart('Mammogram');
     insert_chart('Chlamydia');
     insert_chart('AAA');
     insert_chart('Over_age_65_Pneumovax');
     insert_chart('Smoker_Pneumovax');
-    insert_chart('TD_and_TDAP');
     insert_chart('DM_Eye_Exam', 'DM_Eye_Exam_2');
     insert_chart('DM_Foot_Exam', 'DM_Foot_Exam_2');
     insert_chart('DM_Nephropathy', 'DM_Nephropathy_2');
