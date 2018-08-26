@@ -446,6 +446,7 @@ def create_individual_metrics(name):
 def create_full_html(filedata, provider):
     filedata = filedata.replace("<!--HEAD-->", headtext)
     filedata = filedata.replace("<!--NAVBAR-->", navbar)
+    filedata = filedata.replace("<!--JAVASCRIPT-->", custom_javascript)
     filedata = filedata.replace("<!--CURRENT_DATE-->", current_date_string)
     with open(savefolder(provider) + "index.html", "w+") as file:
         file.write(filedata)
@@ -621,6 +622,8 @@ typically that means this quality measure is more difficult for us.</p>
 
 with open("./files/index-head.txt", "r") as head:
     headtext = head.read()
+with open("./files/js/jkp_custom.js", "r") as customjs:
+    custom_javascript = customjs.read()
 
 for provider in sorted_single_provider_names:
     navbar = make_navbar(provider)
