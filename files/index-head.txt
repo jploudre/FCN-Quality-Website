@@ -5,8 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="../favicon.ico" />
-<link rel="preload" href="../uikit.min.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="../uikit.min.css"></noscript>
+<link rel="stylesheet" type="text/css" href="../uikit.min.css"> 
 <script src="../js/promise.min.js"></script>
 <script src="../js/symbol.min.js"></script>
 <script src="../js/fetch.min.js"></script>
