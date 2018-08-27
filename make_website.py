@@ -9,6 +9,7 @@ import os
 import shutil
 import datetime as datetime
 from multiprocessing import Pool
+import json
 
 names = pd.read_csv("./files/names.csv", index_col="MeridiosName")
 metrics = pd.read_csv(
@@ -85,9 +86,9 @@ if not under_zero_df.empty:
     print("Percentages can't be less than 0:\n", under_zero_df)
 
 
-def make_individual_metric_chart(metric, name, savefolder):
+def make_individual_metric_json(metric, name):
     """
-    Makes a chart for a single metric and a single provider.
+    Makes a chart json for a single metric and a single provider.
 
     Assumes: dataframe 'df' that has all the data from CSVs
     Assumes: dataframes 'names' and 'metrics' for lookups
@@ -212,10 +213,22 @@ def make_individual_metric_chart(metric, name, savefolder):
         chart = fcn_progress_line + clinic_progress_line + provider_progress_line | (
             fcn_current_strip_chart + provider_highlight_strip + provider_percent
         )
-    chart.save(savefolder + str(metric).replace(" ", "_") + ".json", scale_factor=2)
+    return chart.to_json()
 
 
-def make_clinic_metric_chart(metric, clinic_name, savefolder):
+def save_individual_chart_data(name):
+    json_data = ""
+    for metric in main_metrics:
+        chart_data = make_individual_metric_json(metric, name)
+        chart_data_json = json.loads(chart_data)
+        json_minified = json.dumps(chart_data_json, separators=(",", ":"))
+        json_data += "var " + metric.replace(" ", "_") + " = " + json_minified + ";\n"
+    foldername = savefolder(name)
+    with open(foldername + "chart_data.json", "w") as savefile:
+        savefile.write(json_data)
+
+
+def make_clinic_metric_json(metric, clinic_name):
     """
     Makes a chart for a single metric and a clinic.
 
@@ -329,10 +342,22 @@ def make_clinic_metric_chart(metric, clinic_name, savefolder):
         ) | ranged_dot + ranged_dot_rule
     else:
         chart = (fcn_progress_line + clinic_progress_line) | ranged_dot
-    chart.save(savefolder + str(metric).replace(" ", "_") + ".json", scale_factor=2)
+    return chart.to_json()
 
 
-def make_fcn_metric_chart(metric, savefolder):
+def save_clinic_chart_data(clinic_name):
+    json_data = ""
+    for metric in main_metrics:
+        chart_data = make_clinic_metric_json(metric, clinic_name)
+        chart_data_json = json.loads(chart_data)
+        json_minified = json.dumps(chart_data_json, separators=(",", ":"))
+        json_data += "var " + metric.replace(" ", "_") + " = " + json_minified + ";\n"
+    foldername = savefolder(clinic_name)
+    with open(foldername + "chart_data.json", "w") as savefile:
+        savefile.write(json_data)
+
+
+def make_fcn_metric_json(metric):
     """
     Makes a chart for a single metric for FCN.
 
@@ -416,7 +441,7 @@ def make_fcn_metric_chart(metric, savefolder):
         chart = (metric_target_rule + fcn_progress_line) | ranged_dot + ranged_dot_rule
     else:
         chart = (fcn_progress_line) | ranged_dot
-    chart.save(savefolder + str(metric).replace(" ", "_") + ".json", scale_factor=2)
+    return chart.to_json()
 
 
 # In names dataframe, if data in individual column then it's an active person
@@ -438,23 +463,20 @@ def savefolder(name):
     return "./docs/" + foldername + "/"
 
 
-def create_individual_metrics(name):
-    for metric in main_metrics:
-        make_individual_metric_chart(metric, name, savefolder(name))
-
-
 def create_full_html(filedata, provider):
     filedata = filedata.replace("<!--HEAD-->", headtext)
     filedata = filedata.replace("<!--NAVBAR-->", navbar)
-    filedata = filedata.replace("<!--JAVASCRIPT-->", custom_javascript)
+    with open(
+        "./docs/" + provider.replace(" ", "_") + "/chart_data.json", "r"
+    ) as chart_data:
+        chart_data_text = chart_data.read()
+        new_custom_javascript = custom_javascript.replace(
+            "<!--JSON-->", chart_data_text
+        )
+    filedata = filedata.replace("<!--JAVASCRIPT-->", new_custom_javascript)
     filedata = filedata.replace("<!--CURRENT_DATE-->", current_date_string)
     with open(savefolder(provider) + "index.html", "w+") as file:
         file.write(filedata)
-
-
-def create_clinic_metrics(clinic_name):
-    for metric in main_metrics:
-        chart = make_clinic_metric_chart(metric, clinic_name, savefolder(clinic_name))
 
 
 FCN_logo = "./files/pictures/logo.png"
@@ -477,15 +499,6 @@ if os.path.isfile(css):
 favicon = "./files/pictures/favicon.ico"
 if os.path.isfile(favicon):
     shutil.copyfile(favicon, "./docs/favicon.ico")
-
-for name in sorted_single_provider_names:
-    provider_picture = "./files/pictures/" + str(name).replace(" ", "_") + ".JPG"
-    if os.path.isfile(provider_picture):
-        shutil.copyfile(
-            provider_picture, "./docs/pictures/" + str(name).replace(" ", "_") + ".JPG"
-        )
-    else:
-        print("Provider photo not found in /files/pictures folder:", provider_picture)
 
 strip_chart = "./files/pictures/strip_chart.png"
 if os.path.isfile(strip_chart):
@@ -605,12 +618,12 @@ def make_navbar(provider):
 
 <h3>Strip Chart</h3>
 <p>Shows the distribution of all provider panels at FCN with the individual provider highlighted.</p>
-<img src="../strip_chart.png" width="176" height="239" style="display:block" class="uk-align-center" uk-img>
+<img src="../strip_chart.png" width="176" height="239" style="display:block" class="uk-align-center">
 <p>Here you can see that the provider's panel is doing better than most at FCN. You can also see there's a wide range of panels &mdash;
 typically that means this quality measure is more difficult for us.</p>
 <h3>Quality Comet Chart</h3>
 <p>The 'quality comets' show how individual panels are changing over time. The tail shows size and direction of changes. If there's no tail, then there hasn't been significant change.</p>
-<img src="../quality_comet.png" width="339" height="169" style="display:block" class="uk-align-center" uk-img>
+<img src="../quality_comet.png" width="339" height="169" style="display:block" class="uk-align-center">
 <p>Here you can see that 3 provider panels have dramatically improved. Several are doing a little improvement and a few are mostly unchanged. Looking that the height of the dots, you can see most are above target &mdash; so there has probably been some work and learning on this quality measure.</p>
 </div>
 </div>
@@ -620,12 +633,42 @@ typically that means this quality measure is more difficult for us.</p>
     return navbar
 
 
+pool = Pool()
+pool.map(save_individual_chart_data, sorted_single_provider_names)
+pool.close()
+pool.join()
+
+pool2 = Pool()
+pool2.map(save_clinic_chart_data, clinics)
+pool2.close()
+pool2.join()
+
+json_data = ""
+name = "FCN"
+for metric in main_metrics:
+    chart_data = make_fcn_metric_json(metric)
+    chart_data_json = json.loads(chart_data)
+    json_minified = json.dumps(chart_data_json, separators=(",", ":"))
+    json_data += "var " + metric.replace(" ", "_") + " = " + json_minified + ";\n"
+foldername = savefolder(name)
+with open(foldername + "chart_data.json", "w") as savefile:
+    savefile.write(json_data)
+
+
 with open("./files/index-head.txt", "r") as head:
     headtext = head.read()
 with open("./files/js/jkp_custom.js", "r") as customjs:
     custom_javascript = customjs.read()
 
 for provider in sorted_single_provider_names:
+    provider_picture = "./files/pictures/" + str(provider).replace(" ", "_") + ".JPG"
+    if os.path.isfile(provider_picture):
+        shutil.copyfile(
+            provider_picture,
+            "./docs/pictures/" + str(provider).replace(" ", "_") + ".JPG",
+        )
+    else:
+        print("Provider photo not found in /files/pictures folder:", provider_picture)
     navbar = make_navbar(provider)
     with open("./files/index.html", "r") as file:
         filedata = file.read()
@@ -688,15 +731,5 @@ filedata = filedata.replace("{{{Current Date}}}", current_date_string)
 with open("docs/" + "index.html", "w+") as file:
     file.write(filedata)
 
-pool = Pool()
-pool.map(create_individual_metrics, sorted_single_provider_names)
-pool.close()
-pool.join()
-
-pool2 = Pool()
-pool2.map(create_clinic_metrics, clinics)
-pool2.close()
-pool2.join()
-
-for metric in main_metrics:
-    chart = make_fcn_metric_chart(metric, savefolder("FCN"))
+# Remove all the JSONs now
+map(os.remove, glob.glob("/docs/*.json"))
