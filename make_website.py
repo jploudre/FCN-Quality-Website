@@ -732,4 +732,4 @@ with open("docs/" + "index.html", "w+") as file:
     file.write(filedata)
 
 # Remove all the JSONs now
-map(os.remove, glob.glob("./docs/*.json"))
+map(os.remove, glob.glob("/docs/*.json"))
