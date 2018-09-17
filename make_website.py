@@ -54,7 +54,7 @@ for file in files:
         df = df.append(file_df)
     else:
         raise ValueError(
-            "CSV Filename should have Zero Padded Date. See the zeros in --> 02-01-2018"
+            "CSV Filename should have Zero Padded Date"
         )
 
 # df.dtypes
@@ -67,13 +67,13 @@ for file in files:
 
 if set(df.NAME.unique()) - set(names.index.unique()) != set():
     print(
-        "There are providers in Meridios CSVs that aren't in names.csv:\n",
+        "Missing Provider in names.csv:\n",
         set(df.NAME.unique()) - set(names.index.unique()) 
     )
 df.drop(["NAME"], axis=1, inplace=True)
 
 print(
-    "There are metrics in Meridios CSVs that aren't in metrics.csv:\n",
+    "Missing Metric in metrics.csv:\n",
     set(df.Metricname.unique()) - set(metrics.index.unique()),
 )
 df.drop(["Metricname"], axis=1, inplace=True)
