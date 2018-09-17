@@ -103,5 +103,6 @@ Index,MeridiosName,Name,Type,Clinic
 101,"Sweeney MD, Margaret",Meg Sweeney,Individual,IFP
 102,"McClenahan MD, Richard",,,
 103,"Dubek MD, Martin",,,
-104,"Nolan ARNP,Rebecca",,,
-105,FCN,FCN,FCN,FCN
+104,"Nolan MD, Rebecca",Bryn Nolan,Individual,NCFP
+105,"Hill ARNP, Susan",,, 
+106,FCN,FCN,FCN,FCN

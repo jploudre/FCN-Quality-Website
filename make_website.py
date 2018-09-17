@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 
-import numpy as np
-import pandas as pd
-import altair as alt
-
 import glob as glob
 import os
 import shutil
 import datetime as datetime
 from multiprocessing import Pool
 import json
+
+import pandas as pd
+import altair as alt
+
 
 names = pd.read_csv("./files/names.csv", index_col="MeridiosName")
 metrics = pd.read_csv(
@@ -49,7 +49,7 @@ for file in files:
 
         # Smaller dataframes use less memory and reduce eventual JSON export size.
         file_df.drop(
-            ["NAME", "Metricname", "SeenNum", "SeenDenom"], axis=1, inplace=True
+            ["SeenNum", "SeenDenom"], axis=1, inplace=True
         )
         df = df.append(file_df)
     else:
@@ -65,17 +65,18 @@ for file in files:
 # df.head()
 # metrics.head()
 
-if set(df.Name.unique()) - set(names.Name) != set():
+if set(df.NAME.unique()) - set(names.index.unique()) != set():
     print(
         "There are providers in Meridios CSVs that aren't in names.csv:\n",
-        set(df.Name.unique()) - set(names.Name),
+        set(df.NAME.unique()) - set(names.index.unique()) 
     )
+df.drop(["NAME"], axis=1, inplace=True)
 
-if set(df.Metric.unique()) < set(metrics.Metric):
-    print(
-        "There are metrics in Meridios CSVs that aren't in metrics.csv:\n",
-        set(df.Metric.unique()) - set(metrics.Metric),
-    )
+print(
+    "There are metrics in Meridios CSVs that aren't in metrics.csv:\n",
+    set(df.Metricname.unique()) - set(metrics.index.unique()),
+)
+df.drop(["Metricname"], axis=1, inplace=True)
 
 big_error_df = df[(df["Percentage"] > 1)]
 if not big_error_df.empty:
@@ -668,7 +669,7 @@ for provider in sorted_single_provider_names:
             "./docs/pictures/" + str(provider).replace(" ", "_") + ".JPG",
         )
     else:
-        print("Provider photo not found in /files/pictures folder:", provider_picture)
+        print("Missing photo:", provider_picture)
     navbar = make_navbar(provider)
     with open("./files/index.html", "r") as file:
         filedata = file.read()
