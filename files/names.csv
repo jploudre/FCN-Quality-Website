@@ -1,110 +1,111 @@
-Index,MeridiosName,Name,Type,Clinic
-0,"Alexander MD, Steven",Steve Alexander,Individual,LFM
-1,"Anderson MD, Greg",Greg Anderson,Individual,BellB
-2,"Anderson MD, Rodney",Rodney Anderson,Individual,FHA
-3,"Bates MD, Jennifer",Jen Bates,Individual,FFMC
-4,North Sound Family Medicine,NSFM,Clinic,NSFM
-5,Squalicum Family Medicine,SFM,Clinic,SFM
-6,Whatcom Family Medicine,WFM,Clinic,WFM
-7,Bellingham Bay Medical Center,BellB,Clinic,BellB
-8,Birch Bay Family Medicine,BBFM,Clinic,BBFM
-9,Family Health Associates,FHA,Clinic,FHA
-10,Ferndale Family Medical Center,FFMC,Clinic,FFMC
-11,Island Family Physicians,IFP,Clinic,IFP
-12,Lynden Family Medicine,LFM,Clinic,LFM
-13,North Cascade Family Physicians,NCFP,Clinic,NCFP
-14,"Billau DO, Shannon",Shannon Billau,Individual,WFM
-15,"Binder MD, Richard",,,
-16,"Bjorseth, Franklin",Frank Bjorseth,Individual,IFP
-17,"Bloom MD, Edward",Edward Bloom,Individual,FHA
-18,"Bloom MD, Jessica",Jessica Bloom,Individual,FHA
-19,"Bloom MD, Steven",Steve Bloom,Individual,WFM
-20,"Bonner, MD, Ian",Ian Bonner,Individual,BellB
-21,"Bowling, Sara",Sara Bowling,Individual,BellB
-22,"Bradt DO, Rory",Rory Bradt,Individual,NSFM
-23,"Brejcha ARNP, Rebecca",,,
-24,"Brodsky, Lisa",Lisa Brodsky,Individual,NSFM
-25,"Burden MD, Margaret",Margaret Burden,Individual,LFM
-26,"Bylund MD, Erik",Erik Bylund,Individual,NCFP
-27,"Caldwell MD, Robin",Robin Caldwell,Individual,LFM
-28,"Eiford PA-C, William",,,
-29,"Estep MD, Roger",Roger Estep,Individual,NCFP
-30,"Fleming PA-C, Michael",Mike Fleming,Individual,LFM
-31,"Floyd MD, Anneliese",Anneliese Floyd,Individual,NSFM
-32,"Fox DO, Laura",Laura Fox,Individual,BellB
-33,"Fredette MD, MSNu, Renay",Renay Fredette,Individual,FFMC
-34,"Gambs MD, Catherine",Kay-Kay Gambs,Individual,NCFP
-35,"Gamson MD, Jonathan",Jonathan Gamson,Individual,NCFP
-36,"Gavareski MD, David",,,
-37,"Gaylord ARNP, ND, Elizabeth",Elizabeth Gaylord,Individual,NSFM
-38,"Goodman ARNP, Karen",Karen Goodman,Individual,IFP
-39,"Hall MD, Deborah",Deb Hall,Individual,FHA
-40,"Hansom MD, Janet",Janet Hansom,Individual,NCFP
-41,"Hartwell MD, Larry",Larry Hartwell,Individual,LFM
-42,"Hein MD, Shelby",Shelby Hein,Individual,SFM
-43,"Herdman MD, S. Harry",Harry Herdman,Individual,SFM
-44,"Herrman ARNP, Sarah",,,
-45,"Hiemstra DO, John",John Hiemstra,Individual,LFM
-46,"Honey DO, Heather",Heather Honey,Individual,SFM
-47,"Honey MD, Robert",Ryan Honey,Individual,FHA
-48,"Hopper MD, James",Jim Hopper,Individual,BellB
-49,"Hruby MD, John",John Hruby,Individual,FFMC
-50,"Jacobs MD, Kellie",Kellie Jacobs,Individual,FHA
-51,"James, Michael",Mike James,Individual,IFP
-52,"Kerlin ARNP, Sharon",,,
-53,"Klassen ARNP, Jessica",Jessica Klassen,Individual,BBFM
-54,"Lelonek, Meghan",Meghan Lelonek,Individual,FHA
-55,"Lewis MD, Stephen",Steve Lewis,Individual,FFMC
-56,"Maloney PA-C, Erin",,,
-57,"McConahey PA-C, Joseph",,,
-58,"McLaughlin MD, Patrick",Patrick McLaughlin,Individual,NSFM
-59,"McPherson ARNP, Sally",Sally McPherson,Individual,NCFP
-60,"Muller MD, Lucia",Lucia Muller,Individual,NCFP
-61,"O'Keefe MD, Karen",Karen O’Keefe,Individual,BellB
-62,"Pavlik ARNP, Lillian",,,
-63,"Payne-Zajac PA-C, Patricia",Patricia Payne-Zajac,Individual,LFM
-64,"Pederson MD, Bruce",,,
-65,"Ploudre MD, Jonathan",Jonathan Ploudre,Individual,NCFP
-66,"Regier ARNP, Teresa",Teresa Regier,Individual,BBFM
-67,"Rey MD, Claudia",Claudia Rey,Individual,FFMC
-68,"Rieger, Robert",Rob Rieger,Individual,IFP
-69,"Roessler MD, Deborah",Debbie Roessler,Individual,SFM
-70,"Safford MD, Bertha",Berdi Safford,Individual,FFMC
-71,"Sauve ARNP, Lauren",Lauren Sauve,Individual,NCFP
-72,"Schimke, MD, Melana",Melana Schimke,Individual,BellB
-73,"Shapiro MD, Miriam",Miriam Shapiro,Individual,FHA
-74,"Short MD, Jason",Jason Short,Individual,NSFM
-75,"Short MD, Vicki",Vicki Short,Individual,NSFM
-76,"Snyder DO, Ashley",Ashley Snyder,Individual,LFM
-77,"Snyder MD, Walter Kalani",Kalani Snyder,Individual,FFMC
-78,"Swanson MD, Mary",Mary Swanson,Individual,NSFM
-79,"Sweeney, Margaret",Meg Sweeney,Individual,IFP
-80,"Thomson ARNP, Heather",Heather Thomson,Individual,WFM
-81,"VanHofwegen MD, Lisa",Lisa Van Hofwegen,Individual,BellB
-82,"Wakefield-Pagels MD, April",April Wakefield-Pagels,Individual,NSFM
-83,"Welty MD, Joy",Joy Welty,Individual,SFM
-84,"Werner MD, Matt",Matt Werner,Individual,SFM
-85,"Winkes MD, L Sloane",Sloane Winkes,Individual,NCFP
-86,"Wu MD, Chao-Ying",Ying Wu,Individual,NSFM
-87,"Yoder MD, Ashley",Ashley Yoder,Individual,FHA
-88,Everson Family Medicine,,,
-89,"Case ARNP, Erinn",,,
-90,"Gunningham MD, Frederick",,,
-91,"Raduege MD, John",John Raduege,Individual,NSFM
-92,"Steele MD, Michael",,,
-93,"Stewart ARNP, Sarah",,,
-94,"Martiniano MA-C, Erin",,,
-95,"Bjorseth MD, Franklin",Frank Bjorseth,Individual,IFP
-96,"Bowling MD, Sara",Sara Bowling,Individual,BellB
-97,"Brodsky ARNP, Lisa",Lisa Brodsky,Individual,NSFM
-98,"James MD, Michael",Mike James,Individual,IFP
-99,"Lelonek MD, Meghan",Meghan Lelonek,Individual,FHA
-100,"Rieger MD, Robert",Rob Rieger,Individual,IFP
-101,"Sweeney MD, Margaret",Meg Sweeney,Individual,IFP
-102,"McClenahan MD, Richard",,,
-103,"Dubek MD, Martin",,,
-104,"Nolan MD, Rebecca",Bryn Nolan,Individual,NCFP
-105,"Hill ARNP, Susan",,, 
-106,"Walls MD, Ashlee",Ashlee Walls,Individual,NSFM
-107,FCN,FCN,FCN,FCN
-108,"McAllister MD, Sumner",Sumner McAllister,Individual,BellB
+Index,MeridiosName,Name,Type,Clinic,
+0,"Alexander MD, Steven",Steve Alexander,Individual,LFM,
+1,"Anderson MD, Greg",Greg Anderson,Individual,BellB,
+2,"Anderson MD, Rodney",Rodney Anderson,Individual,FHA,
+3,"Bates MD, Jennifer",Jen Bates,Individual,FFMC,
+4,North Sound Family Medicine,NSFM,Clinic,NSFM,
+5,Squalicum Family Medicine,SFM,Clinic,SFM,
+6,Whatcom Family Medicine,WFM,Clinic,WFM,
+7,Bellingham Bay Medical Center,BellB,Clinic,BellB,
+8,Birch Bay Family Medicine,BBFM,Clinic,BBFM,
+9,Family Health Associates,FHA,Clinic,FHA,
+10,Ferndale Family Medical Center,FFMC,Clinic,FFMC,
+11,Island Family Physicians,IFP,Clinic,IFP,
+12,Lynden Family Medicine,LFM,Clinic,LFM,
+13,North Cascade Family Physicians,NCFP,Clinic,NCFP,
+14,"Billau DO, Shannon",Shannon Billau,Individual,WFM,
+15,"Binder MD, Richard",,,,
+16,"Bjorseth, Franklin",Frank Bjorseth,Individual,IFP,
+17,"Bloom MD, Edward",Edward Bloom,Individual,FHA,
+18,"Bloom MD, Jessica",Jessica Bloom,Individual,FHA,
+19,"Bloom MD, Steven",Steve Bloom,Individual,WFM,
+20,"Bonner, MD, Ian",Ian Bonner,Individual,BellB,
+21,"Bowling, Sara",,,,
+22,"Bradt DO, Rory",Rory Bradt,Individual,NSFM,
+23,"Brejcha ARNP, Rebecca",,,,
+24,"Brodsky, Lisa",Lisa Brodsky,Individual,NSFM,
+25,"Burden MD, Margaret",Margaret Burden,Individual,LFM,
+26,"Bylund MD, Erik",Erik Bylund,Individual,NCFP,
+27,"Caldwell MD, Robin",Robin Caldwell,Individual,LFM,
+28,"Eiford PA-C, William",,,,
+29,"Estep MD, Roger",Roger Estep,Individual,NCFP,
+30,"Fleming PA-C, Michael",Mike Fleming,Individual,LFM,
+31,"Floyd MD, Anneliese",Anneliese Floyd,Individual,NSFM,
+32,"Fox DO, Laura",Laura Fox,Individual,BellB,
+33,"Fredette MD, MSNu, Renay",Renay Fredette,Individual,FFMC,
+34,"Gambs MD, Catherine",Kay-Kay Gambs,Individual,NCFP,
+35,"Gamson MD, Jonathan",Jonathan Gamson,Individual,NCFP,
+36,"Gavareski MD, David",,,,
+37,"Gaylord ARNP, ND, Elizabeth",Elizabeth Gaylord,Individual,NSFM,
+38,"Goodman ARNP, Karen",Karen Goodman,Individual,IFP,
+39,"Hall MD, Deborah",Deb Hall,Individual,FHA,
+40,"Hansom MD, Janet",Janet Hansom,Individual,NCFP,
+41,"Hartwell MD, Larry",Larry Hartwell,Individual,LFM,
+42,"Hein MD, Shelby",Shelby Hein,Individual,SFM,
+43,"Herdman MD, S. Harry",Harry Herdman,Individual,SFM,
+44,"Herrman ARNP, Sarah",,,,
+45,"Hiemstra DO, John",John Hiemstra,Individual,LFM,
+46,"Honey DO, Heather",Heather Honey,Individual,SFM,
+47,"Honey MD, Robert",Ryan Honey,Individual,FHA,
+48,"Hopper MD, James",,,,
+49,"Hruby MD, John",John Hruby,Individual,FFMC,
+50,"Jacobs MD, Kellie",Kellie Jacobs,Individual,FHA,
+51,"James, Michael",Mike James,Individual,IFP,
+52,"Kerlin ARNP, Sharon",,,,
+53,"Klassen ARNP, Jessica",Jessica Klassen,Individual,BBFM,
+54,"Lelonek, Meghan",Meghan Lelonek,Individual,FHA,
+55,"Lewis MD, Stephen",Steve Lewis,Individual,FFMC,
+56,"Maloney PA-C, Erin",,,,
+57,"McConahey PA-C, Joseph",,,,
+58,"McLaughlin MD, Patrick",Patrick McLaughlin,Individual,NSFM,
+59,"McPherson ARNP, Sally",Sally McPherson,Individual,NCFP,
+60,"Muller MD, Lucia",Lucia Muller,Individual,NCFP,
+61,"O'Keefe MD, Karen",Karen O’Keefe,Individual,BellB,
+62,"Pavlik ARNP, Lillian",,,,
+63,"Payne-Zajac PA-C, Patricia",Patricia Payne-Zajac,Individual,LFM,
+64,"Pederson MD, Bruce",,,,
+65,"Ploudre MD, Jonathan",Jonathan Ploudre,Individual,NCFP,
+66,"Regier ARNP, Teresa",Teresa Regier,Individual,BBFM,
+67,"Rey MD, Claudia",Claudia Rey,Individual,FFMC,
+68,"Rieger, Robert",Rob Rieger,Individual,IFP,
+69,"Roessler MD, Deborah",Debbie Roessler,Individual,SFM,
+70,"Safford MD, Bertha",Berdi Safford,Individual,FFMC,
+71,"Sauve ARNP, Lauren",Lauren Sauve,Individual,NCFP,
+72,"Schimke, MD, Melana",Melana Schimke,Individual,BellB,
+73,"Shapiro MD, Miriam",Miriam Shapiro,Individual,FHA,
+74,"Short MD, Jason",Jason Short,Individual,NSFM,
+75,"Short MD, Vicki",Vicki Short,Individual,NSFM,
+76,"Snyder DO, Ashley",Ashley Snyder,Individual,LFM,
+77,"Snyder MD, Walter Kalani",Kalani Snyder,Individual,FFMC,
+78,"Swanson MD, Mary",Mary Swanson,Individual,NSFM,
+79,"Sweeney, Margaret",Meg Sweeney,Individual,IFP,
+80,"Thomson ARNP, Heather",Heather Thomson,Individual,WFM,
+81,"VanHofwegen MD, Lisa",Lisa Van Hofwegen,Individual,BellB,
+82,"Wakefield-Pagels MD, April",April Wakefield-Pagels,Individual,NSFM,
+83,"Welty MD, Joy",Joy Welty,Individual,SFM,
+84,"Werner MD, Matt",Matt Werner,Individual,SFM,
+85,"Winkes MD, L Sloane",Sloane Winkes,Individual,NCFP,
+86,"Wu MD, Chao-Ying",Ying Wu,Individual,NSFM,
+87,"Yoder MD, Ashley",Ashley Yoder,Individual,FHA,
+88,Everson Family Medicine,,,,
+89,"Case ARNP, Erinn",,,,
+90,"Gunningham MD, Frederick",,,,
+91,"Raduege MD, John",John Raduege,Individual,NSFM,
+92,"Steele MD, Michael",,,,
+93,"Stewart ARNP, Sarah",,,,
+94,"Martiniano MA-C, Erin",,,,
+95,"Bjorseth MD, Franklin",Frank Bjorseth,Individual,IFP,
+96,"Bowling MD, Sara",,,,
+97,"Brodsky ARNP, Lisa",Lisa Brodsky,Individual,NSFM,
+98,"James MD, Michael",Mike James,Individual,IFP,
+99,"Lelonek MD, Meghan",Meghan Lelonek,Individual,FHA,
+100,"Rieger MD, Robert",Rob Rieger,Individual,IFP,
+101,"Sweeney MD, Margaret",Meg Sweeney,Individual,IFP,
+102,"McClenahan MD, Richard",,,,
+103,"Dubek MD, Martin",,,,
+104,"Nolan MD, Rebecca",Bryn Nolan,Individual,NCFP,
+105,"Hill ARNP, Susan",,, ,
+106,"Walls MD, Ashlee",Ashlee Walls,Individual,NSFM,
+107,FCN,FCN,FCN,FCN,
+108,"McAllister MD, Sumner",Sumner McAllister,Individual,BellB,
+109,"Embree MD, Leah",Leah Embree,Individual,BBFM,
