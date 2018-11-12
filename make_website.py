@@ -48,14 +48,10 @@ for file in files:
         file_df["Date"] = datetime.datetime.strptime(filename_parts[0], "%m.%d.%Y")
 
         # Smaller dataframes use less memory and reduce eventual JSON export size.
-        file_df.drop(
-            ["SeenNum", "SeenDenom"], axis=1, inplace=True
-        )
+        file_df.drop(["SeenNum", "SeenDenom"], axis=1, inplace=True)
         df = df.append(file_df)
     else:
-        raise ValueError(
-            "CSV Filename should have Zero Padded Date"
-        )
+        raise ValueError("CSV Filename should have Zero Padded Date")
 
 # df.dtypes
 # df.info()
@@ -68,7 +64,7 @@ for file in files:
 if set(df.NAME.unique()) - set(names.index.unique()) != set():
     print(
         "Missing Provider in names.csv:\n",
-        set(df.NAME.unique()) - set(names.index.unique()) 
+        set(df.NAME.unique()) - set(names.index.unique()),
     )
 df.drop(["NAME"], axis=1, inplace=True)
 
@@ -253,6 +249,12 @@ def make_clinic_metric_json(metric, clinic_name):
         & (df["Date"] == current_date)
     ]
 
+    clinic_current_metric = df[
+        (df["Metric"] == metric)
+        & (df["Name"] == clinic_name)
+        & (df["Date"] == current_date)
+    ]
+
     clinic_progress_line = (
         alt.Chart(clinic_df)
         .mark_line(strokeWidth=4)
@@ -266,6 +268,14 @@ def make_clinic_metric_json(metric, clinic_name):
             color=alt.ColorValue("#ff7f0e"),
         )
         .properties(width=200, height=200)
+    )
+
+    clinic_progress_line += (
+        alt.Chart(clinic_current_metric)
+        .mark_text(align="left", baseline="top", dx=25, dy=-95, size=20)
+        .encode(
+            text=alt.Text("Percentage:Q", format=".2%"), color=alt.ColorValue("#ff7f0e")
+        )
     )
 
     fcn_progress_line = (
