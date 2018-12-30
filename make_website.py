@@ -18,8 +18,8 @@ metrics = pd.read_csv(
 
 df = pd.DataFrame()
 
-files = glob.glob("./data/*.csv")
-for file in files:
+files = glob.iglob("./data/*.csv")
+for file in tqdm.tqdm(files, total=len(glob.glob("./data/*csv")), unit="CSV Files"):
     file_df = pd.read_csv(file, usecols=["NAME", "Metricname", "SeenNum", "SeenDenom"])
     file_df["Name"] = file_df.NAME.map(names.Name)
     file_df["Type"] = file_df.NAME.map(names.Type)
@@ -647,14 +647,14 @@ typically that means this quality measure is more difficult for us.</p>
 pool = Pool()
 for _ in tqdm.tqdm(
     pool.imap(save_individual_chart_data, sorted_single_provider_names),
-    total=len(sorted_single_provider_names),
+    total=len(sorted_single_provider_names), unit="Graphs"
 ):
     pass
 pool.close()
 pool.join()
 
 pool2 = Pool()
-for _ in tqdm.tqdm(pool2.imap(save_clinic_chart_data, clinics), total=len(clinics)):
+for _ in tqdm.tqdm(pool2.imap(save_clinic_chart_data, clinics), total=len(clinics), unit="Graphs"):
     pass
 pool2.close()
 pool2.join()
