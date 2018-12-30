@@ -9,7 +9,7 @@ import json
 
 import pandas as pd
 import altair as alt
-
+import tqdm as tqdm
 
 names = pd.read_csv("./files/names.csv", index_col="MeridiosName")
 metrics = pd.read_csv(
@@ -645,12 +645,17 @@ typically that means this quality measure is more difficult for us.</p>
 
 
 pool = Pool()
-pool.map(save_individual_chart_data, sorted_single_provider_names)
+for _ in tqdm.tqdm(
+    pool.imap(save_individual_chart_data, sorted_single_provider_names),
+    total=len(sorted_single_provider_names),
+):
+    pass
 pool.close()
 pool.join()
 
 pool2 = Pool()
-pool2.map(save_clinic_chart_data, clinics)
+for _ in tqdm.tqdm(pool2.imap(save_clinic_chart_data, clinics), total=len(clinics)):
+    pass
 pool2.close()
 pool2.join()
 
