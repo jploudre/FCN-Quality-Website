@@ -1,0 +1,46 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-64
+@EXPLICIT
+https://repo.anaconda.com/pkgs/main/osx-64/blas-1.0-mkl.tar.bz2
+https://conda.anaconda.org/conda-forge/osx-64/ca-certificates-2018.11.29-ha4d7672_0.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/intel-openmp-2019.1-144.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/libcxxabi-4.0.1-hcfea43d_1.tar.bz2
+https://repo.continuum.io/pkgs/main/osx-64/libgfortran-3.0.1-h93005f0_2.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/xz-5.2.4-h1de35cc_4.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/zlib-1.2.11-h1de35cc_3.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/libcxx-4.0.1-hcfea43d_1.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/mkl-2019.1-144.tar.bz2
+https://conda.anaconda.org/conda-forge/osx-64/openssl-1.0.2p-h470a237_1.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/tk-8.6.8-ha441bb4_0.tar.bz2
+https://repo.continuum.io/pkgs/main/osx-64/libffi-3.2.1-h475c297_4.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/ncurses-6.1-h0a44026_1.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/libedit-3.1.20170329-hb402a30_2.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/readline-7.0-h1de35cc_5.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/sqlite-3.26.0-ha441bb4_0.tar.bz2
+https://conda.anaconda.org/conda-forge/osx-64/python-3.7.1-h46c1a51_0.tar.bz2
+https://conda.anaconda.org/conda-forge/noarch/appdirs-1.4.3-py_1.tar.bz2
+https://conda.anaconda.org/conda-forge/noarch/attrs-18.2.0-py_0.tar.bz2
+https://conda.anaconda.org/conda-forge/osx-64/certifi-2018.11.29-py37_1000.tar.bz2
+https://conda.anaconda.org/conda-forge/noarch/click-7.0-py_0.tar.bz2
+https://conda.anaconda.org/conda-forge/osx-64/entrypoints-0.2.3-py37_1002.tar.bz2
+https://conda.anaconda.org/conda-forge/osx-64/markupsafe-1.1.0-py37h470a237_0.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/numpy-base-1.15.4-py37h6575580_0.tar.bz2
+https://conda.anaconda.org/conda-forge/noarch/pytz-2018.7-py_0.tar.bz2
+https://conda.anaconda.org/conda-forge/osx-64/six-1.12.0-py37_1000.tar.bz2
+https://conda.anaconda.org/conda-forge/noarch/toml-0.10.0-py_0.tar.bz2
+https://conda.anaconda.org/conda-forge/noarch/toolz-0.9.0-py_1.tar.bz2
+https://conda.anaconda.org/conda-forge/noarch/tqdm-4.28.1-py_0.tar.bz2
+https://conda.anaconda.org/conda-forge/noarch/black-18.9b0-py_0.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/mkl_fft-1.0.6-py37h27c97d8_0.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/mkl_random-1.0.2-py37h27c97d8_0.tar.bz2
+https://conda.anaconda.org/conda-forge/osx-64/pyrsistent-0.14.8-py37h470a237_0.tar.bz2
+https://conda.anaconda.org/conda-forge/noarch/python-dateutil-2.7.5-py_0.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/setuptools-40.6.3-py37_0.tar.bz2
+https://conda.anaconda.org/conda-forge/noarch/jinja2-2.10-py_1.tar.bz2
+https://conda.anaconda.org/conda-forge/osx-64/jsonschema-3.0.0a3-py37_1000.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/numpy-1.15.4-py37hacdab7b_0.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/wheel-0.32.3-py37_0.tar.bz2
+https://conda.anaconda.org/conda-forge/osx-64/pandas-0.23.4-py37hf8a1672_0.tar.bz2
+https://repo.anaconda.com/pkgs/main/osx-64/pip-18.1-py37_0.tar.bz2
+https://conda.anaconda.org/conda-forge/osx-64/altair-2.3.0-py37_1001.tar.bz2
