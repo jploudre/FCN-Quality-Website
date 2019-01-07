@@ -431,7 +431,6 @@ def make_fcn_metric_json(metric):
             ),
             alt.X("Name:N", axis=alt.Axis(title="")),
             detail="Name:N",
-            tooltip=["Name", "Percentage"],
         )
         .properties(height=200)
     )
@@ -439,7 +438,7 @@ def make_fcn_metric_json(metric):
     ranged_dot += (
         alt.Chart(current_metric)
         .mark_point(size=100, opacity=1, filled=True, color="#FF7F0E")
-        .encode(alt.Y("Percentage:Q"), alt.X("Name:N"), tooltip=["Name", "Percentage"])
+        .encode(alt.Y("Percentage:Q"), alt.X("Name:N"))
     )
 
     ranged_dot_rule = (
@@ -589,19 +588,13 @@ def make_navbar(provider):
     )
     for clinic in clinics:
         if clinic == clinic_name:
-            navbar += (
-                f'<li class="uk-active"><a href="../{str(clinic).replace(" ", "_")}/index.html">{clinic}</a></li>\n'
-            )
+            navbar += f'<li class="uk-active"><a href="../{str(clinic).replace(" ", "_")}/index.html">{clinic}</a></li>\n'
         else:
-            navbar += (
-                f'<li><a href="../{str(clinic).replace(" ", "_")}/index.html">{clinic}</a></li>\n'
-            )
+            navbar += f'<li><a href="../{str(clinic).replace(" ", "_")}/index.html">{clinic}</a></li>\n'
     navbar += "</ul></div>\n&nbsp;@&nbsp;\n"
 
     if type == "Individual" or type == "Clinic":
-        navbar += (
-            '<a class="uk-inline" style="color:#1F77B4" href="../FCN/index.html">FCN</a>\n'
-        )
+        navbar += '<a class="uk-inline" style="color:#1F77B4" href="../FCN/index.html">FCN</a>\n'
     elif type == "FCN":
         navbar += '<p class="uk-inline uk-text-bold" style="color:#1F77B4">FCN</p>\n'
 
