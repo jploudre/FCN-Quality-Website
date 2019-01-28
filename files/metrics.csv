@@ -41,5 +41,4 @@ Index,MeridiosMetric,Metric,Target,Metric Category,Main,Initial Population,Numer
 39,RAF (HCC) Score for Medicate,HCC Medicare,,Utilization,,,,,
 40,Pneumovax - DM ,DM Pneumovax,0.8,Immunization,Main,,,,
 41,Nephropathy Assessment ,DM Nephropathy,0.8,Chronic Dz,Main,,,,
-
-
+42,Pneumovax - DM,DM Pneumovax,0.8,Immunization,Main,,,,
