@@ -6,10 +6,8 @@ import shutil
 import datetime as datetime
 from multiprocessing import Pool
 import json
-
 import pandas as pd
 import altair as alt
-import tqdm as tqdm
 
 names = pd.read_csv("./files/names.csv", index_col="MeridiosName")
 metrics = pd.read_csv(
@@ -19,7 +17,7 @@ metrics = pd.read_csv(
 df = pd.DataFrame()
 
 files = glob.iglob("./data/*.csv")
-for file in tqdm.tqdm(files, total=len(glob.glob("./data/*csv")), desc="CSV Files"):
+for file in files:
     file_df = pd.read_csv(file, usecols=["NAME", "Metricname", "SeenNum", "SeenDenom"])
     file_df["Name"] = file_df.NAME.map(names.Name)
     file_df["Type"] = file_df.NAME.map(names.Type)
@@ -53,26 +51,12 @@ for file in tqdm.tqdm(files, total=len(glob.glob("./data/*csv")), desc="CSV File
     else:
         raise ValueError("CSV Filename should have Zero Padded Date")
 
-# df.dtypes
-# df.info()
-# df.describe()
-# df.columns
-# df.Metric.unique()
-# df.head()
-# metrics.head()
 
 if len(set(df.NAME.unique()) - set(names.index.unique())) > 1:
     print(
         "Missing Provider in names.csv:\n",
         set(df.NAME.unique()) - set(names.index.unique()),
     )
-df.drop(["NAME"], axis=1, inplace=True)
-
-print(
-    "Missing Metric in metrics.csv:\n",
-    set(df.Metricname.unique()) - set(metrics.index.unique()),
-)
-df.drop(["Metricname"], axis=1, inplace=True)
 
 big_error_df = df[(df["Percentage"] > 1)]
 if not big_error_df.empty:
@@ -81,6 +65,9 @@ if not big_error_df.empty:
 under_zero_df = df[(df["Percentage"] < 0)]
 if not under_zero_df.empty:
     print("Percentages can't be less than 0:\n", under_zero_df)
+
+df.drop(["NAME"], axis=1, inplace=True)
+df.drop(["Metricname"], axis=1, inplace=True)
 
 
 def make_individual_metric_json(metric, name):
@@ -545,8 +532,8 @@ def make_navbar(provider):
         )
 
     if type == "Individual":
-        navbar += (
-            f'<div class="uk-inline uk-text-bold" style="color:#9467bd">{provider}'
+        navbar += '<div class="uk-inline uk-text-bold" style="color:#9467bd">{}'.format(
+            provider
         )
     elif type == "Clinic" or type == "FCN":
         navbar += '<div class="uk-inline" style="color:#9467bd">Providers'
@@ -558,7 +545,7 @@ def make_navbar(provider):
         )
         for clinic_provider in same_clinic_providers:
             if provider == clinic_provider:
-                navbar += f'<li class="uk-active">{provider}</li>\n'
+                navbar += '<li class="uk-active">{}</li>\n'.format(provider)
             else:
                 navbar += (
                     '<li><a href="../'
@@ -574,10 +561,10 @@ def make_navbar(provider):
     navbar += "&nbsp;@&nbsp;\n"
 
     if type == "Individual":
-        navbar += f'<div class="uk-inline" style="color:#ff7f0e">{clinic_name}'
+        navbar += '<div class="uk-inline" style="color:#ff7f0e">{}'.format(clinic_name)
     elif type == "Clinic":
-        navbar += (
-            f'<div class="uk-inline uk-text-bold" style="color:#ff7f0e">{clinic_name}'
+        navbar += '<div class="uk-inline uk-text-bold" style="color:#ff7f0e">{}'.format(
+            clinic_name
         )
     elif type == "FCN":
         navbar += '<div class="uk-inline" style="color:#ff7f0e">Clinics'
@@ -588,13 +575,15 @@ def make_navbar(provider):
     )
     for clinic in clinics:
         if clinic == clinic_name:
-            navbar += f'<li class="uk-active"><a href="../{str(clinic).replace(" ", "_")}/index.html">{clinic}</a></li>\n'
+            navbar += '<li class="uk-active"><a href="../{}/index.html">{}</a></li>\n'.format(clinic, clinic)
         else:
-            navbar += f'<li><a href="../{str(clinic).replace(" ", "_")}/index.html">{clinic}</a></li>\n'
+            navbar += '<li><a href="../{}/index.html">{}</a></li>\n'.format(clinic, clinic)
     navbar += "</ul></div>\n&nbsp;@&nbsp;\n"
 
     if type == "Individual" or type == "Clinic":
-        navbar += '<a class="uk-inline" style="color:#1F77B4" href="../FCN/index.html">FCN</a>\n'
+        navbar += (
+            '<a class="uk-inline" style="color:#1F77B4" href="../FCN/index.html">FCN</a>\n'
+        )
     elif type == "FCN":
         navbar += '<p class="uk-inline uk-text-bold" style="color:#1F77B4">FCN</p>\n'
 
@@ -638,20 +627,12 @@ typically that means this quality measure is more difficult for us.</p>
 
 
 pool = Pool()
-for _ in tqdm.tqdm(
-    pool.imap(save_individual_chart_data, sorted_single_provider_names),
-    total=len(sorted_single_provider_names),
-    desc="Graphs",
-):
-    pass
+pool.map(save_individual_chart_data, sorted_single_provider_names)
 pool.close()
 pool.join()
 
 pool2 = Pool()
-for _ in tqdm.tqdm(
-    pool2.imap(save_clinic_chart_data, clinics), total=len(clinics), desc="Graphs"
-):
-    pass
+pool2.map(save_clinic_chart_data, clinics)
 pool2.close()
 pool2.join()
 
