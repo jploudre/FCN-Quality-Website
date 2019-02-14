@@ -157,6 +157,14 @@ def make_individual_metric_json(metric, name):
             .mark_rule(strokeWidth=1, strokeDash=[4, 2])
             .encode(y="TargetValue:Q", color=alt.ColorValue("#2ca02c"))
         )
+        metric_target_rule += (
+            alt.Chart(metricdf)
+            .mark_text(align="right", baseline="bottom", dx=100, dy=100, size=14)
+            .encode(
+                text=alt.Text("TargetValue:Q", format=".2%"),
+                color=alt.ColorValue("#2ca02c"),
+            )
+        )
 
     fcn_current_strip_chart = (
         alt.Chart(current_metric)
@@ -575,9 +583,13 @@ def make_navbar(provider):
     )
     for clinic in clinics:
         if clinic == clinic_name:
-            navbar += '<li class="uk-active"><a href="../{}/index.html">{}</a></li>\n'.format(clinic, clinic)
+            navbar += '<li class="uk-active"><a href="../{}/index.html">{}</a></li>\n'.format(
+                clinic, clinic
+            )
         else:
-            navbar += '<li><a href="../{}/index.html">{}</a></li>\n'.format(clinic, clinic)
+            navbar += '<li><a href="../{}/index.html">{}</a></li>\n'.format(
+                clinic, clinic
+            )
     navbar += "</ul></div>\n&nbsp;@&nbsp;\n"
 
     if type == "Individual" or type == "Clinic":
