@@ -252,7 +252,14 @@ def make_clinic_metric_json(metric, clinic_name):
             .mark_rule(strokeWidth=1, strokeDash=[4, 2])
             .encode(y="TargetValue:Q", color=alt.ColorValue("#2ca02c"))
         )
-
+        metric_target_rule += (
+            alt.Chart(metricdf)
+            .mark_text(align="right", baseline="bottom", dx=100, dy=100, size=16)
+            .encode(
+                text=alt.Text("TargetValue:Q", format=".2%"),
+                color=alt.ColorValue("#2ca02c"),
+            )
+        )
     clinic_providers = sorted(
         single_providers[single_providers.Clinic == clinic_name].Name.unique(),
         key=lambda x: x.split(" ")[1],
