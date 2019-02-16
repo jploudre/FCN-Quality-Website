@@ -84,8 +84,6 @@ def make_individual_metric_json(metric, name):
 
     provider_df = provider_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
 
-    # Lookup clinic from the provider name in the names dataframe.
-    # Make a comparison dataframe.
     clinic_name = names[names.Name == name].iloc[0].Clinic
     clinic_df = df[(df["Metric"] == metric) & (df["Name"] == clinic_name)]
     clinic_df = clinic_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
