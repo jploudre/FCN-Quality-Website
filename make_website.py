@@ -119,7 +119,7 @@ def make_individual_metric_json(metric, name):
         alt.Chart(provider_df)
         .mark_line(strokeWidth=4)
         .encode(
-            alt.X("Date:T", title=""),
+            alt.X("Date:T", title="", scale=alt.Scale(domain=("01/01/2018","12/31/2019"))),
             alt.Y(
                 "Percentage:Q",
                 axis=alt.Axis(format="%", title=""),
@@ -254,7 +254,7 @@ def make_clinic_metric_json(metric, clinic_name):
         alt.Chart(clinic_df)
         .mark_line(strokeWidth=4)
         .encode(
-            alt.X("Date:T", title=""),
+            alt.X("Date:T", title="", scale=alt.Scale(domain=("01/01/2018","12/31/2019"))),
             alt.Y(
                 "Percentage:Q",
                 axis=alt.Axis(format="%", title=""),
