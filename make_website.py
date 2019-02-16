@@ -100,21 +100,6 @@ def make_individual_metric_json(metric, name):
     if metric_target:
         metricdf = pd.DataFrame([{"TargetValue": metric_target, "Title": "Target"}])
 
-    # Make a Current dataframe to use for Strip Chart.
-    current_metric = df[
-        (df["Metric"] == metric)
-        & (df["Type"] == "Individual")
-        & (df["Date"] == current_date)
-    ]
-    highlight_provider = current_metric
-    highlight_provider = highlight_provider[(highlight_provider["Name"] == name)]
-    current_metric = current_metric.drop(
-        ["Name", "Type", "Clinic", "Metric", "Date"], axis=1
-    )
-    highlight_provider = highlight_provider.drop(
-        ["Name", "Type", "Clinic", "Metric", "Date"], axis=1
-    )
-
     provider_progress_line = (
         alt.Chart(provider_df)
         .mark_line(strokeWidth=4)
