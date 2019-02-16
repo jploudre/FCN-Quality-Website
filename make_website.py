@@ -119,7 +119,9 @@ def make_individual_metric_json(metric, name):
         alt.Chart(provider_df)
         .mark_line(strokeWidth=4)
         .encode(
-            alt.X("Date:T", title="", scale=alt.Scale(domain=("01/01/2018","12/31/2019"))),
+            alt.X(
+                "Date:T", title="", scale=alt.Scale(domain=("01/01/2018", "12/31/2019"))
+            ),
             alt.Y(
                 "Percentage:Q",
                 axis=alt.Axis(format="%", title=""),
@@ -166,45 +168,16 @@ def make_individual_metric_json(metric, name):
             )
         )
 
-    fcn_current_strip_chart = (
-        alt.Chart(current_metric)
-        .mark_tick(color="#ddd")
-        .encode(
-            alt.Y(
-                "Percentage:Q",
-                axis=alt.Axis(format="%", title="", labels=False),
-                scale=alt.Scale(domain=(0, 1)),
-            )
-        )
-        .properties(height=200)
-    )
-
-    provider_highlight_strip = (
-        alt.Chart(highlight_provider)
-        .mark_tick()
-        .encode(
-            alt.Y("Percentage:Q"),
-            opacity=alt.value("1.0"),
-            color=alt.ColorValue("#9467bd"),
-        )
-    )
-
-    provider_percent = provider_highlight_strip.mark_text(
-        align="left", baseline="middle", dx=15, size=20
-    ).encode(text=alt.Text("Percentage:Q", format=".2%"))
-
     if metric_target:
         chart = (
             metric_target_rule
             + fcn_progress_line
             + clinic_progress_line
             + provider_progress_line
-            | (fcn_current_strip_chart + provider_highlight_strip + provider_percent)
         )
     else:
-        chart = fcn_progress_line + clinic_progress_line + provider_progress_line | (
-            fcn_current_strip_chart + provider_highlight_strip + provider_percent
-        )
+        chart = fcn_progress_line + clinic_progress_line + provider_progress_line
+
     return chart.to_json()
 
 
@@ -254,7 +227,9 @@ def make_clinic_metric_json(metric, clinic_name):
         alt.Chart(clinic_df)
         .mark_line(strokeWidth=4)
         .encode(
-            alt.X("Date:T", title="", scale=alt.Scale(domain=("01/01/2018","12/31/2019"))),
+            alt.X(
+                "Date:T", title="", scale=alt.Scale(domain=("01/01/2018", "12/31/2019"))
+            ),
             alt.Y(
                 "Percentage:Q",
                 axis=alt.Axis(format="%", title=""),
