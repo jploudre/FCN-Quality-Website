@@ -112,7 +112,6 @@ def make_individual_metric_json(metric, name):
                 axis=alt.Axis(format="%", title=""),
                 scale=alt.Scale(domain=(0, 1)),
             ),
-            # color=alt.Color("Name:N", legend=None, ),
             color=alt.ColorValue("#9467bd"),
         )
         .properties(width=200, height=200)
@@ -146,7 +145,7 @@ def make_individual_metric_json(metric, name):
         )
         metric_target_rule += (
             alt.Chart(metricdf)
-            .mark_text(align="right", baseline="bottom", dx=100, dy=100, size=14)
+            .mark_text(align="right", baseline="bottom", dx=200, dy=100, size=16)
             .encode(
                 text=alt.Text("TargetValue:Q", format=".2%"),
                 color=alt.ColorValue("#2ca02c"),
@@ -227,7 +226,7 @@ def make_clinic_metric_json(metric, clinic_name):
 
     clinic_progress_line += (
         alt.Chart(clinic_current_metric)
-        .mark_text(align="left", baseline="top", dx=25, dy=-95, size=20)
+        .mark_text(align="right", baseline="top", dx=100, dy=-98, size=16)
         .encode(
             text=alt.Text("Percentage:Q", format=".2%"), color=alt.ColorValue("#ff7f0e")
         )
@@ -581,11 +580,6 @@ def make_navbar(provider):
 <span style="color:#98df8a; background:#2ca02c; padding:4px; border-radius: 4px;">Target</span>
 </p>
 
-<h3>Strip Chart</h3>
-<p>Shows the distribution of all provider panels at FCN with the individual provider highlighted.</p>
-<img src="../strip_chart.png" width="176" height="239" style="display:block" class="uk-align-center">
-<p>Here you can see that the provider's panel is doing better than most at FCN. You can also see there's a wide range of panels &mdash;
-typically that means this quality measure is more difficult for us.</p>
 <h3>Quality Comet Chart</h3>
 <p>The 'quality comets' show how individual panels are changing over time. The tail shows size and direction of changes. If there's no tail, then there hasn't been significant change.</p>
 <img src="../quality_comet.png" width="339" height="169" style="display:block" class="uk-align-center">
