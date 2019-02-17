@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/Users/jonathan/miniconda3/bin/python3
 
 import glob as glob
 import os
@@ -589,9 +589,7 @@ def make_navbar(provider):
     navbar += "</ul></div>\n&nbsp;@&nbsp;\n"
 
     if type == "Individual" or type == "Clinic":
-        navbar += (
-            '<a class="uk-inline" style="color:#1F77B4" href="../FCN/index.html">FCN</a>\n'
-        )
+        navbar += '<a class="uk-inline" style="color:#1F77B4" href="../FCN/index.html">FCN</a>\n'
     elif type == "FCN":
         navbar += '<p class="uk-inline uk-text-bold" style="color:#1F77B4">FCN</p>\n'
 
