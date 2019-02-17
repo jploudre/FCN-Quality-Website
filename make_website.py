@@ -78,14 +78,9 @@ def make_individual_metric_json(metric, name):
     Assumes: dataframes 'names' and 'metrics' for lookups
     """
 
-    provider_df = df[
-        (df["Metric"] == metric) & (df["Type"] == "Individual") & (df["Name"] == name)
-    ]
-
+    provider_df = df[(df["Metric"] == metric) & (df["Name"] == name)]
     provider_df = provider_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
 
-    # Lookup clinic from the provider name in the names dataframe.
-    # Make a comparison dataframe.
     clinic_name = names[names.Name == name].iloc[0].Clinic
     clinic_df = df[(df["Metric"] == metric) & (df["Name"] == clinic_name)]
     clinic_df = clinic_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
@@ -93,42 +88,42 @@ def make_individual_metric_json(metric, name):
     fcn_df = df[(df["Metric"] == metric) & (df["Type"] == "FCN")]
     fcn_df = fcn_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
 
-    # Lookup the metric target -- not all metrics have a target.
+    provider_current_metric = df[
+        (df["Metric"] == metric) & (df["Name"] == name) & (df["Date"] == current_date)
+    ]
+    provider_current_metric = provider_current_metric.drop(
+        ["Name", "Type", "Clinic", "Metric"], axis=1
+    )
+
     metric_target = metrics[metrics.Metric == metric].iloc[0].Target
 
     # If there's a target value, we'll make a rule on graph.
     if metric_target:
         metricdf = pd.DataFrame([{"TargetValue": metric_target, "Title": "Target"}])
 
-    # Make a Current dataframe to use for Strip Chart.
-    current_metric = df[
-        (df["Metric"] == metric)
-        & (df["Type"] == "Individual")
-        & (df["Date"] == current_date)
-    ]
-    highlight_provider = current_metric
-    highlight_provider = highlight_provider[(highlight_provider["Name"] == name)]
-    current_metric = current_metric.drop(
-        ["Name", "Type", "Clinic", "Metric", "Date"], axis=1
-    )
-    highlight_provider = highlight_provider.drop(
-        ["Name", "Type", "Clinic", "Metric", "Date"], axis=1
-    )
-
     provider_progress_line = (
         alt.Chart(provider_df)
         .mark_line(strokeWidth=4)
         .encode(
-            alt.X("Date:T", title=""),
+            alt.X(
+                "Date:T", title="", scale=alt.Scale(domain=("01/01/2018", "12/31/2019"))
+            ),
             alt.Y(
                 "Percentage:Q",
                 axis=alt.Axis(format="%", title=""),
                 scale=alt.Scale(domain=(0, 1)),
             ),
-            # color=alt.Color("Name:N", legend=None, ),
             color=alt.ColorValue("#9467bd"),
         )
-        .properties(width=200, height=200)
+        .properties(width=350, height=200)
+    )
+
+    provider_progress_line += (
+        alt.Chart(provider_current_metric)
+        .mark_text(align="right", baseline="top", dx=175, dy=-98, size=16)
+        .encode(
+            text=alt.Text("Percentage:Q", format=".2%"), color=alt.ColorValue("#9467bd")
+        )
     )
 
     clinic_progress_line = (
@@ -159,39 +154,12 @@ def make_individual_metric_json(metric, name):
         )
         metric_target_rule += (
             alt.Chart(metricdf)
-            .mark_text(align="right", baseline="bottom", dx=100, dy=100, size=14)
+            .mark_text(align="right", baseline="bottom", dx=175, dy=100, size=16)
             .encode(
                 text=alt.Text("TargetValue:Q", format=".2%"),
                 color=alt.ColorValue("#2ca02c"),
             )
         )
-
-    fcn_current_strip_chart = (
-        alt.Chart(current_metric)
-        .mark_tick(color="#ddd")
-        .encode(
-            alt.Y(
-                "Percentage:Q",
-                axis=alt.Axis(format="%", title="", labels=False),
-                scale=alt.Scale(domain=(0, 1)),
-            )
-        )
-        .properties(height=200)
-    )
-
-    provider_highlight_strip = (
-        alt.Chart(highlight_provider)
-        .mark_tick()
-        .encode(
-            alt.Y("Percentage:Q"),
-            opacity=alt.value("1.0"),
-            color=alt.ColorValue("#9467bd"),
-        )
-    )
-
-    provider_percent = provider_highlight_strip.mark_text(
-        align="left", baseline="middle", dx=15, size=20
-    ).encode(text=alt.Text("Percentage:Q", format=".2%"))
 
     if metric_target:
         chart = (
@@ -199,12 +167,10 @@ def make_individual_metric_json(metric, name):
             + fcn_progress_line
             + clinic_progress_line
             + provider_progress_line
-            | (fcn_current_strip_chart + provider_highlight_strip + provider_percent)
         )
     else:
-        chart = fcn_progress_line + clinic_progress_line + provider_progress_line | (
-            fcn_current_strip_chart + provider_highlight_strip + provider_percent
-        )
+        chart = fcn_progress_line + clinic_progress_line + provider_progress_line
+
     return chart.to_json()
 
 
@@ -254,7 +220,9 @@ def make_clinic_metric_json(metric, clinic_name):
         alt.Chart(clinic_df)
         .mark_line(strokeWidth=4)
         .encode(
-            alt.X("Date:T", title=""),
+            alt.X(
+                "Date:T", title="", scale=alt.Scale(domain=("01/01/2018", "12/31/2019"))
+            ),
             alt.Y(
                 "Percentage:Q",
                 axis=alt.Axis(format="%", title=""),
@@ -267,7 +235,7 @@ def make_clinic_metric_json(metric, clinic_name):
 
     clinic_progress_line += (
         alt.Chart(clinic_current_metric)
-        .mark_text(align="left", baseline="top", dx=25, dy=-95, size=20)
+        .mark_text(align="right", baseline="top", dx=100, dy=-98, size=16)
         .encode(
             text=alt.Text("Percentage:Q", format=".2%"), color=alt.ColorValue("#ff7f0e")
         )
@@ -293,7 +261,14 @@ def make_clinic_metric_json(metric, clinic_name):
             .mark_rule(strokeWidth=1, strokeDash=[4, 2])
             .encode(y="TargetValue:Q", color=alt.ColorValue("#2ca02c"))
         )
-
+        metric_target_rule += (
+            alt.Chart(metricdf)
+            .mark_text(align="right", baseline="bottom", dx=100, dy=100, size=16)
+            .encode(
+                text=alt.Text("TargetValue:Q", format=".2%"),
+                color=alt.ColorValue("#2ca02c"),
+            )
+        )
     clinic_providers = sorted(
         single_providers[single_providers.Clinic == clinic_name].Name.unique(),
         key=lambda x: x.split(" ")[1],
@@ -374,6 +349,10 @@ def make_fcn_metric_json(metric):
     fcn_df = df[(df["Metric"] == metric) & (df["Type"] == "FCN")]
     fcn_df = fcn_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
 
+    fcn_current_metric = df[
+        (df["Metric"] == metric) & (df["Name"] == "FCN") & (df["Date"] == current_date)
+    ]
+
     metric_target = metrics[metrics.Metric == metric].iloc[0].Target
     if metric_target:
         metricdf = pd.DataFrame([{"TargetValue": metric_target, "Title": "Target"}])
@@ -382,7 +361,9 @@ def make_fcn_metric_json(metric):
         alt.Chart(fcn_df)
         .mark_line(strokeWidth=4)
         .encode(
-            alt.X("Date:T", title=""),
+            alt.X(
+                "Date:T", title="", scale=alt.Scale(domain=("01/01/2018", "12/31/2019"))
+            ),
             alt.Y(
                 "Percentage:Q",
                 axis=alt.Axis(format="%", title=""),
@@ -392,12 +373,27 @@ def make_fcn_metric_json(metric):
         )
         .properties(width=200, height=200)
     )
+    fcn_progress_line += (
+        alt.Chart(fcn_current_metric)
+        .mark_text(align="right", baseline="top", dx=100, dy=-98, size=16)
+        .encode(
+            text=alt.Text("Percentage:Q", format=".2%"), color=alt.ColorValue("#1F77B4")
+        )
+    )
 
     if metric_target:
         metric_target_rule = (
             alt.Chart(metricdf)
             .mark_rule(strokeWidth=1, strokeDash=[4, 2])
             .encode(y="TargetValue:Q", color=alt.ColorValue("#2ca02c"))
+        )
+        metric_target_rule += (
+            alt.Chart(metricdf)
+            .mark_text(align="right", baseline="bottom", dx=100, dy=100, size=16)
+            .encode(
+                text=alt.Text("TargetValue:Q", format=".2%"),
+                color=alt.ColorValue("#2ca02c"),
+            )
         )
 
     current_metric = df[
@@ -621,11 +617,6 @@ def make_navbar(provider):
 <span style="color:#98df8a; background:#2ca02c; padding:4px; border-radius: 4px;">Target</span>
 </p>
 
-<h3>Strip Chart</h3>
-<p>Shows the distribution of all provider panels at FCN with the individual provider highlighted.</p>
-<img src="../strip_chart.png" width="176" height="239" style="display:block" class="uk-align-center">
-<p>Here you can see that the provider's panel is doing better than most at FCN. You can also see there's a wide range of panels &mdash;
-typically that means this quality measure is more difficult for us.</p>
 <h3>Quality Comet Chart</h3>
 <p>The 'quality comets' show how individual panels are changing over time. The tail shows size and direction of changes. If there's no tail, then there hasn't been significant change.</p>
 <img src="../quality_comet.png" width="339" height="169" style="display:block" class="uk-align-center">
