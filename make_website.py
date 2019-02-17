@@ -78,10 +78,7 @@ def make_individual_metric_json(metric, name):
     Assumes: dataframes 'names' and 'metrics' for lookups
     """
 
-    provider_df = df[
-        (df["Metric"] == metric) & (df["Type"] == "Individual") & (df["Name"] == name)
-    ]
-
+    provider_df = df[(df["Metric"] == metric) & (df["Name"] == name)]
     provider_df = provider_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
 
     clinic_name = names[names.Name == name].iloc[0].Clinic
@@ -91,7 +88,13 @@ def make_individual_metric_json(metric, name):
     fcn_df = df[(df["Metric"] == metric) & (df["Type"] == "FCN")]
     fcn_df = fcn_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
 
-    # Lookup the metric target -- not all metrics have a target.
+    provider_current_metric = df[
+        (df["Metric"] == metric) & (df["Name"] == name) & (df["Date"] == current_date)
+    ]
+    provider_current_metric = provider_current_metric.drop(
+        ["Name", "Type", "Clinic", "Metric"], axis=1
+    )
+
     metric_target = metrics[metrics.Metric == metric].iloc[0].Target
 
     # If there's a target value, we'll make a rule on graph.
@@ -112,7 +115,15 @@ def make_individual_metric_json(metric, name):
             ),
             color=alt.ColorValue("#9467bd"),
         )
-        .properties(width=200, height=200)
+        .properties(width=350, height=200)
+    )
+
+    provider_progress_line += (
+        alt.Chart(provider_current_metric)
+        .mark_text(align="right", baseline="top", dx=175, dy=-98, size=16)
+        .encode(
+            text=alt.Text("Percentage:Q", format=".2%"), color=alt.ColorValue("#9467bd")
+        )
     )
 
     clinic_progress_line = (
@@ -143,7 +154,7 @@ def make_individual_metric_json(metric, name):
         )
         metric_target_rule += (
             alt.Chart(metricdf)
-            .mark_text(align="right", baseline="bottom", dx=200, dy=100, size=16)
+            .mark_text(align="right", baseline="bottom", dx=175, dy=100, size=16)
             .encode(
                 text=alt.Text("TargetValue:Q", format=".2%"),
                 color=alt.ColorValue("#2ca02c"),
@@ -338,6 +349,10 @@ def make_fcn_metric_json(metric):
     fcn_df = df[(df["Metric"] == metric) & (df["Type"] == "FCN")]
     fcn_df = fcn_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
 
+    fcn_current_metric = df[
+        (df["Metric"] == metric) & (df["Name"] == "FCN") & (df["Date"] == current_date)
+    ]
+
     metric_target = metrics[metrics.Metric == metric].iloc[0].Target
     if metric_target:
         metricdf = pd.DataFrame([{"TargetValue": metric_target, "Title": "Target"}])
@@ -346,7 +361,9 @@ def make_fcn_metric_json(metric):
         alt.Chart(fcn_df)
         .mark_line(strokeWidth=4)
         .encode(
-            alt.X("Date:T", title=""),
+            alt.X(
+                "Date:T", title="", scale=alt.Scale(domain=("01/01/2018", "12/31/2019"))
+            ),
             alt.Y(
                 "Percentage:Q",
                 axis=alt.Axis(format="%", title=""),
@@ -356,12 +373,27 @@ def make_fcn_metric_json(metric):
         )
         .properties(width=200, height=200)
     )
+    fcn_progress_line += (
+        alt.Chart(fcn_current_metric)
+        .mark_text(align="right", baseline="top", dx=100, dy=-98, size=16)
+        .encode(
+            text=alt.Text("Percentage:Q", format=".2%"), color=alt.ColorValue("#1F77B4")
+        )
+    )
 
     if metric_target:
         metric_target_rule = (
             alt.Chart(metricdf)
             .mark_rule(strokeWidth=1, strokeDash=[4, 2])
             .encode(y="TargetValue:Q", color=alt.ColorValue("#2ca02c"))
+        )
+        metric_target_rule += (
+            alt.Chart(metricdf)
+            .mark_text(align="right", baseline="bottom", dx=100, dy=100, size=16)
+            .encode(
+                text=alt.Text("TargetValue:Q", format=".2%"),
+                color=alt.ColorValue("#2ca02c"),
+            )
         )
 
     current_metric = df[
