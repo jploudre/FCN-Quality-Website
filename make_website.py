@@ -37,15 +37,13 @@ for file in files:
     file_df = file_df.append(fcn_df, ignore_index=True)
 
     # Reduce precision to basis points so we don't have to format it everywhere.
-    file_df["Percentage"] = round(file_df["SeenNum"] / file_df["SeenDenom"], 4)
+    file_df["%"] = round(file_df["SeenNum"] / file_df["SeenDenom"], 4)
 
     # Meridios reports have unreliable datetimes. So create from filename.
     # Zero Padded for easy analysis.
     filename_parts = file[7:-4].split(" ")
     if len(str(filename_parts[0])) is 10:
         file_df["Date"] = datetime.datetime.strptime(filename_parts[0], "%m.%d.%Y")
-
-        # Smaller dataframes use less memory and reduce eventual JSON export size.
         file_df.drop(["SeenNum", "SeenDenom"], axis=1, inplace=True)
         df = df.append(file_df)
     else:
@@ -58,11 +56,11 @@ if len(set(df.NAME.unique()) - set(names.index.unique())) > 1:
         set(df.NAME.unique()) - set(names.index.unique()),
     )
 
-big_error_df = df[(df["Percentage"] > 1)]
+big_error_df = df[(df["%"] > 1)]
 if not big_error_df.empty:
     print("Percentages can't be over 100:\n", big_error_df)
 
-under_zero_df = df[(df["Percentage"] < 0)]
+under_zero_df = df[(df["%"] < 0)]
 if not under_zero_df.empty:
     print("Percentages can't be less than 0:\n", under_zero_df)
 
@@ -70,7 +68,7 @@ df.drop(["NAME"], axis=1, inplace=True)
 df.drop(["Metricname"], axis=1, inplace=True)
 
 
-def make_individual_metric_json(metric, name):
+def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
     """
     Makes a chart json for a single metric and a single provider.
 
@@ -78,22 +76,16 @@ def make_individual_metric_json(metric, name):
     Assumes: dataframes 'names' and 'metrics' for lookups
     """
 
-    provider_df = df[(df["Metric"] == metric) & (df["Name"] == name)]
-    provider_df = provider_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
+    provider_df = name_df[(name_df["Metric"] == metric)]
+    provider_df = provider_df.drop(["Metric"], axis=1)
 
-    clinic_name = names[names.Name == name].iloc[0].Clinic
-    clinic_df = df[(df["Metric"] == metric) & (df["Name"] == clinic_name)]
-    clinic_df = clinic_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
+    clinic_df = clinic_df[(clinic_df["Metric"] == metric)]
+    clinic_df = clinic_df.drop(["Metric"], axis=1)
 
-    fcn_df = df[(df["Metric"] == metric) & (df["Type"] == "FCN")]
-    fcn_df = fcn_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
+    fcn_df = fcn_df[(fcn_df["Metric"] == metric)]
+    fcn_df = fcn_df.drop(["Metric"], axis=1)
 
-    provider_current_metric = df[
-        (df["Metric"] == metric) & (df["Name"] == name) & (df["Date"] == current_date)
-    ]
-    provider_current_metric = provider_current_metric.drop(
-        ["Name", "Type", "Clinic", "Metric"], axis=1
-    )
+    provider_current_metric = provider_df[provider_df["Date"] == current_date]
 
     metric_target = metrics[metrics.Metric == metric].iloc[0].Target
 
@@ -109,7 +101,7 @@ def make_individual_metric_json(metric, name):
                 "Date:T", title="", scale=alt.Scale(domain=("01/01/2018", "12/31/2019"))
             ),
             alt.Y(
-                "Percentage:Q",
+                "%:Q",
                 axis=alt.Axis(format="%", title=""),
                 scale=alt.Scale(domain=(0, 1)),
             ),
@@ -118,11 +110,11 @@ def make_individual_metric_json(metric, name):
         .properties(width=350, height=200)
     )
 
-    provider_progress_line += (
+    provider_current_text = (
         alt.Chart(provider_current_metric)
         .mark_text(align="right", baseline="top", dx=175, dy=-98, size=16)
         .encode(
-            text=alt.Text("Percentage:Q", format=".2%"), color=alt.ColorValue("#9467bd")
+            text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue("#9467bd")
         )
     )
 
@@ -131,7 +123,7 @@ def make_individual_metric_json(metric, name):
         .mark_line(strokeWidth=2)
         .encode(
             alt.X("Date:T", title=""),
-            alt.Y("Percentage:Q"),
+            alt.Y("%:Q"),
             color=alt.ColorValue("#ffbb78"),
         )
     )
@@ -141,7 +133,7 @@ def make_individual_metric_json(metric, name):
         .mark_line(strokeWidth=2)
         .encode(
             alt.X("Date:T", title=""),
-            alt.Y("Percentage:Q"),
+            alt.Y("%:Q"),
             color=alt.ColorValue("#aec7e8"),
         )
     )
@@ -152,7 +144,7 @@ def make_individual_metric_json(metric, name):
             .mark_rule(strokeWidth=1, strokeDash=[4, 2])
             .encode(y="TargetValue:Q", color=alt.ColorValue("#2ca02c"))
         )
-        metric_target_rule += (
+        metric_target_text = (
             alt.Chart(metricdf)
             .mark_text(align="right", baseline="bottom", dx=175, dy=100, size=16)
             .encode(
@@ -163,10 +155,12 @@ def make_individual_metric_json(metric, name):
 
     if metric_target:
         chart = (
-            metric_target_rule
-            + fcn_progress_line
+            fcn_progress_line
             + clinic_progress_line
             + provider_progress_line
+            + metric_target_rule
+            + metric_target_text
+            + provider_current_text
         )
     else:
         chart = fcn_progress_line + clinic_progress_line + provider_progress_line
@@ -176,8 +170,15 @@ def make_individual_metric_json(metric, name):
 
 def save_individual_chart_data(name):
     json_data = ""
+
+    clinic_name = names[names.Name == name].iloc[0].Clinic
+    name_df = df[(df["Name"] == name)]
+    name_df = name_df.drop(["Name", "Type", "Clinic"], axis=1)
+    clinic_df = df[(df["Name"] == clinic_name)]
+    clinic_df = clinic_df.drop(["Name", "Type", "Clinic"], axis=1)
+
     for metric in main_metrics:
-        chart_data = make_individual_metric_json(metric, name)
+        chart_data = make_individual_metric_json(metric, name_df, clinic_df, fcn_df)
         chart_data_json = json.loads(chart_data)
         json_minified = json.dumps(chart_data_json, separators=(",", ":"))
         json_data += "var " + metric.replace(" ", "_") + " = " + json_minified + ";\n"
@@ -186,7 +187,7 @@ def save_individual_chart_data(name):
         savefile.write(json_data)
 
 
-def make_clinic_metric_json(metric, clinic_name):
+def make_clinic_metric_json(metric, clinic_name, clinic_df, fcn_df):
     """
     Makes a chart for a single metric and a clinic.
 
@@ -194,11 +195,11 @@ def make_clinic_metric_json(metric, clinic_name):
     Assumes: dataframes 'names' and 'metrics' for lookups
     """
 
-    clinic_df = df[(df["Metric"] == metric) & (df["Name"] == clinic_name)]
-    clinic_df = clinic_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
+    clinic_df = clinic_df[(clinic_df["Metric"] == metric)]
+    clinic_df = clinic_df.drop(["Metric"], axis=1)
 
-    fcn_df = df[(df["Metric"] == metric) & (df["Type"] == "FCN")]
-    fcn_df = fcn_df.drop(["Name", "Type", "Clinic", "Metric"], axis=1)
+    fcn_df = fcn_df[(fcn_df["Metric"] == metric)]
+    fcn_df = fcn_df.drop(["Metric"], axis=1)
 
     metric_target = metrics[metrics.Metric == metric].iloc[0].Target
     if metric_target:
@@ -224,7 +225,7 @@ def make_clinic_metric_json(metric, clinic_name):
                 "Date:T", title="", scale=alt.Scale(domain=("01/01/2018", "12/31/2019"))
             ),
             alt.Y(
-                "Percentage:Q",
+                "%:Q",
                 axis=alt.Axis(format="%", title=""),
                 scale=alt.Scale(domain=(0, 1)),
             ),
@@ -233,11 +234,11 @@ def make_clinic_metric_json(metric, clinic_name):
         .properties(width=200, height=200)
     )
 
-    clinic_progress_line += (
+    clinic_progress_text = (
         alt.Chart(clinic_current_metric)
         .mark_text(align="right", baseline="top", dx=100, dy=-98, size=16)
         .encode(
-            text=alt.Text("Percentage:Q", format=".2%"), color=alt.ColorValue("#ff7f0e")
+            text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue("#ff7f0e")
         )
     )
 
@@ -247,7 +248,7 @@ def make_clinic_metric_json(metric, clinic_name):
         .encode(
             alt.X("Date:T", title=""),
             alt.Y(
-                "Percentage:Q",
+                "%:Q",
                 axis=alt.Axis(format="%", title=""),
                 scale=alt.Scale(domain=(0, 1)),
             ),
@@ -261,7 +262,7 @@ def make_clinic_metric_json(metric, clinic_name):
             .mark_rule(strokeWidth=1, strokeDash=[4, 2])
             .encode(y="TargetValue:Q", color=alt.ColorValue("#2ca02c"))
         )
-        metric_target_rule += (
+        metric_target_text = (
             alt.Chart(metricdf)
             .mark_text(align="right", baseline="bottom", dx=100, dy=100, size=16)
             .encode(
@@ -295,7 +296,7 @@ def make_clinic_metric_json(metric, clinic_name):
         .mark_line(color="#c5b")
         .encode(
             alt.Y(
-                "Percentage:Q",
+                "%:Q",
                 axis=alt.Axis(format="%", title=""),
                 scale=alt.Scale(domain=(0, 1)),
             ),
@@ -308,7 +309,7 @@ def make_clinic_metric_json(metric, clinic_name):
     ranged_dot += (
         alt.Chart(current_metric)
         .mark_point(size=100, opacity=1, filled=True, color="#9467bd")
-        .encode(alt.Y("Percentage:Q"), alt.X("Name:N", sort=clinic_providers))
+        .encode(alt.Y("%:Q"), alt.X("Name:N", sort=clinic_providers))
     )
 
     ranged_dot_rule = (
@@ -319,7 +320,11 @@ def make_clinic_metric_json(metric, clinic_name):
 
     if metric_target:
         chart = (
-            metric_target_rule + fcn_progress_line + clinic_progress_line
+            fcn_progress_line
+            + clinic_progress_line
+            + metric_target_rule
+            + metric_target_text
+            + clinic_progress_text
         ) | ranged_dot + ranged_dot_rule
     else:
         chart = (fcn_progress_line + clinic_progress_line) | ranged_dot
@@ -328,8 +333,11 @@ def make_clinic_metric_json(metric, clinic_name):
 
 def save_clinic_chart_data(clinic_name):
     json_data = ""
+    clinic_df = df[(df["Name"] == clinic_name)]
+    clinic_df = clinic_df.drop(["Name", "Type", "Clinic"], axis=1)
+
     for metric in main_metrics:
-        chart_data = make_clinic_metric_json(metric, clinic_name)
+        chart_data = make_clinic_metric_json(metric, clinic_name, clinic_df, fcn_df)
         chart_data_json = json.loads(chart_data)
         json_minified = json.dumps(chart_data_json, separators=(",", ":"))
         json_data += "var " + metric.replace(" ", "_") + " = " + json_minified + ";\n"
@@ -365,7 +373,7 @@ def make_fcn_metric_json(metric):
                 "Date:T", title="", scale=alt.Scale(domain=("01/01/2018", "12/31/2019"))
             ),
             alt.Y(
-                "Percentage:Q",
+                "%:Q",
                 axis=alt.Axis(format="%", title=""),
                 scale=alt.Scale(domain=(0, 1)),
             ),
@@ -377,7 +385,7 @@ def make_fcn_metric_json(metric):
         alt.Chart(fcn_current_metric)
         .mark_text(align="right", baseline="top", dx=100, dy=-98, size=16)
         .encode(
-            text=alt.Text("Percentage:Q", format=".2%"), color=alt.ColorValue("#1F77B4")
+            text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue("#1F77B4")
         )
     )
 
@@ -416,7 +424,7 @@ def make_fcn_metric_json(metric):
         .mark_line(color="#ffbb78")
         .encode(
             alt.Y(
-                "Percentage:Q",
+                "%:Q",
                 axis=alt.Axis(format="%", title=""),
                 scale=alt.Scale(domain=(0, 1)),
             ),
@@ -429,7 +437,7 @@ def make_fcn_metric_json(metric):
     ranged_dot += (
         alt.Chart(current_metric)
         .mark_point(size=100, opacity=1, filled=True, color="#FF7F0E")
-        .encode(alt.Y("Percentage:Q"), alt.X("Name:N"))
+        .encode(alt.Y("%:Q"), alt.X("Name:N"))
     )
 
     ranged_dot_rule = (
@@ -501,9 +509,6 @@ favicon = "./files/pictures/favicon.ico"
 if os.path.isfile(favicon):
     shutil.copyfile(favicon, "./docs/favicon.ico")
 
-strip_chart = "./files/pictures/strip_chart.png"
-if os.path.isfile(strip_chart):
-    shutil.copyfile(strip_chart, "./docs/strip_chart.png")
 
 comet_chart = "./files/pictures/quality_comet.png"
 if os.path.isfile(comet_chart):
@@ -627,6 +632,10 @@ def make_navbar(provider):
     return navbar
 
 
+fcn_df = df[(df["Name"] == "FCN")]
+fcn_df = fcn_df.drop(["Name", "Type", "Clinic"], axis=1)
+
+
 pool = Pool()
 pool.map(save_individual_chart_data, sorted_single_provider_names)
 pool.close()
@@ -636,6 +645,7 @@ pool2 = Pool()
 pool2.map(save_clinic_chart_data, clinics)
 pool2.close()
 pool2.join()
+
 
 json_data = ""
 name = "FCN"
@@ -647,7 +657,6 @@ for metric in main_metrics:
 foldername = savefolder(name)
 with open(foldername + "chart_data.json", "w") as savefile:
     savefile.write(json_data)
-
 
 with open("./files/index-head.txt", "r") as head:
     headtext = head.read()
