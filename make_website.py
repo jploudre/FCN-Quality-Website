@@ -113,18 +113,14 @@ def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
     provider_current_text = (
         alt.Chart(provider_current_metric)
         .mark_text(align="right", baseline="top", dx=175, dy=-98, size=16)
-        .encode(
-            text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue("#9467bd")
-        )
+        .encode(text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue("#9467bd"))
     )
 
     clinic_progress_line = (
         alt.Chart(clinic_df)
         .mark_line(strokeWidth=2)
         .encode(
-            alt.X("Date:T", title=""),
-            alt.Y("%:Q"),
-            color=alt.ColorValue("#ffbb78"),
+            alt.X("Date:T", title=""), alt.Y("%:Q"), color=alt.ColorValue("#ffbb78")
         )
     )
 
@@ -132,9 +128,7 @@ def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
         alt.Chart(fcn_df)
         .mark_line(strokeWidth=2)
         .encode(
-            alt.X("Date:T", title=""),
-            alt.Y("%:Q"),
-            color=alt.ColorValue("#aec7e8"),
+            alt.X("Date:T", title=""), alt.Y("%:Q"), color=alt.ColorValue("#aec7e8")
         )
     )
 
@@ -237,9 +231,7 @@ def make_clinic_metric_json(metric, clinic_name, clinic_df, fcn_df):
     clinic_progress_text = (
         alt.Chart(clinic_current_metric)
         .mark_text(align="right", baseline="top", dx=100, dy=-98, size=16)
-        .encode(
-            text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue("#ff7f0e")
-        )
+        .encode(text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue("#ff7f0e"))
     )
 
     fcn_progress_line = (
@@ -384,9 +376,7 @@ def make_fcn_metric_json(metric):
     fcn_progress_line += (
         alt.Chart(fcn_current_metric)
         .mark_text(align="right", baseline="top", dx=100, dy=-98, size=16)
-        .encode(
-            text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue("#1F77B4")
-        )
+        .encode(text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue("#1F77B4"))
     )
 
     if metric_target:
