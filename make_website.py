@@ -48,17 +48,18 @@ for file in files:
     fcn_df = pd.DataFrame.from_records(fcn_data, columns=metric_df.columns)
     file_df = file_df.append(fcn_df, ignore_index=True)
 
-    # Reduce precision 
+    # Manually Calculate percents, reduce precision.
     file_df["%"] = round(file_df["SeenNum"] / file_df["SeenDenom"], 4)
-
-    # Meridios reports have unreliable datetimes
+    file_df.drop(["SeenNum", "SeenDenom"], axis=1, inplace=True)
+    
+    # Meridios reports have unreliable datetimes. Uses Zero-Padded date on
+    # filename for the date column.
     filename_parts = file[7:-4].split(" ")
     if len(str(filename_parts[0])) is 10:
         file_df["Date"] = datetime.datetime.strptime(filename_parts[0], "%m.%d.%Y")
-        file_df.drop(["SeenNum", "SeenDenom"], axis=1, inplace=True)
         df = df.append(file_df)
     else:
-        raise ValueError("CSV Filename should have Zero Padded Date")
+        raise ValueError("Oops, CSV Filename require Zero Padded Dates")
 
 
 if len(set(df.NAME.unique()) - set(names.index.unique())) > 1:
