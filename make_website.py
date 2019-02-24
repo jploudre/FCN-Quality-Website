@@ -5,6 +5,7 @@ import os
 import shutil
 import datetime as datetime
 from multiprocessing import Pool
+from jinja2 import Environment, PackageLoader, select_autoescape
 import json
 import pandas as pd
 import altair as alt
@@ -13,6 +14,9 @@ names = pd.read_csv("./files/names.csv", index_col="MeridiosName")
 metrics = pd.read_csv(
     "./files/metrics.csv", index_col="MeridiosMetric", dtype={"MeridiosMetric": object}
 )
+
+graphing_start_date = "1/1/2018"
+graphing_end_date = "12/31/2019"
 
 df = pd.DataFrame()
 
@@ -36,11 +40,10 @@ for file in files:
     fcn_df = pd.DataFrame.from_records(fcn_data, columns=metric_df.columns)
     file_df = file_df.append(fcn_df, ignore_index=True)
 
-    # Reduce precision to basis points so we don't have to format it everywhere.
+    # Reduce precision 
     file_df["%"] = round(file_df["SeenNum"] / file_df["SeenDenom"], 4)
 
-    # Meridios reports have unreliable datetimes. So create from filename.
-    # Zero Padded for easy analysis.
+    # Meridios reports have unreliable datetimes
     filename_parts = file[7:-4].split(" ")
     if len(str(filename_parts[0])) is 10:
         file_df["Date"] = datetime.datetime.strptime(filename_parts[0], "%m.%d.%Y")
@@ -63,7 +66,6 @@ if not big_error_df.empty:
 under_zero_df = df[(df["%"] < 0)]
 if not under_zero_df.empty:
     print("Percentages can't be less than 0:\n", under_zero_df)
-
 df.drop(["NAME"], axis=1, inplace=True)
 df.drop(["Metricname"], axis=1, inplace=True)
 
@@ -71,17 +73,13 @@ df.drop(["Metricname"], axis=1, inplace=True)
 def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
     """
     Makes a chart json for a single metric and a single provider.
-
-    Assumes: dataframe 'df' that has all the data from CSVs
     Assumes: dataframes 'names' and 'metrics' for lookups
     """
 
     provider_df = name_df[(name_df["Metric"] == metric)]
     provider_df = provider_df.drop(["Metric"], axis=1)
-
     clinic_df = clinic_df[(clinic_df["Metric"] == metric)]
     clinic_df = clinic_df.drop(["Metric"], axis=1)
-
     fcn_df = fcn_df[(fcn_df["Metric"] == metric)]
     fcn_df = fcn_df.drop(["Metric"], axis=1)
 
@@ -89,7 +87,6 @@ def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
 
     metric_target = metrics[metrics.Metric == metric].iloc[0].Target
 
-    # If there's a target value, we'll make a rule on graph.
     if metric_target:
         metricdf = pd.DataFrame([{"TargetValue": metric_target, "Title": "Target"}])
 
@@ -98,7 +95,7 @@ def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
         .mark_line(strokeWidth=4)
         .encode(
             alt.X(
-                "Date:T", title="", scale=alt.Scale(domain=("01/01/2018", "12/31/2019"))
+                "Date:T", title="", scale=alt.Scale(domain=(graphing_start_date, graphing_end_date))
             ),
             alt.Y(
                 "%:Q",
@@ -216,7 +213,7 @@ def make_clinic_metric_json(metric, clinic_name, clinic_df, fcn_df):
         .mark_line(strokeWidth=4)
         .encode(
             alt.X(
-                "Date:T", title="", scale=alt.Scale(domain=("01/01/2018", "12/31/2019"))
+                "Date:T", title="", scale=alt.Scale(domain=(graphing_start_date, graphing_end_date ))
             ),
             alt.Y(
                 "%:Q",
@@ -362,7 +359,7 @@ def make_fcn_metric_json(metric):
         .mark_line(strokeWidth=4)
         .encode(
             alt.X(
-                "Date:T", title="", scale=alt.Scale(domain=("01/01/2018", "12/31/2019"))
+                "Date:T", title="", scale=alt.Scale(domain=(graphing_start_date, graphing_end_date))
             ),
             alt.Y(
                 "%:Q",
@@ -516,7 +513,7 @@ def make_navbar(provider):
         key=lambda x: x.split(" ")[1],
     )
     navbar = (
-        '<div uk-sticky class="uk-inline uk-background-default uk-text-lead uk-text-middle" style="padding-top:1em;">\n'
+        '<div id="navbar" style="padding-top:1em"><div uk-sticky class="uk-inline uk-background-default uk-text-lead uk-text-middle">\n'
         + '<a href="../index.html"><img src="../pictures/logo.png" width="39" height="64"></a>\n'
         + '<div class="uk-inline">Patients seeing:&nbsp;</div>\n'
     )
@@ -614,6 +611,7 @@ def make_navbar(provider):
 <p>The 'quality comets' show how individual panels are changing over time. The tail shows size and direction of changes. If there's no tail, then there hasn't been significant change.</p>
 <img src="../quality_comet.png" width="339" height="169" style="display:block" class="uk-align-center">
 <p>Here you can see that 3 provider panels have dramatically improved. Several are doing a little improvement and a few are mostly unchanged. Looking that the height of the dots, you can see most are above target &mdash; so there has probably been some work and learning on this quality measure.</p>
+</div>
 </div>
 </div>
 </div>

@@ -1,5 +1,25 @@
-<!--HEAD-->
-<!--NAVBAR-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Population Health Quality</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="../favicon.ico" />
+<link rel="stylesheet" type="text/css" href="../uikit.min.css"> 
+<script src="../js/uikit.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-29863015-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-29863015-2');
+</script>
+</head>
+
+<body>
+<div class="uk-container">
+
+{{navbar}}
 
 <ul id="switcher" uk-switcher="animation: uk-animation-fade" uk-tab>
     <li><a href="#">Core</a></li>
@@ -75,7 +95,7 @@
 
 <br />
 <hr class="uk-divider-icon">
-<p class="uk-text-bold">Updated: <!--CURRENT_DATE--></p>
+<p class="uk-text-bold">Updated: {{current_date_string}}</p>
 </div>
 <script src="../js/promise.min.js"></script>
 <script src="../js/symbol.min.js"></script>
@@ -83,7 +103,7 @@
 <script src="../js/vega.min.js"></script>
 <script src="../js/vega_lite.min.js"></script>
 <script src="../js/vega_embed.min.js"></script>
-<!--JAVASCRIPT-->
+{{new_custom_javascript}}
 </body>
 </html>
 

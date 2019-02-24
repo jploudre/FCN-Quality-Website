@@ -1,0 +1,5 @@
+.uk-container{width: 510px; margin:0;}
+#navbar a.uk-float-right{display:none}
+#navbar .uk-text-lead, .uk-card-title {padding:0;font-size:16px;}
+#navbar{padding-top:1em}
+#switcher, #legend, #navbar img, hr.uk-divider-small, hr.uk-divider-icon{display:none}
