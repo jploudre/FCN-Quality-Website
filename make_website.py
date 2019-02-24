@@ -17,6 +17,14 @@ metrics = pd.read_csv(
 
 graphing_start_date = "1/1/2018"
 graphing_end_date = "12/31/2019"
+dark_purple = "#9467bd"
+light_purple = "#c5b0d5"
+dark_orange = "#ff7f0e"
+light_orange = "#ffbb78"
+dark_blue = "#1f77b4"
+light_blue = "#aec7e8"
+dark_green = "#2ca02c"
+light_green = "#98df8a"
 
 df = pd.DataFrame()
 
@@ -102,7 +110,7 @@ def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
                 axis=alt.Axis(format="%", title=""),
                 scale=alt.Scale(domain=(0, 1)),
             ),
-            color=alt.ColorValue("#9467bd"),
+            color=alt.ColorValue(dark_purple),
         )
         .properties(width=350, height=200)
     )
@@ -110,14 +118,14 @@ def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
     provider_current_text = (
         alt.Chart(provider_current_metric)
         .mark_text(align="right", baseline="top", dx=175, dy=-98, size=16)
-        .encode(text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue("#9467bd"))
+        .encode(text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue(dark_purple))
     )
 
     clinic_progress_line = (
         alt.Chart(clinic_df)
         .mark_line(strokeWidth=2)
         .encode(
-            alt.X("Date:T", title=""), alt.Y("%:Q"), color=alt.ColorValue("#ffbb78")
+            alt.X("Date:T", title=""), alt.Y("%:Q"), color=alt.ColorValue(light_orange)
         )
     )
 
@@ -125,7 +133,7 @@ def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
         alt.Chart(fcn_df)
         .mark_line(strokeWidth=2)
         .encode(
-            alt.X("Date:T", title=""), alt.Y("%:Q"), color=alt.ColorValue("#aec7e8")
+            alt.X("Date:T", title=""), alt.Y("%:Q"), color=alt.ColorValue(light_blue)
         )
     )
 
@@ -133,14 +141,14 @@ def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
         metric_target_rule = (
             alt.Chart(metricdf)
             .mark_rule(strokeWidth=1, strokeDash=[4, 2])
-            .encode(y="TargetValue:Q", color=alt.ColorValue("#2ca02c"))
+            .encode(y="TargetValue:Q", color=alt.ColorValue(dark_green))
         )
         metric_target_text = (
             alt.Chart(metricdf)
             .mark_text(align="right", baseline="bottom", dx=175, dy=100, size=16)
             .encode(
                 text=alt.Text("TargetValue:Q", format=".2%"),
-                color=alt.ColorValue("#2ca02c"),
+                color=alt.ColorValue(dark_green),
             )
         )
 
@@ -220,7 +228,7 @@ def make_clinic_metric_json(metric, clinic_name, clinic_df, fcn_df):
                 axis=alt.Axis(format="%", title=""),
                 scale=alt.Scale(domain=(0, 1)),
             ),
-            color=alt.ColorValue("#ff7f0e"),
+            color=alt.ColorValue(dark_orange),
         )
         .properties(width=200, height=200)
     )
@@ -228,7 +236,7 @@ def make_clinic_metric_json(metric, clinic_name, clinic_df, fcn_df):
     clinic_progress_text = (
         alt.Chart(clinic_current_metric)
         .mark_text(align="right", baseline="top", dx=100, dy=-98, size=16)
-        .encode(text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue("#ff7f0e"))
+        .encode(text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue(dark_orange))
     )
 
     fcn_progress_line = (
@@ -241,7 +249,7 @@ def make_clinic_metric_json(metric, clinic_name, clinic_df, fcn_df):
                 axis=alt.Axis(format="%", title=""),
                 scale=alt.Scale(domain=(0, 1)),
             ),
-            color=alt.ColorValue("#aec7e8"),
+            color=alt.ColorValue(light_blue),
         )
     )
 
@@ -249,14 +257,14 @@ def make_clinic_metric_json(metric, clinic_name, clinic_df, fcn_df):
         metric_target_rule = (
             alt.Chart(metricdf)
             .mark_rule(strokeWidth=1, strokeDash=[4, 2])
-            .encode(y="TargetValue:Q", color=alt.ColorValue("#2ca02c"))
+            .encode(y="TargetValue:Q", color=alt.ColorValue(dark_green))
         )
         metric_target_text = (
             alt.Chart(metricdf)
             .mark_text(align="right", baseline="bottom", dx=100, dy=100, size=16)
             .encode(
                 text=alt.Text("TargetValue:Q", format=".2%"),
-                color=alt.ColorValue("#2ca02c"),
+                color=alt.ColorValue(dark_green),
             )
         )
     clinic_providers = sorted(
@@ -282,7 +290,7 @@ def make_clinic_metric_json(metric, clinic_name, clinic_df, fcn_df):
 
     ranged_dot = (
         alt.Chart(start_and_current)
-        .mark_line(color="#c5b")
+        .mark_line(color=light_purple)
         .encode(
             alt.Y(
                 "%:Q",
@@ -297,14 +305,14 @@ def make_clinic_metric_json(metric, clinic_name, clinic_df, fcn_df):
 
     ranged_dot += (
         alt.Chart(current_metric)
-        .mark_point(size=100, opacity=1, filled=True, color="#9467bd")
+        .mark_point(size=100, opacity=1, filled=True, color=dark_purple)
         .encode(alt.Y("%:Q"), alt.X("Name:N", sort=clinic_providers))
     )
 
     ranged_dot_rule = (
         alt.Chart(metricdf)
         .mark_rule(strokeWidth=1, strokeDash=[4, 2])
-        .encode(y="TargetValue:Q", color=alt.value("#2ca02c"))
+        .encode(y="TargetValue:Q", color=alt.value(dark_green))
     )
 
     if metric_target:
@@ -366,28 +374,28 @@ def make_fcn_metric_json(metric):
                 axis=alt.Axis(format="%", title=""),
                 scale=alt.Scale(domain=(0, 1)),
             ),
-            color=alt.ColorValue("#1F77B4"),
+            color=alt.ColorValue(dark_blue),
         )
         .properties(width=200, height=200)
     )
     fcn_progress_line += (
         alt.Chart(fcn_current_metric)
         .mark_text(align="right", baseline="top", dx=100, dy=-98, size=16)
-        .encode(text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue("#1F77B4"))
+        .encode(text=alt.Text("%:Q", format=".2%"), color=alt.ColorValue(dark_blue))
     )
 
     if metric_target:
         metric_target_rule = (
             alt.Chart(metricdf)
             .mark_rule(strokeWidth=1, strokeDash=[4, 2])
-            .encode(y="TargetValue:Q", color=alt.ColorValue("#2ca02c"))
+            .encode(y="TargetValue:Q", color=alt.ColorValue(dark_green))
         )
         metric_target_rule += (
             alt.Chart(metricdf)
             .mark_text(align="right", baseline="bottom", dx=100, dy=100, size=16)
             .encode(
                 text=alt.Text("TargetValue:Q", format=".2%"),
-                color=alt.ColorValue("#2ca02c"),
+                color=alt.ColorValue(dark_green),
             )
         )
 
@@ -408,7 +416,7 @@ def make_fcn_metric_json(metric):
 
     ranged_dot = (
         alt.Chart(start_and_current)
-        .mark_line(color="#ffbb78")
+        .mark_line(color=light_orange)
         .encode(
             alt.Y(
                 "%:Q",
@@ -423,14 +431,14 @@ def make_fcn_metric_json(metric):
 
     ranged_dot += (
         alt.Chart(current_metric)
-        .mark_point(size=100, opacity=1, filled=True, color="#FF7F0E")
+        .mark_point(size=100, opacity=1, filled=True, color=dark_orange)
         .encode(alt.Y("%:Q"), alt.X("Name:N"))
     )
 
     ranged_dot_rule = (
         alt.Chart(metricdf)
         .mark_rule(strokeWidth=1, strokeDash=[4, 2])
-        .encode(y="TargetValue:Q", color=alt.value("#2ca02c"))
+        .encode(y="TargetValue:Q", color=alt.value(dark_green))
     )
 
     if metric_target:
