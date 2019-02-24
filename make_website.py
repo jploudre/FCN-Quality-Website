@@ -5,7 +5,7 @@ import os
 import shutil
 import datetime as datetime
 from multiprocessing import Pool
-from jinja2 import Environment, PackageLoader, select_autoescape
+import jinja2
 import json
 import pandas as pd
 import altair as alt
@@ -468,7 +468,6 @@ def savefolder(name):
 
 
 def create_full_html(filedata, provider):
-    filedata = filedata.replace("<!--NAVBAR-->", navbar)
     with open(
         "./docs/" + provider.replace(" ", "_") + "/chart_data.json", "r"
     ) as chart_data:
@@ -476,8 +475,12 @@ def create_full_html(filedata, provider):
         new_custom_javascript = custom_javascript.replace(
             "<!--JSON-->", chart_data_text
         )
-    filedata = filedata.replace("<!--JAVASCRIPT-->", new_custom_javascript)
-    filedata = filedata.replace("<!--CURRENT_DATE-->", current_date_string)
+    templateLoader = jinja2.FileSystemLoader(searchpath="./files/")
+    templateEnv = jinja2.Environment(loader=templateLoader)
+    TEMPLATE_FILE = "index-jinja.html"
+    template = templateEnv.get_template(TEMPLATE_FILE)
+    providertype = names[names.Name == provider].iloc[0].Type
+    filedata = template.render(navbar=navbar, current_date_string=current_date_string, new_custom_javascript=new_custom_javascript, providertype=providertype)
     with open(savefolder(provider) + "index.html", "w+") as file:
         file.write(filedata)
 
