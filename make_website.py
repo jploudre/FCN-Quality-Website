@@ -468,7 +468,6 @@ def savefolder(name):
 
 
 def create_full_html(filedata, provider):
-    filedata = filedata.replace("<!--HEAD-->", headtext)
     filedata = filedata.replace("<!--NAVBAR-->", navbar)
     with open(
         "./docs/" + provider.replace(" ", "_") + "/chart_data.json", "r"
@@ -654,8 +653,6 @@ foldername = savefolder(name)
 with open(foldername + "chart_data.json", "w") as savefile:
     savefile.write(json_data)
 
-with open("./files/index-head.txt", "r") as head:
-    headtext = head.read()
 with open("./files/js/jkp_custom.js", "r") as customjs:
     custom_javascript = customjs.read()
 
