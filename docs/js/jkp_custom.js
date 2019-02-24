@@ -26,4 +26,8 @@ vegaEmbed("#DM_Nephropathy_2", DM_Nephropathy, {actions: false}).then(function(r
 vegaEmbed("#DM_Pneumovax_2", DM_Pneumovax, {actions: false}).then(function(result) {}).catch(console.error);
 vegaEmbed("#DM_with_ACE_or_ARB", DM_with_ACE_or_ARB, {actions: false}).then(function(result) {}).catch(console.error);
 vegaEmbed("#DM_with_Statin", DM_with_Statin, {actions: false}).then(function(result) {}).catch(console.error);
+vegaEmbed("#PORTAL_USAGE", Portal_Usage, {actions: false}).then(function(result) {}).catch(console.error);
+
+
+
 </script>
