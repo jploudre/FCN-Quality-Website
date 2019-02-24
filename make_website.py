@@ -76,7 +76,8 @@ if not under_zero_df.empty:
     print("Percentages can't be less than 0:\n", under_zero_df)
 df.drop(["NAME"], axis=1, inplace=True)
 df.drop(["Metricname"], axis=1, inplace=True)
-
+df.dropna(subset=['Name'], inplace=True)
+df.dropna(subset=['Metric'], inplace=True)
 
 def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
     """
@@ -467,7 +468,7 @@ def savefolder(name):
     return "./docs/" + foldername + "/"
 
 
-def create_full_html(filedata, provider):
+def create_full_html(provider):
     with open(
         "./docs/" + provider.replace(" ", "_") + "/chart_data.json", "r"
     ) as chart_data:
@@ -480,6 +481,7 @@ def create_full_html(filedata, provider):
     TEMPLATE_FILE = "index.html"
     template = templateEnv.get_template(TEMPLATE_FILE)
     providertype = names[names.Name == provider].iloc[0].Type
+    navbar = make_navbar(provider)
     filedata = template.render(navbar=navbar, current_date_string=current_date_string, new_custom_javascript=new_custom_javascript, providertype=providertype)
     with open(savefolder(provider) + "index.html", "w+") as file:
         file.write(filedata)
@@ -522,11 +524,7 @@ def make_navbar(provider):
         single_providers[single_providers.Clinic == clinic_name].Name.unique(),
         key=lambda x: x.split(" ")[1],
     )
-    navbar = (
-        '<div id="navbar" style="padding-top:1em"><div uk-sticky class="uk-inline uk-background-default uk-text-lead uk-text-middle">\n'
-        + '<a href="../index.html"><img src="../pictures/logo.png" width="39" height="64"></a>\n'
-        + '<div class="uk-inline">Patients seeing:&nbsp;</div>\n'
-    )
+    navbar = ''
 
     if type == "Individual":
         navbar += (
@@ -596,37 +594,6 @@ def make_navbar(provider):
         navbar += '<p class="uk-inline uk-text-bold" style="color:#1F77B4">FCN</p>\n'
 
     navbar += "</div>\n"
-
-    navbar += """
-<a class="uk-button uk-button-secondary uk-float-right" href="#modal-help" uk-toggle>Help?</a>
-
-<div id="modal-help" uk-modal>
-<div class="uk-modal-dialog">
-<button class="uk-modal-close-default" type="button" uk-close></button>
-<div class="uk-modal-header">
-<h2 class="uk-modal-title">Help with Interpretation</h2>
-</div>
-<div class="uk-modal-body" uk-overflow-auto>
-<h3>Issues, Ideas?</h3>
-<p>Please <a href="mailto:jkploudre@fcn.net?subject=Quality-Website">email Jonathan Ploudre</a></p>
-<h3>Color Legend</h3>
-<p>
-<span style="color:#c5b0d5; background:#9467bd; padding:4px; border-radius: 4px;">Provider</span>
-<span style="color:#ffbb78; background:#ff7f0e; padding:4px; border-radius: 4px;">Clinic</span>
-<span style="color:#aec7e8; background:#1f77b4; padding:4px; border-radius: 4px;">FCN</span>
-<span style="color:#98df8a; background:#2ca02c; padding:4px; border-radius: 4px;">Target</span>
-</p>
-
-<h3>Quality Comet Chart</h3>
-<p>The 'quality comets' show how individual panels are changing over time. The tail shows size and direction of changes. If there's no tail, then there hasn't been significant change.</p>
-<img src="../quality_comet.png" width="339" height="169" style="display:block" class="uk-align-center">
-<p>Here you can see that 3 provider panels have dramatically improved. Several are doing a little improvement and a few are mostly unchanged. Looking that the height of the dots, you can see most are above target &mdash; so there has probably been some work and learning on this quality measure.</p>
-</div>
-</div>
-</div>
-</div>
-"""
-
     return navbar
 
 
@@ -668,16 +635,10 @@ for provider in sorted_single_provider_names:
         )
     else:
         print("Missing photo:", provider_picture)
-    navbar = make_navbar(provider)
+  
+all_individual_clinic_fcn = names[(names["Type"].isin(["Individual", "Clinic", "FCN"]))].Name.unique()
+for provider in all_individual_clinic_fcn:
     create_full_html(provider)
-
-for provider in clinics:
-    navbar = make_navbar(provider)
-    create_full_html(provider)
-
-provider = "FCN"
-navbar = make_navbar(provider)
-create_full_html(provider)
 
 # Base HTML File
 root_index_clinic = (

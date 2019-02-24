@@ -19,7 +19,37 @@
 <body>
 <div class="uk-container">
 
+<div id="navbar" style="padding-top:1em"><div uk-sticky class="uk-inline uk-background-default uk-text-lead uk-text-middle">
+<a href="../index.html"><img src="../pictures/logo.png" width="39" height="64"></a>
+<div class="uk-inline">Patients seeing:&nbsp;</div>
 {{navbar}}
+<a class="uk-button uk-button-secondary uk-float-right" href="#modal-help" uk-toggle>Help?</a>
+
+<div id="modal-help" uk-modal>
+<div class="uk-modal-dialog">
+<button class="uk-modal-close-default" type="button" uk-close></button>
+<div class="uk-modal-header">
+<h2 class="uk-modal-title">Help with Interpretation</h2>
+</div>
+<div class="uk-modal-body" uk-overflow-auto>
+<h3>Issues, Ideas?</h3>
+<p>Please <a href="mailto:jkploudre@fcn.net?subject=Quality-Website">email Jonathan Ploudre</a></p>
+<h3>Color Legend</h3>
+<p>
+<span style="color:#c5b0d5; background:#9467bd; padding:4px; border-radius: 4px;">Provider</span>
+<span style="color:#ffbb78; background:#ff7f0e; padding:4px; border-radius: 4px;">Clinic</span>
+<span style="color:#aec7e8; background:#1f77b4; padding:4px; border-radius: 4px;">FCN</span>
+<span style="color:#98df8a; background:#2ca02c; padding:4px; border-radius: 4px;">Target</span>
+</p>
+
+<h3>Quality Comet Chart</h3>
+<p>The 'quality comets' show how individual panels are changing over time. The tail shows size and direction of changes. If there's no tail, then there hasn't been significant change.</p>
+<img src="../quality_comet.png" width="339" height="169" style="display:block" class="uk-align-center">
+<p>Here you can see that 3 provider panels have dramatically improved. Several are doing a little improvement and a few are mostly unchanged. Looking that the height of the dots, you can see most are above target &mdash; so there has probably been some work and learning on this quality measure.</p>
+</div>
+</div>
+</div>
+</div>
 
 <ul id="switcher" uk-switcher="animation: uk-animation-fade" uk-tab>
     <li><a href="#">Core</a></li>
