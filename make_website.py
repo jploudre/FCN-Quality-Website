@@ -477,7 +477,7 @@ def create_full_html(filedata, provider):
         )
     templateLoader = jinja2.FileSystemLoader(searchpath="./files/")
     templateEnv = jinja2.Environment(loader=templateLoader)
-    TEMPLATE_FILE = "index-jinja.html"
+    TEMPLATE_FILE = "index.html"
     template = templateEnv.get_template(TEMPLATE_FILE)
     providertype = names[names.Name == provider].iloc[0].Type
     filedata = template.render(navbar=navbar, current_date_string=current_date_string, new_custom_javascript=new_custom_javascript, providertype=providertype)
@@ -669,21 +669,15 @@ for provider in sorted_single_provider_names:
     else:
         print("Missing photo:", provider_picture)
     navbar = make_navbar(provider)
-    with open("./files/index.html", "r") as file:
-        filedata = file.read()
-    create_full_html(filedata, provider)
+    create_full_html(provider)
 
 for provider in clinics:
     navbar = make_navbar(provider)
-    with open("./files/index-clinic.html", "r") as file:
-        filedata = file.read()
-    create_full_html(filedata, provider)
+    create_full_html(provider)
 
 provider = "FCN"
 navbar = make_navbar(provider)
-with open("./files/index-clinic.html", "r") as file:
-    filedata = file.read()
-create_full_html(filedata, provider)
+create_full_html(provider)
 
 # Base HTML File
 root_index_clinic = (
