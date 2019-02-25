@@ -51,7 +51,7 @@ for file in files:
     # Manually Calculate percents, reduce precision.
     file_df["%"] = round(file_df["SeenNum"] / file_df["SeenDenom"], 4)
     file_df.drop(["SeenNum", "SeenDenom"], axis=1, inplace=True)
-    
+
     # Meridios reports have unreliable datetimes. Uses Zero-Padded date on
     # filename for the date column.
     filename_parts = file[7:-4].split(" ")
@@ -77,8 +77,9 @@ if not under_zero_df.empty:
     print("Percentages can't be less than 0:\n", under_zero_df)
 df.drop(["NAME"], axis=1, inplace=True)
 df.drop(["Metricname"], axis=1, inplace=True)
-df.dropna(subset=['Name'], inplace=True)
-df.dropna(subset=['Metric'], inplace=True)
+df.dropna(subset=["Name"], inplace=True)
+df.dropna(subset=["Metric"], inplace=True)
+
 
 def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
     """
@@ -105,7 +106,9 @@ def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
         .mark_line(strokeWidth=4)
         .encode(
             alt.X(
-                "Date:T", title="", scale=alt.Scale(domain=(graphing_start_date, graphing_end_date))
+                "Date:T",
+                title="",
+                scale=alt.Scale(domain=(graphing_start_date, graphing_end_date)),
             ),
             alt.Y(
                 "%:Q",
@@ -223,7 +226,9 @@ def make_clinic_metric_json(metric, clinic_name, clinic_df, fcn_df):
         .mark_line(strokeWidth=4)
         .encode(
             alt.X(
-                "Date:T", title="", scale=alt.Scale(domain=(graphing_start_date, graphing_end_date ))
+                "Date:T",
+                title="",
+                scale=alt.Scale(domain=(graphing_start_date, graphing_end_date)),
             ),
             alt.Y(
                 "%:Q",
@@ -369,7 +374,9 @@ def make_fcn_metric_json(metric):
         .mark_line(strokeWidth=4)
         .encode(
             alt.X(
-                "Date:T", title="", scale=alt.Scale(domain=(graphing_start_date, graphing_end_date))
+                "Date:T",
+                title="",
+                scale=alt.Scale(domain=(graphing_start_date, graphing_end_date)),
             ),
             alt.Y(
                 "%:Q",
@@ -483,7 +490,12 @@ def create_full_html(provider):
     template = templateEnv.get_template(TEMPLATE_FILE)
     providertype = names[names.Name == provider].iloc[0].Type
     navbar = make_navbar(provider)
-    filedata = template.render(navbar=navbar, current_date_string=current_date_string, new_custom_javascript=new_custom_javascript, providertype=providertype)
+    filedata = template.render(
+        navbar=navbar,
+        current_date_string=current_date_string,
+        new_custom_javascript=new_custom_javascript,
+        providertype=providertype,
+    )
     with open(savefolder(provider) + "index.html", "w+") as file:
         file.write(filedata)
 
@@ -525,7 +537,7 @@ def make_navbar(provider):
         single_providers[single_providers.Clinic == clinic_name].Name.unique(),
         key=lambda x: x.split(" ")[1],
     )
-    navbar = ''
+    navbar = ""
 
     if type == "Individual":
         navbar += (
@@ -601,7 +613,6 @@ def make_navbar(provider):
 fcn_df = df[(df["Name"] == "FCN")]
 fcn_df = fcn_df.drop(["Name", "Type", "Clinic"], axis=1)
 
-
 pool = Pool()
 pool.map(save_individual_chart_data, sorted_single_provider_names)
 pool.close()
@@ -611,7 +622,6 @@ pool2 = Pool()
 pool2.map(save_clinic_chart_data, clinics)
 pool2.close()
 pool2.join()
-
 
 json_data = ""
 name = "FCN"
@@ -636,8 +646,10 @@ for provider in sorted_single_provider_names:
         )
     else:
         print("Missing photo:", provider_picture)
-  
-all_individual_clinic_fcn = names[(names["Type"].isin(["Individual", "Clinic", "FCN"]))].Name.unique()
+
+all_individual_clinic_fcn = names[
+    (names["Type"].isin(["Individual", "Clinic", "FCN"]))
+].Name.unique()
 for provider in all_individual_clinic_fcn:
     create_full_html(provider)
 
