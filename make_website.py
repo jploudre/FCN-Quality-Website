@@ -489,7 +489,6 @@ def create_full_html(provider):
     TEMPLATE_FILE = "index.html"
     template = templateEnv.get_template(TEMPLATE_FILE)
     providertype = names[names.Name == provider].iloc[0].Type
-    provider_sanitized = str(provider).replace(" ", "_")
     navbar = make_navbar(provider)
     filedata = template.render(
         navbar=navbar,
@@ -521,7 +520,6 @@ if os.path.isfile(css):
 favicon = "./files/pictures/favicon.ico"
 if os.path.isfile(favicon):
     shutil.copyfile(favicon, "./docs/favicon.ico")
-
 
 comet_chart = "./files/pictures/quality_comet.png"
 if os.path.isfile(comet_chart):
