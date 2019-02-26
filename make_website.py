@@ -485,16 +485,17 @@ def create_full_html(provider):
             "<!--JSON-->", chart_data_text
         )
     templateLoader = jinja2.FileSystemLoader(searchpath="./files/")
-    templateEnv = jinja2.Environment(loader=templateLoader)
+    templateEnv = jinja2.Environment(loader=templateLoader, trim_blocks=True, lstrip_blocks=True) 
     TEMPLATE_FILE = "index.html"
     template = templateEnv.get_template(TEMPLATE_FILE)
     providertype = names[names.Name == provider].iloc[0].Type
+    provider_sanitized = str(provider).replace(" ", "_")
     navbar = make_navbar(provider)
     filedata = template.render(
         navbar=navbar,
         current_date_string=current_date_string,
         new_custom_javascript=new_custom_javascript,
-        providertype=providertype,
+        providertype=providertype, provider=provider
     )
     with open(savefolder(provider) + "index.html", "w+") as file:
         file.write(filedata)
@@ -538,15 +539,6 @@ def make_navbar(provider):
         key=lambda x: x.split(" ")[1],
     )
     navbar = ""
-
-    if type == "Individual":
-        navbar += (
-            '<img src="'
-            + "../pictures/"
-            + str(provider).replace(" ", "_")
-            + ".JPG"
-            + '" width="64" height="64" class="uk-border-circle">&nbsp;\n'
-        )
 
     if type == "Individual":
         navbar += '<div class="uk-inline uk-text-bold" style="color:#9467bd">{}'.format(

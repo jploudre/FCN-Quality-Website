@@ -22,6 +22,9 @@
 <div id="navbar" style="padding-top:1em"><div uk-sticky class="uk-inline uk-background-default uk-text-lead uk-text-middle">
 <a href="../index.html"><img src="../pictures/logo.png" width="39" height="64"></a>
 <div class="uk-inline">Patients seeing:&nbsp;</div>
+{% if providertype == "Individual" %}
+<img src="../pictures/{{provider.replace(" ", "_")}}.JPG" width="64" height="64" class="uk-border-circle">&nbsp;
+{% endif %}
 {{navbar}}
 <a class="uk-button uk-button-secondary uk-float-right" href="#modal-help" uk-toggle>Help?</a>
 
