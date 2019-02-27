@@ -485,16 +485,20 @@ def create_full_html(provider):
             "<!--JSON-->", chart_data_text
         )
     templateLoader = jinja2.FileSystemLoader(searchpath="./files/")
-    templateEnv = jinja2.Environment(loader=templateLoader, trim_blocks=True, lstrip_blocks=True) 
+    templateEnv = jinja2.Environment(loader=templateLoader, trim_blocks=True, lstrip_blocks=True, line_statement_prefix="#",) 
     TEMPLATE_FILE = "index.html"
     template = templateEnv.get_template(TEMPLATE_FILE)
     providertype = names[names.Name == provider].iloc[0].Type
-    navbar = make_navbar(provider)
+    clinic_name = names[names.Name == provider].iloc[0].Clinic
+    same_clinic_providers = sorted(
+        single_providers[single_providers.Clinic == clinic_name].Name.unique(),
+        key=lambda x: x.split(" ")[1],
+    )
     filedata = template.render(
-        navbar=navbar,
+        
         current_date_string=current_date_string,
         new_custom_javascript=new_custom_javascript,
-        providertype=providertype, provider=provider
+        providertype=providertype, provider=provider, clinic_name=clinic_name, same_clinic_providers=same_clinic_providers, clinics=clinics
     )
     with open(savefolder(provider) + "index.html", "w+") as file:
         file.write(filedata)
@@ -525,79 +529,6 @@ comet_chart = "./files/pictures/quality_comet.png"
 if os.path.isfile(comet_chart):
     shutil.copyfile(comet_chart, "./docs/quality_comet.png")
 
-
-def make_navbar(provider):
-
-    clinic_name = names[names.Name == provider].iloc[0].Clinic
-    # Type of Providers: Individual, Clinic, FCN
-    type = names[names.Name == provider].iloc[0].Type
-
-    same_clinic_providers = sorted(
-        single_providers[single_providers.Clinic == clinic_name].Name.unique(),
-        key=lambda x: x.split(" ")[1],
-    )
-    navbar = ""
-
-    if type == "Individual":
-        navbar += '<div class="uk-inline uk-text-bold" style="color:#9467bd">{}'.format(
-            provider
-        )
-    elif type == "Clinic" or type == "FCN":
-        navbar += '<div class="uk-inline" style="color:#9467bd">Providers'
-
-    if type == "Individual" or type == "Clinic":
-        navbar += (
-            '&nbsp;<span class="uk-animation-slide-bottom">&#9660;</span></div>\n'
-            + '<div uk-dropdown><ul class="uk-nav uk-dropdown-nav">\n'
-        )
-        for clinic_provider in same_clinic_providers:
-            if provider == clinic_provider:
-                navbar += '<li class="uk-active">{}</li>\n'.format(provider)
-            else:
-                navbar += (
-                    '<li><a href="../'
-                    + str(clinic_provider).replace(" ", "_")
-                    + '/index.html">'
-                    + clinic_provider
-                    + "</a></li>\n"
-                )
-        navbar += "</ul></div>\n"
-    elif type == "FCN":
-        navbar += "</div>\n"
-
-    navbar += "&nbsp;@&nbsp;\n"
-
-    if type == "Individual":
-        navbar += '<div class="uk-inline" style="color:#ff7f0e">{}'.format(clinic_name)
-    elif type == "Clinic":
-        navbar += '<div class="uk-inline uk-text-bold" style="color:#ff7f0e">{}'.format(
-            clinic_name
-        )
-    elif type == "FCN":
-        navbar += '<div class="uk-inline" style="color:#ff7f0e">Clinics'
-
-    navbar += (
-        '&nbsp;<span class="uk-animation-slide-bottom">&#9660;</span></div>\n'
-        + '<div uk-dropdown><ul class="uk-nav uk-dropdown-nav">\n'
-    )
-    for clinic in clinics:
-        if clinic == clinic_name:
-            navbar += '<li class="uk-active"><a href="../{}/index.html">{}</a></li>\n'.format(
-                clinic, clinic
-            )
-        else:
-            navbar += '<li><a href="../{}/index.html">{}</a></li>\n'.format(
-                clinic, clinic
-            )
-    navbar += "</ul></div>\n&nbsp;@&nbsp;\n"
-
-    if type == "Individual" or type == "Clinic":
-        navbar += '<a class="uk-inline" style="color:#1F77B4" href="../FCN/index.html">FCN</a>\n'
-    elif type == "FCN":
-        navbar += '<p class="uk-inline uk-text-bold" style="color:#1F77B4">FCN</p>\n'
-
-    navbar += "</div>\n"
-    return navbar
 
 
 fcn_df = df[(df["Name"] == "FCN")]

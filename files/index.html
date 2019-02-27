@@ -18,14 +18,57 @@
 
 <body>
 <div class="uk-container">
-
 <div id="navbar" style="padding-top:1em"><div uk-sticky class="uk-inline uk-background-default uk-text-lead uk-text-middle">
 <a href="../index.html"><img src="../pictures/logo.png" width="39" height="64"></a>
 <div class="uk-inline">Patients seeing:&nbsp;</div>
-{% if providertype == "Individual" %}
+# if providertype == "Individual" 
 <img src="../pictures/{{provider.replace(" ", "_")}}.JPG" width="64" height="64" class="uk-border-circle">&nbsp;
-{% endif %}
-{{navbar}}
+# endif 
+
+# if providertype == "Individual":
+<div class="uk-inline uk-text-bold" style="color:#9467bd">{{provider}}
+# elif providertype == "Clinic" or providertype == "FCN":
+<div class="uk-inline" style="color:#9467bd">Providers
+# endif 
+&nbsp;<span class="uk-animation-slide-bottom">&#9660;</span></div>
+# if providertype == "Individual" or providertype == "Clinic":
+<div uk-dropdown><ul class="uk-nav uk-dropdown-nav">
+	# for clinic_provider in same_clinic_providers:
+		# if provider == clinic_provider:
+<li class="uk-active">{{provider}}</li>
+		# else:
+<li><a href="../{{clinic_provider.replace(" ", "_")}}/index.html">{{clinic_provider}}</a></li>
+		# endif
+	# endfor	
+</ul></div>
+# elif providertype == "FCN":
+</div>
+# endif
+&nbsp;@&nbsp;
+# if providertype == "Individual":
+<div class="uk-inline" style="color:#ff7f0e">{{clinic_name}}
+# elif providertype == "Clinic":
+<div class="uk-inline uk-text-bold" style="color:#ff7f0e">{{clinic_name}}
+# elif providertype == "FCN":
+<div class="uk-inline" style="color:#ff7f0e">Clinics
+# endif
+&nbsp;<span class="uk-animation-slide-bottom">&#9660;</span></div>
+<div uk-dropdown><ul class="uk-nav uk-dropdown-nav">
+# for clinic in clinics:
+        # if clinic == clinic_name:
+<li class="uk-active"><a href="../{{clinic}}/index.html">{{clinic}}</a></li>
+        # else:
+<li><a href="../{{clinic}}/index.html">{{clinic}}</a></li>
+	# endif
+# endfor
+</ul></div>&nbsp;@&nbsp;
+# if providertype == "Individual" or providertype == "Clinic":
+<a class="uk-inline" style="color:#1F77B4" href="../FCN/index.html">FCN</a>
+# elif providertype == "FCN":
+<p class="uk-inline uk-text-bold" style="color:#1F77B4">FCN</p>
+# endif
+
+</div>
 <a class="uk-button uk-button-secondary uk-float-right" href="#modal-help" uk-toggle>Help?</a>
 
 <div id="modal-help" uk-modal>
