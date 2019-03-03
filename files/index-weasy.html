@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Population Health Quality</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@page {
+size: letter landscape;
+margin: 0.75in 0.75in 0.75in 0.75in;
+}
+*{ margin: 0; padding: 0;font-family:'Avenir Next'}
+div.card {width:3in;padding 0 0.25in 0.5in 0; float:left; height:2in;}
+img{width:2.75in;height:1.5in;}
+</style>
+</head>
+
+<body>
+<div style="width:9.5in">
+<h1 style="font-size:16; color:#c5b0d5">{{provider}}&nbsp;&nbsp;<span style="color:#dddddd">{{current_date_string}}</span></h1>
+<div class="card" ><b>Colorectal Screening:</b><br /><img src="./Colorectal Screen.svg" /></div></li>
+<div class="card" ><b>Pap Smears:</b><br /><img src="./Pap Smears.svg" /></div></li>
+<div class="card" ><b>Mammogram:</b><br /><img src="./Mammogram.svg" /></div></li>
+<div class="card" ><b>Diabetes Eye Screening:</b><br /><img src="./DM Eye Exam.svg" /></div></li>
+<div class="card" ><b>Diabetes Foot Exam:</b><br /><img src="./DM Foot Exam.svg" /></div></li>
+<div class="card" ><b>Diabetes Nephropathy:</b><br /><img src="./DM Nephropathy.svg" /></div></li>
+<div class="card" ><b>Pneumovax(DM):</b><br /><img src="./DM Pneumovax.svg" /></div></li>
+<div class="card" ><b>TD and TDAP:</b><br /><img src="./TD and TDAP.svg" /></div></li>
+
+<p style="clear:both"><b>Legend: </b>
+<span style="color:#c5b0d5; background:#9467bd; padding:4px; border-radius: 4px;">{{provider}}</span>
+<span style="color:#ffbb78; background:#ff7f0e; padding:4px; border-radius: 4px;">{{clinic_name}}</span>
+<span style="color:#aec7e8; background:#1f77b4; padding:4px; border-radius: 4px;">FCN</span>
+<span style="color:#98df8a; background:#2ca02c; padding:4px; border-radius: 4px;">Target</span>
+</p>
+</div>
+</body>
+</html>
+
+
+
+
+
+

@@ -9,6 +9,14 @@ import jinja2
 import json
 import pandas as pd
 import altair as alt
+from weasyprint import HTML
+import tqdm as tqdm
+from selenium import webdriver
+
+create_graphs = True 
+create_svgs = True
+create_htmls = True
+create_pdfs = True
 
 names = pd.read_csv("./files/names.csv", index_col="MeridiosName")
 metrics = pd.read_csv(
@@ -29,7 +37,7 @@ light_green = "#98df8a"
 df = pd.DataFrame()
 
 files = glob.iglob("./data/*.csv")
-for file in files:
+for file in tqdm.tqdm(files, total=len(glob.glob("./data/*csv")), desc="CSV Files"):
     file_df = pd.read_csv(file, usecols=["NAME", "Metricname", "SeenNum", "SeenDenom"])
     file_df["Name"] = file_df.NAME.map(names.Name)
     file_df["Type"] = file_df.NAME.map(names.Type)
@@ -81,7 +89,7 @@ df.dropna(subset=["Name"], inplace=True)
 df.dropna(subset=["Metric"], inplace=True)
 
 
-def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
+def make_individual_metric_json(metric, name_df, clinic_df, fcn_df, foldername):
     """
     Makes a chart json for a single metric and a single provider.
     Assumes: dataframes 'names' and 'metrics' for lookups
@@ -152,23 +160,26 @@ def make_individual_metric_json(metric, name_df, clinic_df, fcn_df):
             alt.Chart(metricdf)
             .mark_text(align="right", baseline="bottom", dx=175, dy=100, size=16)
             .encode(
-                text=alt.Text("TargetValue:Q", format=".2%"),
-                color=alt.ColorValue(dark_green),
+                    text=alt.Text("TargetValue:Q", format=".2%"),
+                    color=alt.ColorValue(dark_green),
+                )
             )
-        )
 
-    if metric_target:
-        chart = (
-            fcn_progress_line
-            + clinic_progress_line
-            + provider_progress_line
-            + metric_target_rule
-            + metric_target_text
-            + provider_current_text
-        )
-    else:
-        chart = fcn_progress_line + clinic_progress_line + provider_progress_line
+        if metric_target:
+            chart = (
+                fcn_progress_line
+                + clinic_progress_line
+                + provider_progress_line
+                + metric_target_rule
+                + metric_target_text
+                + provider_current_text
+            )
+        else:
+            chart = fcn_progress_line + clinic_progress_line + provider_progress_line
 
+    if (create_svgs):
+        chart.save(foldername + metric +".svg")
+    
     return chart.to_json()
 
 
@@ -180,13 +191,13 @@ def save_individual_chart_data(name):
     name_df = name_df.drop(["Name", "Type", "Clinic"], axis=1)
     clinic_df = df[(df["Name"] == clinic_name)]
     clinic_df = clinic_df.drop(["Name", "Type", "Clinic"], axis=1)
+    foldername = savefolder(name)
 
     for metric in main_metrics:
-        chart_data = make_individual_metric_json(metric, name_df, clinic_df, fcn_df)
+        chart_data = make_individual_metric_json(metric, name_df, clinic_df, fcn_df, foldername)
         chart_data_json = json.loads(chart_data)
         json_minified = json.dumps(chart_data_json, separators=(",", ":"))
         json_data += "var " + metric.replace(" ", "_") + " = " + json_minified + ";\n"
-    foldername = savefolder(name)
     with open(foldername + "chart_data.json", "w") as savefile:
         savefile.write(json_data)
 
@@ -488,6 +499,7 @@ def create_full_html(provider):
     templateEnv = jinja2.Environment(loader=templateLoader, trim_blocks=True, lstrip_blocks=True, line_statement_prefix="#",) 
     TEMPLATE_FILE = "index.html"
     template = templateEnv.get_template(TEMPLATE_FILE)
+    template_weasy = templateEnv.get_template("index-weasy.html")
     providertype = names[names.Name == provider].iloc[0].Type
     clinic_name = names[names.Name == provider].iloc[0].Clinic
     same_clinic_providers = sorted(
@@ -495,7 +507,6 @@ def create_full_html(provider):
         key=lambda x: x.split(" ")[1],
     )
     filedata = template.render(
-        
         current_date_string=current_date_string,
         new_custom_javascript=new_custom_javascript,
         providertype=providertype, provider=provider, clinic_name=clinic_name, same_clinic_providers=same_clinic_providers, clinics=clinics
@@ -503,7 +514,13 @@ def create_full_html(provider):
     with open(savefolder(provider) + "index.html", "w+") as file:
         file.write(filedata)
 
-
+    filedata_weasy = template_weasy.render(
+        current_date_string=current_date_string,
+        provider=provider, clinic_name=clinic_name, 
+    )
+    with open(savefolder(provider) + "index-weasy.html", "w+") as file:
+                file.write(filedata_weasy)
+                    
 FCN_logo = "./files/pictures/logo.png"
 if os.path.isfile(FCN_logo):
     if not os.path.exists("./docs/pictures/"):
@@ -534,26 +551,39 @@ if os.path.isfile(comet_chart):
 fcn_df = df[(df["Name"] == "FCN")]
 fcn_df = fcn_df.drop(["Name", "Type", "Clinic"], axis=1)
 
-pool = Pool()
-pool.map(save_individual_chart_data, sorted_single_provider_names)
-pool.close()
-pool.join()
+if (create_graphs):
+    pool = Pool()
+    for _ in tqdm.tqdm(
+        pool.imap(save_individual_chart_data, sorted_single_provider_names),
+        total=len(sorted_single_provider_names),
+        desc="   Graphs",
+    ):
+        pass
+    pool.close()
+    pool.join()
 
-pool2 = Pool()
-pool2.map(save_clinic_chart_data, clinics)
-pool2.close()
-pool2.join()
+if (create_graphs):
+    pool2 = Pool()
+    for _ in tqdm.tqdm(
+        pool2.imap(save_clinic_chart_data, clinics), total=len(clinics), desc="   Graphs"
+    ):
+        pass
+    pool2.close()
+    pool2.join()
 
-json_data = ""
-name = "FCN"
-for metric in main_metrics:
-    chart_data = make_fcn_metric_json(metric)
-    chart_data_json = json.loads(chart_data)
-    json_minified = json.dumps(chart_data_json, separators=(",", ":"))
-    json_data += "var " + metric.replace(" ", "_") + " = " + json_minified + ";\n"
-foldername = savefolder(name)
-with open(foldername + "chart_data.json", "w") as savefile:
-    savefile.write(json_data)
+
+
+if (create_graphs):
+    json_data = ""
+    name = "FCN"
+    for metric in main_metrics:
+        chart_data = make_fcn_metric_json(metric)
+        chart_data_json = json.loads(chart_data)
+        json_minified = json.dumps(chart_data_json, separators=(",", ":"))
+        json_data += "var " + metric.replace(" ", "_") + " = " + json_minified + ";\n"
+    foldername = savefolder(name)
+    with open(foldername + "chart_data.json", "w") as savefile:
+        savefile.write(json_data)
 
 with open("./files/js/jkp_custom.js", "r") as customjs:
     custom_javascript = customjs.read()
@@ -567,12 +597,12 @@ for provider in sorted_single_provider_names:
         )
     else:
         print("Missing photo:", provider_picture)
-
-all_individual_clinic_fcn = names[
-    (names["Type"].isin(["Individual", "Clinic", "FCN"]))
-].Name.unique()
-for provider in all_individual_clinic_fcn:
-    create_full_html(provider)
+if (create_htmls):
+    all_individual_clinic_fcn = names[
+        (names["Type"].isin(["Individual", "Clinic", "FCN"]))
+    ].Name.unique()
+    for provider in all_individual_clinic_fcn:
+        create_full_html(provider)
 
 # Base HTML File
 root_index_clinic = (
@@ -619,6 +649,36 @@ filedata = filedata.replace("{{{Current Date}}}", current_date_string)
 with open("docs/" + "index.html", "w+") as file:
     file.write(filedata)
 
-# Remove all the JSONs now
+
+
+def pdf_folder(name):
+    foldername = str(name).replace(" ", "_")
+    if not os.path.exists("./docs/" + foldername):
+        os.makedirs("./docs/" + foldername)
+    return "/docs/" + foldername + "/"
+
+
+def make_pdf(provider):
+    HTML(
+        "http://0.0.0.0:8000{}index-weasy.html".format(pdf_folder(provider))
+    ).write_pdf(target=".{}{}.pdf".format(pdf_folder(provider), provider))
+
+if (create_pdfs):
+    pool = Pool()
+    for _ in tqdm.tqdm(
+        pool.imap(make_pdf, single_providers.Name.unique()), total=len(single_providers), desc="     PDFs"
+    ):
+        pass
+    pool.close()
+    pool.join()
+
+
+# Remove all the temporary files now
 for file in glob.iglob("./docs/**/*.json", recursive=True):
+    os.remove(file)
+for file in glob.iglob("./docs/**/*.png", recursive=True):
+    os.remove(file)
+for file in glob.iglob("./docs/**/*.svg", recursive=True):
+    os.remove(file)
+for file in glob.iglob("./docs/**/index-weasy.html", recursive=True):
     os.remove(file)
