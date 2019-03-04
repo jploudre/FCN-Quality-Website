@@ -676,8 +676,6 @@ if (create_pdfs):
 # Remove all the temporary files now
 for file in glob.iglob("./docs/**/*.json", recursive=True):
     os.remove(file)
-for file in glob.iglob("./docs/**/*.png", recursive=True):
-    os.remove(file)
 for file in glob.iglob("./docs/**/*.svg", recursive=True):
     os.remove(file)
 for file in glob.iglob("./docs/**/index-weasy.html", recursive=True):
