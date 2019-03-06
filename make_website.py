@@ -13,7 +13,7 @@ from weasyprint import HTML
 import tqdm as tqdm
 from selenium import webdriver
 
-create_graphs = True 
+create_graphs = True
 create_svgs = True
 create_htmls = True
 create_pdfs = True
@@ -160,10 +160,10 @@ def make_individual_metric_json(metric, name_df, clinic_df, fcn_df, foldername):
             alt.Chart(metricdf)
             .mark_text(align="right", baseline="bottom", dx=175, dy=100, size=16)
             .encode(
-                    text=alt.Text("TargetValue:Q", format=".2%"),
-                    color=alt.ColorValue(dark_green),
-                )
+                text=alt.Text("TargetValue:Q", format=".2%"),
+                color=alt.ColorValue(dark_green),
             )
+        )
 
         if metric_target:
             chart = (
@@ -177,9 +177,9 @@ def make_individual_metric_json(metric, name_df, clinic_df, fcn_df, foldername):
         else:
             chart = fcn_progress_line + clinic_progress_line + provider_progress_line
 
-    if (create_svgs):
-        chart.save(foldername + metric +".svg")
-    
+    if create_svgs:
+        chart.save(foldername + metric + ".svg")
+
     return chart.to_json()
 
 
@@ -194,7 +194,9 @@ def save_individual_chart_data(name):
     foldername = savefolder(name)
 
     for metric in main_metrics:
-        chart_data = make_individual_metric_json(metric, name_df, clinic_df, fcn_df, foldername)
+        chart_data = make_individual_metric_json(
+            metric, name_df, clinic_df, fcn_df, foldername
+        )
         chart_data_json = json.loads(chart_data)
         json_minified = json.dumps(chart_data_json, separators=(",", ":"))
         json_data += "var " + metric.replace(" ", "_") + " = " + json_minified + ";\n"
@@ -496,7 +498,12 @@ def create_full_html(provider):
             "<!--JSON-->", chart_data_text
         )
     templateLoader = jinja2.FileSystemLoader(searchpath="./files/")
-    templateEnv = jinja2.Environment(loader=templateLoader, trim_blocks=True, lstrip_blocks=True, line_statement_prefix="#",) 
+    templateEnv = jinja2.Environment(
+        loader=templateLoader,
+        trim_blocks=True,
+        lstrip_blocks=True,
+        line_statement_prefix="#",
+    )
     TEMPLATE_FILE = "index.html"
     template = templateEnv.get_template(TEMPLATE_FILE)
     template_weasy = templateEnv.get_template("index-weasy.html")
@@ -509,18 +516,24 @@ def create_full_html(provider):
     filedata = template.render(
         current_date_string=current_date_string,
         new_custom_javascript=new_custom_javascript,
-        providertype=providertype, provider=provider, clinic_name=clinic_name, same_clinic_providers=same_clinic_providers, clinics=clinics
+        providertype=providertype,
+        provider=provider,
+        clinic_name=clinic_name,
+        same_clinic_providers=same_clinic_providers,
+        clinics=clinics,
     )
     with open(savefolder(provider) + "index.html", "w+") as file:
         file.write(filedata)
 
     filedata_weasy = template_weasy.render(
         current_date_string=current_date_string,
-        provider=provider, clinic_name=clinic_name, 
+        provider=provider,
+        clinic_name=clinic_name,
     )
     with open(savefolder(provider) + "index-weasy.html", "w+") as file:
-                file.write(filedata_weasy)
-                    
+        file.write(filedata_weasy)
+
+
 FCN_logo = "./files/pictures/logo.png"
 if os.path.isfile(FCN_logo):
     if not os.path.exists("./docs/pictures/"):
@@ -547,11 +560,10 @@ if os.path.isfile(comet_chart):
     shutil.copyfile(comet_chart, "./docs/quality_comet.png")
 
 
-
 fcn_df = df[(df["Name"] == "FCN")]
 fcn_df = fcn_df.drop(["Name", "Type", "Clinic"], axis=1)
 
-if (create_graphs):
+if create_graphs:
     pool = Pool()
     for _ in tqdm.tqdm(
         pool.imap(save_individual_chart_data, sorted_single_provider_names),
@@ -562,18 +574,19 @@ if (create_graphs):
     pool.close()
     pool.join()
 
-if (create_graphs):
+if create_graphs:
     pool2 = Pool()
     for _ in tqdm.tqdm(
-        pool2.imap(save_clinic_chart_data, clinics), total=len(clinics), desc="   Graphs"
+        pool2.imap(save_clinic_chart_data, clinics),
+        total=len(clinics),
+        desc="   Graphs",
     ):
         pass
     pool2.close()
     pool2.join()
 
 
-
-if (create_graphs):
+if create_graphs:
     json_data = ""
     name = "FCN"
     for metric in main_metrics:
@@ -597,7 +610,7 @@ for provider in sorted_single_provider_names:
         )
     else:
         print("Missing photo:", provider_picture)
-if (create_htmls):
+if create_htmls:
     all_individual_clinic_fcn = names[
         (names["Type"].isin(["Individual", "Clinic", "FCN"]))
     ].Name.unique()
@@ -650,7 +663,6 @@ with open("docs/" + "index.html", "w+") as file:
     file.write(filedata)
 
 
-
 def pdf_folder(name):
     foldername = str(name).replace(" ", "_")
     if not os.path.exists("./docs/" + foldername):
@@ -663,10 +675,13 @@ def make_pdf(provider):
         "http://0.0.0.0:8000{}index-weasy.html".format(pdf_folder(provider))
     ).write_pdf(target=".{}{}.pdf".format(pdf_folder(provider), provider))
 
-if (create_pdfs):
+
+if create_pdfs:
     pool = Pool()
     for _ in tqdm.tqdm(
-        pool.imap(make_pdf, single_providers.Name.unique()), total=len(single_providers), desc="     PDFs"
+        pool.imap(make_pdf, single_providers.Name.unique()),
+        total=len(single_providers),
+        desc="     PDFs",
     ):
         pass
     pool.close()
