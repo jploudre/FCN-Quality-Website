@@ -617,49 +617,20 @@ if create_htmls:
     for provider in all_individual_clinic_fcn:
         create_full_html(provider)
 
-# Base HTML File
-root_index_clinic = (
-    '<div uk-filter="target: .js-filter"><ul class="uk-subnav uk-subnav-pill">\n'
+
+
+templateLoader = jinja2.FileSystemLoader(searchpath="./files/")
+templateEnv = jinja2.Environment(
+    loader=templateLoader,
+    trim_blocks=True,
+    lstrip_blocks=True,
+    line_statement_prefix="#",
 )
-
-for clinic in clinics:
-    root_index_clinic += (
-        '<li uk-filter-control=".tag-'
-        + clinic
-        + '"><a href="#">'
-        + clinic
-        + "</a></li>\n"
-    )
-root_index_clinic += "</ul>"
-
-provider_index_cards = '<ul class="js-filter uk-grid-match uk-card-small" uk-grid>\n'
-
-for name in sorted_single_provider_names:
-    provider_icon = (
-        '<img class="uk-border-circle" src="'
-        + "./pictures/"
-        + str(name).replace(" ", "_")
-        + ".JPG"
-        + '" width="64" height="64" class="">&nbsp;&nbsp;'
-    )
-    provider_index_cards += (
-        '<li class="tag-'
-        + names[names.Name == name].iloc[0].Clinic
-        + '"><a class="" href="./'
-        + str(name).replace(" ", "_")
-        + '/"><div class="uk-card uk-width-medium uk-card-hover uk-card-default uk-card-body">'
-        + provider_icon
-        + name
-        + "</div></a></li>\n"
-    )
-provider_index_cards += "</ul>"
-
-with open("./files/index-base.html", "r") as file:
-    filedata = file.read()
-filedata = filedata.replace("<!--CLINICS-->", root_index_clinic)
-filedata = filedata.replace("<!--Provider-Index-Cards-->", provider_index_cards)
-filedata = filedata.replace("{{{Current Date}}}", current_date_string)
-with open("docs/" + "index.html", "w+") as file:
+template_base = templateEnv.get_template("index-base.html")
+filedata = template_base.render(
+names=names, sorted_single_provider_names=sorted_single_provider_names, current_date_string=current_date_string, clinics=clinics
+)
+with open("./docs/index.html", "w+") as file:
     file.write(filedata)
 
 

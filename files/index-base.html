@@ -36,13 +36,23 @@
 
 <p class="class="uk-text-lead">Or select provider:</p>
 
-<!--CLINICS-->
-<!--Provider-Index-Cards-->
+<div uk-filter="target: .js-filter"><ul class="uk-subnav uk-subnav-pill">
+# for clinic in clinics:
+<li uk-filter-control=".tag-{{clinic}}"><a href="#">{{clinic}}</a></li>
+# endfor
+</ul>
+<ul class="js-filter uk-grid-match uk-card-small" uk-grid>
+
+# for name in sorted_single_provider_names:
+<li class="tag-{{names[names.Name == name].iloc[0].Clinic}}"><a class="" href="./{{name.replace(" ", "_")}}/">
+<div class="uk-card uk-width-medium uk-card-hover uk-card-default uk-card-body"><img class="uk-border-circle" src="./pictures/{{name.replace(" ", "_")}}.JPG" width="64" height="64" class="">&nbsp;&nbsp;{{name}}</div></a></li>
+# endfor
+</ul>
 </div>
 
 <br />
 <hr class="uk-divider-icon">
-<p class="uk-text-small uk-text-meta">Updated: <!--CURRENT_DATE--></p>
+<p class="uk-text-small uk-text-meta">{{current_date_string}}</p>
 </div>
 </body>
 </html>
