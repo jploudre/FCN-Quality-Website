@@ -16,7 +16,7 @@ from selenium import webdriver
 create_graphs = True
 create_svgs = False
 create_htmls = True
-create_pdfs = True
+create_pdfs = False
 
 names = pd.read_csv("./files/names.csv", index_col="MeridiosName")
 metrics = pd.read_csv(
