@@ -14,9 +14,9 @@ import tqdm as tqdm
 from selenium import webdriver
 
 create_graphs = True
-create_svgs = False
+create_svgs = True
 create_htmls = True
-create_pdfs = False
+create_pdfs = True
 
 names = pd.read_csv("./files/names.csv", index_col="MeridiosName")
 metrics = pd.read_csv(
