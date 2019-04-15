@@ -1,4 +1,4 @@
-#!/Users/jonathan/miniconda3/bin/python3
+#!/home/jkploudre/miniconda3/bin/python3
 
 import glob as glob
 import os
@@ -178,7 +178,7 @@ def make_individual_metric_json(metric, name_df, clinic_df, fcn_df, foldername):
             chart = fcn_progress_line + clinic_progress_line + provider_progress_line
 
     if create_svgs:
-        chart.save(foldername + metric + ".svg")
+        chart.save(foldername + metric + ".svg", webdriver="firefox")
 
     return chart.to_json()
 
